@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "svgo": "node_modules/.bin/svgo -i static/svg/Krähenbeißer.svg -o assets/images/kraehenbeisser.svg",
+    "build": "hugo",
+    "start": "hugo server -D --debug --disableFastRender --buildFuture"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "jquery": "^3.5.1"
+  }
+}

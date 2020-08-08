@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap');
+@import url('fontawesome/fontawesome.scss');
+
+nav {
+    position: fixed;
+    background: #293133;
+
+    .container {
+
+        a, span {
+            color: #FAFAFA;
+        }
+        a:active, a:hover {
+            text-decoration: none;
+            color: #FAFAFA;
+        }
+    }
+
+}
+
+.content {
+    height: calc(100vh - 6.0rem);
+}
+
+/*
+.content > .home {
+    background: linear-gradient(90deg, #fff 50%, #293133 50%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+}
+*/

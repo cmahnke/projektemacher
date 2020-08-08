@@ -1,0 +1,71 @@
+baseURL = "http://example.org/"
+languageCode = "de"
+title = "Projektemacher"
+theme = "hugo-coder"
+publishDir = "docs"
+disableKinds = ["term", "taxonomy"]
+languagecode = "de"
+defaultcontentlanguage = "de"
+
+[params]
+    author = "Projektemacher"
+    description = "Blog Potpourri"
+    keywords = "blog, book, digitization, history, cultural history"
+    info = "Was früher Bandnamen waren, sind heute Blogs..."
+    avatarurl = "images/avatar.jpg"
+    footercontent = "Enter a text here."
+
+    hideFooter = true
+    hideCredits = true
+    hideCopyright = true
+    since = 2020
+
+    colorscheme = "light"
+
+    enableTwemoji = false
+
+    custom_scss = ["scss/base.scss"]
+    custom_js = ["js/jquery/jquery.js", "js/style.js"]
+
+[languages]
+    [languages.de]
+        languagename = "Deutsch"
+
+        [languages.de.menu]
+
+            [[languages.de.menu.main]]
+                name = "Blogs"
+                weight = 1
+                url = "blogs/"
+
+            [[languages.de.menu.main]]
+                name = "News"
+                weight = 2
+                url = "posts/"
+
+            [[languages.de.menu.main]]
+                name = "Über"
+                weight = 3
+                url = "about/"
+
+            [[languages.de.menu.main]]
+                name = "Kontakt"
+                weight = 4
+                url = "contact/"
+
+[module]
+    [[module.mounts]]
+        source = "assets/scss"
+        target = "assets/scss"
+
+    [[module.mounts]]
+        source = "assets/js"
+        target = "assets/js"
+
+    [[module.mounts]]
+        source = "node_modules/@fortawesome/fontawesome-free/scss"
+        target = "assets/sccs/fontawesome"
+
+    [[module.mount]]
+        source = "node_modules/jquery/dist"
+        target = "assets/js/jquery"
