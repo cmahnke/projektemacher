@@ -3,6 +3,7 @@ languageCode = "de"
 title = "Projektemacher"
 theme = "hugo-coder"
 publishDir = "docs"
+canonifyurls = true
 disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
@@ -12,7 +13,8 @@ defaultcontentlanguage = "de"
     description = "Blog Potpourri"
     keywords = "blog, book, digitization, history, cultural history"
     info = "Was früher Bandnamen waren, sind heute Blogs..."
-    avatarurl = "images/avatar.jpg"
+    avatar1url = "images/avatar.jpg"
+    avatar2url = ""
     footercontent = "Enter a text here."
 
     hideFooter = true
@@ -22,10 +24,23 @@ defaultcontentlanguage = "de"
 
     colorscheme = "light"
 
-    enableTwemoji = false
+[module]
+    [[module.mounts]]
+        source = "assets/scss"
+        target = "assets/scss"
 
-    custom_scss = ["scss/base.scss"]
-    custom_js = ["js/jquery/jquery.js", "js/style.js"]
+    [[module.mounts]]
+        source = "node_modules/@fortawesome/fontawesome-free/webfonts"
+        target = "assets/css/webfonts"
+
+    [[module.mounts]]
+        source = "node_modules/jquery/dist"
+        target = "assets/js/jquery"
+
+    [[module.mounts]]
+        source = "assets/js"
+        target = "assets/js"
+
 
 [languages]
     [languages.de]
@@ -53,19 +68,33 @@ defaultcontentlanguage = "de"
                 weight = 4
                 url = "contact/"
 
-[module]
-    [[module.mounts]]
-        source = "assets/scss"
-        target = "assets/scss"
+    [languages.en]
+        languagename = "English"
+        title = "Projektemacher"
 
-    [[module.mounts]]
-        source = "assets/js"
-        target = "assets/js"
+        [languages.en.params]
+            info = "Full Stack DevOps e Mágico"
+            description = "Sítio pessoal de João Ninguém"
+            footercontent = "Coloque algum texto aqui."
 
-    [[module.mounts]]
-        source = "node_modules/@fortawesome/fontawesome-free/scss"
-        target = "assets/sccs/fontawesome"
+        [languages.en.menu]
 
-    [[module.mount]]
-        source = "node_modules/jquery/dist"
-        target = "assets/js/jquery"
+            [[languages.en.menu.main]]
+                name = "Blogs"
+                weight = 1
+                url = "blogs/"
+
+            [[languages.en.menu.main]]
+                name = "News"
+                weight = 2
+                url = "posts/"
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 3
+                url = "about/"
+
+            [[languages.en.menu.main]]
+                name = "Contact"
+                weight = 4
+                url = "contact/"

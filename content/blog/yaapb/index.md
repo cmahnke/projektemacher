@@ -9,7 +9,7 @@ lang:
 - en
 resources:
 - name: screenshot
-  src: "screenshot.jpeg"
+  src: "screenshot.png"
   params:
     description: "Screenshot"
 ---

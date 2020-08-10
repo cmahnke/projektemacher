@@ -1,5 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&display=swap');
-@import url('fontawesome/fontawesome.scss');
+$fa-font-path: "./webfonts";
+
+@import "fontawesome.scss";
+@import "regular.scss";
+
+/* Variables */
+$text-font-family: Lora, Georgia, serif;
+$heading-font-family: Lato, Helvetica, sans-serif;
+$code-font-family: 'Source Code Pro', 'Lucida Console', monospace;
+
+// Colors
+$bg-color: #FAFAFA !default;
+$fg-color: #212121 !default;
+$alt-bg-color: #E0E0E0 !default;
+$alt-fg-color: #000 !default;
+$link-color: #1565c0 !default;
+
+// Colors dark
+$bg-color-dark: #212121 !default;
+$fg-color-dark: #dadada !default;
+$alt-bg-color-dark: #424242 !default;
+$alt-fg-color-dark: #dadada !default;
+$link-color-dark: #42a5f5 !default;
+
+@import "base";
+@import "content";
+@import "navigation";
+@import "pagination";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 
 nav {
     position: fixed;
@@ -18,16 +47,201 @@ nav {
 
 }
 
-.content {
-    height: calc(100vh - 6.0rem);
-}
-
 /*
-.content > .home {
-    background: linear-gradient(90deg, #fff 50%, #293133 50%);
-    background-clip: text;
-    color: transparent;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
+.navigation .menu-button {
+
 }
 */
+
+.content.home {
+    height: calc(100vh - 6.0rem);
+    background: linear-gradient(90deg, #fff 50%, #293133 50%);
+    margin-bottom: 0;
+}
+
+.about-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 50em;
+    position: relative;
+
+    .about {
+        width: 100%;
+    }
+
+    .about-foreground {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);;
+
+        h1, h2 {
+            margin-bottom: .5rem;
+            color: white;
+        }
+
+        h1 {
+            margin-top: 2rem;
+        }
+
+        h2 {
+            margin-top: 1rem;
+            font-size: 2.4rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .about-container {
+        width: 40em;
+    }
+}
+
+h1.header {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.portfolio {
+    .blog-tiles {
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-content: space-evenly;
+        flex-wrap: wrap;
+
+        .blog {
+            display: inline-block;
+            width: 40%;
+            margin: 1em;
+            position: relative;
+
+            border-radius: .3rem;
+            background-color: #fff;
+            box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,.23);
+
+            /* Taken from https://codepen.io/nxworld/pen/oLdoWb */
+            .ribbon {
+                  width: 150px;
+                  height: 150px;
+                  overflow: hidden;
+                  position: absolute;
+            }
+            .ribbon::before,
+            .ribbon::after {
+                  position: absolute;
+                  z-index: -1;
+                  content: '';
+                  display: block;
+                  border: 5px solid #2980b9;
+            }
+            .ribbon span {
+                  position: absolute;
+                  display: block;
+                  width: 225px;
+                  padding: 15px 0;
+                  background-color: #3498db;
+                  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+                  color: #fff;
+                  font: 700 18px/1 'Lato', sans-serif;
+                  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+                  text-transform: uppercase;
+                  text-align: center;
+            }
+
+            /* top right*/
+            .ribbon-top-right {
+                  top: -10px;
+                  right: -10px;
+            }
+            .ribbon-top-right::before,
+            .ribbon-top-right::after {
+                  border-top-color: transparent;
+                  border-right-color: transparent;
+            }
+            .ribbon-top-right::before {
+                  top: 0;
+                  left: 0;
+            }
+            .ribbon-top-right::after {
+                  bottom: 0;
+                  right: 0;
+            }
+            .ribbon-top-right span {
+                  left: -25px;
+                  top: 30px;
+                  transform: rotate(45deg);
+            }
+
+            a {
+                color: $fg-color;
+                .screenshot img {
+                    width: 100%
+                }
+            }
+            a:active, a:hover {
+                color: $fg-color;
+                text-decoration: none;
+            }
+
+            .tile {
+                text-align: left;
+
+                padding: 0.5em;
+
+                .blog-title {
+                    font-family: $heading-font-family;
+                    display: block;
+                    font-size: 115%;
+                    margin-bottom: 0.4em;
+
+                }
+                .blog-description {
+                    display: block;
+                    //text-align: justify;
+                    //text-justify: auto;
+                    hyphens: auto;
+                    padding-left: 0.2em;
+                    padding-right: 0.2em;
+
+
+                }
+                .blog-content {
+                    display: block;
+                    padding-left: 0.2em;
+                    padding-right: 0.2em;
+
+                    p {
+                        margin-top: 0.2em;
+                        margin-bottom: 0.2em;
+                        font-size: 85%;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+    @media only screen and (max-width: 640px) {
+        .blog-tiles {
+            .blog {
+                width: 80%;
+            }
+        }
+    }
+
+}

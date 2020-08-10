@@ -1,0 +1,4 @@
+---
+url: /posts
+draft: false
+---

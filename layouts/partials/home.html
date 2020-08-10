@@ -1,0 +1,12 @@
+<div class="content home">
+    <section class="container centered">
+      <div class="about-container">
+         <div class="about">
+           {{ partial "about.html" (dict "context" . "avatar" .Site.Params.avatar1url "author" .Site.Params.author "info" .Site.Params.info) }}
+         </div>
+         <div class="about-foreground">
+           {{ partial "about.html" (dict "context" . "avatar" .Site.Params.avatar2url "author" .Site.Params.author "info" .Site.Params.info) }}
+         </div>
+       </div>
+    </section>
+</div>

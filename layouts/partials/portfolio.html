@@ -1,0 +1,35 @@
+<div class="content portfolio">
+    <section class="container page">
+      <article class="portfolio">
+        <header>
+          <h1 class="header">{{ .Title }}</h1>
+        </header>
+        <div class="blog-tiles">
+            {{- range .Paginator.Pages -}}
+              <div class="blog">
+                  <a href="{{ .Params.link }}">
+                      <div class="ribbon ribbon-top-right">
+                         <span> Test</span>
+                      </div>
+                      {{ $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" }}
+                      {{ $preview := $screenshot.Resize "400x Lanczos jpg" }}
+                      <div class="screenshot">
+                          <img src="{{ $preview.RelPermalink }}" alt="Preview">
+                      </div>
+
+                  <div class="tile">
+                      <span class="blog-title">{{ .Title }}</span>
+                      <span class="blog-description">
+                          {{ .Description }}
+                      </span>
+                      <span class="blog-content">
+                          {{ replace .Content "<p></p>" "" | safeHTML }}
+                      </span>
+                    </div>
+                  </a>
+                </div>
+            {{- end -}}
+        </div>
+      </article>
+    </section>
+</div>
