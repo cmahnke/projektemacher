@@ -6,6 +6,14 @@
         </header>
         <div class="blog-tiles">
             {{ $pages := where .Data.Pages "Section" .Section }}
+            {{- .Scratch.Set "pages" $pages -}}
+            {{- $mainSite := .Sites.First -}}
+            {{- if ne $mainSite .Site -}}
+                {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
+            {{ end }}
+            {{ $pages := .Scratch.Get "pages" }}
+
+
             {{ $sorted := $pages.ByParam "status" }}
             {{ range (.Paginate $sorted).Pages }}
               <div class="blog">

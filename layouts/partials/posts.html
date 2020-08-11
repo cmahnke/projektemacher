@@ -1,0 +1,57 @@
+<div class="content list">
+    <section class="container list">
+      <h1 class="title header">
+        {{- if eq .Kind "term" -}}
+          {{- i18n .Data.Singular | title -}}
+          {{- print ": " -}}
+        {{- end -}}
+
+        {{- .Title -}}
+      </h1>
+      {{ .Content }}
+      <ul>
+        {{- $pages := .Pages -}}
+        {{- .Scratch.Set "pages" $pages -}}
+        {{- $mainSite := .Sites.First -}}
+        {{- if ne $mainSite .Site -}}
+            {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
+        {{ end }}
+        {{ $pages := .Scratch.Get "pages" }}
+
+        {{range last 5 $pages }}
+        <li>
+          <div class="post-heading">
+              {{- $dir := split (string (path.Dir .Path)) "/" -}}
+              {{- $dir = first (sub (len $dir) 1) $dir -}}
+              {{- $displayName := "" -}}
+              {{- $postLink := "" -}}
+              {{- if gt (len $dir) 1 -}}
+                {{- $linkPrefix := "" -}}
+                {{- $prefix := index $dir 1 -}}
+                {{- $page := .Site.GetPage "blog" $prefix -}}
+                {{- $displayName = printf "%s: " $page.Title -}}
+                {{- if ($page.Param "linkPrefix") -}}
+                    {{ $linkPrefix = $page.Param "linkPrefix" -}}
+                {{- else -}}
+                    {{ $linkPrefix = $page.Param "link" -}}
+                {{- end -}}
+                {{- $postLink = split (string .Path) "/" -}}
+                {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+                {{- $postLink = delimit $postLink "/" -}}
+                {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+                {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+              {{- end -}}
+              {{- if eq $postLink "" }}
+                {{- $postLink = .RelPermalink -}}
+              {{- end -}}
+            <span class="date">
+                {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+            </span>
+            <a class="title" href="{{ $postLink }}">{{- $displayName }}{{ .Title -}}</a>
+          </div>
+          <div class="post-snippet">{{- .Description -}}</div>
+        </li>
+        {{ end }}
+      </ul>
+    </section>
+</div>

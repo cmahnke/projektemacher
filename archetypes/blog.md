@@ -4,6 +4,7 @@ description: ""
 date: {{ .Date }}
 draft: true
 link: ""
+linkPrefix: ""
 status: ""
 lang:
 - en

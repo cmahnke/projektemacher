@@ -20,8 +20,7 @@ Creating a new entry:
 hugo new post/postnamehere/index.md
 ```
 
-Make sure to create the page bundle in the right directory!
-
+**Note:** Make sure to create the page bundle (option `-c`) in the right directory! Hugo seem to have some stupid defaults if working in a fake multisite tree.
 
 ### Options
 
@@ -36,6 +35,7 @@ Creating a new entry:
 
 * `lang` - List of available languages
 * `link` - Link to blogs
+* `linkPrefix` - Prefix for links to this blog
 * `status` - One of `active`, `inactive` or `planned`
 
 ### Creating a new empty screenshot
@@ -60,6 +60,8 @@ Edit `config.toml`:
         source = "blogs/kraehenbeisser/content/post"
         target = "content/post/kraehenbeisser"
 ```
+
+Make sure there is a page in `contents/blog` for the newly added blog since some metadata is pulled from there.
 
 # Debugging mounts
 

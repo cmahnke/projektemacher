@@ -9,6 +9,8 @@
 {{ define "content" }}
   {{- if and (eq .Kind "section") (eq .Section "blog") -}}
     {{ partial "portfolio.html" . }}
+  {{- else if and (eq .Kind "section") (eq .Section "post") -}}
+    {{ partial "posts.html" . }}
   {{ else }}
     {{ partial "list.html" . }}
   {{- end -}}

@@ -1,4 +1,4 @@
 ---
+slug: contact
 title: Kontakt
-draft: true
 ---

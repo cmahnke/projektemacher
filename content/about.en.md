@@ -1,5 +1,4 @@
 ---
-title: About
+title: About this Blog
 slug: about
-draft: true
 ---
