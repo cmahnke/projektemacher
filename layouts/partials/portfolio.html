@@ -5,26 +5,42 @@
           <h1 class="header">{{ .Title }}</h1>
         </header>
         <div class="blog-tiles">
-            {{- range .Paginator.Pages -}}
+            {{ $pages := where .Data.Pages "Section" .Section }}
+            {{ $sorted := $pages.ByParam "status" }}
+            {{ range (.Paginate $sorted).Pages }}
               <div class="blog">
-                  <a href="{{ .Params.link }}">
-                      <div class="ribbon ribbon-top-right">
-                         <span> Test</span>
-                      </div>
+                  {{ $link := .RelPermalink }}
+                  {{- if .Params.link -}}
+                    {{ $link = .Params.link }}
+                  {{- end -}}
+                  <a href="{{ $link }}">
+                      {{ $status := .Params.status }}
+                      {{ $lang := .Params.lang }}
+
                       {{ $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" }}
                       {{ $preview := $screenshot.Resize "400x Lanczos jpg" }}
                       <div class="screenshot">
+                          <div class="ribbon ribbon-top-right {{ $status }}">
+                               <span>{{ i18n $status | humanize }}</span>
+                          </div>
                           <img src="{{ $preview.RelPermalink }}" alt="Preview">
+                          {{- range $lang -}}
+                              {{/*
+                              <i class="fas fa-flag lang {{ . }}" title="{{ i18n . }}"></i>
+                              */}}
+                              <i class="lang {{ . }}" title="{{ i18n . }}"></i>
+                          {{- end -}}
                       </div>
-
-                  <div class="tile">
-                      <span class="blog-title">{{ .Title }}</span>
-                      <span class="blog-description">
-                          {{ .Description }}
-                      </span>
-                      <span class="blog-content">
-                          {{ replace .Content "<p></p>" "" | safeHTML }}
-                      </span>
+                      <div class="tile">
+                          <div class="blog-about">
+                              <span class="blog-title">{{ .Title }}</span>
+                              <span class="blog-description">
+                                  {{- .Description -}}
+                              </span>
+                              <span class="blog-content">
+                                  {{- replace .Content "<p></p>" "" | safeHTML -}}
+                              </span>
+                          </div>
                     </div>
                   </a>
                 </div>

@@ -2,7 +2,6 @@
 title: "Krähenbeißer"
 description: "Historische Abbildungen von Krähenbeißern"
 date: 2020-08-07T08:44:04+02:00
-draft: true
 link: https://xn--krhenbeisser-hcb.de/
 status: active
 lang:

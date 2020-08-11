@@ -1,4 +1,4 @@
 ---
-url: /posts
-draft: false
+url: posts
+title: Neueste Beiträge
 ---

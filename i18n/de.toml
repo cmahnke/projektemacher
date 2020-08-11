@@ -1,0 +1,18 @@
+# Blog status
+
+[active]
+other = "Aktiv"
+
+[inactive]
+other = "Inaktiv"
+
+[planned]
+other = "Geplant"
+
+# Languages
+
+[en]
+other = "Englisch"
+
+[de]
+other = "Deutsch"

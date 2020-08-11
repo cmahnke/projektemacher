@@ -1,12 +1,12 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Blaufußtölpel"
 description: ""
-date: {{ .Date }}
+date: 2020-08-11T10:05:20+02:00
 draft: true
 link: ""
-status: ""
+status: planned
 lang:
-- en
+- de
 resources:
 - name: screenshot
   src: "screenshot.png"

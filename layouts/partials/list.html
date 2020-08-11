@@ -10,10 +10,25 @@
       </h1>
       {{ .Content }}
       <ul>
-        {{ range .Paginator.Pages }}
+        {{ range (.Paginator 5).Pages }}
         <li>
-          <span class="date">{{ .Date.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>
-          <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{ .Title }}</a>
+          <div class="post-heading">
+              {{ $dir := split (string (path.Dir .Path)) "/" }}
+              {{ $dir = first (sub (len $dir) 1) $dir }}
+              {{ $displayName := "" }}
+              {{ $linkPrefix := "" }}
+              {{ if gt (len $dir) 1 }}
+                {{ $prefix := index $dir 1 }}
+                {{ $page := .Site.GetPage "blog" $prefix }}
+                {{ $displayName = printf "%s: " $page.Title }}
+                {{ $linkPrefix = $page.Param "link" }}
+              {{ end }}
+            <span class="date">
+                {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+            </span>
+            <a class="title" href="{{ .Params.ExternalLink | default .RelPermalink }}">{{- $displayName }}{{ .Title -}}</a>
+          </div>
+          <div class="post-snippet">{{- .Description -}}</div>
         </li>
         {{ end }}
       </ul>

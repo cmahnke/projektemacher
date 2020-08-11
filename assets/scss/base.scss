@@ -1,7 +1,7 @@
 $fa-font-path: "./webfonts";
 
 @import "fontawesome.scss";
-@import "regular.scss";
+@import "solid.scss";
 
 /* Variables */
 $text-font-family: Lora, Georgia, serif;
@@ -30,6 +30,15 @@ $link-color-dark: #42a5f5 !default;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 
+.menu {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-bars);
+  }
+}
+
 nav {
     position: fixed;
     background: #293133;
@@ -43,15 +52,27 @@ nav {
             text-decoration: none;
             color: #FAFAFA;
         }
+
+        @media only screen and (max-width: 768px) {
+            .navigation-item {
+                .navigation-link {
+                    color: black;
+                }
+            }
+        }
     }
 
 }
 
-/*
-.navigation .menu-button {
+.navigation {
+    z-index: 100;
 
+    @media only screen and (max-width: 768px) {
+        .menu-button i {
+             color: $bg-color
+        }
+    }
 }
-*/
 
 .content.home {
     height: calc(100vh - 6.0rem);
@@ -127,11 +148,17 @@ h1.header {
             display: inline-block;
             width: 40%;
             margin: 1em;
-            position: relative;
+            min-height: 45vh;
 
             border-radius: .3rem;
             background-color: #fff;
             box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,.23);
+
+            .screenshot {
+                position: relative;
+                padding-bottom: 0.4em;
+                margin-bottom: 0.2em;
+            }
 
             /* Taken from https://codepen.io/nxworld/pen/oLdoWb */
             .ribbon {
@@ -158,9 +185,35 @@ h1.header {
                   color: #fff;
                   font: 700 18px/1 'Lato', sans-serif;
                   text-shadow: 0 1px 1px rgba(0,0,0,.2);
-                  text-transform: uppercase;
                   text-align: center;
             }
+
+            .ribbon.active span {
+                background-color: #32A842;
+            }
+
+            .ribbon.active::before,
+            .ribbon.active::after {
+                 border: 5px solid #23752E;
+             }
+
+            .ribbon.inactive span {
+                background-color: #F8463F;
+            }
+
+            .ribbon.inactive::before,
+            .ribbon.inactive::after {
+                 border: 5px solid #F8463F;
+             }
+
+            .ribbon.planned span {
+                background-color: #EDBA19;
+            }
+
+            .ribbon.planned::before,
+            .ribbon.planned::after {
+                 border: 5px solid #CD8D11;
+             }
 
             /* top right*/
             .ribbon-top-right {
@@ -197,51 +250,104 @@ h1.header {
                 text-decoration: none;
             }
 
+            .lang {
+                left: 1.5em;
+                bottom: -.1em;
+                background-clip: text;
+                height: 2em;
+                width: 2em;
+                position: absolute;
+            }
+
             .tile {
                 text-align: left;
-
+                //position: absolute;
                 padding: 0.5em;
 
-                .blog-title {
-                    font-family: $heading-font-family;
+                .blog-about {
                     display: block;
-                    font-size: 115%;
-                    margin-bottom: 0.4em;
+                    //position: absolute;
+                    width: 100%;
 
-                }
-                .blog-description {
-                    display: block;
-                    //text-align: justify;
-                    //text-justify: auto;
-                    hyphens: auto;
-                    padding-left: 0.2em;
-                    padding-right: 0.2em;
-
-
-                }
-                .blog-content {
-                    display: block;
-                    padding-left: 0.2em;
-                    padding-right: 0.2em;
-
-                    p {
-                        margin-top: 0.2em;
-                        margin-bottom: 0.2em;
-                        font-size: 85%;
+                    .blog-title {
+                        display: block;
+                        font-family: $heading-font-family;
+                        margin-bottom: 0.4em;
+                        width: 100%;
+                        font-size: 115%;
                     }
 
+                    .blog-description {
+                        display: block;
+                        //text-align: justify;
+                        //text-justify: auto;
+                        hyphens: auto;
+                        padding-left: 0.2em;
+                        padding-right: 0.2em;
+                    }
+
+                    .blog-content {
+                        display: block;
+                        padding-left: 0.2em;
+                        padding-right: 0.2em;
+
+                        p {
+                            margin-top: 0.2em;
+                            margin-bottom: 0.2em;
+                            font-size: 85%;
+                        }
+
+                    }
                 }
 
             }
 
         }
     }
-    @media only screen and (max-width: 640px) {
+    @media only screen and (max-width: 768px) {
         .blog-tiles {
             .blog {
                 width: 80%;
             }
         }
     }
+}
 
+.list ul {
+    padding-top: 1em;
+
+    li  {
+        margin-bottom: .8em;
+
+        .post-snippet {
+            margin-left: 23.5rem;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .post-heading {
+                .date {
+                    width: 13rem;
+                    margin-right: 2rem;
+                    display: inline-block;
+                }
+            }
+
+            .post-snippet {
+                margin-left: 15.5rem;
+            }
+        }
+    }
+}
+
+// Flogs from https://github.com/lipis/flag-icon-css
+// Flags encoded by https://www.base64encode.org/
+
+.de {
+     background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJmbGFnLWljb24tY3NzLWRlIiB2aWV3Qm94PSIwIDAgNjQwIDQ4MCI+CiAgPHBhdGggZmlsbD0iI2ZmY2UwMCIgZD0iTTAgMzIwaDY0MHYxNjBIMHoiLz4KICA8cGF0aCBkPSJNMCAwaDY0MHYxNjBIMHoiLz4KICA8cGF0aCBmaWxsPSIjZDAwIiBkPSJNMCAxNjBoNjQwdjE2MEgweiIvPgo8L3N2Zz4=');
+     background-size: 100% 100%;
+}
+
+.en {
+     background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJmbGFnLWljb24tY3NzLWdiIiB2aWV3Qm94PSIwIDAgNjQwIDQ4MCI+CiAgPHBhdGggZmlsbD0iIzAxMjE2OSIgZD0iTTAgMGg2NDB2NDgwSDB6Ii8+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTc1IDBsMjQ0IDE4MUw1NjIgMGg3OHY2Mkw0MDAgMjQxbDI0MCAxNzh2NjFoLTgwTDMyMCAzMDEgODEgNDgwSDB2LTYwbDIzOS0xNzhMMCA2NFYwaDc1eiIvPgogIDxwYXRoIGZpbGw9IiNDODEwMkUiIGQ9Ik00MjQgMjgxbDIxNiAxNTl2NDBMMzY5IDI4MWg1NXptLTE4NCAyMGw2IDM1TDU0IDQ4MEgwbDI0MC0xNzl6TTY0MCAwdjNMMzkxIDE5MWwyLTQ0TDU5MCAwaDUwek0wIDBsMjM5IDE3NmgtNjBMMCA0MlYweiIvPgogIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yNDEgMHY0ODBoMTYwVjBIMjQxek0wIDE2MHYxNjBoNjQwVjE2MEgweiIvPgogIDxwYXRoIGZpbGw9IiNDODEwMkUiIGQ9Ik0wIDE5M3Y5Nmg2NDB2LTk2SDB6TTI3MyAwdjQ4MGg5NlYwaC05NnoiLz4KPC9zdmc+');
+     background-size: 100% 100%;
 }

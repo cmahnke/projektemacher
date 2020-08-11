@@ -1,12 +1,12 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "Backsteinexpressionismus"
 description: ""
-date: {{ .Date }}
+date: 2020-08-11T07:07:33+02:00
 draft: true
 link: ""
-status: ""
+status: planned
 lang:
-- en
+- de
 resources:
 - name: screenshot
   src: "screenshot.png"

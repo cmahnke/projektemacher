@@ -31,7 +31,7 @@ defaultcontentlanguage = "de"
 
     [[module.mounts]]
         source = "node_modules/@fortawesome/fontawesome-free/webfonts"
-        target = "assets/css/webfonts"
+        target = "static/css/webfonts"
 
     [[module.mounts]]
         source = "node_modules/jquery/dist"
@@ -41,6 +41,13 @@ defaultcontentlanguage = "de"
         source = "assets/js"
         target = "assets/js"
 
+    [[module.mounts]]
+        source = "blogs/kraehenbeisser/content/post"
+        target = "content/post/kraehenbeisser"
+
+    [[module.mounts]]
+        source = "content"
+        target = "content"
 
 [languages]
     [languages.de]
