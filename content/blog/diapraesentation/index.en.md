@@ -4,6 +4,7 @@ description: "Modern presentations with old technology"
 date: 2020-08-07T09:02:01+02:00
 link: https://diapraesentation.tumblr.com/
 status: inactive
+private: true
 lang:
 - de
 resources:

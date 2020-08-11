@@ -3,6 +3,7 @@ title: "Projektemacher"
 description: "Überblog (dieses Blog)"
 date: 2020-08-11T16:10:14+02:00
 draft: true
+private: true
 link: "https://projektemacher.org/"
 linkPrefix: ""
 status: "planned"

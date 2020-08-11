@@ -4,6 +4,7 @@ description: "Dieses Blog begibt sich auf die Spuren eines unbekannten Künstler
 date: 2020-08-07T09:16:14+02:00
 link: https://ric-unknownartist.tumblr.com/
 status: active
+private: true
 lang:
 - en
 resources:

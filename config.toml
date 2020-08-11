@@ -1,4 +1,4 @@
-baseURL = "http://example.org/"
+baseURL = "https://projektemacher.org/"
 languageCode = "de"
 title = "Projektemacher"
 theme = "hugo-coder"
@@ -12,10 +12,10 @@ defaultcontentlanguage = "de"
     author = "Projektemacher"
     description = "Blog Potpourri"
     keywords = "blog, book, digitization, history, cultural history"
-    info = "Was früher Bandnamen waren, sind heute Blogs..."
+    info = "Blogfabrik"
     avatar1url = "images/avatar.jpg"
     avatar2url = ""
-    footercontent = "Enter a text here."
+    footercontent = ""
 
     hideFooter = true
     hideCredits = true
@@ -30,12 +30,20 @@ defaultcontentlanguage = "de"
         target = "assets/scss"
 
     [[module.mounts]]
+        source = "node_modules/bootstrap/dist/css"
+        target = "assets/css/bootstrap"
+
+    [[module.mounts]]
         source = "node_modules/@fortawesome/fontawesome-free/webfonts"
         target = "static/css/webfonts"
 
     [[module.mounts]]
         source = "node_modules/jquery/dist"
         target = "assets/js/jquery"
+
+    [[module.mounts]]
+        source = "node_modules/bootstrap/dist/js"
+        target = "assets/js/bootstrap"
 
     [[module.mounts]]
         source = "assets/js"
@@ -80,9 +88,9 @@ defaultcontentlanguage = "de"
         title = "Projektemacher"
 
         [languages.en.params]
-            info = "Full Stack DevOps e Mágico"
-            description = "Sítio pessoal de João Ninguém"
-            footercontent = "Coloque algum texto aqui."
+            info = "Blog factory"
+            description = "Blog factory"
+            footercontent = ""
 
         [languages.en.menu]
 

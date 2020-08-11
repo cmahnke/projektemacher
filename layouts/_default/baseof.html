@@ -27,7 +27,8 @@
     {{/* Our own JavaScript handling */}}
     {{ $jqueryLib := resources.Get "js/jquery/jquery.js" }}
     {{ $commonLib := resources.Get "js/common.js" }}
-    {{ $js := slice  $jqueryLib $commonLib | resources.Concat "js/concated.js" | minify | fingerprint }}
+    {{ $bootstrapLib := resources.Get "js/bootstrap/bootstrap.bundle.min.js" }}
+    {{ $js := slice $jqueryLib $bootstrapLib $commonLib | resources.Concat "js/concated.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{/* Our own CSS / SCCS handling */}}
@@ -35,7 +36,8 @@
     {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) }}
     {{ $ourTemplate := resources.Get "scss/base.scss" }}
     {{ $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
-    {{ $style := slice $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint }}
+    {{ $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" }}
+    {{ $style := slice $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
 
     {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
