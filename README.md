@@ -28,7 +28,7 @@ hugo new post/postnamehere/index.md
 
 Creating a new entry:
 ```
-    hugo new blog/blognamehere/index.md
+hugo new blog/blognamehere/index.md
 ```
 
 ### Options
@@ -63,7 +63,7 @@ Edit `config.toml`:
 
 Make sure there is a page in `contents/blog` for the newly added blog since some metadata is pulled from there.
 
-# Debugging mounts
+# Debugging `static` mounts
 
 ```
 /usr/local/bin/hugo server -D --debug --disableFastRender --renderToDisk

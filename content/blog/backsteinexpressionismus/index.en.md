@@ -1,6 +1,6 @@
 ---
 title: "Backsteinexpressionismus"
-description: "Backsteinexpressionismus in alten Ansichten"
+description: "Old illustrations of brick expressionism"
 date: 2020-08-11T07:07:33+02:00
 draft: true
 private: true
@@ -14,4 +14,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Herbst 2020 gestartet
+Will be launched in autumn 2020.

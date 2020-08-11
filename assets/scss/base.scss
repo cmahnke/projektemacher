@@ -274,7 +274,7 @@ h1.header {
                         font-family: $heading-font-family;
                         margin-bottom: 0.4em;
                         width: 100%;
-                        font-size: 115%;
+                        font-size: 125%;
                     }
 
                     .blog-description {
@@ -339,7 +339,7 @@ h1.header {
     }
 }
 
-// Flogs from https://github.com/lipis/flag-icon-css
+// Flags from https://github.com/lipis/flag-icon-css
 // Flags encoded by https://www.base64encode.org/
 
 .de {
@@ -350,4 +350,16 @@ h1.header {
 .en {
      background:url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGlkPSJmbGFnLWljb24tY3NzLWdiIiB2aWV3Qm94PSIwIDAgNjQwIDQ4MCI+CiAgPHBhdGggZmlsbD0iIzAxMjE2OSIgZD0iTTAgMGg2NDB2NDgwSDB6Ii8+CiAgPHBhdGggZmlsbD0iI0ZGRiIgZD0iTTc1IDBsMjQ0IDE4MUw1NjIgMGg3OHY2Mkw0MDAgMjQxbDI0MCAxNzh2NjFoLTgwTDMyMCAzMDEgODEgNDgwSDB2LTYwbDIzOS0xNzhMMCA2NFYwaDc1eiIvPgogIDxwYXRoIGZpbGw9IiNDODEwMkUiIGQ9Ik00MjQgMjgxbDIxNiAxNTl2NDBMMzY5IDI4MWg1NXptLTE4NCAyMGw2IDM1TDU0IDQ4MEgwbDI0MC0xNzl6TTY0MCAwdjNMMzkxIDE5MWwyLTQ0TDU5MCAwaDUwek0wIDBsMjM5IDE3NmgtNjBMMCA0MlYweiIvPgogIDxwYXRoIGZpbGw9IiNGRkYiIGQ9Ik0yNDEgMHY0ODBoMTYwVjBIMjQxek0wIDE2MHYxNjBoNjQwVjE2MEgweiIvPgogIDxwYXRoIGZpbGw9IiNDODEwMkUiIGQ9Ik0wIDE5M3Y5Nmg2NDB2LTk2SDB6TTI3MyAwdjQ4MGg5NlYwaC05NnoiLz4KPC9zdmc+');
      background-size: 100% 100%;
+}
+
+.portfolio-list-content, .post-list-content {
+    margin-top: 2em;
+    font-size: smaller;
+    width:100%;
+    text-align: center;
+    color: gray;
+
+    p {
+        margin-top: 10em;
+    }
 }

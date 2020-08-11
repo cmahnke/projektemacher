@@ -12,4 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Analog war gestern - und hat trotzdem funktioniert. Für "Yaapb" werden verschiedene alte Kameras ausprobiert. Zusätzlich werden auf dem Flohmarkt gefundene Filme und Negative präsentiert.
+Analog photography is a thing from the past, this blog presents photos taken with analog cameras and presents found films from flea markets.

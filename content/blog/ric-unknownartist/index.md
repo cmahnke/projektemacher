@@ -1,6 +1,6 @@
 ---
 title: "Ric - An unknown artist"
-description: "This blog tries to help to solve the mystery „Who was Ric?“"
+description: "Dieses Blog begibt sich auf die Spuren eines unbekannten Künstlers - Ric"
 date: 2020-08-07T09:16:14+02:00
 link: https://ric-unknownartist.tumblr.com/
 status: active
@@ -12,3 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
+"Ric" hat in der zweiten Hälfte des 20. Jahrhunderts gewirkt und hat seine Druck nur mit "Ric" signiert. Das Blog stellt seine Werke vor und beteiligt sich an der internationalen Suche nach Ric's Identität.

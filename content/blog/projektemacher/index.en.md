@@ -1,6 +1,6 @@
 ---
 title: "Projektemacher"
-description: "Überblog (dieses Blog)"
+description: "Umbrella blog (this Blog)"
 date: 2020-08-11T16:10:14+02:00
 draft: true
 link: "https://projektemacher.org/"
@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Sommer 2020 gestartet
+Will be launched in summer 2020.

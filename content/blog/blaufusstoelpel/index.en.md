@@ -1,6 +1,6 @@
 ---
 title: "Blaufußtölpel"
-description: "Ein Blog über historische Mode"
+description: "A blog about historical fashion"
 date: 2020-08-11T10:05:20+02:00
 draft: true
 link: ""
@@ -13,4 +13,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Spätsommer 2020 gestartet.
+Will be launched in late summer 2020.

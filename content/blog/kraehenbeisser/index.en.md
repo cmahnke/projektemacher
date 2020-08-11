@@ -1,6 +1,6 @@
 ---
 title: "Krähenbeißer"
-description: "Historische Abbildungen von Krähenbeißern"
+description: "Historical illustrations of crowbitters"
 date: 2020-08-07T08:44:04+02:00
 link: https://xn--krhenbeisser-hcb.de/
 linkPrefix: https://xn--krhenbeisser-hcb.de/post/
@@ -13,4 +13,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-"Krähenbeißer" ist ein Blog, dass historische Abbildungen von Krähenbeißern zu präsentiert.
+"Krähenbeißer" is a blog that presents historical images of crowbitters.
