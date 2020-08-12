@@ -1,6 +1,13 @@
 $fa-font-path: "./webfonts";
 
 @import "fontawesome.scss";
+/*
+@import 'variables';
+@import 'mixins';
+@import 'core';
+@import 'icons';
+*/
+
 @import "solid.scss";
 
 /* Variables */
@@ -30,18 +37,11 @@ $link-color-dark: #42a5f5 !default;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 
-.menu {
-  @extend %fa-icon;
-  @extend .fas;
-
-  &:before {
-    content: fa-content($fa-var-bars);
-  }
-}
-
 nav {
     position: fixed;
     background: #293133;
+    //background-color: rgba(41, 49, 51, .95);
+    z-index: 100;
 
     .container {
 
@@ -59,25 +59,33 @@ nav {
                     color: black;
                 }
             }
+
+            .menu-button i {
+                 color: $bg-color
+            }
         }
     }
 
 }
 
-.navigation {
-    z-index: 100;
+.container {
+    width: 100%;
+    margin: 0 18rem;
+}
 
-    @media only screen and (max-width: 768px) {
-        .menu-button i {
-             color: $bg-color
-        }
+@media only screen and (max-width: 768px) {
+    .container {
+        margin: 0 2rem;
     }
 }
 
-.content.home {
+
+.content {
     height: calc(100vh - 6.0rem);
-    background: linear-gradient(90deg, #fff 50%, #293133 50%);
     margin-bottom: 0;
+    &.home {
+        background: linear-gradient(90deg, #fff 50%, #293133 50%);
+    }
 }
 
 .about-container {
@@ -131,9 +139,10 @@ nav {
     }
 }
 
-h1.header {
+article header h1.header {
     width: 100%;
-    margin-top: 2em;
+    margin-top: 2.5em;
+    font-size: 4.2rem;
 }
 
 .portfolio {
@@ -199,6 +208,12 @@ h1.header {
 
             .ribbon.inactive span {
                 background-color: #F8463F;
+                text-indent: 8%;
+
+                em {
+                    font-size: 65%;
+                    vertical-align: middle;
+                }
             }
 
             .ribbon.inactive::before,
@@ -252,7 +267,7 @@ h1.header {
 
             .lang {
                 left: 1.5em;
-                bottom: -.1em;
+                bottom: -.6em;
                 background-clip: text;
                 height: 2em;
                 width: 2em;
@@ -261,12 +276,10 @@ h1.header {
 
             .tile {
                 text-align: left;
-                //position: absolute;
-                padding: 0.5em;
+                padding: 0.8em;
 
                 .blog-about {
                     display: block;
-                    //position: absolute;
                     width: 100%;
 
                     .blog-title {
@@ -279,8 +292,6 @@ h1.header {
 
                     .blog-description {
                         display: block;
-                        //text-align: justify;
-                        //text-justify: auto;
                         hyphens: auto;
                         padding-left: 0.2em;
                         padding-right: 0.2em;
@@ -319,8 +330,63 @@ h1.header {
     li  {
         margin-bottom: .8em;
 
+        .post-heading {
+            a:active, a:hover {
+                text-decoration: none;
+                color: #0b1e47;
+            }
+
+            a:visited, .collapsed, .title:focus {
+                text-decoration: none;
+                color: $fg-color;
+            }
+
+        }
+
         .post-snippet {
-            margin-left: 23.5rem;
+
+            .description {
+                margin-left: 23.5rem;
+                display: block;
+            }
+
+            .post-content {
+                margin-left: 24.5rem;
+
+                margin-top: 2rem;
+                background-color: #fff;
+
+                border-radius: .5rem;
+                background-color: #fff;
+                box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,.23);
+                padding: .6em;
+
+                h1 {
+                    font-size: 130%;
+                    margin-top: 1.5rem;
+                    margin-bottom: 1rem;
+                    margin-left: 2rem;
+                }
+
+                h2 {
+                    font-size: 120%;
+                    margin-top: 1rem;
+                    margin-bottom: .5rem;
+                    margin-left: 2rem;
+                }
+
+                h3 {
+                    font-size: 110%;
+                    margin-top: .5rem;
+                    margin-bottom: .25rem;
+                    margin-left: 2rem;
+                }
+
+                p {
+                    margin-left: 2rem;
+                }
+            }
+
         }
 
         @media only screen and (max-width: 768px) {
@@ -333,7 +399,18 @@ h1.header {
             }
 
             .post-snippet {
-                margin-left: 15.5rem;
+                margin-top: 2rem;
+                margin-left: 5rem;
+                margin-bottom: 3.5rem;
+
+                .description {
+                    margin-left: unset;
+                }
+
+                .post-content {
+                    margin-left: unset;
+                }
+
             }
         }
     }

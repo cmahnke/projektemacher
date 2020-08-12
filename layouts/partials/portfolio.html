@@ -31,7 +31,12 @@
                       {{ $preview := $screenshot.Resize "400x Lanczos jpg" }}
                       <div class="screenshot">
                           <div class="ribbon ribbon-top-right {{ $status }}">
-                               <span>{{ i18n $status | humanize }}</span>
+                               {{- $statusString := (i18n $status | humanize) -}}
+                               <span>{{ $statusString }}
+                                   {{- if and (eq $status "inactive") (.Params.yearsActive) -}}
+                                      <em class="yearsActive"> ({{.Params.yearsActive}})</em>
+                                   {{- end -}}
+                               </span>
                           </div>
                           <img src="{{ $preview.RelPermalink }}" alt="Preview">
                           {{ $counter := 0 }}

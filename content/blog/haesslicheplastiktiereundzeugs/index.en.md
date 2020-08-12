@@ -1,6 +1,6 @@
 ---
 title: Hässliche Plastiktiere und Zeugs
-description: Fotodokumentaion über Tierparaden
+description: Photo documentation about animal parades
 date: 2020-08-07T09:09:01+02:00
 private: true
 link: http://haesslicheplastiktiereundzeugs.tumblr.com/
@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Tierparaden als Stadtverschönerungsmaßnahme sind ein fragwürdiger Trend des frühen 21. Jahrhunderts. Dieses Blog zeigt zahlreiche Beispiele.
+A questionable trend of the early 21st century are animal parades. This blog shows numerous examples.

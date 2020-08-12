@@ -1,6 +1,6 @@
 ---
 title: "Flohmarktfunde"
-description: Fundstücke vom Flohmarkt und aus Trödelläden
+description: Findings from flea markets and junk shops
 date: 2020-08-07T09:05:01+02:00
 private: true
 link: http://flohmarktfunde.tumblr.com/
@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Flohmarktbesuche in Göttingen und Bremen.
+Flea markets visits in Göttingen and Bremen.
