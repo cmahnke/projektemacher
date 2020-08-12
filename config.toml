@@ -13,8 +13,8 @@ defaultcontentlanguage = "de"
     description = "Blog Potpourri"
     keywords = "blog, book, digitization, history, cultural history"
     info = "Blogfabrik"
-    avatar1url = "images/avatar.jpg"
-    avatar2url = ""
+    avatar1url = "images/laborant.svg"
+    avatar2url = "images/laborant.svg"
     footercontent = ""
 
     hideFooter = true

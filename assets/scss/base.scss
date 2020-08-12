@@ -67,12 +67,6 @@ nav {
     }
 
 }
-/*
-.container {
-    width: 100%;
-    margin: 0 auto;
-}
-*/
 
 .content {
     height: calc(100vh - 6.0rem);
@@ -122,6 +116,9 @@ nav {
         h2 {
             margin-top: 1rem;
             font-size: 2.4rem;
+        }
+        .avatar {
+            filter: invert(100%);
         }
 
         @media only screen and (max-width: 768px) {
