@@ -21,6 +21,7 @@ jobs:
       - name: Install Node dependencies
         run: |
           yarn install
+          yarn run svgo
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
