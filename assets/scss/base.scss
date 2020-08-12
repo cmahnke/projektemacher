@@ -77,12 +77,13 @@ nav {
 .content {
     height: calc(100vh - 6.0rem);
     margin-bottom: 0;
-    &.home {
+    &.home, &.error404 {
         background: linear-gradient(90deg, #fff 50%, #293133 50%);
     }
+
 }
 
-.about-container {
+.about-container, .error404-container {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -91,11 +92,11 @@ nav {
     width: 50em;
     position: relative;
 
-    .about {
+    .about, .error404 {
         width: 100%;
     }
 
-    .about-foreground {
+    .about-foreground, .error404-foreground {
         position: absolute;
         left: 0;
         top: 0;
@@ -104,9 +105,14 @@ nav {
 
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);;
 
+        h1, h2, p {
+            color: white;
+        }
+    }
+
+    .about-foreground {
         h1, h2 {
             margin-bottom: .5rem;
-            color: white;
         }
 
         h1 {
@@ -431,7 +437,7 @@ article header h1.header {
     color: gray;
 
     p {
-        text-align: center;
+        text-align: center !important;
         margin-top: 10em;
     }
 }
