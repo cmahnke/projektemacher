@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "svgo": "node_modules/.bin/svgo -i static/svg/Krähenbeißer.svg -o assets/images/kraehenbeisser.svg",
     "build": "hugo",
     "start": "hugo server -D --debug --disableFastRender --buildFuture"
   },

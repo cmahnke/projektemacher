@@ -1,6 +1,11 @@
 Projektemacher
 ==============
 
+# Using this repository
+
+Make sure you check it out recursively, otherwise the theme and links to other blogs won't work.
+Additionally you need to run `yarn` a least once if you want to start `hugo serve` for offline editing.
+
 # Adding content
 
 There are two content types:
@@ -49,8 +54,7 @@ convert -size 1024x768 -background gray36 -gravity Center -fill gray93 -font ./s
 Add the blog as Git submodule:
 
 ```
-cd blogs
-git submodule add https://github.com/cmahnke/kraehenbeisser.git
+git submodule add https://github.com/cmahnke/kraehenbeisser.git blogs/kraehenbeisser
 ```
 
 Edit `config.toml`:
