@@ -20,7 +20,7 @@ jobs:
 
       - name: Convert source file
         run: |
-          convert "Source Files/Avatar/img001-color.tif" -crop 5324x3260+0+90 content/logo/img001.jpg
+          convert "Source Files/Logo/img001-color.jpg" -crop 5324x3260+0+90 content/logo/img001.jpg
 
       - name: Set up Python
         uses: actions/setup-python@v2
