@@ -13,8 +13,9 @@ defaultcontentlanguage = "de"
     description = "Blog Potpourri"
     keywords = "blog, book, digitization, history, cultural history"
     info = "Blogfabrik"
-    avatar1url = "images/laborant.svg"
-    avatar2url = "images/laborant.svg"
+    logoUrl1 = "/images/laborant.svg"
+    logoUrl2 = "/images/laborant.svg"
+    logoLink = "logo"
     footercontent = ""
 
     hideFooter = true
@@ -48,6 +49,22 @@ defaultcontentlanguage = "de"
     [[module.mounts]]
         source = "node_modules/bootstrap/dist/js"
         target = "assets/js/bootstrap"
+
+    [[module.mounts]]
+        source = "node_modules/leaflet/dist"
+        target = "assets/js/leaflet"
+
+    [[module.mounts]]
+        source = "node_modules/leaflet-iiif"
+        target = "assets/js/leaflet-iiif"
+
+    [[module.mounts]]
+        source = "node_modules/leaflet.fullscreen"
+        target = "assets/js/leaflet.fullscreen"
+
+    [[module.mounts]]
+        source = "node_modules/leaflet/dist/images"
+        target = "assets/images/leaflet"
 
     [[module.mounts]]
         source = "assets/js"
@@ -117,3 +134,8 @@ defaultcontentlanguage = "de"
                 name = "Contact"
                 weight = 4
                 url = "contact/"
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe= true

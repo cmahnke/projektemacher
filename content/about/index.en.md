@@ -1,5 +1,5 @@
 ---
-title: About this Blog
+title: About this blog
 slug: about
 ---
 # Why "Projektemacher"?
@@ -30,6 +30,6 @@ The following JavaScript and CSS frameworks are used:
 * [Bootstrap](https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com/)
 
-The [flag icons](https://github.com/lipis/flag-icon-css) and the [conversion into the German date format](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) are taken from the provided links.
+The [flag icons](https://github.com/lipis/flag-icon-css), the [CSS code for the ribbons](https://codepen.io/nxworld/pen/oLdoWb) and the [conversion into the German date format](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) are taken from the provided links.
 
-The page is hosted by [GitHub](https://github.com/).
+The [Logo] (logo) was vectorized and edited with [Inkscape] (https://inkscape.org/). The page is hosted by [GitHub](https://github.com/).

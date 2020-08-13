@@ -9,6 +9,14 @@ other = "Inaktiv"
 [planned]
 other = "Geplant"
 
+#Leaflet fullscreen
+
+[startFullscreen]
+other = "Starte Vollbildansicht"
+
+[exitFullscreen]
+other = "Vollbildansicht verlassen"
+
 # Languages
 
 [en]

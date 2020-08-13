@@ -1,0 +1,7 @@
+#Leaflet fullscreen
+
+[startFullscreen]
+other = "Start fullscreen mode"
+
+[exitFullscreen]
+other = "Exit fullscreen mode"

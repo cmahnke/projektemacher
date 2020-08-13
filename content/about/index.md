@@ -30,6 +30,6 @@ Folgende JavaScript und CSS Frameworks kommen zum Einsatz:
 * [Bootstrap](https://getbootstrap.com/)
 * [Font Awesome](https://fontawesome.com/)
 
-Die [Icons für die Länderflaggen](https://github.com/lipis/flag-icon-css) und die [Anzeige des deutschen Datumformats](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) sind aus den jeweils angebenen Quellen übernommen.
+Die [Icons für die Länderflaggen](https://github.com/lipis/flag-icon-css), der [CSS Kode der Bändchen](https://codepen.io/nxworld/pen/oLdoWb) und die [Anzeige des deutschen Datumformats](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) sind aus den jeweils angebenen Quellen übernommen.
 
-Die Seite wird von [GitHub](https://github.com/) gehosted.
+Das [Logo](logo) wurde mit [Inkscape](https://inkscape.org/) vektorisiert und bearbeitet. Die Seite wird von [GitHub](https://github.com/) gehosted.

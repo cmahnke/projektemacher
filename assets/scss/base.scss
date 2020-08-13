@@ -32,8 +32,9 @@ $link-color-dark: #42a5f5 !default;
 @import "base";
 @import "content";
 @import "navigation";
-@import "pagination";
-@import "footer";
+
+@import "leaflet";
+@import "Control.FullScreen";
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap');
 
@@ -127,6 +128,10 @@ nav {
             }
         }
 
+    }
+
+    .avatar a {
+        cursor: default;
     }
 }
 
@@ -437,4 +442,22 @@ article header h1.header {
         text-align: center !important;
         margin-top: 10em;
     }
+}
+
+// Leaflet
+.viewer {
+    width: 100%;
+    height: 100vh
+}
+
+// Leaflet fullscreen
+.fullscreen-icon {
+    {{ $leafletFullscreenIcon := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
+    background-image: url({{ $leafletFullscreenIcon.RelPermalink }})
+}
+
+.leaflet-retina .fullscreen-icon {
+    {{ $leafletFullscreenIconRetina := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
+    background-image: url({{ $leafletFullscreenIconRetina.RelPermalink }});
+    background-size: 26px 26px
 }

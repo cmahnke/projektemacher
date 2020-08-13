@@ -1,4 +1,8 @@
-  <div class="avatar"><img src="{{ .avatar }}" alt="avatar"></div>
+  <div class="avatar">
+      {{ if .link }}<a href="{{ .link }}">{{ end }}
+          <img src="{{ .avatar }}" alt="avatar">
+      {{ if .link }}</a>{{ end }}
+  </div>
   <h1>{{ .author }}</h1>
   <h2>{{ .info }}</h2>
   {{ with .Site.Params.social }}
