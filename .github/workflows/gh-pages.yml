@@ -16,7 +16,7 @@ jobs:
 
       - name: Setup Imagemagick
         run: |
-          sudo apt-get install imagemagick
+          sudo apt-get install libtiff5 imagemagick
 
       - name: Convert source file
         run: |
