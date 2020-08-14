@@ -93,6 +93,17 @@ nav {
         background: linear-gradient(90deg, #fff 50%, #293133 50%);
     }
 
+    .page {
+        &.about {
+            hr {
+                border-top: unset;
+                clear: both;
+                visibility: hidden;
+                display: block;
+            }
+        }
+    }
+
 }
 
 .about-container, .error404-container {
@@ -479,5 +490,31 @@ article header h1.header {
     float: right;
     margin-bottom: 1.5em !important;
     margin-left: 2em !important;
-    width: 10em;
+    width: 14em;
+
+    figcaption {
+        h4 {
+            font-size: unset;
+            line-height: unset;
+            padding: 1.4rem 0 .8rem;
+            background-color: lightgray;
+            margin: unset;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about-image {
+        margin-bottom: .75em !important;
+        margin-left: 1em !important;
+        width: 7em;
+
+        figcaption {
+            h4 {
+                padding: .7rem 0 .4rem;
+            }
+        }
+    }
+
 }

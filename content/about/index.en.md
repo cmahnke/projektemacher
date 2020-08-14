@@ -1,5 +1,5 @@
 ---
-title: About this blog
+title: About this site
 slug: about
 ---
 # Why "Projektemacher"?
@@ -8,6 +8,8 @@ In the past, "Projektemacher" (literally "project makers") was a designation for
 Nowadays, it has more or less lost its negative connotation, but since many projects revolve around historical materials, techniques, etc., this dubious association is definitely intended.
 
 {{< figure src="cover.jpg" alt="Cover Projektemacher" title="Cover" class="about-image" >}}If you want to read more about historical figure of the "Projektemacher", I recommend the book "Projektemacher", edited by Markus Krajewski, published in 2004 by Kulturverlag Kadmos, Berlin (ISBN 3-931659-56-9). Unfortunately in German only.
+
+---
 
 # Projects
 

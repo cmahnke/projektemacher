@@ -1,5 +1,5 @@
 ---
-title: Über dieses Blog
+title: Über dieses Seite
 slug: about
 ---
 
@@ -8,7 +8,9 @@ slug: about
 Projektemacher nannte man in der Vergangenheit Leute mit tollkühnen bis unrealistischen Ideen, manchmal auch Spinner und Verrückte - kurz der Begriff ist historisch gesehen eher schlecht besetzt.
 Heutzutage, hat er den Beigeschmack mehr oder weniger eingebüßt, aber da sich viele Projekte um historische Materialien, Techniken usw. drehen, ist das der zweifelhafte Charme durchaus intendiert.
 
-{{< figure src="cover.jpg" alt="Cover Projektemacher" title="Cover" class="about-image" >}}Wer sich näher mit mit der historischen Figur des Projektemachers beschäftigen möchte, dem sei das Buch "Projektemacher", herausgegeben  von Markus Krajewski, erschienen 2004 im Kulturverlag Kadmos, Berlin (ISBN 3-931659-56-9) empfohlen.
+{{< figure src="cover.jpg" alt="Cover Projektemacher" title="Buchcover" class="about-image" >}}Wer sich näher mit mit der historischen Figur des Projektemachers beschäftigen möchte, dem sei das Buch "Projektemacher", herausgegeben  von Markus Krajewski, erschienen 2004 im Kulturverlag Kadmos, Berlin (ISBN 3-931659-56-9) empfohlen.
+
+---
 
 # Projekte
 Projekte sind in unser Leben gekrochen, langsam und unbemerkt sind sie irgendwann einfach mit der Arbeit nach Hause gekommen. Wie in Virus vielleicht, zumindest aber wie ein klebriges Kaugummi am Schuh.
