@@ -5,7 +5,6 @@
     "svgo": "node_modules/.bin/svgo -i Source\\ Files/Logo/Laborant.svg -o static/images/laborant.svg"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "leaflet": "^1.6.0",

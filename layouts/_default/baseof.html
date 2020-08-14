@@ -33,7 +33,7 @@
 
     {{/* Our own CSS / SCCS handling */}}
     {{/* Base style is included at SCSS level - see 'assets/scss/base.scss' */}}
-    {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss" "node_modules/leaflet/dist/" "node_modules/leaflet.fullscreen/")) }}
+    {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) }}
     {{ $ourTemplate := resources.Get "scss/base.scss" }}
     {{ $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
     {{ $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" }}

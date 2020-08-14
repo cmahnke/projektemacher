@@ -5,7 +5,7 @@ date: 2020-08-11T16:10:14+02:00
 private: true
 link: "https://projektemacher.org/"
 linkPrefix: ""
-status: "planned"
+status: "active"
 lang:
 - de
 - en

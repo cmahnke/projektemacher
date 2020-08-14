@@ -7,7 +7,7 @@ slug: about
 In the past, "Projektemacher" (literally "project makers") was a designation for people with daring to unrealistic ideas, sometimes weirdos and crazy people - in short, the term used to have negative meaning in the past.
 Nowadays, it has more or less lost its negative connotation, but since many projects revolve around historical materials, techniques, etc., this dubious association is definitely intended.
 
-If you want to read more about historical figure of the "Projektemacher", I recommend the book "Projektemacher", edited by Markus Krajewski, published in 2004 by Kulturverlag Kadmos, Berlin (ISBN 3-931659-56-9). Unfortunately in German only.
+{{< figure src="cover.jpg" alt="Cover Projektemacher" title="Cover" class="about-image" >}}If you want to read more about historical figure of the "Projektemacher", I recommend the book "Projektemacher", edited by Markus Krajewski, published in 2004 by Kulturverlag Kadmos, Berlin (ISBN 3-931659-56-9). Unfortunately in German only.
 
 # Projects
 
@@ -28,8 +28,9 @@ This page(s) have been generated with [Hugo](https://gohugo.io/). The Theme is a
 The following JavaScript and CSS frameworks are used:
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
-* [Font Awesome](https://fontawesome.com/)
 
-The [flag icons](https://github.com/lipis/flag-icon-css), the [CSS code for the ribbons](https://codepen.io/nxworld/pen/oLdoWb) and the [conversion into the German date format](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) are taken from the provided links.
+The [flag icons](https://github.com/lipis/flag-icon-css), the [SVG icons](https://github.com/FortAwesome/Font-Awesome), the [CSS code for the ribbons](https://codepen.io/nxworld/pen/oLdoWb) and the [conversion into the German date format](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) are taken from the provided links.
 
-The [Logo] (logo) was vectorized and edited with [Inkscape] (https://inkscape.org/). The page is hosted by [GitHub](https://github.com/).
+The [Logo](../logo) was vectorized and edited with [Inkscape](https://inkscape.org/).
+
+The page is hosted by [GitHub](https://github.com/).

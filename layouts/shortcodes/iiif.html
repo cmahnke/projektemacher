@@ -9,19 +9,27 @@ Parameters:
 * includeSources - Include JavaScript sources (optional - default 'false')
 */}}
 
-{{/*
-{{ $leafletStyle := resources.Get "js/leaflet/leaflet.css" }}
-{{ $leafletFullscreenStyle := resources.Get "js/leaflet.fullscreen/Control.FullScreen.css" }}
-{{ $style := slice $leafletStyle $leafletFullscreenStyle | resources.Concat "css/leaflet.css" | minify }}
-<link href="{{ $style.RelPermalink }}" rel="stylesheet">
-*/}}
-
 {{ if not (.Get "includeSources") }}
+    {{/* JavaScript */}}
     {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
     {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
     {{ $leafletFullscreenLib := resources.Get "js/leaflet.fullscreen/Control.FullScreen.js" }}
     {{ $js := slice $leafletLib $leafletIiifLib $leafletFullscreenLib | resources.Concat "js/leaflet.js" | minify | fingerprint }}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+
+    {{/* CSS - the stylesheet itself is generated in layout/_default/baseof.html */}}
+    {{ $viewerOptions := (dict "targetPath" "viewer.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/leaflet/dist/" "node_modules/leaflet.fullscreen/")) }}
+    {{ $viewerTemplate := resources.Get "scss/viewer.scss" }}
+    {{ $viewerStyle := $viewerTemplate | resources.ExecuteAsTemplate "scss/viewer.scss" . | toCSS $viewerOptions }}
+    {{ $viewerCSS := slice $viewerStyle | resources.Concat "css/viewer.css" | minify | fingerprint }}
+    <script type="text/javascript">
+        var css = document.createElement("link");
+        css.setAttribute("rel", "stylesheet");
+        css.setAttribute("type", "text/css");
+        css.setAttribute("href", '{{ $viewerCSS.RelPermalink }}');
+        css.setAttribute("integrity", '{{ $viewerCSS.Data.Integrity }}');
+        document.head.appendChild(css);
+    </script>
 {{ end }}
 
 {{ $src := .Get "src" }}
@@ -38,18 +46,20 @@ Parameters:
 <div id="{{ $id }}" class="viewer"></div>
 
 <script type="text/javascript">
-  {{ $var | safeJS }} = L.map('{{ $id }}', {
-          center: [0, 0],
-          crs: L.CRS.Simple,
-          zoom: 1,
-          attributionControl:false,
-          minZoom: 1,
-          maxZoom: 6,
-          fullscreenControl: true,
-          fullscreenControlOptions: {
-            title: '{{ i18n "startFullscreen" }}',
-            titleCancel: '{{ i18n "exitFullscreen" }}'
-          }
-        });
-  var {{ $var | safeJS -}}_layer = L.tileLayer.iiif("{{ $src }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $var | safeJS }});
+    $(document).ready(function() {
+      {{ $var | safeJS }} = L.map('{{ $id }}', {
+              center: [0, 0],
+              crs: L.CRS.Simple,
+              zoom: 1,
+              attributionControl:false,
+              minZoom: 1,
+              maxZoom: 6,
+              fullscreenControl: true,
+              fullscreenControlOptions: {
+                title: '{{ i18n "startFullscreen" }}',
+                titleCancel: '{{ i18n "exitFullscreen" }}'
+              }
+            });
+      var {{ $var | safeJS -}}_layer = L.tileLayer.iiif("{{ $src }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $var | safeJS }});
+    });
 </script>

@@ -39,10 +39,6 @@ defaultcontentlanguage = "de"
         target = "static"
 
     [[module.mounts]]
-        source = "node_modules/@fortawesome/fontawesome-free/webfonts"
-        target = "static/css/webfonts"
-
-    [[module.mounts]]
         source = "node_modules/jquery/dist"
         target = "assets/js/jquery"
 
