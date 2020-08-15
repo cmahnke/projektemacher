@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
 
+    {{- if and (eq .Kind "page") (eq .Section "blog") -}}
+      {{ if and (.Params.link) (.Params.private) }}
+        <meta http-equiv="refresh" content="0; URL={{ .Params.link }}">
+      {{ end }}
+    {{ end }}
+
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
     <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">

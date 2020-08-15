@@ -6,6 +6,10 @@ Projektemacher
 Make sure you check it out recursively, otherwise the theme and links to other blogs won't work.
 Additionally you need to run `yarn` a least once if you want to start `hugo serve` for offline editing.
 
+```
+git submodule update --init --recursive
+```
+
 # Adding content
 
 There are two content types:
@@ -44,6 +48,8 @@ hugo new blog/blognamehere/index.md
 * `status` - One of `active`, `inactive` or `planned`
 
 ### Creating a new empty screenshot
+
+You need Imagemagick with Freetype support buildin.
 
 ```
 convert -size 1024x768 -background gray36 -gravity Center -fill gray93 -font ./static/fonts/Lato-Bold.ttf label:"TEXT" screenshot.png
