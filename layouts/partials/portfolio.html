@@ -12,9 +12,12 @@
                 {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
             {{ end }}
             {{ $pages := .Scratch.Get "pages" }}
-
             {{ $sorted := $pages.ByParam "status" }}
-            {{ range (.Paginate $sorted).Pages }}
+
+            {{/*
+            {{ range (.Paginate ( first $blogCount $sorted)).Pages }}
+            */}}
+            {{ range $sorted }}
               <div class="blog">
                   {{/*
                   {{ $link := .RelPermalink }}
