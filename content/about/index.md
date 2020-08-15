@@ -1,5 +1,5 @@
 ---
-title: Über dieses Seite
+title: Über diese Seite
 slug: about
 ---
 
