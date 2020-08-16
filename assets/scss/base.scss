@@ -513,6 +513,13 @@ article header h1.header {
     }
 }
 
+body {
+    background-position: 97% 97%;
+    background-image: url(/images/cm.svg);
+    background-repeat: no-repeat;
+}
+
+
 @media only screen and (max-width: 768px) {
 
     .about-image {
