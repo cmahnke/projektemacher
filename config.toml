@@ -71,6 +71,10 @@ defaultcontentlanguage = "de"
         target = "content/post/kraehenbeisser"
 
     [[module.mounts]]
+        source = "blogs/diapraesentation/content/post"
+        target = "content/post/diapraesentation"
+
+    [[module.mounts]]
         source = "content"
         target = "content"
 
