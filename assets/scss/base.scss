@@ -121,7 +121,7 @@ nav {
         .avatar {
             img {
                 width: 24rem;
-            {
+            }
             @media only screen and (max-width: 768px) {
                 img {
                     width: 18rem;
@@ -175,8 +175,14 @@ nav {
 
     }
 
-    .avatar a {
-        cursor: default;
+    .avatar {
+        img {
+            width: 24rem;
+        }
+
+        a {
+            cursor: default;
+        }
     }
 }
 
