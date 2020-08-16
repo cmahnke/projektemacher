@@ -5,5 +5,5 @@
 	path = blogs/kraehenbeisser
 	url = https://github.com/cmahnke/kraehenbeisser.git
 [submodule "blog/diapraesentation"]
-	path = blog/diapraesentation
+	path = blogs/diapraesentation
 	url = https://github.com/cmahnke/diapraesentation.git
