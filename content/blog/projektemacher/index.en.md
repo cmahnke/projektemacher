@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in summer 2020.
+"Projektemacher" is the Überblog for my different projects.

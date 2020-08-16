@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Sommer 2020 gestartet
+"Projektemacher" ist das Überblog um meine verschiedenen Blogprojekete unter einem Dach zusammenzuführen.
