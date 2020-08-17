@@ -7,3 +7,6 @@
 [submodule "blog/diapraesentation"]
 	path = blogs/diapraesentation
 	url = https://github.com/cmahnke/diapraesentation.git
+[submodule "blogs/flohmarktfunde"]
+	path = blogs/flohmarktfunde
+	url = https://github.com/cmahnke/flohmarktfunde.git
