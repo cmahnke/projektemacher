@@ -22,6 +22,7 @@ defaultcontentlanguage = "de"
     hideCredits = true
     hideCopyright = true
     since = 2020
+    news = 10
 
     colorscheme = "light"
 
@@ -73,6 +74,10 @@ defaultcontentlanguage = "de"
     [[module.mounts]]
         source = "blogs/diapraesentation/content/post"
         target = "content/post/diapraesentation"
+
+    [[module.mounts]]
+        source = "blogs/flohmarktfunde/content/post"
+        target = "content/post/flohmarktfunde"
 
     [[module.mounts]]
         source = "content"

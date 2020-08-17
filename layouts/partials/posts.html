@@ -18,25 +18,31 @@
         {{- if ne $mainSite .Site -}}
             {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
         {{ end }}
-        {{ $pages := .Scratch.Get "pages" }}
-
-        {{range last 5 $pages }}
+        {{ $pages = (sort $pages ".Page.Date").Reverse }}
+        {{range first .Site.Params.news $pages }}
         <li>
           <div class="post-heading">
               {{- $dir := split (string (path.Dir .Path)) "/" -}}
+              {{- $article := last 1 $dir -}}
               {{- $id := index $dir 1 -}}
               {{- $dir = first (sub (len $dir) 1) $dir -}}
+              {{- $section := first 1 $dir -}}
               {{- $displayName := "" -}}
               {{- $postLink := "" -}}
+              {{- $prefix := "" -}}
+              {{- if gt (len $dir) 1 -}}
+                  {{- $prefix = index $dir 1 -}}
+              {{- end -}}
               {{- if gt (len $dir) 1 -}}
                 {{- $linkPrefix := "" -}}
                 {{- $prefix := index $dir 1 -}}
-                {{- $page := .Site.GetPage "blog" $prefix -}}
-                {{- $displayName = printf "%s: " $page.Title -}}
-                {{- if ($page.Param "linkPrefix") -}}
-                    {{ $linkPrefix = $page.Param "linkPrefix" -}}
+                {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+                {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                {{- $displayName = printf "%s: " $blogPage.Title -}}
+                {{- if ($blogPage.Param "linkPrefix") -}}
+                    {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
                 {{- else -}}
-                    {{ $linkPrefix = $page.Param "link" -}}
+                    {{ $linkPrefix = $blogPage.Param "link" -}}
                 {{- end -}}
                 {{- $postLink = split (string .Path) "/" -}}
                 {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
