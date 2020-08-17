@@ -26,6 +26,10 @@ defaultcontentlanguage = "de"
 
     colorscheme = "light"
 
+    favicon_16 = "images/favicon-16.png"
+    favicon_32 = "images/favicon-32.png"
+    favicon_svg = "images/cm.svg"
+
 [module]
     [[module.mounts]]
         source = "assets/scss"
