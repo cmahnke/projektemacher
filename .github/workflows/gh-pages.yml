@@ -18,9 +18,9 @@ jobs:
         run: |
           sudo apt-get install libtiff5 imagemagick
 
-      - name: Convert source file
+      - name: Generate Files
         run: |
-          convert "Source Files/Logo/img001-color.jpg" -crop 5324x3260+0+90 content/logo/img001.jpg
+          ./scripts/setup.sh
 
       - name: Set up Python
         uses: actions/setup-python@v2

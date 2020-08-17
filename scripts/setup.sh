@@ -1,5 +1,7 @@
 #!/bin/sh
 
+convert "Source Files/Logo/img001-color.jpg" -crop 5324x3260+0+90 content/logo/img001.jpg
+
 # Favicons
 # See https://gist.github.com/pfig/1808188
 convert static/images/cm.svg static/images/cm.png
