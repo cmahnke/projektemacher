@@ -10,3 +10,6 @@
 [submodule "blogs/flohmarktfunde"]
 	path = blogs/flohmarktfunde
 	url = https://github.com/cmahnke/flohmarktfunde.git
+[submodule "blogs/haesslicheplastiktiereundzeugs"]
+	path = blogs/haesslicheplastiktiereundzeugs
+	url = https://github.com/cmahnke/haesslicheplastiktiereundzeugs.git
