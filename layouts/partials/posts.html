@@ -61,22 +61,28 @@
             <span class="date">
                 {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
             </span>
-            <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
+            <span class="link">
+                <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
+            </span>
           </div>
           <div class="post-snippet">
+            {{ if ne .Description ""}}
               <span class="description">{{- .Description -}}</span>
-              {{ if not $openExternal }}
-                <div class="post-content collapse collapsed" id="{{ $id }}">
-                    {{ .Content }}
-                </div>
-              {{ end }}
+            {{ else }}
+                <span class="post-spacer">&nbsp;</span>
+            {{ end }}
+            {{ if not $openExternal }}
+              <div class="post-content collapse collapsed" id="{{ $id }}">
+                {{ .Content }}
+              </div>
+            {{ end }}
           </div>
         </li>
         {{ end }}
       </ul>
-      <div class="post-list-content">
+        <div class="post-list-content">
           {{ .Content }}
-      </div>
+        </div>
     </article>
     </section>
 </div>

@@ -85,6 +85,10 @@ rssLimit = 25
         target = "content/post/flohmarktfunde"
 
     [[module.mounts]]
+        source = "blogs/haesslicheplastiktiereundzeugs/content/post"
+        target = "content/post/haesslicheplastiktiereundzeugs"
+
+    [[module.mounts]]
         source = "content"
         target = "content"
 
