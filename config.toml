@@ -8,6 +8,7 @@ disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
 rssLimit = 25
+author = "Christian Mahnke"
 
 [params]
     author = "Projektemacher"
@@ -87,6 +88,10 @@ rssLimit = 25
     [[module.mounts]]
         source = "blogs/haesslicheplastiktiereundzeugs/content/post"
         target = "content/post/haesslicheplastiktiereundzeugs"
+
+    [[module.mounts]]
+        source = "blogs/ric-unknownartist/content/post"
+        target = "content/post/ric-unknownartist"
 
     [[module.mounts]]
         source = "content"
