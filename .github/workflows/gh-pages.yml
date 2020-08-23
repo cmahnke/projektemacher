@@ -14,13 +14,9 @@ jobs:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Setup Imagemagick
+      - name: Setup dependencies
         run: |
           sudo apt-get install libtiff5 imagemagick
-
-      - name: Generate Files
-        run: |
-          ./scripts/setup.sh
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -39,10 +35,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 10.22.0
-      - name: Install Node dependencies
+
+      - name: Generate Files
         run: |
-          yarn install
-          yarn run svgo
+          ./scripts/setup.sh
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2

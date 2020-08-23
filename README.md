@@ -10,6 +10,14 @@ Additionally you need to run `yarn` a least once if you want to start `hugo serv
 git submodule update --init --recursive
 ```
 
+# Setup for local (offine) development
+
+Run the following script to generate assets
+
+```
+./scripts/setup.sh
+```
+
 # Adding content
 
 There are two content types:
