@@ -7,6 +7,11 @@
     height: 100vh
 }
 
+.logo.viewer {
+    width: 100%;
+    height: 65vh
+}
+
 // Leaflet fullscreen
 .fullscreen-icon {
     {{ $leafletFullscreenIcon := resources.Get "js/leaflet.fullscreen/icon-fullscreen.png" }}
