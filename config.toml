@@ -8,10 +8,10 @@ disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
 rssLimit = 25
-author = "Christian Mahnke"
 
 [params]
-    author = "Projektemacher"
+    author = "Christian Mahnke"
+    homeTitle = "Projektemacher"
     description = "Blog Potpourri"
     keywords = "blog, book, digitization, history, cultural history"
     info = "Blogfabrik"
@@ -101,6 +101,9 @@ author = "Christian Mahnke"
     [languages.de]
         languagename = "Deutsch"
 
+        [languages.de.params]
+            tagLines = ["Blog Potpourri", "Blogfabrik"]
+
         [languages.de.menu]
 
             [[languages.de.menu.main]]
@@ -125,11 +128,11 @@ author = "Christian Mahnke"
 
     [languages.en]
         languagename = "English"
-        title = "Projektemacher"
 
         [languages.en.params]
             info = "Blog factory"
             description = "Blog factory"
+            tagLines = ["Blog potpourri", "Blog factory"]
             footercontent = ""
 
         [languages.en.menu]
