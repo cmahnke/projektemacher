@@ -62,6 +62,11 @@
       {{ end }}
     {{ end }}
 
+    {{/* External Styles - Fonts etc */}}
+    {{ range .Site.Params.stylesheets -}}
+    <link href="{{ . }}" rel="stylesheet">
+    {{- end -}}
+
     {{ range .Site.Params.custom_css }}
       <link rel="stylesheet" href="{{ . | relURL }}" />
     {{ end }}

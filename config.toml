@@ -32,6 +32,8 @@ rssLimit = 25
     favicon_32 = "/images/favicon-32.png"
     favicon_svg = "/images/cm.svg"
 
+    stylesheets = ["https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"]
+
 [module]
     [[module.mounts]]
         source = "assets/scss"
