@@ -7,59 +7,48 @@ Parameters:
 * divId - The ID of the viewer <div> (optional - default 'iiif-image-' plus a random number)
 * jsId - The variable name of the viewer <div> (optional - default 'map')
 * includeSources - Include JavaScript sources (optional - default 'false')
+* pageURL - Link to page (optional, will be used to generate link)
+* share - Add share links (optional)
 */}}
 
-{{ if not (.Get "includeSources") }}
+{{- if not (.Get "includeSources") -}}
     {{/* JavaScript */}}
-    {{ $leafletLib := resources.Get "js/leaflet/leaflet.js" }}
-    {{ $leafletIiifLib := resources.Get "js/leaflet-iiif/leaflet-iiif.js" }}
-    {{ $leafletFullscreenLib := resources.Get "js/leaflet.fullscreen/Control.FullScreen.js" }}
-    {{ $js := slice $leafletLib $leafletIiifLib $leafletFullscreenLib | resources.Concat "js/leaflet.js" | minify | fingerprint }}
+    {{- $defines := dict "process.env.NODE_ENV" `"development"` -}}
+    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines -}}
+    {{- $iiifViewer := resources.Get "js/iiif-viewer.js" | js.Build $opts -}}
+    {{- $js := slice $iiifViewer | resources.Concat "js/iiif-ol.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
-
-    {{/* CSS - the stylesheet itself is generated in layout/_default/baseof.html */}}
-    {{ $viewerOptions := (dict "targetPath" "viewer.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/leaflet/dist/" "node_modules/leaflet.fullscreen/")) }}
-    {{ $viewerTemplate := resources.Get "scss/viewer.scss" }}
-    {{ $viewerStyle := $viewerTemplate | resources.ExecuteAsTemplate "scss/viewer.scss" . | toCSS $viewerOptions }}
-    {{ $viewerCSS := slice $viewerStyle | resources.Concat "css/viewer.css" | minify | fingerprint }}
-    <script type="text/javascript">
-        var css = document.createElement("link");
-        css.setAttribute("rel", "stylesheet");
-        css.setAttribute("type", "text/css");
-        css.setAttribute("href", '{{ $viewerCSS.RelPermalink }}');
-        css.setAttribute("integrity", '{{ $viewerCSS.Data.Integrity }}');
-        document.head.appendChild(css);
-    </script>
 {{ end }}
 
-{{ $src := .Get "src" }}
-{{ $id := printf "iiif-image-%s" (delimit (shuffle (seq 1 9)) "") }}
-{{ if .Get "divId" }}
-    {{ $id = .divId }}
-{{ end }}
-{{ $var := "map" }}
-{{ if .Get "id" }}
-    {{ $var = .jsId }}
-{{ end }}
+{{- $src := .Get "src" -}}
+{{- $id := printf "iiif-image-%s" (delimit (shuffle (seq 1 9)) "") -}}
+{{- if .Get "divId" -}}
+    {{- $id = .divId -}}
+{{- end -}}
+{{- $var := "map" -}}
+{{- if .Get "id" -}}
+    {{- $var = .jsId -}}
+{{- end -}}
 
 <a name="{{ $id }}"></a>
 <div id="{{ $id }}" class="viewer"></div>
-
+{{ $rotation := 0 }}
+{{ if (.Get "rotate") }}
+    {{ $rotation =  .Get "rotate" }}
+{{ end }}
 <script type="text/javascript">
-    $(document).ready(function() {
-      {{ $var | safeJS }} = L.map('{{ $id }}', {
-              center: [0, 0],
-              crs: L.CRS.Simple,
-              zoom: 1,
-              attributionControl:false,
-              minZoom: 1,
-              maxZoom: 6,
-              fullscreenControl: true,
-              fullscreenControlOptions: {
-                title: '{{ i18n "startFullscreen" }}',
-                titleCancel: '{{ i18n "exitFullscreen" }}'
-              }
-            });
-      var {{ $var | safeJS -}}_layer = L.tileLayer.iiif("{{ $src }}", {tileSize: 512, fitBounds: true, setMaxBounds: true}).addTo({{ $var | safeJS }});
-    });
+    var {{ $var | safeJS }} = addMap(document.getElementById("{{ $id }}"), "{{ $src }}", {{ $rotation }}, "{{ path.Dir $src }}");
+    {{ $var | safeJS }}.updateSize();
 </script>
+{{ if (.Get "share") }}
+    <div class="share">
+        {{ if (.Get "downloadURL") }}
+            <a href="{{- (.Get "downloadURL") -}}" class="image-download">Volle Auflösung herunterladen</a> | 
+        {{ end }}
+        <a href="{{ $src }}" class="iiif-link">IIIF Manifest</a>
+        {{- if (.Get "pageURL") -}}
+            {{- $pageURL := .Get "pageURL" }}
+            | <a href="{{ $pageURL }}#{{ .Name }}" class="image-link">Link zu diesem Bild</a>
+        {{- end -}}
+    </div>
+{{ end }}

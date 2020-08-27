@@ -1,6 +1,6 @@
 ---
 title: Hässliche Plastiktiere und Zeugs
-description: Fotodokumentaion über Tierparaden
+description: Fotodokumentation über Tierparaden
 date: 2020-08-07T09:09:01+02:00
 private: true
 link: https://haesslicheplastiktiereundzeugs.projektemacher.org/

@@ -56,20 +56,8 @@ rssLimit = 25
         target = "assets/js/bootstrap"
 
     [[module.mounts]]
-        source = "node_modules/leaflet/dist"
-        target = "assets/js/leaflet"
-
-    [[module.mounts]]
-        source = "node_modules/leaflet-iiif"
-        target = "assets/js/leaflet-iiif"
-
-    [[module.mounts]]
-        source = "node_modules/leaflet.fullscreen"
-        target = "assets/js/leaflet.fullscreen"
-
-    [[module.mounts]]
-        source = "node_modules/leaflet/dist/images"
-        target = "assets/images/leaflet"
+        source = "node_modules/ol"
+        target = "assets/css/ol"
 
     [[module.mounts]]
         source = "assets/js"

@@ -46,8 +46,13 @@
     {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) }}
     {{ $ourTemplate := resources.Get "scss/base.scss" }}
     {{ $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
+    {{ $olStyle := resources.Get "css/ol/ol.css" }}
+{{/*
+    {- $viewerOptions := (dict "targetPath" "viewer.css" "outputStyle" "compressed") -}}
+    {{- $viewerStyle := resources.Get "scss/viewer.scss" | toCSS $viewerOptions -}}
+*/}}
     {{ $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" }}
-    {{ $style := slice $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint }}
+    {{ $style := slice $olStyle $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint }}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
 
     {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}

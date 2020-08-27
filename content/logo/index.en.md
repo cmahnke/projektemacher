@@ -8,9 +8,8 @@ It is an advertisement for **C. Angerer & Göschl, k. u. k. Hof-Photochemigraphe
 
 It shows a photo lab technician rinsing a glass plate after the fixing bath.
 
-{{< iiif src="/../logo/img001/info.json" >}}
+{{< iiif src="/iiif/img001/info.json" share="true" downloadURL="/images/img001.jpg" >}}
 
-The post-processing of the digitized page was done with [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced).
+The post-processing of the digitized page was done with [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced). For it's display [OpenLayers](https://openlayers.org/) is used.
 
-[Leaflet-IIIF](https://github.com/mejackreed/Leaflet-IIIF) and [Leaflet.fullscreen](https://github.com/brunob/leaflet.fullscreen) is used for display and full-screen view. Both are plugins for [Leaflet](https://leafletjs.com/).
 The tiles were generated with [`iiif_static.py`](https://github.com/zimeon/iiif).
