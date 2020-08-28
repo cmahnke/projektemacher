@@ -60,6 +60,10 @@ rssLimit = 25
         target = "assets/css/ol"
 
     [[module.mounts]]
+        source = "node_modules/normalize.css"
+        target = "assets/css/normalize"
+
+    [[module.mounts]]
         source = "assets/js"
         target = "assets/js"
 

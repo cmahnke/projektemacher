@@ -8,6 +8,7 @@
     "bootstrap": "^4.5.2",
     "jquery": "^3.5.1",
     "jquery.flipster": "^1.1.4",
+    "normalize.css": "^8.0.1",
     "ol": "^6.4.3"
   },
   "devDependencies": {
