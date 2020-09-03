@@ -16,3 +16,6 @@
 [submodule "blogs/ric-unknownartist"]
 	path = blogs/ric-unknownartist
 	url = https://github.com/cmahnke/ric-unknownartist.git
+[submodule "blogs/kleiderbuegel"]
+	path = blogs/kleiderbuegel
+	url = https://github.com/cmahnke/kleiderbuegel.git
