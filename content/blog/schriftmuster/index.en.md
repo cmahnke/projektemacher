@@ -1,7 +1,7 @@
 ---
 title: "Vorsatzpapier"
-description: "This blog presents old book end paper"
-date: 2020-08-07T09:16:14+02:00
+description: "This blog presents old type tables"
+date: 2020-09-02T21:16:14+02:00
 link:
 status: planned
 draft: true
@@ -16,4 +16,4 @@ resources:
 ---
 Will be launched in winter 2020.
 
-Around the turn of the century before last, many books were produced with beautiful book end papers...
+Before the age of desktop publishing there where type tables...
