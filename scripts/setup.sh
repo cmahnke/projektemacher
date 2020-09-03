@@ -12,6 +12,7 @@ convert static/images/favicon-128.png -resize 64x64 static/images/favicon-64.png
 convert static/images/favicon-16.png static/images/favicon-32.png static/images/favicon-64.png static/images/favicon-128.png -colors 256 static/images/favicon.ico
 
 # IIIF tiles
+rm -rf static/iiif/*
 WD=`pwd`
 cd static/images
 iiif_static.py -d ../iiif img001.jpg
