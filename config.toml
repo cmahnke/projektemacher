@@ -88,6 +88,10 @@ rssLimit = 25
         target = "content/post/ric-unknownartist"
 
     [[module.mounts]]
+        source = "blogs/yaapb/content/post"
+        target = "content/post/yaapb"
+
+    [[module.mounts]]
         source = "content"
         target = "content"
 

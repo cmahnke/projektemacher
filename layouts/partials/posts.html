@@ -11,7 +11,7 @@
             {{- .Title -}}
           </h1>
       </header>
-      <div>Post from the last 30 days</div>
+      <div>{{- i18n "latestPosts" -}}</div>
       <ul>
         {{- $pages := .Pages -}}
         {{- .Scratch.Set "pages" $pages -}}

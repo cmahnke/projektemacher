@@ -19,3 +19,6 @@
 [submodule "blogs/kleiderbuegel"]
 	path = blogs/kleiderbuegel
 	url = https://github.com/cmahnke/kleiderbuegel.git
+[submodule "blogs/yaapb"]
+	path = blogs/yaapb
+	url = https://github.com/cmahnke/yaapb.git
