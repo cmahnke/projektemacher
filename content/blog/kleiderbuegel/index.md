@@ -2,8 +2,6 @@
 title: "Kleiderbuegel"
 description: "Alte Kleiderbügel"
 date: 2020-08-27T06:45:02+02:00
-draft: true
-private: true
 link: ""
 linkPrefix: ""
 status: "planned"
