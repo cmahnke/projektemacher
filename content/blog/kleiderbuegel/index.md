@@ -2,9 +2,9 @@
 title: "Kleiderbuegel"
 description: "Alte Kleiderbügel"
 date: 2020-08-27T06:45:02+02:00
-link: ""
-linkPrefix: ""
-status: "planned"
+link: "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/"
+linkPrefix: "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/"
+status: "active"
 lang:
 - de
 resources:
@@ -13,4 +13,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-"Kleiderbügel" ist ein Unterprojekt des "Blaufußtölpel". Startet im Spätsommer 2020.
+"Kleiderbügel" ist ein Unterprojekt des "Blaufußtölpel" und zeigt in mögliches Schicksal aller Klamotten: Den Kleiderbügel.
