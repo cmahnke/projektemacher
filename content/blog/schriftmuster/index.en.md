@@ -8,6 +8,7 @@ draft: true
 private: true
 lang:
 - de
+- en
 resources:
 - name: screenshot
   src: "screenshot.png"
