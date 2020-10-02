@@ -1,10 +1,11 @@
 ---
-title: "Blaufußtölpel"
-description: "A blog about historical fashion"
-date: 2020-08-11T10:05:20+02:00
-private: true
+title: "Kinderbücher"
+description: "Questionable old children's books"
+date: 2020-10-02T17:30:20+02:00
 link: ""
 status: planned
+draft: true
+private: true
 lang:
 - de
 resources:
@@ -13,4 +14,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in autumn 2020.
+Will be launched in winter 2020.
