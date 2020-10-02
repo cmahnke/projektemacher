@@ -92,6 +92,10 @@ rssLimit = 25
         target = "content/post/yaapb"
 
     [[module.mounts]]
+        source = "blogs/kleiderbuegel/content/post"
+        target = "content/post/kleiderbuegel"
+
+    [[module.mounts]]
         source = "content"
         target = "content"
 
