@@ -2,8 +2,6 @@
 title: "Backsteinexpressionismus"
 description: "Old illustrations of brick expressionism"
 date: 2020-08-11T07:07:33+02:00
-draft: true
-private: true
 link: ""
 status: planned
 lang:
