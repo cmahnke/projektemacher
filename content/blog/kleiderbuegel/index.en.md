@@ -1,5 +1,5 @@
 ---
-title: "Kleiderbuegel"
+title: "Kleiderbügel"
 description: "Old coat hangers"
 date: 2020-08-27T06:45:02+02:00
 link: "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/"
