@@ -19,12 +19,9 @@
             */}}
             {{ range $sorted }}
               <div class="blog">
-                  {{/*
-                  {{ $link := .RelPermalink }}
-                  */}}
-                  {{ $link := "#" }}
+                  {{- $link := "#" -}}
                   {{- if .Params.link -}}
-                    {{ $link = .Params.link }}
+                    {{- $link = .Params.link -}}
                   {{- end -}}
                   <a {{ if ne $link "#" -}} href="{{ $link }}"{{- end -}}>
                       {{ $status := .Params.status }}
@@ -52,7 +49,7 @@
                                 {{- $flagPos = printf "left: calc(1.5em + (2.5em) * %d);" $counter -}}
                               {{- end -}}
                               <i class="lang {{ . }}" title="{{ i18n . }}" style="{{ $flagPos | safeCSS }}"></i>
-                              {{ $counter = add $counter 1 }}
+                              {{- $counter = add $counter 1 -}}
                           {{- end -}}
                       </div>
                       <div class="tile">
