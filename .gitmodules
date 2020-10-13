@@ -22,3 +22,6 @@
 [submodule "blogs/yaapb"]
 	path = blogs/yaapb
 	url = https://github.com/cmahnke/yaapb.git
+[submodule "blogs/vorsatzpapier"]
+	path = blogs/vorsatzpapier
+	url = https://github.com/cmahnke/vorsatzpapier.git
