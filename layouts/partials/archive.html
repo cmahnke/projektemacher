@@ -1,0 +1,104 @@
+<div class="content list">
+    <section class="container list">
+      <article class="archive">
+      <header>
+          <h1 class="title header">
+            {{- if eq .Kind "term" -}}
+              {{- i18n .Data.Singular | title -}}
+              {{- print ": " -}}
+            {{- end -}}
+
+            {{- .Title -}}
+          </h1>
+      </header>
+      <div class="archiche-description">{{ .Content }}</div>
+
+      {{- $pages := where (where .Site.RegularPages "Section" "post") "Params.displayinlist" "!=" false -}}
+      {{- .Scratch.Set "pages" $pages -}}
+      {{- $mainSite := .Sites.First -}}
+      {{- if ne $mainSite .Site -}}
+          {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
+      {{- end -}}
+      {{- $pages = (.Scratch.Get "pages").Reverse -}}
+
+      {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
+      {{- $lastYear := (index (last 1 $pages) 0).Date.Year -}}
+
+      {{- range (seq $firstYear $lastYear) -}}
+        {{ $year := . }}
+        {{- if len (where $pages ".Date.Year" "==" $year) -}}
+            <a class="year collapse-header" aria-expanded="false" data-toggle="collapse" aria-controls="collapse-{{ $year }}" href="#year-{{ $year }}">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+                {{ $year }}
+            </a>
+            <ul id="year-{{ $year }}" class="year-section collapse">
+                {{- $yearPages := where $pages ".Date.Year" "==" . -}}
+                {{- range (seq 1 12 ) -}}
+                    {{- $month := . -}}
+                    {{- if len (where $yearPages ".Date.Month" "==" $month) -}}
+                      <li class="month-section">
+                        <ul class="month-section month-{{ $month }}">
+                            {{- $monthName := "" -}}
+                            {{ if eq "de" $.Site.Language.Lang }}
+                                {{ $monthName = (index $.Site.Data.months (printf "%d" $month)) }}
+                            {{- else -}}
+                                {{- $monthName = (dateFormat "January" (printf "2001-%02d-01" $month)) -}}
+                            {{- end -}}
+
+                            <span class="month">{{ $monthName }}</span>
+                            {{- range (where $yearPages ".Date.Month" "==" $month) -}}
+
+                                {{- $dir := split (string (path.Dir .Path)) "/" -}}
+                                {{- $id := index $dir 1 -}}
+                                {{- $displayName := "" -}}
+                                {{- $postLink := "" -}}
+                                {{- if gt (len $dir) 1 -}}
+                                  {{- $linkPrefix := "" -}}
+                                  {{- $prefix := index $dir 1 -}}
+                                  {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+                                  {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                                  {{- $displayName = printf "%s: " $blogPage.Title -}}
+                                  {{- if ($blogPage.Param "linkPrefix") -}}
+                                      {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+                                  {{- else -}}
+                                      {{ $linkPrefix = $blogPage.Param "link" -}}
+                                  {{- end -}}
+                                  {{- $postLink = split (string .Path) "/" -}}
+                                  {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+                                  {{- $postLink = delimit $postLink "/" -}}
+                                  {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+                                  {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+                                {{- end -}}
+                                {{ $openExternal := true }}
+                                {{- if eq $postLink "" }}
+                                  {{- $postLink = printf "#%s" $id -}}
+                                  {{ $openExternal = false }}
+                                {{- end -}}
+                                <li class="archive-link">
+                                    <div class="post-heading">
+                                        <span class="date">
+                                            {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                                        </span>
+                                        <span class="link">
+                                            {{- $postTitle := "" -}}
+                                            {{- if eq .Title "" -}}
+                                                {{- $postTitle = (i18n "untitlePost") -}}
+                                            {{- else -}}
+                                                {{- $postTitle = .Title -}}
+                                            {{- end -}}
+                                            <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ $postTitle -}}</a>
+                                        </span>
+                                    </div>
+                                </li>
+                            {{ end }}
+                        </ul>
+                      </li>
+                    {{end }}
+                {{ end }}
+            </ul>
+        {{- end -}}
+      {{- end -}}
+      </article>
+    </section>
+</div>

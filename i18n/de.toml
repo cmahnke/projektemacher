@@ -22,9 +22,11 @@ other = "Starte Vollbildansicht"
 other = "Vollbildansicht verlassen"
 
 # Languages
-
 [en]
 other = "Englisch"
 
 [de]
 other = "Deutsch"
+
+[untitlePost]
+other = "Unbenannter Eintrag"

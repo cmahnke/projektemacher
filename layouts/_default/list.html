@@ -11,6 +11,8 @@
     {{ partial "portfolio.html" . }}
   {{- else if and (eq .Kind "section") (eq .Section "post") -}}
     {{ partial "posts.html" . }}
+  {{- else if and (eq .Kind "section") (eq .Section "archive") -}}
+    {{ partial "archive.html" . }}
   {{ else }}
     {{ partial "list.html" . }}
   {{- end -}}

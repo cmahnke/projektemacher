@@ -95,6 +95,18 @@ rssLimit = 25
         source = "blogs/kleiderbuegel/content/post"
         target = "content/post/kleiderbuegel"
 
+#    [[module.mounts]]
+#        source = "blogs/vorsatzpapier/content/post"
+#        target = "content/post/vorsatzpapier"
+
+#    [[module.mounts]]
+#        source = "blogs/schriftmuster/content/post"
+#        target = "content/post/schriftmuster"
+
+#    [[module.mounts]]
+#        source = "blogs/backsteinexpressionismus/content/post"
+#        target = "content/post/backsteinexpressionismus"
+
     [[module.mounts]]
         source = "content"
         target = "content"
@@ -119,13 +131,18 @@ rssLimit = 25
                 url = "posts/"
 
             [[languages.de.menu.main]]
-                name = "Über"
+                name = "Archiv"
                 weight = 3
+                url = "archive/"
+
+            [[languages.de.menu.main]]
+                name = "Über"
+                weight = 4
                 url = "about/"
 
             [[languages.de.menu.main]]
                 name = "Kontakt"
-                weight = 4
+                weight = 5
                 url = "contact/"
 
     [languages.en]
@@ -150,13 +167,18 @@ rssLimit = 25
                 url = "posts/"
 
             [[languages.en.menu.main]]
-                name = "About"
+                name = "Archive"
                 weight = 3
+                url = "archive/"
+
+            [[languages.en.menu.main]]
+                name = "About"
+                weight = 4
                 url = "about/"
 
             [[languages.en.menu.main]]
                 name = "Contact"
-                weight = 4
+                weight = 5
                 url = "contact/"
 
 [markup]

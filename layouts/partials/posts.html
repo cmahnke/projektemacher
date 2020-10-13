@@ -19,12 +19,10 @@
         {{- if ne $mainSite .Site -}}
             {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
         {{ end }}
+        {{- $pages = (.Scratch.Get "pages") -}}
 
         {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
-        {{/*
-        {{ $pages = (sort $pages ".Page.Date").Reverse }}
-        {{ range first .Site.Params.news $pages }}
-        */}}
+
         <li>
           <div class="post-heading">
               {{- $dir := split (string (path.Dir .Path)) "/" -}}
@@ -57,9 +55,6 @@
               {{- end -}}
               {{ $openExternal := true }}
               {{- if eq $postLink "" }}
-                {{/*
-                    {{- $postLink = .RelPermalink -}}
-                */}}
                 {{- $postLink = printf "#%s" $id -}}
                 {{ $openExternal = false }}
               {{- end -}}

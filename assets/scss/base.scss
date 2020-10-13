@@ -23,6 +23,7 @@ $link-color-dark: #42a5f5 !default;
 @import "navigation";
 
 @import "ol-iiif";
+@import "icons";
 
 /**
  * Fontawesome SVGs - taken fom https://github.com/FortAwesome/Font-Awesome
@@ -378,8 +379,11 @@ article header h1.header {
     }
 }
 
-.list ul {
+.list .post ul {
     padding-top: 1em;
+}
+
+.list ul {
 
     li  {
         margin-bottom: .8em;
@@ -572,5 +576,67 @@ body {
 
     a {
         text-decoration: none;
+    }
+}
+
+.archive {
+    ul.month-section, ul.year-section {
+        padding-top: unset ;
+    }
+
+    .fa-plus:before {
+        display: inline-block;
+        width: 1em;
+        content: url($plus-dark);
+        font-size: .7em;
+        margin-right: .6em;
+    }
+
+    .fa-minus:before {
+        display: inline-block;
+        width: 1em;
+        content: url($minus-dark);
+        font-size: .7em;
+        margin-right: .6em;
+    }
+
+    a {
+        &[aria-expanded=true] .fa-plus {
+           display: none;
+        }
+
+        &[aria-expanded=false] .fa-minus {
+           display: none;
+        }
+
+        &:hover, &:active, &:visited {
+            text-decoration: none;
+            color: $fg-color;
+        }
+    }
+
+    .collapse-header {
+        display: block;
+        color: $fg-color;
+        width: 30%;
+
+
+    }
+
+    font-family: $heading-font-family;
+
+    li.month-section {
+        margin: 0 2em 0 2em;
+    }
+
+    .year {
+        font-size: x-large;
+        font-weight: bold;
+        margin: .6em 0;
+    }
+
+    .month {
+        font-size: large;
+        font-weight: bold;
     }
 }
