@@ -14,6 +14,6 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Winter 2020 gestartet.
+Wird im Frühjahr 2021 gestartet.
 
 Ein optisches Gerät für Kinder...
