@@ -25,3 +25,6 @@
 [submodule "blogs/vorsatzpapier"]
 	path = blogs/vorsatzpapier
 	url = https://github.com/cmahnke/vorsatzpapier.git
+[submodule "blogs/schriftmuster"]
+	path = blogs/schriftmuster
+	url = https://github.com/cmahnke/schriftmuster.git
