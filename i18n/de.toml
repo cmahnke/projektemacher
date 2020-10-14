@@ -30,3 +30,6 @@ other = "Deutsch"
 
 [untitlePost]
 other = "Unbenannter Eintrag"
+
+[filter]
+other = "Archiv filtern"

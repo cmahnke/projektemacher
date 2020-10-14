@@ -9,10 +9,10 @@
             {{- .Scratch.Set "pages" $pages -}}
             {{- $mainSite := .Sites.First -}}
             {{- if ne $mainSite .Site -}}
-                {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
-            {{ end }}
-            {{ $pages := .Scratch.Get "pages" }}
-            {{ $sorted := $pages.ByParam "status" }}
+                {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
+            {{- end -}}
+            {{- $pages := .Scratch.Get "pages" -}}
+            {{- $sorted := $pages.ByParam "status" -}}
 
             {{ range $sorted }}
               <div class="blog">
@@ -24,8 +24,8 @@
                       {{ $status := .Params.status }}
                       {{ $lang := .Params.lang }}
 
-                      {{ $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" }}
-                      {{ $preview := $screenshot.Resize "400x Lanczos jpg" }}
+                      {{- $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" -}}
+                      {{- $preview := $screenshot.Resize "400x Lanczos jpg" -}}
                       <div class="screenshot">
                           <div class="ribbon ribbon-top-right {{ $status }}">
                                {{- $statusString := (i18n $status | humanize) -}}

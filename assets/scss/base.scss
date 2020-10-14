@@ -580,6 +580,41 @@ body {
 }
 
 .archive {
+    .archive-filter {
+        margin: auto;
+        width: fit-content;
+
+        .filter-header {
+            margin: 2.4rem 0 1.2rem;
+        }
+
+        .filter-list {
+            columns: 3;
+            column-gap: 2em;
+
+            .filter-checkbox {
+                margin-right: .3em;
+            }
+
+            .filter {
+                padding: 0.3em;
+                cursor: pointer;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .filter-list {
+                columns: 2;
+                column-gap: 1em;
+            }
+        }
+    }
+
+    .year-header {
+        line-height: unset;
+        display: inline;
+    }
+
     ul.month-section, ul.year-section {
         padding-top: unset ;
     }

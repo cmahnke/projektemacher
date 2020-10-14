@@ -7,58 +7,57 @@
     <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
 
     {{- if and (eq .Kind "page") (eq .Section "blog") -}}
-      {{ if and (.Params.link) (.Params.private) }}
+      {{- if and (.Params.link) (.Params.private) -}}
         <meta http-equiv="refresh" content="0; URL={{ .Params.link }}">
-      {{ end }}
-    {{ end }}
+      {{- end -}}
+    {{- end -}}
 
     {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
     <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
     <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
 
-    {{ if hasPrefix .Page.Name "404" }}
+    {{- if hasPrefix .Page.Name "404" -}}
         <meta http-equiv="refresh" content="15; URL={{ .Site.BaseURL }}">
-    {{ end }}
+    {{- end -}}
 
-    {{ template "_internal/twitter_cards.html" . }}
-    {{ template "_internal/opengraph.html" . }}
+    {{- template "_internal/opengraph.html" . -}}
 
-    {{ if .Permalink }}
+    {{- if .Permalink -}}
       <base href="{{ .Permalink }}">
-    {{ end }}
+    {{- end -}}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
-    {{ if .Permalink }}
+    {{- if .Permalink -}}
       <link rel="canonical" href="{{ .Permalink }}">
-    {{ end }}
+    {{- end -}}
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
 
     {{/* Our own JavaScript handling */}}
-    {{ $jqueryLib := resources.Get "js/jquery/jquery.js" }}
-    {{ $bootstrapLib := resources.Get "js/bootstrap/bootstrap.bundle.min.js" }}
-    {{ $js := slice $jqueryLib $bootstrapLib | resources.Concat "js/concated.js" | minify | fingerprint }}
+    {{- $jqueryLib := resources.Get "js/jquery/jquery.js" -}}
+    {{- $bootstrapLib := resources.Get "js/bootstrap/bootstrap.bundle.min.js" -}}
+    {{- $js := slice $jqueryLib $bootstrapLib | resources.Concat "js/concated.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{/* Our own CSS / SCCS handling */}}
-    {{ $normalizeStyle := resources.Get "css/normalize/normalize.css" }}
+    {{- $normalizeStyle := resources.Get "css/normalize/normalize.css" -}}
     {{/* Base style is included at SCSS level - see 'assets/scss/base.scss' */}}
-    {{ $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) }}
-    {{ $ourTemplate := resources.Get "scss/base.scss" }}
-    {{ $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options }}
-    {{ $olStyle := resources.Get "css/ol/ol.css" }}
-    {{ $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" }}
-    {{ $style := slice $normalizeStyle $olStyle $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint }}
+    {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) -}}
+    {{- $ourTemplate := resources.Get "scss/base.scss" -}}
+    {{- $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options -}}
+    {{- $olStyle := resources.Get "css/ol/ol.css" -}}
+    {{- $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" -}}
+    {{- $style := slice $normalizeStyle $olStyle $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
 
-    {{ if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") }}
-      {{ if .Site.IsServer }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
+    {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
+      {{- if .Site.IsServer -}}
+        {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) -}}
+        {{- $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts }}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
       {{ else }}
-        {{ $cssOpts := (dict "targetPath" "css/coder-dark.css" ) }}
-        {{ $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint }}
+        {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" ) -}}
+        {{- $styles := resources.Get "scss/coder-dark.scss" | resources.ExecuteAsTemplate "style.coder-dark.css" . | toCSS $cssOpts | minify | fingerprint -}}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}
@@ -75,11 +74,11 @@
     {{ range .Site.Params.custom_scss }}
       {{/* We don't change the targetPath to because it's transparent to users */}}
       {{ if $.Site.IsServer }}
-        {{ $cssOpts := (dict "enableSourceMap" true ) }}
-        {{ $styles := resources.Get . | toCSS $cssOpts }}
+        {{- $cssOpts := (dict "enableSourceMap" true ) -}}
+        {{- $styles := resources.Get . | toCSS $cssOpts -}}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" media="screen">
-      {{ else }}
-        {{ $styles := resources.Get . | toCSS | minify | fingerprint }}
+      {{- else -}}
+        {{- $styles := resources.Get . | toCSS | minify | fingerprint -}}
         <link rel="stylesheet" href="{{ $styles.RelPermalink }}" integrity="{{ $styles.Data.Integrity }}" crossorigin="anonymous" media="screen" />
       {{ end }}
     {{ end }}

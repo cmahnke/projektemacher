@@ -12,3 +12,6 @@ other = "Exit fullscreen mode"
 
 [untitlePost]
 other = "Untitled post"
+
+[filter]
+other = "Filter achive contents"
