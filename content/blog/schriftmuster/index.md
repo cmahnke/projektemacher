@@ -1,11 +1,9 @@
 ---
 title: "Schriftmuster"
 description: "Dieses Blog präsentiert alte Schriftmuster"
-date: 2020-09-02T21:16:14+02:00
+date: 2020-10-10T14:49:14+02:00
 link:
 status: planned
-draft: true
-private: true
 lang:
 - de
 - en
@@ -15,6 +13,5 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Winter 2020 gestartet.
 
-Vor den Zeiten von DTP gab es Bücher voll mit Schriftbeispielen...
+Vor den Zeiten von DTP und [Google fonts](https://fonts.google.com/) gab es Bücher voll mit Schriftbeispielen...

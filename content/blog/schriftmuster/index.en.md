@@ -1,11 +1,9 @@
 ---
 title: "Vorsatzpapier"
 description: "This blog presents old type tables"
-date: 2020-09-02T21:16:14+02:00
+date: 2020-10-10T14:49:14+02:00
 link:
 status: planned
-draft: true
-private: true
 lang:
 - de
 - en
@@ -15,6 +13,5 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in winter 2020.
 
-Before the age of desktop publishing there where type tables...
+Before the age of desktop publishing and [Google fonts](https://fonts.google.com/) there where type tables...

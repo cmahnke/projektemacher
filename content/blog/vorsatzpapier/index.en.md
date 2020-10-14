@@ -1,7 +1,7 @@
 ---
 title: "Vorsatzpapier"
 description: "This blog presents old book end paper"
-date: 2020-08-07T09:16:14+02:00
+date: 2020-09-16T10:53:14+02:00
 link:
 status: planned
 lang:
@@ -13,6 +13,6 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in autumn 2020.
 
-Around the turn of the century before last, many books were produced with beautiful book end papers...
+Around 1900 many books were produced with beautiful book end papers...
+This blog shows some of them and wallpapers.
