@@ -25,11 +25,12 @@ Additionally to implementing more blog ideas, the older ones are scheduled to be
 
 # Colophon
 
-This page(s) have been generated with [Hugo](https://gohugo.io/). The theme is a customized version of [Coder](https://github.com/luizdepra/hugo-coder). The fonts used are [Lato] (http://www.latofonts.com/) for the headings and [Lora] (https://github.com/cyrealtype/Lora-Cyrillic) for the other elements.
+This page(s) have been generated with [Hugo](https://gohugo.io/). The theme is a customized version of [Coder](https://github.com/luizdepra/hugo-coder). The fonts used are [Lato](http://www.latofonts.com/) for the headings and [Lora](https://github.com/cyrealtype/Lora-Cyrillic) for the other elements.
 
 The following JavaScript and CSS frameworks are used:
 * [jQuery](https://jquery.com/)
 * [Bootstrap](https://getbootstrap.com/)
+* [normalize.css](https://necolas.github.io/normalize.css/)
 
 The [flag icons](https://github.com/lipis/flag-icon-css), the [SVG icons](https://github.com/FortAwesome/Font-Awesome), the [CSS code for the ribbons](https://codepen.io/nxworld/pen/oLdoWb) and the [conversion into the German date format](https://pfischbeck.de/en/posts/multilingual-dates-in-hugo/) are taken from the provided links.
 

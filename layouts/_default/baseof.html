@@ -31,23 +31,19 @@
       <link rel="canonical" href="{{ .Permalink }}">
     {{- end -}}
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-
-    {{/* Our own JavaScript handling */}}
-    {{- $jqueryLib := resources.Get "js/jquery/jquery.js" -}}
-    {{- $bootstrapLib := resources.Get "js/bootstrap/bootstrap.bundle.min.js" -}}
-    {{- $js := slice $jqueryLib $bootstrapLib | resources.Concat "js/concated.js" | minify | fingerprint -}}
+    {{/* JavaScript */}}
+    {{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
+    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" true -}}
+    {{- $main := resources.Get "js/main.js" | js.Build $opts -}}
+    {{- $js := slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
 
     {{/* Our own CSS / SCCS handling */}}
-    {{- $normalizeStyle := resources.Get "css/normalize/normalize.css" -}}
     {{/* Base style is included at SCSS level - see 'assets/scss/base.scss' */}}
-    {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/@fortawesome/fontawesome-free/scss")) -}}
+    {{- $options := (dict "targetPath" "base.css" "outputStyle" "compressed" "includePaths" (slice "node_modules/normalize.css" "node_modules/ol" "node_modules/bootstrap/scss" "node_modules/@fortawesome/fontawesome-free/scss")) -}}
     {{- $ourTemplate := resources.Get "scss/base.scss" -}}
     {{- $ourStyle := $ourTemplate | resources.ExecuteAsTemplate "scss/base.scss" . | toCSS $options -}}
-    {{- $olStyle := resources.Get "css/ol/ol.css" -}}
-    {{- $bootstrapStyle := resources.Get "css/bootstrap/bootstrap.min.css" -}}
-    {{- $style := slice $normalizeStyle $olStyle $bootstrapStyle $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
+    {{- $style := slice $ourStyle | resources.Concat "css/concated.css" | minify | fingerprint -}}
     <link href="{{ $style.RelPermalink }}" rel="stylesheet" integrity="{{ $style.Data.Integrity }}">
 
     {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
