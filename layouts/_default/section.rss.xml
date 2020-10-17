@@ -1,0 +1,3 @@
+{{- if and (eq .Kind "section") (or (eq .Section "blog") (eq .Section "post")) -}}
+  {{- partial "blogs.rss.xml" . -}}
+{{- end -}}
