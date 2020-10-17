@@ -18,8 +18,13 @@
         {{- $mainSite := .Sites.First -}}
         {{- if ne $mainSite .Site -}}
             {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
+<<<<<<< HEAD
         {{ end }}
         {{- $pages = (.Scratch.Get "pages") -}}
+=======
+        {{- end -}}
+        {{- $pages = .Scratch.Get "pages" -}}
+>>>>>>> 0275d2ba44a57dbbbc687d7bdf05ec316e415c75
 
         {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
 

@@ -1,0 +1,63 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  {{- $pages := where .Data.Pages "Section" "post" -}}
+  {{- .Scratch.Set "pages" $pages -}}
+  {{- $mainSite := .Sites.First -}}
+  {{- if ne $mainSite .Site -}}
+      {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
+  {{- end -}}
+  {{- $pages = .Scratch.Get "pages" -}}
+  <channel>
+    <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+    <generator>{{ hugo.Generator }}</generator>
+    {{ with .Site.LanguageCode }}
+      <language>{{.}}</language>
+    {{end}}
+    {{ if not .Date.IsZero }}
+      <lastBuildDate>
+        {{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}
+      </lastBuildDate>
+    {{ end }}
+    {{ with .OutputFormats.Get "RSS" }}
+        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
+    {{ end }}
+    {{ range $pages }}
+      <item>
+        {{- $dir := split (string (path.Dir .Path)) "/" -}}
+        {{- $article := last 1 $dir -}}
+        {{- $id := index $dir 1 -}}
+        {{- $dir = first (sub (len $dir) 1) $dir -}}
+        {{- $section := first 1 $dir -}}
+        {{- $displayName := "" -}}
+        {{- $postLink := "" -}}
+        {{- $prefix := "" -}}
+        {{- if gt (len $dir) 1 -}}
+            {{- $prefix = index $dir 1 -}}
+        {{- end -}}
+        {{- if gt (len $dir) 1 -}}
+          {{- $linkPrefix := "" -}}
+          {{- $prefix := index $dir 1 -}}
+          {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+          {{- $blogPage := .Site.GetPage $sectionHeading -}}
+          {{- $displayName = printf "%s: " $blogPage.Title -}}
+          {{- if ($blogPage.Param "linkPrefix") -}}
+              {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+          {{- else -}}
+              {{ $linkPrefix = $blogPage.Param "link" -}}
+          {{- end -}}
+          {{- $postLink = split (string .Path) "/" -}}
+          {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+          {{- $postLink = delimit $postLink "/" -}}
+          {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+          {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+        {{- end -}}
+        <title>{{- $displayName }}{{ .Title -}}</title>
+        <link>{{ $postLink }}</link>
+        <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
+        <guid>{{ .Permalink }}</guid>
+        <description>{{- .Content | html -}}</description>
+      </item>
+    {{ end }}
+  </channel>
+</rss>
