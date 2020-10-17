@@ -1,0 +1,1 @@
+{{- partial "blogs.rss.xml" . -}}

@@ -1,9 +1,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  {{- $pages := where .Data.Pages "Section" "post" -}}
+  {{- $pages := where (where .Site.RegularPages "Section" "post") "Params.displayinlist" "!=" false -}}
   {{- .Scratch.Set "pages" $pages -}}
   {{- $mainSite := .Sites.First -}}
   {{- if ne $mainSite .Site -}}
-      {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
+      {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
   {{- end -}}
   {{- $pages = .Scratch.Get "pages" -}}
   <channel>
@@ -22,7 +22,7 @@
     {{ with .OutputFormats.Get "RSS" }}
         {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
     {{ end }}
-    {{ range $pages }}
+    {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
       <item>
         {{- $dir := split (string (path.Dir .Path)) "/" -}}
         {{- $article := last 1 $dir -}}
