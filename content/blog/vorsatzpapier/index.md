@@ -2,8 +2,9 @@
 title: "Vorsatzpapier"
 description: "Dieses Blog präsentiert alte Vorsatzpapiere"
 date: 2020-09-16T10:53:14+02:00
-link:
-status: planned
+link: https://vorsatzpapier.projektemacher.org/
+linkPrefix: https://vorsatzpapier.projektemacher.org/post/
+status: active
 lang:
 - de
 - en
@@ -14,5 +15,5 @@ resources:
     description: "Screenshot"
 ---
 
-Um die vorletzte Jahrhundertwende wurden viele Bücher mit besonders schmuckvollen Vorsatzpapieren ausgestattet...
-Diese Blog zeigt einige und Tapeten.
+Um die vorletzte Jahrhundertwende wurden viele Bücher mit besonders schmuckvollen Vorsatzpapieren ausgestattet, dieses Blog zeigt einige..
+ Und Tapeten.
