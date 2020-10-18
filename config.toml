@@ -7,7 +7,6 @@ canonifyurls = true
 disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
-rssLimit = 25
 
 [params]
     author = "Christian Mahnke"
