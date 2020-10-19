@@ -82,9 +82,9 @@ defaultcontentlanguage = "de"
         source = "blogs/schriftmuster/content/post"
         target = "content/post/schriftmuster"
 
-#    [[module.mounts]]
-#        source = "blogs/backsteinexpressionismus/content/post"
-#        target = "content/post/backsteinexpressionismus"
+    [[module.mounts]]
+        source = "blogs/backsteinexpressionismus/content/post"
+        target = "content/post/backsteinexpressionismus"
 
 #    [[module.mounts]]
 #        source = "blogs/blaufusstoelpel/content/post"
@@ -168,3 +168,9 @@ defaultcontentlanguage = "de"
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe= true
+
+[imaging]
+    quality = 95
+
+[outputs]
+    page = ["HTML", "JSON"]

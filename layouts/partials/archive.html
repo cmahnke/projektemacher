@@ -83,11 +83,11 @@
       </div>
 
       <div class="archive-content">
-          {{- $pages := where (where .Site.RegularPages "Section" "post") "Params.displayinlist" "!=" false -}}
+          {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
           {{- .Scratch.Set "pages" $pages -}}
           {{- $mainSite := .Sites.First -}}
           {{- if ne $mainSite .Site -}}
-              {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" "post") ) -}}
+              {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
           {{- end -}}
           {{- $pages = (.Scratch.Get "pages").Reverse -}}
 

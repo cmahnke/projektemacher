@@ -28,3 +28,6 @@
 [submodule "blogs/schriftmuster"]
 	path = blogs/schriftmuster
 	url = https://github.com/cmahnke/schriftmuster.git
+[submodule "blogs/backsteinexpressionismus"]
+	path = blogs/backsteinexpressionismus
+	url = https://github.com/cmahnke/backsteinexpressionismus.git

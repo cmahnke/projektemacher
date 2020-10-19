@@ -13,11 +13,14 @@
       </header>
       <div>{{- i18n "latestPosts" -}}</div>
       <ul>
+        {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
+        {{/*
         {{- $pages := .Pages -}}
+        */}}
         {{- .Scratch.Set "pages" $pages -}}
         {{- $mainSite := .Sites.First -}}
         {{- if ne $mainSite .Site -}}
-            {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) }}
+            {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) }}
         {{- end -}}
         {{- $pages = .Scratch.Get "pages" -}}
 
@@ -67,7 +70,7 @@
           </div>
           <div class="post-snippet">
             {{ if ne .Description ""}}
-              <span class="description">{{- .Description -}}</span>
+              <span class="description">{{- .Description | markdownify -}}</span>
             {{ else }}
                 <span class="post-spacer">&nbsp;</span>
             {{ end }}
