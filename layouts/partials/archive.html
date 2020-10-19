@@ -81,7 +81,7 @@
             </script>
         </div>
       </div>
-
+      <hr class="archive-hr">
       <div class="archive-content">
           {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
           {{- .Scratch.Set "pages" $pages -}}
