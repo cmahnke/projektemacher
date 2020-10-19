@@ -46,14 +46,6 @@ defaultcontentlanguage = "de"
         source = "static"
         target = "static"
 
-#    [[module.mounts]]
-#        source = "node_modules/jquery/dist"
-#        target = "assets/js/jquery"
-
-#    [[module.mounts]]
-#        source = "node_modules/bootstrap/dist/js"
-#        target = "assets/js/bootstrap"
-
     [[module.mounts]]
         source = "blogs/kraehenbeisser/content/post"
         target = "content/post/kraehenbeisser"
@@ -82,17 +74,21 @@ defaultcontentlanguage = "de"
         source = "blogs/kleiderbuegel/content/post"
         target = "content/post/kleiderbuegel"
 
-#    [[module.mounts]]
-#        source = "blogs/vorsatzpapier/content/post"
-#        target = "content/post/vorsatzpapier"
+    [[module.mounts]]
+        source = "blogs/vorsatzpapier/content/post"
+        target = "content/post/vorsatzpapier"
 
-#    [[module.mounts]]
-#        source = "blogs/schriftmuster/content/post"
-#        target = "content/post/schriftmuster"
+    [[module.mounts]]
+        source = "blogs/schriftmuster/content/post"
+        target = "content/post/schriftmuster"
 
 #    [[module.mounts]]
 #        source = "blogs/backsteinexpressionismus/content/post"
 #        target = "content/post/backsteinexpressionismus"
+
+#    [[module.mounts]]
+#        source = "blogs/blaufusstoelpel/content/post"
+#        target = "content/post/blaufusstoelpel"
 
     [[module.mounts]]
         source = "content"
