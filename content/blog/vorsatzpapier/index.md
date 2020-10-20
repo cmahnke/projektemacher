@@ -15,5 +15,5 @@ resources:
     description: "Screenshot"
 ---
 
-Um die vorletzte Jahrhundertwende wurden viele Bücher mit besonders schmuckvollen Vorsatzpapieren ausgestattet, dieses Blog zeigt einige..
- Und Tapeten.
+Um die vorletzte Jahrhundertwende wurden viele Bücher mit besonders schmuckvollen Vorsatzpapieren ausgestattet, dieses Blog zeigt einige...
+Und Tapeten.
