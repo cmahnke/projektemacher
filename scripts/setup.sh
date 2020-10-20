@@ -1,6 +1,6 @@
 #!/bin/sh
 
-convert "Source Files/Logo/img001-color.jpg" -crop 5324x3260+0+90 -quality 95 static/images/img001.jpg
+convert "Source Files/Logo/img001-color.jpg" -crop 5324x3260+0+90 -quality 95 content/logo/img001.jpg
 
 # Favicons
 # See https://gist.github.com/pfig/1808188
@@ -12,12 +12,11 @@ convert static/images/favicon-128.png -resize 64x64 static/images/favicon-64.png
 convert static/images/favicon-16.png static/images/favicon-32.png static/images/favicon-64.png static/images/favicon-128.png -colors 256 static/images/favicon.ico
 
 # IIIF tiles
-rm -rf static/iiif
-mkdir -p static/iiif
-WD=`pwd`
-cd static/images
-iiif_static.py -d ../iiif img001.jpg
-cd $WD
+echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
+
+if [[ -z "$SKIP_IIIF" ]] ; then
+    ./scripts/iiif.sh
+fi
 
 # NPM dependencies
 yarn install

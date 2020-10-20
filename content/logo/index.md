@@ -11,7 +11,7 @@ Es handelt sich eine Werbung für **C. Angerer & Göschl, k. u. k. Hof-Photochem
 
 Es zeigt einen Fotolaboranten, der eine Glasplatte nach einem Bad abspült.
 
-{{< iiif src="/iiif/img001/info.json" share="true" downloadURL="/images/img001.jpg" >}}
+{{< iiif contextPath="logo" src="img001/info.json" share="true" downloadURL="img001.jpg" >}}
 
 Die Nachbearbeitung des Digitalisats wurde mit [ScanTailor Advanced](https://github.com/4lex4/scantailor-advanced) durchgeführt. Für seine Darstellung wird [OpenLayers](https://openlayers.org/) verwendet.
-Die jeweils angezeigten Ausschnitte wurden mit [`iiif_static.py`](https://github.com/zimeon/iiif) erzeugt.
+Die jeweils angezeigten Ausschnitte wurden mit [libvips](https://libvips.github.io/libvips/) erzeugt.

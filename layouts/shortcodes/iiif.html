@@ -30,15 +30,22 @@ Parameters:
     {{- $var = .jsId -}}
 {{- end -}}
 
-<a name="{{ $id }}"></a>
-<div id="{{ $id }}" class="viewer"></div>
+{{- $contextPath := .Get "contextPath" -}}
+
+{{- $mapName := replace (replace (replace $src "/" "_") "." "") "-" "_" -}}
+{{- $infoJson := printf "/%s" (path.Join $contextPath $src) -}}
+{{- $baseURL := printf "/%s/%s/" $contextPath (path.Dir $src) -}}
+
+<a name="{{ $mapName }}"></a>
+<div id="{{ $mapName }}" class="viewer"></div>
 {{ $rotation := 0 }}
 {{ if (.Get "rotate") }}
     {{ $rotation =  .Get "rotate" }}
 {{ end }}
 <script type="text/javascript">
-    var {{ $var | safeJS }} = addMap(document.getElementById("{{ $id }}"), "{{ $src }}", {{ $rotation }}, "{{ path.Dir $src }}");
-    {{ $var | safeJS }}.updateSize();
+    {{ $mapName | safeJS }}_Div = document.getElementById("{{ $mapName }}");
+    {{ $mapName | safeJS }} = addMap({{ $mapName | safeJS }}_Div, "{{ $infoJson }}", {{ $rotation }}, {{ $baseURL }});
+    {{ $mapName | safeJS }}.updateSize();
 </script>
 {{ if (.Get "share") }}
     <div class="share">

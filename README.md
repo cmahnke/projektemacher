@@ -81,7 +81,18 @@ Edit `config.toml`:
 
 Make sure there is a page in `contents/blog` for the newly added blog since some metadata is pulled from there.
 
-# Debugging `static` mounts
+# Running hugo
+
+## Without watching
+
+This might be needed if there are to many sub directories (with IIIF structures) generated, since watching might not work in this setup.
+
+```
+hugo serve -F --debug --disableFastRender  --disableLiveReload --watch=false --renderToDisk
+
+```
+
+## Debugging `static` mounts
 
 ```
 /usr/local/bin/hugo server -D --debug --disableFastRender --renderToDisk
