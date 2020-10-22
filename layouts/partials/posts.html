@@ -13,16 +13,18 @@
       </header>
       <div>{{- i18n "latestPosts" -}}</div>
       <ul>
-        {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
-        {{/*
-        {{- $pages := .Pages -}}
-        */}}
+        {{- $pages := where .Site.Pages "Section" "post" -}}
         {{- .Scratch.Set "pages" $pages -}}
         {{- $mainSite := .Sites.First -}}
         {{- if ne $mainSite .Site -}}
             {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) }}
         {{- end -}}
         {{- $pages = .Scratch.Get "pages" -}}
+        {{/* Filter non post pages */}}
+        {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+        {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+        {{- $pages = where $pages "Params.metaPage" "!=" true -}}
+        {{- $pages = where $pages "Date.IsZero" "==" false -}}
 
         {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
 

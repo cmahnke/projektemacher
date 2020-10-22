@@ -6,7 +6,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.2",
+    "glob": "^7.1.6",
     "jquery": "^3.5.1",
+    "lunr": "^2.3.9",
     "normalize.css": "^8.0.1",
     "ol": "^6.4.3",
     "popper.js": "^1.16.1"

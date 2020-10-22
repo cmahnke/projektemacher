@@ -47,48 +47,57 @@ defaultcontentlanguage = "de"
         target = "static"
 
     [[module.mounts]]
-        source = "blogs/kraehenbeisser/content/post"
+        source = "blogs/kraehenbeisser/content"
         target = "content/post/kraehenbeisser"
 
     [[module.mounts]]
-        source = "blogs/diapraesentation/content/post"
+        source = "blogs/diapraesentation/content"
         target = "content/post/diapraesentation"
 
     [[module.mounts]]
-        source = "blogs/flohmarktfunde/content/post"
+        source = "blogs/flohmarktfunde/content"
         target = "content/post/flohmarktfunde"
 
     [[module.mounts]]
-        source = "blogs/haesslicheplastiktiereundzeugs/content/post"
+        source = "blogs/haesslicheplastiktiereundzeugs/content"
         target = "content/post/haesslicheplastiktiereundzeugs"
 
     [[module.mounts]]
-        source = "blogs/ric-unknownartist/content/post"
+        source = "blogs/ric-unknownartist/content"
         target = "content/post/ric-unknownartist"
 
     [[module.mounts]]
-        source = "blogs/yaapb/content/post"
+        source = "blogs/yaapb/content"
         target = "content/post/yaapb"
 
     [[module.mounts]]
-        source = "blogs/kleiderbuegel/content/post"
+        source = "blogs/kleiderbuegel/content"
         target = "content/post/kleiderbuegel"
 
     [[module.mounts]]
-        source = "blogs/vorsatzpapier/content/post"
+        source = "blogs/vorsatzpapier/content"
         target = "content/post/vorsatzpapier"
 
     [[module.mounts]]
-        source = "blogs/schriftmuster/content/post"
+        source = "blogs/schriftmuster/content"
         target = "content/post/schriftmuster"
 
     [[module.mounts]]
-        source = "blogs/backsteinexpressionismus/content/post"
+        source = "blogs/backsteinexpressionismus/content"
         target = "content/post/backsteinexpressionismus"
 
+#### Add these later
 #    [[module.mounts]]
-#        source = "blogs/blaufusstoelpel/content/post"
+#        source = "blogs/blaufusstoelpel/content"
 #        target = "content/post/blaufusstoelpel"
+
+#    [[module.mounts]]
+#        source = "blogs/kinderbuecher/content"
+#        target = "content/post/kinderbuecher"
+
+#    [[module.mounts]]
+#        source = "blogs/briefsteller/content"
+#        target = "content/post/briefsteller"
 
     [[module.mounts]]
         source = "content"
@@ -167,7 +176,7 @@ defaultcontentlanguage = "de"
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
-            unsafe= true
+            unsafe = true
 
 [imaging]
     quality = 95

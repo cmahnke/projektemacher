@@ -3,7 +3,6 @@ title: "Kleiderbügel"
 description: "Alte Kleiderbügel"
 date: 2020-08-27T06:45:02+02:00
 link: "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/"
-linkPrefix: "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/"
 status: "active"
 lang:
 - de

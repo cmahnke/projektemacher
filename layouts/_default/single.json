@@ -1,13 +1,47 @@
-{"meta": {"date": "{{ .Date }}", "title": "{{ .Title | safeJS }}", "type": "{{ .Params.type }}" }, "images": {
-        {{- if eq .Params.type "hanger" -}}
-            {{- $front := .Resources.GetMatch "front*" -}}
-            {{- $large := $front.Resize "1600x" -}}
-            "front": {"src": "{{ $large.RelPermalink }}", "alt": "{{ .Title | safeJS }}" }
-            {{- $thumb := $front.Resize "330x" -}}
-            , "thumb": {"src": "{{ $thumb.RelPermalink }}"}
-          {{- with .Resources.GetMatch "back*" -}}
-              {{- $largeBack := .Resize "1600x" -}}
-              , "back": {"src": "{{ $largeBack.RelPermalink }}", "alt": "{{ .Title | safeJS }}" }
-          {{- end }}
+{
+    {{- if not .Date.IsZero -}}
+        "date": "{{ .Date }}",
+    {{- end -}}
+    {{- if ne .Description "" -}}
+        "description": {{- .Description | markdownify | jsonify -}},
+    {{- end -}}
+
+    {{- $dir := split (string (path.Dir .Path)) "/" -}}
+    {{- $prefix := index $dir 1 -}}
+    {{- $blogMetaDir := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+    {{- $postLink := split (string .Path) "/" -}}
+    {{- $linkPrefix := "" -}}
+    {{- $external := true -}}
+    {{- if and (ne $prefix nil) (ne (index $dir 0) "blog") -}}
+        {{- if not (fileExists $blogMetaDir) -}}
+            {{- $external = false -}}
+        {{- else -}}
+            {{- $blogPage := .Site.GetPage $blogMetaDir -}}
+            {{- if ($blogPage.Param "linkPrefix") -}}
+              {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+            {{- else -}}
+              {{ $linkPrefix = $blogPage.Param "link" -}}
+            {{- end -}}
         {{- end -}}
-    }, "content": "{{ .Content | chomp | safeJS }}"}
+    {{ else }}
+        {{- $external = false -}}
+    {{- end -}}
+
+    {{- if $external -}}
+        {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+        {{- $postLink = delimit $postLink "/" -}}
+        {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+
+        {{- if in .Permalink (printf "/%s/" .Language.Lang) -}}
+            {{- $postLink = printf "%s/%s" .Language.Lang $postLink -}}
+        {{- end -}}
+
+        {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+    {{ else }}
+        {{- $postLink = .Permalink -}}
+    {{- end -}}
+
+    "url": "{{ $postLink }}",
+    "title": {{- .Title | jsonify -}},
+    "content": {{- .Content | chomp | jsonify -}}
+}

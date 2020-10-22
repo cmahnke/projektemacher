@@ -2,7 +2,7 @@
 title: Über diese Seite
 slug: about
 displayinlist: false
-mataPage: true
+metaPage: true
 ---
 
 # Warum "Projektemacher"?

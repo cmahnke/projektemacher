@@ -3,7 +3,6 @@ title: "Vorsatzpapier"
 description: "This blog presents old book end paper"
 date: 2020-09-16T10:53:14+02:00
 link: https://vorsatzpapier.projektemacher.org/
-linkPrefix: https://vorsatzpapier.projektemacher.org/post/
 status: active
 lang:
 - de

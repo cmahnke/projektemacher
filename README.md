@@ -81,6 +81,12 @@ Edit `config.toml`:
 
 Make sure there is a page in `contents/blog` for the newly added blog since some metadata is pulled from there.
 
+# Remove generated IIIF directories
+
+```
+find content blogs -name info.json -print -exec dirname {} \; | xargs rm -r
+```
+
 # Running hugo
 
 ## Without watching

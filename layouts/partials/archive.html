@@ -83,16 +83,26 @@
       </div>
       <hr class="archive-hr">
       <div class="archive-content">
-          {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
+          {{- $pages := where .Site.Pages "Section" "post" -}}
+
           {{- .Scratch.Set "pages" $pages -}}
           {{- $mainSite := .Sites.First -}}
           {{- if ne $mainSite .Site -}}
               {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
           {{- end -}}
           {{- $pages = (.Scratch.Get "pages").Reverse -}}
+          {{/* Filter non post pages */}}
+          {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+          {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+          {{- $pages = where $pages "Params.metaPage" "!=" true -}}
+          {{- $pages = where $pages "Date.IsZero" "==" false -}}
 
           {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
           {{- $lastYear := (index (last 1 $pages) 0).Date.Year -}}
+          {{- if eq $firstYear 1 -}}
+            {{ warnf "%s" (index (first 1 $pages) 0) -}}
+            {{- warnf "Building archive for years %d to %d" $firstYear $lastYear -}}
+            {{- end -}}
 
           {{- range (seq $firstYear $lastYear) -}}
             {{ $year := . }}
@@ -120,32 +130,32 @@
                                 {{- range (where $yearPages ".Date.Month" "==" $month) -}}
 
                                     {{- $dir := split (string (path.Dir .Path)) "/" -}}
-                                    {{- $id := index $dir 1 -}}
+
                                     {{- $displayName := "" -}}
                                     {{- $postLink := "" -}}
-                                    {{- $prefix := "" -}}
-                                    {{- if gt (len $dir) 1 -}}
-                                      {{- $linkPrefix := "" -}}
-                                      {{- $prefix = index $dir 1 -}}
-                                      {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-                                      {{- $blogPage := .Site.GetPage $sectionHeading -}}
-                                      {{- $displayName = printf "%s: " $blogPage.Title -}}
-                                      {{- if ($blogPage.Param "linkPrefix") -}}
-                                          {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
-                                      {{- else -}}
-                                          {{ $linkPrefix = $blogPage.Param "link" -}}
-                                      {{- end -}}
-                                      {{- $postLink = split (string .Path) "/" -}}
-                                      {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
-                                      {{- $postLink = delimit $postLink "/" -}}
-                                      {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
-                                      {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+                                    {{- $linkPrefix := "" -}}
+                                    {{- $prefix := index $dir 1 -}}
+                                    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+                                    {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                                    {{- $displayName = printf "%s: " $blogPage.Title -}}
+                                    {{- if ($blogPage.Param "linkPrefix") -}}
+                                      {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+                                    {{- else -}}
+                                      {{ $linkPrefix = $blogPage.Param "link" -}}
                                     {{- end -}}
-                                    {{ $openExternal := true }}
-                                    {{- if eq $postLink "" }}
-                                      {{- $postLink = printf "#%s" $id -}}
-                                      {{ $openExternal = false }}
+                                    {{- $postLink = split (string .Path) "/" -}}
+
+                                    {{- if eq (len $dir) 2 -}}
+                                        {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
+                                    {{ else }}
+                                        {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
                                     {{- end -}}
+                                    {{- $postLink = delimit $postLink "/" -}}
+                                    {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+                                    {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+
+                                    {{- $openExternal := true -}}
+
                                     <li class="archive-link {{ $prefix }}">
                                         <div class="post-heading">
                                             <span class="date">
@@ -154,7 +164,7 @@
                                             <span class="link">
                                                 {{- $postTitle := "" -}}
                                                 {{- if eq .Title "" -}}
-                                                    {{- $postTitle = (i18n "untitlePost") -}}
+                                                    {{- $postTitle = (i18n "untitledPost") -}}
                                                 {{- else -}}
                                                     {{- $postTitle = .Title -}}
                                                 {{- end -}}

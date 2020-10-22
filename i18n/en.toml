@@ -10,7 +10,7 @@ other = "Start fullscreen mode"
 [exitFullscreen]
 other = "Exit fullscreen mode"
 
-[untitlePost]
+[untitledPost]
 other = "Untitled post"
 
 [filter]

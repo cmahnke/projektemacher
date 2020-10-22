@@ -2,7 +2,7 @@
 title: Über das Logo
 slug: logo
 displayinlist: false
-mataPage: true
+metaPage: true
 ---
 
 Das Logo entstammt **Lehmanns Allgemeinem Wohnungsanzeiger (nebst Handels- und Gewerbe-Adreßbuch für die k. k. Reichs-Haupt- und Residenzstadt) Wien, 1912 - Erster Band**. Erschienen bei **Alfred Hölder, k. u. k. Hof- und Universitäts-Buchhändler, Wien**.

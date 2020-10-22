@@ -6,6 +6,13 @@
       {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
   {{- end -}}
   {{- $pages = .Scratch.Get "pages" -}}
+
+  {{/* Filter non post pages */}}
+  {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+  {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+  {{- $pages = where $pages "Params.metaPage" "!=" true -}}
+  {{- $pages = where $pages "Date.IsZero" "==" false -}}
+
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
@@ -25,33 +32,31 @@
     {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
       <item>
         {{- $dir := split (string (path.Dir .Path)) "/" -}}
-        {{- $article := last 1 $dir -}}
-        {{- $id := index $dir 1 -}}
-        {{- $dir = first (sub (len $dir) 1) $dir -}}
-        {{- $section := first 1 $dir -}}
+
         {{- $displayName := "" -}}
         {{- $postLink := "" -}}
-        {{- $prefix := "" -}}
-        {{- if gt (len $dir) 1 -}}
-            {{- $prefix = index $dir 1 -}}
+
+        {{- $linkPrefix := "" -}}
+        {{- $prefix := index $dir 1 -}}
+        {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+
+        {{- $blogPage := .Site.GetPage $sectionHeading -}}
+        {{- $displayName = printf "%s: " $blogPage.Title -}}
+        {{- if ($blogPage.Param "linkPrefix") -}}
+          {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+        {{- else -}}
+          {{ $linkPrefix = $blogPage.Param "link" -}}
         {{- end -}}
-        {{- if gt (len $dir) 1 -}}
-          {{- $linkPrefix := "" -}}
-          {{- $prefix := index $dir 1 -}}
-          {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-          {{- $blogPage := .Site.GetPage $sectionHeading -}}
-          {{- $displayName = printf "%s: " $blogPage.Title -}}
-          {{- if ($blogPage.Param "linkPrefix") -}}
-              {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
-          {{- else -}}
-              {{ $linkPrefix = $blogPage.Param "link" -}}
-          {{- end -}}
-          {{- $postLink = split (string .Path) "/" -}}
-          {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
-          {{- $postLink = delimit $postLink "/" -}}
-          {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
-          {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+        {{- $postLink = split (string .Path) "/" -}}
+
+        {{- if eq (len $dir) 2 -}}
+            {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
+        {{ else }}
+            {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
         {{- end -}}
+        {{- $postLink = delimit $postLink "/" -}}
+        {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+        {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
         <title>{{- $displayName }}{{ .Title -}}</title>
         <link>{{ $postLink }}</link>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>

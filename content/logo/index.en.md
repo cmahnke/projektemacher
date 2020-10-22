@@ -2,7 +2,7 @@
 title: About the logo
 slug: logo
 displayinlist: false
-mataPage: true
+metaPage: true
 ---
 The Logo is from **Lehmanns Allgemeinem Wohnungsanzeiger (nebst Handels- und Gewerbe-Adreßbuch für die k. k. Reichs-Haupt- und Residenzstadt) Wien, 1912 - Erster Band** (*literally translated*: Lehmann's General Housing Gazette (together with the trade and commercial address book for the imperial capital and residence) Vienna, 1912 - first volume). Published by **Alfred Hölder, k. u. k. Hof- und Universitäts-Buchhändler, Wien** (*literally translated*: Alfred Hölder, k. u. k. Court and university bookseller, Vienna).
 

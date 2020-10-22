@@ -46,6 +46,10 @@ jobs:
       - name: Build Hugo site
         run: hugo
 
+      - name: Index and cleanup
+        run: |
+          ./scripts/post-build.sh
+
       - name: Deploy site
         uses: peaceiris/actions-gh-pages@v3
         with:

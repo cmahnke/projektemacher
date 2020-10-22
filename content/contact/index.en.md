@@ -2,7 +2,7 @@
 slug: contact
 title: Contact
 displayinlist: false
-mataPage: true
+metaPage: true
 ---
 "Projektemacher" and the linked blogs are projects by **Christian Mahnke**.
 
