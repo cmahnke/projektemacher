@@ -32,6 +32,9 @@
         {{- $postLink = delimit $postLink "/" -}}
         {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
 
+        {{/* If pages aren't contained in directories, rewrite them to directories */}}
+        {{- $postLink = replaceRE "[\\.den]{0,3}.md$" "/" $postLink -}}
+
         {{- if in .Permalink (printf "/%s/" .Language.Lang) -}}
             {{- $postLink = printf "%s/%s" .Language.Lang $postLink -}}
         {{- end -}}
