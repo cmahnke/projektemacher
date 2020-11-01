@@ -7,14 +7,16 @@ var indexFile = siteDir + '/search-index.json';
 
 var index;
 
+//See: https://lunrjs.com/guides/index_prebuilding.html
 glob(siteDir + '/**/index.json', function (err, res) {
   if (err) {
     console.log('Error', err);
   } else {
     index = lunr(function () {
-        this.ref('url')
+        this.ref('id')
         this.field('date')
         this.field('description')
+        this.field('url')
         this.field('title')
         this.field('content')
 

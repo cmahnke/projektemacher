@@ -5,6 +5,9 @@
     {{- if ne .Description "" -}}
         "description": {{- .Description | markdownify | jsonify -}},
     {{- end -}}
+    {{- if .Params.tags -}}
+        "Tags": {{- .Params.tags | jsonify -}},
+    {{- end -}}
 
     {{- $dir := split (string (path.Dir .Path)) "/" -}}
     {{- $prefix := index $dir 1 -}}
@@ -45,6 +48,8 @@
     {{- end -}}
 
     "url": "{{ $postLink }}",
+    "id": "{{ .File.UniqueID }}",
     "title": {{- .Title | jsonify -}},
-    "content": {{- .Content | chomp | jsonify -}}
+    {{- $content := .Plain | chomp -}}
+    "content": {{- $content  | jsonify -}}
 }

@@ -31,3 +31,6 @@
 [submodule "blogs/backsteinexpressionismus"]
 	path = blogs/backsteinexpressionismus
 	url = https://github.com/cmahnke/backsteinexpressionismus.git
+[submodule "blogs/blaufusstoelpel"]
+	path = blogs/blaufusstoelpel
+	url = https://github.com/cmahnke/blaufusstoelpel.git
