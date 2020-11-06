@@ -12,4 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in winter 2020.
+Will be launched in autumn 2020.

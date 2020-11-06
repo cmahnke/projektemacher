@@ -12,4 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in autumn 2020.
+In the 20ies there was an unusual architectural style that always fascinated me...

@@ -13,4 +13,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Herbst 2020 gestartet.
+Mode ist nicht nur Ausdruck des jeweils herrschenden ästhetischen Zeitgeistes...

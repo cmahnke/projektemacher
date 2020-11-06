@@ -13,4 +13,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in autumn 2020.
+Fashion is not just an expression of the prevailing aesthetic spirit of time...

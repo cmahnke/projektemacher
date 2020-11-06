@@ -12,4 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Herbst 2020 gestartet
+In den 20er Jahren gab es eine ungewöhnlichen Architekturstil, der mich immer schon fasziniert hat...
