@@ -34,3 +34,6 @@
 [submodule "blogs/blaufusstoelpel"]
 	path = blogs/blaufusstoelpel
 	url = https://github.com/cmahnke/blaufusstoelpel.git
+[submodule "static.projektemacher.org"]
+	path = static.projektemacher.org
+	url = https://github.com/cmahnke/static.projektemacher.org.git

@@ -86,11 +86,11 @@ defaultcontentlanguage = "de"
         source = "blogs/backsteinexpressionismus/content"
         target = "content/post/backsteinexpressionismus"
 
-#### Add these later
-#    [[module.mounts]]
-#        source = "blogs/blaufusstoelpel/content"
-#        target = "content/post/blaufusstoelpel"
+    [[module.mounts]]
+        source = "blogs/blaufusstoelpel/content"
+        target = "content/post/blaufusstoelpel"
 
+#### Add these later
 #    [[module.mounts]]
 #        source = "blogs/kinderbuecher/content"
 #        target = "content/post/kinderbuecher"
