@@ -37,3 +37,6 @@
 [submodule "static.projektemacher.org"]
 	path = static.projektemacher.org
 	url = https://github.com/cmahnke/static.projektemacher.org.git
+[submodule "blogs/kinderbuecher"]
+	path = blogs/kinderbuecher
+	url = https://github.com/cmahnke/kinderbuecher.git
