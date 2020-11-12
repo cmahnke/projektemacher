@@ -15,6 +15,10 @@ jobs:
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
 
+      - name: Remove unused image from sub blogs
+        run: |
+          find blogs -name '*.jpg' -exec rm {} \;
+
       - name: Setup dependencies
         run: |
           sudo apt-get install libtiff5 imagemagick
