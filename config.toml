@@ -90,11 +90,11 @@ defaultcontentlanguage = "de"
         source = "blogs/blaufusstoelpel/content"
         target = "content/post/blaufusstoelpel"
 
-#### Add these later
-#    [[module.mounts]]
-#        source = "blogs/kinderbuecher/content"
-#        target = "content/post/kinderbuecher"
+    [[module.mounts]]
+        source = "blogs/kinderbuecher/content"
+        target = "content/post/kinderbuecher"
 
+#### Add these later
 #    [[module.mounts]]
 #        source = "blogs/briefsteller/content"
 #        target = "content/post/briefsteller"
