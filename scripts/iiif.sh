@@ -34,7 +34,7 @@ else
 fi
 
 # IIFF
-for IMAGE in `ls -1 content/*/img*.jpg`
+for IMAGE in `ls -1 content/logo/img001.jpg`
 do
     OUTPUT_DIR=`dirname $IMAGE`
     IIIF_DIR=`basename $IMAGE .jpg`
