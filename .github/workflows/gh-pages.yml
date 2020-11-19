@@ -34,6 +34,9 @@ jobs:
 
       - name: Create IIIF derivates
         run: |
+          pwd
+          ls
+          ls content
           ls content/*/img*.jpg
           docker run -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest sh -c "cd ${PWD} && ./scripts/iiif.sh"
 
