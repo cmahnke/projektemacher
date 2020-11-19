@@ -24,21 +24,17 @@ jobs:
           git submodule update --init --depth 1 -j 4 themes/*
           for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; find blogs/$dir -type f -size +1M -name '*.jpg' -exec rm {} \;  ; done
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.7.8
-      - name: Install Python dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install iiif
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
           node-version: 10.22.0
 
+      - name: Create IIIF derivates
+        run: docker run -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest sh -c "cd ${PWD} && ./scripts/iiif.sh"
+
       - name: Generate Files
+        env:
+          SKIP_IIIF: yes
         run: |
           ./scripts/setup.sh
 
