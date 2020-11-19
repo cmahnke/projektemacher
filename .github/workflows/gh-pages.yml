@@ -15,6 +15,14 @@ jobs:
         run: |
           sudo apt-get install git libtiff5 imagemagick
 
+      - name: Login to GitHub Packages Docker Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.CR_PAT }}
+          logout: false
+
       - uses: actions/checkout@v2
         with:
           submodules: false  # Fetch Hugo themes (true OR recursive)
