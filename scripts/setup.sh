@@ -14,8 +14,10 @@ convert static/images/favicon-16.png static/images/favicon-32.png static/images/
 # IIIF tiles
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
 
-if [[ -z "$SKIP_IIIF" ]] ; then
+if [ -z "$SKIP_IIIF" ] ; then
     ./scripts/iiif.sh
+else
+    echo "Skipping IIIF generation"
 fi
 
 # NPM dependencies
