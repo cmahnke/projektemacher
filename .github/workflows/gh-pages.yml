@@ -11,17 +11,18 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-
-      - name: Remove unused image from sub blogs
-        run: |
-          find blogs -name '*.jpg' -exec rm {} \;
-
       - name: Setup dependencies
         run: |
-          sudo apt-get install libtiff5 imagemagick
+          sudo apt-get install git libtiff5 imagemagick
+
+      - uses: actions/checkout@v2
+        with:
+          submodules: false  # Fetch Hugo themes (true OR recursive)
+
+      - name: Checkout submodules
+        run: |
+          git submodule update --init --depth 1 -j 4 themes/*
+          for dir in `ls blogs/*`; do git submodule update --depth 1 -j 4 --init blogs/$dir ; find blogs/$dir -type f -size +1M -name '*.jpg' -exec rm {} \;  ; done
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -58,3 +59,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
+          force_orphan: true

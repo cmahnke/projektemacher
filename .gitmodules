@@ -4,7 +4,7 @@
 [submodule "blogs/kraehenbeisser"]
 	path = blogs/kraehenbeisser
 	url = https://github.com/cmahnke/kraehenbeisser.git
-[submodule "blog/diapraesentation"]
+[submodule "blogs/diapraesentation"]
 	path = blogs/diapraesentation
 	url = https://github.com/cmahnke/diapraesentation.git
 [submodule "blogs/flohmarktfunde"]
