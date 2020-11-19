@@ -22,7 +22,7 @@ jobs:
       - name: Checkout submodules
         run: |
           git submodule update --init --depth 1 -j 4 themes/*
-          for dir in `ls blogs/*`; do git submodule update --depth 1 -j 4 --init blogs/$dir ; find blogs/$dir -type f -size +1M -name '*.jpg' -exec rm {} \;  ; done
+          for dir in `ls blogs/*`; do echo "Checking out submodule $dir" ; git submodule update --depth 1 -j 4 --init $dir ; find $dir -type f -size +1M -name '*.jpg' -exec rm {} \;  ; done
 
       - name: Set up Python
         uses: actions/setup-python@v2
