@@ -1,6 +1,6 @@
 ---
 title: "Unterführungen"
-description: "Die häßlichste Schwester der autogerechten Stadt"
+description: "Die hässlichste Schwester der autogerechten Stadt"
 date: 2020-12-03T09:41:14+02:00
 link:
 status: planned
