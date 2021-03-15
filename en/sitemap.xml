@@ -1,0 +1,78 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/posts/</loc>
+	    <lastmod>2021-03-15T16:29:42+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/posts/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/posts/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/</loc>
+	    <lastmod>2021-03-15T16:29:42+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/post/schriftmuster/post/alphabete-und-zierschriften/</loc>
+	    <lastmod>2020-12-31T08:42:43+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/post/schriftmuster/post/alphabete-und-zierschriften/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/post/schriftmuster/post/alphabete-und-zierschriften/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/post/schriftmuster/post/alphabete/</loc>
+	    <lastmod>2020-12-12T07:58:43+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/post/schriftmuster/post/alphabete/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/post/schriftmuster/post/alphabete/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/post/schriftmuster/post/moderne-lateinschriften/</loc>
+	    <lastmod>2020-11-10T07:50:43+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/post/schriftmuster/post/moderne-lateinschriften/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/post/schriftmuster/post/moderne-lateinschriften/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/blogs/</loc>
+	    <lastmod>2020-10-10T14:49:14+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/blogs/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/blogs/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/post/schriftmuster/post/muster-alphabete/</loc>
+	    <lastmod>2020-10-09T16:13:43+02:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/post/schriftmuster/post/muster-alphabete/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/post/schriftmuster/post/muster-alphabete/"/>
+	  </url>
+      <url>
+          true
+	    <loc>https://projektemacher.org/en/logo/</loc>
+	    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/logo/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/logo/"/>
+	  </url>
+      <url>
+          true
+	    <loc>https://projektemacher.org/en/about/</loc>
+	    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/about/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/about/"/>
+	  </url>
+      <url>
+          false
+	    <loc>https://projektemacher.org/en/archive/</loc>
+	    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/archive/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/archive/"/>
+	  </url>
+      <url>
+          true
+	    <loc>https://projektemacher.org/en/contact/</loc>
+	    <lastmod>0001-01-01T00:00:00+00:00</lastmod>
+            <xhtml:link rel="alternate" hreflang="de" href="https://projektemacher.org/contact/"/>
+            <xhtml:link rel="alternate" hreflang="en" href="https://projektemacher.org/en/contact/"/>
+	  </url></urlset>
