@@ -21,9 +21,17 @@ So oder so ähnlich geht eine so verbreitete wie falsche These - wenn überhaupt
 
 Dieses Seite ist eine Sammlung von Blogs die jeweils meine kleinen Projekt begleiten.
 
-# TODO
+# Die Blogs
 
-Parallel zu der Realisierung weitere Blog Ideen, sollen in den nächsten Monaten die älteren Blogs zu GitHub / Hugo migriert werden. Dadurch können auch neue Beiträge aus dienen Blogs hier angezeigt werden.
+Die [Blogs](/blogs/) lassen sich in zwei verschiedene Gruppen einteilen:
+* Ressourcen ([Schriftmuster](https://schriftmuster.projektemacher.org/), [Vorsatzpapier](https://vorsatzpapier.projektemacher.org/)): Die Inhalte sind für die Nachnutzung gedacht
+* Themen (z.B. [Blaufusstölpel](https://xn--blaufusstlpel-qmb.de/), [Backsteinexpressionismus](https://backsteinexpressionismus.projektemacher.org/))
+
+Viele der Blogs präsentieren alte (hauptsächlich aus dem 20. Jahrhundert) Druckerzeugnisse (Bücher, Postkarten, Zeitschriften) aus meiner eigenen Sammlung. Gerade bei Blogs mit solchen Inhalten ist ein Ziel auch experimentell herauszufinden auf welche Weise thematisch eng umrissene optimal im Web präsentiert werden können.
+
+## TODO
+
+Parallel zu der Realisierung weitere Blog Ideen, sollen in den nächsten Monaten die bestehenden Blogs um weitere Funktionalitäten erweitert werden. Einige davon werden auch auch in den [Projektemacher Labs](https://labs.projektemacher.org/) ausprobiert.
 
 # Kolophon
 
