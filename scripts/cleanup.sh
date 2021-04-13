@@ -2,9 +2,10 @@
 
 for BLOG in `ls -1 blogs`
 do
-    echo "Cleaning $BLOG"
-    rm -rf blogs/$BLOG/docs/* blogs/$BLOG/resources/_gen/*
-    find blogs/$BLOG/content -name info.json -print -exec dirname {} \; | xargs rm -r
+    if [ -x "$BLOG/scripts/cleanup.sh" ] ; then
+        echo "Cleaning $BLOG"
+        $BLOG/scripts/cleanup.sh
+    fi
 done
 
-rm -rf docs/* resources/_gen/*
+rm -rf docs/* resources/_gen/* static/images/favicon*

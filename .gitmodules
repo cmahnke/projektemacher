@@ -43,6 +43,6 @@
 [submodule "blogs/labs.projektemacher.org"]
 	path = blogs/labs.projektemacher.org
 	url = https://github.com/cmahnke/labs.projektemacher.org.git
-[submodule "projektemacher-redirect"]
-	path = projektemacher-redirect
-	url = https://github.com/cmahnke/projektemacher-redirect.git
+[submodule "themes/projektemacher-base"]
+	path = themes/projektemacher-base
+	url = https://github.com/cmahnke/projektemacher-base.git

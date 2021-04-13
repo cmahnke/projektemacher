@@ -53,7 +53,7 @@ jobs:
           hugo-version: '0.81.0'
           extended: true
       - name: Build Hugo site
-        run: hugo
+        run: hugo --i18n-warnings
 
       - name: Index and cleanup
         run: |

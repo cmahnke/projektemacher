@@ -2,13 +2,15 @@
 [latestPosts]
 other = "Posts from the last 30 days"
 
-#Leaflet fullscreen
+# Blog status
+[active]
+other = "Active"
 
-[startFullscreen]
-other = "Start fullscreen mode"
+[inactive]
+other = "Inaktive"
 
-[exitFullscreen]
-other = "Exit fullscreen mode"
+[planned]
+other = "Planned"
 
 [untitledPost]
 other = "Untitled post"

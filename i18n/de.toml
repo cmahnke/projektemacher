@@ -3,7 +3,6 @@
 other = "Beiträge der letzten 30 Tage"
 
 # Blog status
-
 [active]
 other = "Aktiv"
 
@@ -12,21 +11,6 @@ other = "Inaktiv"
 
 [planned]
 other = "Geplant"
-
-#Leaflet fullscreen
-
-[startFullscreen]
-other = "Starte Vollbildansicht"
-
-[exitFullscreen]
-other = "Vollbildansicht verlassen"
-
-# Languages
-[en]
-other = "Englisch"
-
-[de]
-other = "Deutsch"
 
 [untitledPost]
 other = "Unbenannter Eintrag"
