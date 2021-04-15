@@ -6,6 +6,7 @@
         "description": {{- .Description | markdownify | jsonify -}},
     {{- end -}}
     {{- if .Params.tags -}}
+    {{/* TODO: Also add translated tags here */}}
         "Tags": {{- .Params.tags | jsonify -}},
     {{- end -}}
 
