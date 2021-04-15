@@ -173,6 +173,25 @@ defaultcontentlanguage = "de"
                 weight = 5
                 url = "contact/"
 
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["geojson", "gjson"]
+
+[outputFormats]
+  [outputFormats.GEOJSON]
+    mediaType = "application/json"
+    isPlainText = true
+    isHTML = false
+    baseName = "map"
+    notAlternative = true
+
+  [outputFormats.IIIF]
+    mediaType = "application/json"
+    isPlainText = true
+    isHTML = false
+    baseName = "manifest"
+    notAlternative = true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
