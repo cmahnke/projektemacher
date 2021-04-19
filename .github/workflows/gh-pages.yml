@@ -11,6 +11,12 @@ jobs:
   deploy:
     runs-on: ubuntu-18.04
     steps:
+# See https://github.com/easimon/maximize-build-space/blob/master/action.yml
+      - name: Try to free disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /opt/ghc
+# /usr/share/dotnet can also be removed if it's clear that it isn't needed by any actions
+
       - name: Setup dependencies
         run: |
           sudo apt-get install git libtiff5 imagemagick
@@ -35,7 +41,8 @@ jobs:
       - name: Checkout submodules
         run: |
           git submodule update --init --depth 1 -j 4 themes/*
-          for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; find blogs/$dir -type f -size +1M -name '*.jpg' -print -exec rm {} \;  ; done
+          for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; rm -rf blogs/$dir/.git ; find blogs/$dir -type f -size +1M -name '*.jpg' -print -exec rm {} \;  ; done
+#          ./scripts/git-checkout.sh
 
       - name: Generate Files
         env:
