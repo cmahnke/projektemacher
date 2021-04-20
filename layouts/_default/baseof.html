@@ -4,7 +4,6 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Language" content="{{ .Site.Language.Lang }}">
 
     {{- if and (eq .Kind "page") (eq .Section "blog") -}}
       {{- if and (.Params.link) (.Params.private) -}}
@@ -12,21 +11,10 @@
       {{- end -}}
     {{- end -}}
 
-    {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-    <meta name="description" content="{{ .Description | default (.Summary | default .Site.Params.description ) }}">
-    <meta name="keywords" content="{{ (delimit .Keywords ",") | default .Site.Params.keywords }}">
-
-    {{- if hasPrefix .Page.Name "404" -}}
-        <meta http-equiv="refresh" content="15; URL={{ .Site.BaseURL }}">
-    {{- end -}}
+    {{ partial "html/head/meta.html" . }}
 
     {{- template "_internal/opengraph.html" . -}}
 
-{{/*
-    {{- if .Permalink -}}
-      <base href="{{ .Permalink }}">
-    {{- end -}}
-*/}}
     <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
 
     {{- if .Permalink -}}
@@ -106,12 +94,6 @@
 
       {{ partial "footer.html" . }}
     </main>
-
-    {{ template "_internal/google_analytics.html" . }}
-
-    {{ if and .Site.Params.fathomAnalytics .Site.Params.fathomAnalytics.siteID }}
-      {{- partial "analytics/fathom" . -}}
-    {{ end }}
 
   </body>
 

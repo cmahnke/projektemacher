@@ -178,14 +178,14 @@ defaultcontentlanguage = "de"
     suffixes = ["geojson", "gjson"]
 
 [outputFormats]
-  [outputFormats.GEOJSON]
+  [outputFormats.geojson]
     mediaType = "application/json"
     isPlainText = true
     isHTML = false
     baseName = "map"
     notAlternative = true
 
-  [outputFormats.IIIF]
+  [outputFormats.iiif]
     mediaType = "application/json"
     isPlainText = true
     isHTML = false

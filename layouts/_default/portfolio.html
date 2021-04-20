@@ -1,0 +1,82 @@
+{{ define "title" }}
+  {{- if eq .Kind "term" -}}
+    {{- i18n .Data.Singular | title -}}
+    {{- print ": " -}}
+  {{- end -}}
+
+  {{- .Title }} · {{ .Site.Title -}}
+{{ end }}
+{{ define "content" }}
+    <div class="content portfolio">
+        <section class="container page">
+          <article class="portfolio">
+            <header>
+              <h1 class="header">{{ .Title }}</h1>
+            </header>
+            <div class="blog-tiles">
+                {{ $pages := where .Data.Pages "Section" .Section }}
+                {{- .Scratch.Set "pages" $pages -}}
+                {{- $mainSite := .Sites.First -}}
+                {{- if ne $mainSite .Site -}}
+                    {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
+                {{- end -}}
+                {{- $pages := .Scratch.Get "pages" -}}
+                {{- $sorted := $pages.ByParam "status" -}}
+
+                {{ range $sorted }}
+                  <div class="blog">
+                      {{- $link := "#" -}}
+                      {{- if .Params.link -}}
+                        {{- $link = .Params.link -}}
+                      {{- end -}}
+                      <a {{ if ne $link "#" -}} href="{{ $link }}"{{- end -}}>
+                          {{ $status := .Params.status }}
+                          {{ $lang := .Params.lang }}
+
+                          {{- $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" -}}
+                          {{- $preview := $screenshot.Resize "400x Lanczos jpg" -}}
+                          <div class="screenshot">
+                              <div class="ribbon ribbon-top-right {{ $status }}">
+                                   {{- $statusString := (i18n $status | humanize) -}}
+                                   <span>{{ $statusString }}
+                                       {{- if and (eq $status "inactive") (.Params.yearsActive) -}}
+                                          <em class="yearsActive"> ({{.Params.yearsActive}})</em>
+                                       {{- end -}}
+                                   </span>
+                              </div>
+                              <img src="{{ $preview.RelPermalink }}" alt="Preview">
+                              {{ $counter := 0 }}
+                              {{- range $lang -}}
+                                  {{/*
+                                  <i class="fas fa-flag lang {{ . }}" title="{{ i18n . }}"></i>
+                                  */}}
+                                  {{- $flagPos := "" -}}
+                                  {{- if gt $counter 0 -}}
+                                    {{- $flagPos = printf "left: calc(1.5em + (2.5em) * %d);" $counter -}}
+                                  {{- end -}}
+                                  <i class="lang {{ . }}" title="{{ i18n . }}" style="{{ $flagPos | safeCSS }}"></i>
+                                  {{- $counter = add $counter 1 -}}
+                              {{- end -}}
+                          </div>
+                          <div class="tile">
+                              <div class="blog-about">
+                                  <span class="blog-title">{{ .Title }}</span>
+                                  <span class="blog-description">
+                                      {{- .Description -}}
+                                  </span>
+                                  <span class="blog-content">
+                                      {{- replace .Content "<p></p>" "" | safeHTML -}}
+                                  </span>
+                              </div>
+                        </div>
+                      </a>
+                    </div>
+                {{- end -}}
+            </div>
+            <div class="portfolio-list-content">
+              {{ .Content }}
+            </div>
+          </article>
+        </section>
+    </div>
+{{ end }}
