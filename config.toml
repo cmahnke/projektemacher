@@ -1,7 +1,7 @@
 baseURL = "https://projektemacher.org/"
 languageCode = "de"
 title = "Projektemacher"
-theme = ["projektemacher-base", "hugo-coder"]
+theme = ["hugo-coder", "projektemacher-base"]
 publishDir = "docs"
 canonifyurls = true
 disableKinds = ["term", "taxonomy"]
