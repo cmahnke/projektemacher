@@ -23,7 +23,7 @@
 
     {{/* JavaScript */}}
     {{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
-    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" true -}}
+    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" false -}}
     {{- $main := resources.Get "js/main.js" | js.Build $opts -}}
     {{- $js := slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
     <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
@@ -77,7 +77,6 @@
     {{ range .AlternativeOutputFormats -}}
       {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
-    {{ hugo.Generator }}
   </head>
 
   {{ $csClass := "colorscheme-light" }}
@@ -86,15 +85,14 @@
   {{ else if eq .Site.Params.colorscheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  <body class="{{ $csClass }}">
+  <body class="{{ $csClass }} {{ if .IsHome }} home {{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
       {{ block "content" . }}{{ end }}
 
-      {{ partial "footer.html" . }}
     </main>
-
+    {{ partial "footer.html" . }}
   </body>
 
 </html>

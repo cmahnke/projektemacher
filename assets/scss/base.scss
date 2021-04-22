@@ -1,6 +1,5 @@
 @import "normalize";
 @import "bootstrap.scss";
-@import "ol";
 
 /* Variables */
 $text-font-family: Lora, Georgia, serif;
@@ -96,7 +95,7 @@ nav {
 }
 
 .content {
-    height: calc(100vh - 6.0rem);
+    /* height: calc(100vh - 6.0rem); */
     margin-bottom: 0;
     &.home, &.error404 {
         background: linear-gradient(90deg, #fff 50%, #293133 50%);
@@ -679,5 +678,34 @@ body {
     .month {
         font-size: large;
         font-weight: bold;
+    }
+}
+
+.wrapper {
+    min-height: calc(100vh - 3em);
+}
+
+footer {
+
+    background: #293133;
+    font-family: $heading-font-family;
+    margin-top: 3em;
+    max-height: 5.5em;
+
+
+    .footer-container {
+        max-width: 60%;
+        margin: auto;
+        text-align: center;
+        color: #fafafa;
+
+        p {
+            margin: unset;
+        }
+
+        a {
+            color: #fafafa;
+            text-decoration: none;
+        }
     }
 }

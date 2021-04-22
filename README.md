@@ -101,5 +101,5 @@ hugo serve -F --debug --disableFastRender  --disableLiveReload --watch=false --r
 ## Debugging `static` mounts
 
 ```
-/usr/local/bin/hugo server -D --debug --disableFastRender --renderToDisk
+hugo server -D --debug --disableFastRender --renderToDisk
 ```
