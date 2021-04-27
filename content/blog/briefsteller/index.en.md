@@ -12,4 +12,5 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in winter 2020.
+Sample letters offer an interesting insight into past communicative practices.
+Netiquette 0.1..

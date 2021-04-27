@@ -12,4 +12,5 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Winter 2020 gestartet.
+Musterbriefe bieten einen interessanten Einblick in vergangene kommunikative Gepflogenheiten.
+Netiquette 0.1 sozusagen.
