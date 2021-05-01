@@ -685,6 +685,10 @@ body {
     min-height: calc(100vh - 3em);
 }
 
+.home .wrapper {
+    min-height: 100vh;
+}
+
 footer {
 
     background: #293133;
