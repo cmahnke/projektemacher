@@ -6,7 +6,7 @@ convert -resize 1024x1024 -transparent white -density 600 "Source Files/Logo/Lab
 # Favicons
 # See https://gist.github.com/pfig/1808188
 
-SOURCE="theme/projektemacher-base/images/cm.png" OPTIONS="-transparent white static/images/favicon-128.png" ./themes/projektemacher-base/scripts/favicon.sh
+SOURCE="themes/projektemacher-base/static/images/cm.svg" OPTIONS="-transparent white static/images/favicon-128.png" ./themes/projektemacher-base/scripts/favicon.sh
 
 # IIIF tiles
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
