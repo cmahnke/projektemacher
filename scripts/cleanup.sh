@@ -5,6 +5,7 @@ do
     if [ -x "$BLOG/scripts/cleanup.sh" ] ; then
         echo "Cleaning $BLOG"
         $BLOG/scripts/cleanup.sh
+        $(cd blogs/$BLOG && git branch -d gh-pages)
     fi
 done
 

@@ -2,7 +2,7 @@
   "scripts": {
     "build": "hugo",
     "start": "hugo server -D --debug --disableFastRender --buildFuture",
-    "svgo": "node_modules/.bin/svgo -i Source\\ Files/Logo/Laborant.svg -o static/images/laborant.svg"
+    "svgo": "svgo -i Source\\ Files/Logo/Laborant.svg -o static/images/laborant.svg"
   },
   "dependencies": {
     "bootstrap": "^4.5.2",

@@ -1,6 +1,3 @@
-{{/*
-{{ if not .Site.Params.hideFooter | default false }}
-*/}}
 {{- if not .IsHome -}}
   <footer class="footer">
       {{- .Scratch.Set "footer" (printf `%s <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.` (i18n "powered_by")) -}}
