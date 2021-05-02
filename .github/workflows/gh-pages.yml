@@ -25,11 +25,6 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - name: Install required dependencies
-        run: |
-          ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
-          ./themes/projektemacher-base/scripts/github/docker-images.sh
-
       - name: Setup Node.js
         uses: actions/setup-node@v2.1.5
         with:
@@ -44,6 +39,11 @@ jobs:
           git submodule update --init --depth 1 -j 4 themes/*
           for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; rm -rf blogs/$dir/.git ; find blogs/$dir -type f -size +1M -name '*.jpg' -print -exec rm {} \;  ; done
 #          ./scripts/git-checkout.sh
+
+      - name: Install required dependencies
+        run: |
+          ./themes/projektemacher-base/scripts/github/setup-dependendies.sh
+          ./themes/projektemacher-base/scripts/github/docker-images.sh
 
       - name: Generate Files
         env:
