@@ -99,6 +99,10 @@ defaultcontentlanguage = "de"
         target = "content/post/briefsteller"
 
     [[module.mounts]]
+        source = "blogs/labs.projektemacher.org/content"
+        target = "content/post/labs.projektemacher.org"
+
+    [[module.mounts]]
         source = "content"
         target = "content"
 
@@ -126,14 +130,19 @@ defaultcontentlanguage = "de"
                 weight = 3
                 url = "archive/"
 
+#            [[languages.de.menu.main]]
+#                name = "Suche"
+#                weight = 4
+#                url = "search/"
+
             [[languages.de.menu.main]]
                 name = "Über"
-                weight = 4
+                weight = 5
                 url = "about/"
 
             [[languages.de.menu.main]]
                 name = "Kontakt"
-                weight = 5
+                weight = 6
                 url = "contact/"
 
     [languages.en]
@@ -162,14 +171,19 @@ defaultcontentlanguage = "de"
                 weight = 3
                 url = "archive/"
 
+#            [[languages.de.menu.main]]
+#                name = "Search"
+#                weight = 4
+#                url = "search/"
+
             [[languages.en.menu.main]]
                 name = "About"
-                weight = 4
+                weight = 5
                 url = "about/"
 
             [[languages.en.menu.main]]
                 name = "Contact"
-                weight = 5
+                weight = 6
                 url = "contact/"
 
 [mediaTypes]

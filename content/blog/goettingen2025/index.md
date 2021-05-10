@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Sommer 2021 gestartet.
+Wird im Herbst 2021 gestartet.

@@ -1,0 +1,8 @@
+{{ define "title" }}
+  {{ .Title }} · {{ .Site.Title }}
+{{ end }}
+{{ define "content" }}
+    {{- if ne .CurrentSection .FirstSection -}}
+        {{ partial "page.html" . }}
+    {{- end -}}
+{{ end }}

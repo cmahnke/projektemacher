@@ -27,6 +27,8 @@
             <div class="filter-list">
                 {{- $pages := where .Data.Pages "Section" "blog" -}}
                 {{- $pages = ($pages | lang.Merge (where .Sites.First.RegularPages "Section" "blog") ) -}}
+                {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+                {{- $pages = where $pages "Params.displayInList" "!=" false -}}
                 {{- $pages = where $pages "Params.status" "ne" "planned" }}
                 {{- range $pages -}}
                     {{- $dir := split (string (path.Dir .Path)) "/" -}}
@@ -92,19 +94,20 @@
           </div>
           <hr class="archive-hr">
           <div class="archive-content">
+              {{/*
               {{- $pages := where .Site.Pages "Section" "post" -}}
-
               {{- .Scratch.Set "pages" $pages -}}
               {{- $mainSite := .Sites.First -}}
               {{- if ne $mainSite .Site -}}
                   {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
               {{- end -}}
               {{- $pages = (.Scratch.Get "pages").Reverse -}}
-              {{/* Filter non post pages */}}
               {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
               {{- $pages = where $pages "Params.displayInList" "!=" false -}}
               {{- $pages = where $pages "Params.metaPage" "!=" true -}}
               {{- $pages = where $pages "Date.IsZero" "==" false -}}
+              */}}
+              {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")) -}}
 
               {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
               {{- $lastYear := (index (last 1 $pages) 0).Date.Year -}}

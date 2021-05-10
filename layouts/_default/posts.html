@@ -1,0 +1,105 @@
+{{ define "title" }}
+  {{- if eq .Kind "term" -}}
+    {{- i18n .Data.Singular | title -}}
+    {{- print ": " -}}
+  {{- end -}}
+
+  {{- .Title }} · {{ .Site.Title -}}
+{{ end }}
+{{ define "content" }}
+    <div class="content list">
+        <section class="container list">
+          <article class="posts">
+          <header>
+              <h1 class="title header">
+                {{- if eq .Kind "term" -}}
+                  {{- i18n .Data.Singular | title -}}
+                  {{- print ": " -}}
+                {{- end -}}
+
+                {{- .Title -}}
+              </h1>
+          </header>
+          <div>{{- i18n "latestPosts" -}}</div>
+          <ul>
+            {{/*
+            {{- $pages := where .Site.Pages "Section" "post" -}}
+            {{- .Scratch.Set "pages" $pages -}}
+            {{- $mainSite := .Sites.First -}}
+            {{- if ne $mainSite .Site -}}
+                {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) }}
+            {{- end -}}
+            {{- $pages = .Scratch.Get "pages" -}}
+            {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+            {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+            {{- $pages = where $pages "Params.metaPage" "!=" true -}}
+            {{- $pages = where $pages "Date.IsZero" "==" false -}}
+            */}}
+
+            {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "news")) -}}
+            {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
+
+            <li>
+              <div class="post-heading">
+                  {{- $dir := split (string (path.Dir .Path)) "/" -}}
+                  {{- $article := last 1 $dir -}}
+                  {{- $id := index $dir 1 -}}
+                  {{- $dir = first (sub (len $dir) 1) $dir -}}
+                  {{- $section := first 1 $dir -}}
+                  {{- $displayName := "" -}}
+                  {{- $postLink := "" -}}
+                  {{- $prefix := "" -}}
+                  {{- if gt (len $dir) 1 -}}
+                      {{- $prefix = index $dir 1 -}}
+                  {{- end -}}
+                  {{- if gt (len $dir) 1 -}}
+                    {{- $linkPrefix := "" -}}
+                    {{- $prefix := index $dir 1 -}}
+                    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+                    {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                    {{- $displayName = printf "%s: " $blogPage.Title -}}
+                    {{- if ($blogPage.Param "linkPrefix") -}}
+                        {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+                    {{- else -}}
+                        {{ $linkPrefix = $blogPage.Param "link" -}}
+                    {{- end -}}
+                    {{- $postLink = split (string .Path) "/" -}}
+                    {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+                    {{- $postLink = delimit $postLink "/" -}}
+                    {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+                    {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+                  {{- end -}}
+                  {{ $openExternal := true }}
+                  {{- if eq $postLink "" }}
+                    {{- $postLink = printf "#%s" $id -}}
+                    {{ $openExternal = false }}
+                  {{- end -}}
+                <span class="date">
+                    {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                </span>
+                <span class="link">
+                    <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
+                </span>
+              </div>
+              <div class="post-snippet">
+                {{ if ne .Description ""}}
+                  <span class="description">{{- .Description | markdownify -}}</span>
+                {{ else }}
+                    <span class="post-spacer">&nbsp;</span>
+                {{ end }}
+                {{ if not $openExternal }}
+                  <div class="post-content collapse collapsed" id="{{ $id }}">
+                    {{ .Content }}
+                  </div>
+                {{ end }}
+              </div>
+            </li>
+            {{ end }}
+          </ul>
+            <div class="post-list-content">
+              {{ .Content }}
+            </div>
+        </article>
+        </section>
+    </div>
+{{ end }}

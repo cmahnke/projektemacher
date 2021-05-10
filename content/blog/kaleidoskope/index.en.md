@@ -14,4 +14,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in Spring 2021.
+Will be launched in Summer 2021.

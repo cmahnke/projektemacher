@@ -15,6 +15,8 @@
             </header>
             <div class="blog-tiles">
                 {{ $pages := where .Data.Pages "Section" .Section }}
+                {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+                {{- $pages = where $pages "Params.displayInList" "!=" false -}}
                 {{- .Scratch.Set "pages" $pages -}}
                 {{- $mainSite := .Sites.First -}}
                 {{- if ne $mainSite .Site -}}
@@ -74,7 +76,7 @@
                 {{- end -}}
             </div>
             <div class="portfolio-list-content">
-              {{ .Content }}
+              {{ .Content | markdownify }}
             </div>
           </article>
         </section>

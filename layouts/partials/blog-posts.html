@@ -1,0 +1,40 @@
+{{/* Handle parameters */}}
+{{- $context := .context -}}
+{{- $type := .type -}}
+
+{{/* Get section metadata */}}
+{{ $blogs := where $context.Site.Pages "Section" "blog" }}
+
+{{/* Collect all relevant pages */}}
+{{- $pages := where $context.Site.Pages "Section" "post" -}}
+
+{{- $mainSite := $context.Sites.First -}}
+{{- if ne $mainSite $context.Site -}}
+    {{- $pages = ($pages | lang.Merge (where $mainSite.Pages "Section" "post")) -}}
+{{- end -}}
+
+{{/* Filter non post pages */}}
+{{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+{{- $pages = where $pages "Params.displayInList" "!=" false -}}
+{{- $pages = where $pages "Params.metaPage" "!=" true -}}
+{{- $pages = where $pages "Date.IsZero" "==" false -}}
+
+{{- range $filter := where $blogs (printf "Params.%s" $type) "==" false -}}
+    {{- $dir := split (string (path.Dir .Path)) "/" -}}
+    {{- $blogName := index $dir 1 -}}
+    {{- $filterPath := path.Join "post" (index $dir 1) -}}
+
+    {{- $filterPages := slice -}}
+    {{- range $p := $pages -}}
+        {{- if hasPrefix $p.File.Dir $filterPath -}}
+            {{- $filterPages = $filterPages | append $p -}}
+        {{- end -}}
+    {{- end -}}
+    {{- $pages = $pages | symdiff $filterPages -}}
+{{- end -}}
+
+{{- if eq $type "news" -}}
+    {{- $pages = where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) -}}
+{{- end -}}
+
+{{- return $pages -}}
