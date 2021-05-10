@@ -17,3 +17,9 @@ other = "Untitled post"
 
 [filter]
 other = "Filter achive contents"
+
+[search]
+other = "Search"
+
+[results]
+other = "Results for"

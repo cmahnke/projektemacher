@@ -8,5 +8,33 @@
 {{ end }}
 {{ define "content" }}
     <div class="content list search">
+        <div class="searchbox">
+
+            <div class="box">
+                <input type="search" id="search-box" class="search-input" placeholder="{{ i18n "search" }}" />
+            </div>
+            <button type="button" class="search-button">
+                <i class="search-icon"></i><span class="button-text">{{ i18n "search" }}</span>
+            </button>
+
+        </div>
+        <div class="result-list">
+        </div>
+        <script>
+            var resultElem = $('.result-list')[0];
+
+            window.onload = function() {
+                loadIndex();
+                $('#search-box').on('keydown', function (key) {
+                    if (event.keyCode == 13) {
+                        doSearch($(this).val(), resultElem, '{{ i18n "results" }}');
+                    }
+                })
+                $('.search-button').on('click', function () {
+                    doSearch($('#search-box').val(), resultElem, '{{ i18n "results" }}');
+                })
+            };
+        </script>
+
     </div>
 {{ end }}

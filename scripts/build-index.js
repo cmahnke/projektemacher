@@ -1,33 +1,28 @@
 const glob = require('glob')
 const fs = require('fs');
-var lunr = require('lunr');
+const Fuse = require('fuse.js')
 
 var siteDir = 'docs';
 var indexFile = siteDir + '/search-index.json';
+var docsFile = siteDir + '/docs.json';
 
-var index;
+// This hack is needed to get the shared index definition
+const definition = require('../assets/js/index-definition.js');
+const options = definition.options;
 
-//See: https://lunrjs.com/guides/index_prebuilding.html
-glob(siteDir + '/**/index.json', function (err, res) {
-  if (err) {
-    console.log('Error', err);
-  } else {
-    index = lunr(function () {
-        this.ref('id')
-        this.field('date')
-        this.field('description')
-        this.field('url')
-        this.field('title')
-        this.field('content')
-
-        res.forEach(function (file) {
+glob(siteDir + '/**/index.json', function(err, res) {
+    if (err) {
+        console.log('Error', err);
+    } else {
+        docs = [];
+        res.forEach(function(file) {
             console.log('Found ' + file + ', indexing');
-            this.add(JSON.parse(fs.readFileSync(file, 'utf8')))
-        }, this)
+            docs.push(JSON.parse(fs.readFileSync(file, 'utf8')))
+        });
 
-    });
+    }
+    const index = Fuse.createIndex(options.keys, docs, )
     console.log('Writing ' + indexFile);
-    fs.writeFileSync(indexFile, JSON.stringify(index), 'utf8');
+    fs.writeFileSync(indexFile, JSON.stringify({'docs': docs, 'index': index.toJSON()}), 'utf8');
 
-  }
 });

@@ -1,6 +1,7 @@
 {
     {{- if not .Date.IsZero -}}
         "date": "{{ .Date }}",
+        "displayDate": {{- trim  (partial "date.html" .) " \n" | jsonify  -}},
     {{- end -}}
     {{- if ne .Description "" -}}
         "description": {{- .Description | markdownify | jsonify -}},
@@ -50,7 +51,22 @@
 
     "url": "{{ $postLink }}",
     "id": "{{ .File.UniqueID }}",
+{{/* Additional post metadata */}}
+    {{- if .Params.description -}}
+        "description": {{- .Params.description | jsonify -}},
+    {{- else if .Params.itemDescription -}}
+        "description": {{- .Params.itemDescription | jsonify -}},
+    {{- end -}}
+    {{- if .Params.type -}}
+        "type": {{- .Params.type | jsonify -}},
+    {{- else if .Params.itemType -}}
+        "type": {{- .Params.itemType | jsonify -}},
+    {{- end -}}
+    {{- if .Params.notes -}}
+        "notes": {{- .Params.notes | jsonify -}},
+    {{- end -}}
+
     "title": {{- .Title | jsonify -}},
     {{- $content := .Plain | chomp -}}
-    "content": {{- $content  | jsonify -}}
+    "content": {{- $content | replace "\n" " " | jsonify -}}
 }

@@ -20,13 +20,11 @@
 
     {{ partial "html/head/meta.html" . }}
     {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" )) -}}
+    {{- partial "html/head/script.html" (dict "js" (partial "html/head/iiif-js.html" .)) -}}
 
-    {{/* JavaScript */}}
-    {{- $defines := dict "process.env.NODE_ENV" `"production"` -}}
-    {{- $opts := dict "targetPath" "js/main.js" "defines" $defines "minify" false -}}
-    {{- $main := resources.Get "js/main.js" | js.Build $opts -}}
-    {{- $js := slice $main | resources.Concat "js/main.js" | minify | fingerprint -}}
-    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}"></script>
+    {{- if eq .FirstSection .CurrentSection -}}
+        {{- partial "html/head/page-scripts.html" . -}}
+    {{- end -}}
 
     {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
       {{- if .Site.IsServer -}}
