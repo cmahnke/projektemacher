@@ -130,10 +130,10 @@ defaultcontentlanguage = "de"
                 weight = 3
                 url = "archive/"
 
-#            [[languages.de.menu.main]]
-#                name = "Suche"
-#                weight = 4
-#                url = "search/"
+            [[languages.de.menu.main]]
+                name = "Suche"
+                weight = 4
+                url = "search/"
 
             [[languages.de.menu.main]]
                 name = "Über"
@@ -171,10 +171,10 @@ defaultcontentlanguage = "de"
                 weight = 3
                 url = "archive/"
 
-#            [[languages.de.menu.main]]
-#                name = "Search"
-#                weight = 4
-#                url = "search/"
+            [[languages.en.menu.main]]
+                name = "Search"
+                weight = 4
+                url = "search/"
 
             [[languages.en.menu.main]]
                 name = "About"
@@ -215,3 +215,4 @@ defaultcontentlanguage = "de"
 
 [outputs]
     page = ["HTML", "JSON"]
+    section = ["HTML", "JSON"]

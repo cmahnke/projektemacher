@@ -22,7 +22,7 @@ glob(siteDir + '/**/index.json', function(err, res) {
 
     }
     const index = Fuse.createIndex(options.keys, docs, )
-    console.log('Writing ' + indexFile);
+    console.log('Writing ' + docs.length + ' entries to ' + indexFile);
     fs.writeFileSync(indexFile, JSON.stringify({'docs': docs, 'index': index.toJSON()}), 'utf8');
 
 });

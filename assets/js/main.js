@@ -36,7 +36,7 @@ function doSearch(str, elem, heading) {
 
     var html = '';
     if (heading !== undefined && heading !== '' ) {
-        html = '<div class="query">' + heading + ' "' + str + '"</div>';
+        html = '<div class="query">' + results.length + ' ' + heading + ' "' + str + '"</div>';
     }
     html += '<ul class="search-result-list">';
 

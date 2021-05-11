@@ -1,0 +1,74 @@
+{
+    {{- if not .Date.IsZero -}}
+        "date": "{{ .Date }}",
+        "displayDate": {{- trim  (partial "date.html" .) " \n" | jsonify  -}},
+    {{- end -}}
+    {{- if .Params.tags -}}
+    {{/* TODO: Also add translated tags here */}}
+        "tags": {{- .Params.tags | jsonify -}},
+    {{- end -}}
+
+    {{- $dir := split (string (path.Dir .Path)) "/" -}}
+    {{- $prefix := index $dir 1 -}}
+    {{- if ne $prefix "" -}}
+        "blog": {{- $prefix | jsonify -}},
+    {{- end -}}
+    {{- $blogMetaDir := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+    {{- $postLink := split (string .Path) "/" -}}
+    {{- $linkPrefix := "" -}}
+    {{- $external := true -}}
+    {{- if and (ne $prefix nil) (ne (index $dir 0) "blog") -}}
+        {{- if not (fileExists $blogMetaDir) -}}
+            {{- $external = false -}}
+        {{- else -}}
+            {{- $blogPage := .Site.GetPage $blogMetaDir -}}
+            {{- if ($blogPage.Param "linkPrefix") -}}
+              {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+            {{- else -}}
+              {{ $linkPrefix = $blogPage.Param "link" -}}
+            {{- end -}}
+        {{- end -}}
+    {{ else }}
+        {{- $external = false -}}
+    {{- end -}}
+
+    {{- if $external -}}
+        {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+        {{- $postLink = delimit $postLink "/" -}}
+        {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+
+        {{/* If pages aren't contained in directories, rewrite them to directories */}}
+        {{- $postLink = replaceRE "[\\.den]{0,3}.md$" "/" $postLink -}}
+
+        {{- if in .Permalink (printf "/%s/" .Language.Lang) -}}
+            {{- $postLink = printf "%s/%s" .Language.Lang $postLink -}}
+        {{- end -}}
+
+        {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+    {{ else }}
+        {{- $postLink = .Permalink -}}
+    {{- end -}}
+
+    "url": "{{ $postLink }}",
+    "id": "{{ .File.UniqueID }}",
+
+    {{/* Additional post metadata */}}
+    {{- if and .Params.description (ne .Params.description "") -}}
+        "description": {{- .Params.description | markdownify | jsonify -}},
+    {{- else if and .Params.itemDescription (ne .Params.itemDescription "") -}}
+        "description": {{- .Params.itemDescription | markdownify | jsonify -}},
+    {{- end -}}
+    {{- if and .Params.type (ne .Params.type "") -}}
+        "type": {{- .Params.type | jsonify -}},
+    {{- else if and .Params.itemType (ne .Params.itemType "") -}}
+        "type": {{- .Params.itemType | jsonify -}},
+    {{- end -}}
+    {{- if .Params.notes -}}
+        "notes": {{- .Params.notes | jsonify -}},
+    {{- end -}}
+
+    "title": {{- .Title | jsonify -}},
+    {{- $content := .Content | plainify | chomp -}}
+    {{/* replace "\n" " " | */}}
+    "content": {{- (trim $content " \n") | jsonify -}}
+}
