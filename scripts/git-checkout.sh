@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SECTIONS=$(git config --file .gitmodules -l --name-only |sed -E 's/^[^\0][^\.]*\.([^\0]*)\.[^\0][^\.]*$/\1/g')
 SECTIONS=`echo $SECTIONS | tr '\n' ':'`
