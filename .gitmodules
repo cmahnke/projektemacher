@@ -49,3 +49,6 @@
 [submodule "blogs/briefsteller"]
 	path = blogs/briefsteller
 	url = https://github.com/cmahnke/briefsteller.git
+[submodule "blogs/christianmahnke"]
+	path = blogs/christianmahnke
+	url = https://github.com/cmahnke/christianmahnke.git
