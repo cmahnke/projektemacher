@@ -29,6 +29,10 @@ Die [Blogs](/blogs/) lassen sich in zwei verschiedene Gruppen einteilen:
 
 Viele der Blogs präsentieren alte (hauptsächlich aus dem 20. Jahrhundert) Druckerzeugnisse (Bücher, Postkarten, Zeitschriften) aus meiner eigenen Sammlung. Gerade bei Blogs mit solchen Inhalten ist ein Ziel auch experimentell herauszufinden auf welche Weise thematisch eng umrissene optimal im Web präsentiert werden können.
 
+# Instagram
+
+Seit Juni 2021 gibt es auch einen <i class="insta"></i> [Instagram Kanal](https://www.instagram.com/projektemacher/), der ab und zu objekte aus meinen Sammlungen und kleinere Projekte präsentiert.
+
 ## TODO
 
 Parallel zu der Realisierung weitere Blog Ideen, sollen in den nächsten Monaten die bestehenden Blogs um weitere Funktionalitäten erweitert werden. Einige davon werden auch auch in den [Projektemacher Labs](https://labs.projektemacher.org/) ausprobiert.

@@ -224,6 +224,7 @@ article header h1.header {
             border-radius: 0.3rem;
             background-color: #fff;
             box-shadow: 0 0.5rem 1rem 0 rgba(0,0,0,.19), 0 0.3rem 0.3rem -0.1rem rgba(0,0,0,.23);
+            transition: all .4s;
 
             &:hover {
                 transform: scale(1.05);
@@ -401,6 +402,7 @@ article header h1.header {
 .list ul {
     li {
         margin-bottom: 0.8em;
+        flex-direction: column;
 
         .post-heading {
             display: flex;
@@ -808,4 +810,13 @@ footer {
     height: 2.7em;
     margin-right: 1rem;
     /* object-fit: contain' */
+}
+
+.insta:after {
+    display: inline-block;
+    width: 1.6em;
+    height: 1.6em;
+    line-height: 2em;
+    content: url($insta-dark);
+    vertical-align: sub;
 }

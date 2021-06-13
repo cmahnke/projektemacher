@@ -21,6 +21,10 @@ That's a myth that one can hear one quite often. If anything similar ever happen
 
 This page is an umbrella for some of my projects, that made it into a blog.
 
+# Instagram
+
+Since June 2021 there also is an <i class="insta"></i> [Instagram channel](https://www.instagram.com/projektemacher/), to presents objects from my collections and smaller projects.
+
 # TODO
 
 Additionally to implementing more blog ideas, the older ones are scheduled to be migrated to GitHub / Hugo in the next few months. This means that new posts from serving blogs can also be displayed here.

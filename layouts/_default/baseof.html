@@ -20,7 +20,7 @@
 
     {{ partial "html/head/meta.html" . }}
     {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" )) -}}
-    {{- partial "html/head/script.html" (dict "js" (partial "html/head/iiif-js.html" .)) -}}
+    {{- partial "html/head/script.html" . -}}
 
     {{- if eq .FirstSection .CurrentSection -}}
         {{- partial "html/head/page-scripts.html" . -}}
