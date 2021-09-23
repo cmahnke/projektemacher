@@ -5,7 +5,7 @@
     "svgo": "svgo -i Source\\ Files/Logo/Laborant.svg -o static/images/laborant.svg"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
+    "bootstrap": "^5.1.1",
     "fuse.js": "^6.4.6",
     "glob": "^7.1.7",
     "jquery": "^3.5.1",
