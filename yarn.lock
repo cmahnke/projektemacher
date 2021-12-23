@@ -167,10 +167,10 @@ fs.realpath@^1.0.0:
   resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
   integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
 
-fuse.js@^6.4.6:
-  version "6.4.6"
-  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.4.6.tgz#62f216c110e5aa22486aff20be7896d19a059b79"
-  integrity sha512-/gYxR/0VpXmWSfZOIPS3rWwU8SHgsRTwWuXhyb2O6s7aRuVtHtxCkR33bNYu3wyLyNx/Wpv0vU7FZy8Vj53VNw==
+fuse.js@^6.5.2:
+  version "6.5.2"
+  resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.5.2.tgz#3c775c456b888bc8b3a0ca10aeadef507a2790d0"
+  integrity sha512-FTJXjzNg/HqEceelMCmQgDSuZ2HPpxlgV8YZc6ptuC51DiEHhc7H1E17XnH52WUPs8wdMAbG+PQwAMFnsI9ysA==
 
 geotiff@^1.0.8:
   version "1.0.8"
