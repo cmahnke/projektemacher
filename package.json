@@ -6,7 +6,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.6.1",
-    "fuse.js": "^6.5.3",
+    "fuse.js": "^6.6.2",
     "glob": "^8.0.3",
     "jquery": "^3.5.1",
     "normalize.css": "^8.0.1",
