@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3.5.0
         with:
-          node-version: 10.22.0
+          node-version: lts/fermium
 
       - uses: actions/checkout@v3
         with:
