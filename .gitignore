@@ -1,6 +1,8 @@
 node_modules
 docs
 resources
+.hugo_build.lock
+hugo_stats.json
 static/images/laborant.svg
 content/logo/img001.jpg
 content/logo/img001
