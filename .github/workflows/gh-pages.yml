@@ -9,7 +9,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-22.04
     steps:
 # See https://github.com/easimon/maximize-build-space/blob/master/action.yml
       - name: Try to free disk space
@@ -28,7 +28,12 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3.5.0
         with:
-          node-version: lts/fermium
+          node-version-file: '.nvmrc'
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
       - uses: actions/checkout@v3
         with:
@@ -58,10 +63,10 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.5.0
         with:
-          hugo-version: '0.83.1'
+          hugo-version: '0.104.3'
           extended: true
       - name: Build Hugo site
-        run: hugo --i18n-warnings
+        run: hugo --printI18nWarnings --printUnusedTemplates
 
       - name: Index and cleanup
         run: |
