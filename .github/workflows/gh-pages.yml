@@ -25,16 +25,6 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3.5.0
-        with:
-          node-version-file: '.nvmrc'
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-
       - uses: actions/checkout@v3
         with:
           submodules: false  # Fetch Hugo themes (true OR recursive)
@@ -45,9 +35,19 @@ jobs:
           for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; rm -rf blogs/$dir/.git ; find blogs/$dir -type f -size +1M -name '*.jpg' -print -exec rm {} \;  ; done
 #          ./scripts/git-checkout.sh
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
       - name: Install required dependencies
         run: |
           ./scripts/github-setup.sh
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3.5.0
+        with:
+          node-version-file: '.nvmrc'
 
       - name: Generate Files
         env:
