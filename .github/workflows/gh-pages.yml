@@ -47,8 +47,7 @@ jobs:
 
       - name: Install required dependencies
         run: |
-          ./themes/projektemacher-base/scripts/github/setup-dependencies.sh
-          ./themes/projektemacher-base/scripts/github/docker-images.sh
+          ./scripts/github-setup.sh
 
       - name: Generate Files
         env:
