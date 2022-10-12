@@ -4,8 +4,10 @@
 
 for BLOG in `ls -1 blogs`
 do
-  if [ -d blogs/$BLOG/themes/projektemacher-base ]
-  cd blogs/$BLOG/themes/projektemacher-base
-  git pull
-  cd ../../../..
+  if [ -d blogs/$BLOG/themes/projektemacher-base ] ; then
+    cd blogs/$BLOG/themes/projektemacher-base
+    echo "Updating 'projektemacher-base' theme for ${BLOG}"
+    git pull origin main
+    cd ../../../..
+  fi
 done
