@@ -52,3 +52,6 @@
 [submodule "blogs/christianmahnke"]
 	path = blogs/christianmahnke
 	url = https://github.com/cmahnke/christianmahnke.git
+[submodule "blogs/merch.projektemacher"]
+	path = blogs/merch.projektemacher
+	url = https://github.com/cmahnke/merch.projektemacher.git
