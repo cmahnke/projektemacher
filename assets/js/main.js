@@ -2,6 +2,7 @@ window.$ = window.jQuery = require('jquery');
 const Fuse = require('fuse.js')
 //require('bootstrap');
 import 'bootstrap';
+require('./iiif-image-viewer');
 
 // This hack is needed to get the shared index definition
 const definition = require('./index-definition.js');
