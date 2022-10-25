@@ -149,8 +149,13 @@ defaultcontentlanguage = "de"
                 url = "about/"
 
             [[languages.de.menu.main]]
-                name = "Kontakt"
+                name = "Merch"
                 weight = 6
+                url = "https://merch.projektemacher.org/"
+
+            [[languages.de.menu.main]]
+                name = "Kontakt"
+                weight = 7
                 url = "contact/"
 
     [languages.en]
@@ -190,8 +195,13 @@ defaultcontentlanguage = "de"
                 url = "about/"
 
             [[languages.en.menu.main]]
-                name = "Contact"
+                name = "Merch"
                 weight = 6
+                url = "https://merch.projektemacher.org/en/"
+
+            [[languages.en.menu.main]]
+                name = "Contact"
+                weight = 7
                 url = "contact/"
 
 [mediaTypes]
