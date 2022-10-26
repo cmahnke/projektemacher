@@ -1,6 +1,6 @@
 ---
 title: "Projektemacher Merch"
-description: "Experimente zu Inhalten und Blogs"
+description: "Produktentwürfe aus meinen Sammlungen"
 date: 2022-10-26T06:41:14+01:00
 link: https://merch.projektemacher.org/
 archive: true
@@ -16,4 +16,4 @@ resources:
     description: "Screenshot"
 ---
 
-Various product designs are presented here...
+Hier werden verschieden Produktentwürfe präsentiert...
