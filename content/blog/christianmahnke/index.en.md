@@ -3,8 +3,8 @@ title: "ChristianMahnke.de"
 description: "About me"
 date: 2021-04-28T10:41:14+01:00
 link: https://christianmahnke.de/
-archive: false
-news: false
+archive: true
+news: true
 displayinlist: false
 lang:
 - de

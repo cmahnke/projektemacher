@@ -1,8 +1,8 @@
 ---
-title: "Projektemacher Labs"
+title: "Projektemacher Merch"
 description: "Experimente zu Inhalten und Blogs"
-date: 2021-04-28T10:41:14+01:00
-link: https://labs.projektemacher.org/
+date: 2022-10-26T06:41:14+01:00
+link: https://merch.projektemacher.org/
 archive: true
 news: true
 displayinlist: false
@@ -16,4 +16,4 @@ resources:
     description: "Screenshot"
 ---
 
-Im Lab werden neue Inhaltstypen ausprobiert und dann auf bestehende Blogs ausgerollt...
+Various product designs are presented here...

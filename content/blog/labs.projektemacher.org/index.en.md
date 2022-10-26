@@ -3,9 +3,8 @@ title: "Projektemacher Labs"
 description: "Experiments on media types and blogs"
 date: 2021-04-28T10:41:14+01:00
 link: https://labs.projektemacher.org/
-
-archive: false
-news: false
+archive: true
+news: true
 displayinlist: false
 lang:
 - de
