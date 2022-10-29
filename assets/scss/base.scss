@@ -619,6 +619,9 @@ body {
     .year-header {
         line-height: unset;
         display: inline;
+        .count {
+            display:none;
+        }
     }
 
     ul.month-section,

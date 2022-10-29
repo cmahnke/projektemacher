@@ -23,7 +23,7 @@
                     {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
                 {{- end -}}
                 {{- $pages := .Scratch.Get "pages" -}}
-                {{- $sorted := $pages.ByParam "status" -}}
+                {{- $sorted := (sort $pages ".Date" "asc").ByParam "status" -}}
 
                 {{ range $sorted }}
                   <div class="blog">
