@@ -19,6 +19,8 @@
 {{- $pages = where $pages "Params.metaPage" "!=" true -}}
 {{- $pages = where $pages "Date.IsZero" "==" false -}}
 
+{{/* TODO: Also apply filters from blog config (see _default/archive.html) */}}
+
 {{- range $filter := where $blogs (printf "Params.%s" $type) "==" false -}}
     {{- $dir := split (string (path.Dir .Path)) "/" -}}
     {{- $blogName := index $dir 1 -}}
@@ -26,6 +28,9 @@
 
     {{- $filterPages := slice -}}
     {{- range $p := $pages -}}
+        {{- if and (isset .Params $type) (eq (.Params.Get $type) false) -}}
+            {{- continue -}}
+        {{- end -}}
         {{- if hasPrefix $p.File.Dir $filterPath -}}
             {{- $filterPages = $filterPages | append $p -}}
         {{- end -}}

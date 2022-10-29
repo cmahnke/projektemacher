@@ -137,7 +137,6 @@
 
                                     <span class="month">{{ $monthName }}</span>
                                     {{- range (where $yearPages ".Date.Month" "==" $month) -}}
-
                                         {{- $dir := split (string (path.Dir .Path)) "/" -}}
 
                                         {{- $displayName := "" -}}
