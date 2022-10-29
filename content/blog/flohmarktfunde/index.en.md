@@ -1,7 +1,7 @@
 ---
 title: "Flohmarktfunde"
 description: Findings from flea markets and junk shops
-date: 2020-08-07T09:05:01+02:00
+date: 2014-06-30T23:22:13Z
 link: https://flohmarktfunde.projektemacher.org/
 status: active
 #yearsActive: 2014 - 2016

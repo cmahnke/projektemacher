@@ -1,7 +1,7 @@
 ---
 title: "Vorsatzpapier"
 description: "Dieses Blog präsentiert alte Vorsatzpapiere"
-date: 2020-09-16T10:53:14+02:00
+date: 2020-08-05T19:36:07+02:00
 link: https://vorsatzpapier.projektemacher.org/
 status: active
 lang:

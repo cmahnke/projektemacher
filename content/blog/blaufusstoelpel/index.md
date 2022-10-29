@@ -1,7 +1,7 @@
 ---
 title: "Blaufußtölpel"
 description: "Ein Blog über historische Mode"
-date: 2020-08-11T10:05:20+02:00
+date: 2020-07-28T16:51:27+02:00
 private: true
 link: "https://xn--blaufusstlpel-qmb.de/"
 status: active

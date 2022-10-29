@@ -1,7 +1,7 @@
 ---
 title: "Projektemacher"
 description: "Überblog (dieses Blog)"
-date: 2020-08-11T16:10:14+02:00
+date: 2020-08-08T09:23:46+02:00
 private: true
 link: "https://projektemacher.org/"
 linkPrefix: ""

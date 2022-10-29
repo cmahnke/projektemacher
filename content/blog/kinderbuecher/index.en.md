@@ -1,7 +1,7 @@
 ---
 title: "Kinderbücher"
 description: "Old beautiful and questionable children's books"
-date: 2020-10-02T17:30:20+02:00
+date: 2020-08-05T19:36:07+02:00
 link: "https://xn--kinderbcher-zhb.projektemacher.org/"
 status: active
 lang:

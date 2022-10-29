@@ -1,7 +1,7 @@
 ---
 title: "Diapraesentation"
 description: "Moderne Präsentationen mit alter Technik"
-date: 2020-08-07T09:02:01+02:00
+date: 2013-08-28T02:32:00Z
 link: https://diapraesentation.projektemacher.org/
 status: inactive
 yearsActive: 2013 - 2015

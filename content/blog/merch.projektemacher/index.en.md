@@ -2,7 +2,7 @@
 title: "Projektemacher Merch"
 description: "Product designs for my collections"
 date: 2022-10-26T06:41:14+01:00
-link: https://merch.projektemacher.org/
+link: "https://merch.projektemacher.org/"
 archive: true
 news: true
 displayinlist: false

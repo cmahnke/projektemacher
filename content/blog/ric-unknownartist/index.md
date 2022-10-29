@@ -1,7 +1,7 @@
 ---
 title: "Ric - An unknown artist"
 description: "Dieses Blog begibt sich auf die Spuren eines unbekannten Künstlers - Ric"
-date: 2020-08-07T09:16:14+02:00
+date: 2019-03-27T19:30:39Z
 link: https://ric-unknownartist.projektemacher.org/
 status: active
 private: true

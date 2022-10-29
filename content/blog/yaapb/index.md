@@ -1,7 +1,7 @@
 ---
 title: "Yaapb"
 description: "Yet another analog photo blog"
-date: 2020-08-07T09:01:32+02:00
+date:  2016-02-23T22:54:03Z
 link: https://yaapb.projektemacher.org/
 status: active
 private: true
