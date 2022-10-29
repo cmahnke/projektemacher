@@ -27,10 +27,20 @@
             <div class="filter-list">
                 {{- $pages := where .Data.Pages "Section" "blog" -}}
                 {{- $pages = ($pages | lang.Merge (where .Sites.First.RegularPages "Section" "blog") ) -}}
-                {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-                {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-                {{- $pages = where $pages "Params.status" "ne" "planned" }}
+                {{- $pages = sort $pages ".Title" "asc" -}}
                 {{- range $pages -}}
+                    {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
+                        {{- continue -}}
+                    {{/* (and (isset .Params "private") (eq .Params.private true)) */}}
+                    {{- else if and (isset .Params "status") (eq .Params.status "planned") -}}
+                        {{- continue -}}
+                    {{- end -}}
+                    {{- if not (isset .Params "archive") -}}
+                        {{- if or (and (isset .Params "displayinlist") (ne .Params.displayinlist false)) (and (isset .Params "displayInList") (ne .Params.displayInList false)) -}}
+                            {{- continue -}}
+                        {{- end -}}
+                    {{- end -}}
+
                     {{- $dir := split (string (path.Dir .Path)) "/" -}}
                     {{- $prefix := index $dir 1 -}}
                     <div class="filter">
@@ -94,19 +104,6 @@
           </div>
           <hr class="archive-hr">
           <div class="archive-content">
-              {{/*
-              {{- $pages := where .Site.Pages "Section" "post" -}}
-              {{- .Scratch.Set "pages" $pages -}}
-              {{- $mainSite := .Sites.First -}}
-              {{- if ne $mainSite .Site -}}
-                  {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
-              {{- end -}}
-              {{- $pages = (.Scratch.Get "pages").Reverse -}}
-              {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-              {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-              {{- $pages = where $pages "Params.metaPage" "!=" true -}}
-              {{- $pages = where $pages "Date.IsZero" "==" false -}}
-              */}}
               {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")) -}}
 
               {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
@@ -149,6 +146,10 @@
                                         {{- $prefix := index $dir 1 -}}
                                         {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
                                         {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                                        {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
+                                        {{- if in $prefix "." -}}
+                                            {{- $blogPage = .Site.GetPage (printf "%s/index.md" $sectionHeading) -}}
+                                        {{- end -}}
                                         {{- $displayName = printf "%s: " $blogPage.Title -}}
                                         {{- if ($blogPage.Param "linkPrefix") -}}
                                           {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
@@ -180,15 +181,15 @@
                                                     {{- else -}}
                                                         {{- $postTitle = .Title -}}
                                                     {{- end -}}
-                                                    <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ $postTitle -}}</a>
+                                                    <a class="title" href="{{ $postLink }}" {{- if $openExternal }} target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ $postTitle -}}</a>
                                                 </span>
                                             </div>
                                         </li>
-                                    {{ end }}
+                                    {{- end -}}
                                 </ul>
                               </li>
-                            {{end }}
-                        {{ end }}
+                            {{- end -}}
+                        {{- end -}}
                     </ul>
                 {{- end -}}
               {{- end -}}
