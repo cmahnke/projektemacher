@@ -22,6 +22,10 @@
             {{- $external = false -}}
         {{- else -}}
             {{- $blogPage := .Site.GetPage $blogMetaDir -}}
+            {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
+            {{- if in $prefix "." -}}
+                {{- $blogPage = .Site.GetPage (printf "%s/index.md" $blogMetaDir) -}}
+            {{- end -}}
             {{- if ($blogPage.Param "linkPrefix") -}}
               {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
             {{- else -}}
