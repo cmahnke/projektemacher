@@ -146,9 +146,15 @@
                                         {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
                                         {{- $blogPage := .Site.GetPage $sectionHeading -}}
                                         {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
-                                        {{- if in $prefix "." -}}
+                                        {{- if and (in $prefix ".") (eq (printf "%T" $blogPage) "*page.nopPage") -}}
                                             {{- $blogPage = .Site.GetPage (printf "%s/index.md" $sectionHeading) -}}
                                         {{- end -}}
+                                        {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+                                            {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+                                            {{- $sectionHeading = "" -}}
+                                            {{- $prefix = "projektemacher" -}}
+                                        {{- end -}}
+
                                         {{- $displayName = printf "%s: " $blogPage.Title -}}
                                         {{- if ($blogPage.Param "linkPrefix") -}}
                                           {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}

@@ -620,7 +620,8 @@ body {
         line-height: unset;
         display: inline;
         .count {
-            display:none;
+            color: gray;
+            margin-left: .6rem;
         }
     }
 

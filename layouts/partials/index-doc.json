@@ -13,18 +13,23 @@
     {{- if ne $prefix "" -}}
         "blog": {{- $prefix | jsonify -}},
     {{- end -}}
-    {{- $blogMetaDir := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
     {{- $postLink := split (string .Path) "/" -}}
     {{- $linkPrefix := "" -}}
     {{- $external := true -}}
     {{- if and (ne $prefix nil) (ne (index $dir 0) "blog") -}}
-        {{- if not (fileExists $blogMetaDir) -}}
+        {{- if not (fileExists $sectionHeading) -}}
             {{- $external = false -}}
         {{- else -}}
-            {{- $blogPage := .Site.GetPage $blogMetaDir -}}
+            {{- $blogPage := .Site.GetPage $sectionHeading -}}
             {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
-            {{- if in $prefix "." -}}
-                {{- $blogPage = .Site.GetPage (printf "%s/index.md" $blogMetaDir) -}}
+            {{- if and (in $prefix ".") (eq (printf "%T" $blogPage) "*page.nopPage") -}}
+                {{- $blogPage = .Site.GetPage (printf "%s/index.md" $sectionHeading) -}}
+            {{- end -}}
+            {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+                {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+                {{- $sectionHeading = "" -}}
+                {{- $prefix = "projektemacher" -}}
             {{- end -}}
             {{- if ($blogPage.Param "linkPrefix") -}}
               {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
