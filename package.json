@@ -14,6 +14,6 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
-    "svgo": "^3.0.1"
+    "svgo": "^3.0.2"
   }
 }
