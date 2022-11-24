@@ -4,7 +4,8 @@
 
 for BLOG in `ls -1 blogs`
 do
+  echo "-> Updating $BLOG"
   cd blogs/$BLOG
-  git pull
+  git pull origin main
   cd ../..
 done
