@@ -1,0 +1,8 @@
+{{- $src := .Get "src" -}}
+{{- $share := false -}}
+{{- if (.Get "share") -}}
+  {{- $share = (.Get "share") -}}
+{{- end -}}
+{{- $downloadURL := .Get "downloadURL" -}}
+
+{{- partial "iiif/_iiif-image.html" (dict "infoJson" $src "share" $share "downloadURL" $downloadURL) -}}
