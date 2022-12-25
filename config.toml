@@ -16,7 +16,7 @@ defaultcontentlanguage = "de"
     info = "Blogfabrik"
     logoUrl1 = "/images/laborant.svg"
     logoUrl2 = "/images/laborant.svg"
-    logoLink = "logo"
+    logoLink = "logo/"
     footercontent = ""
 
     hideFooter = true
