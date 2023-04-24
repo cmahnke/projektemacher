@@ -204,11 +204,6 @@ foreground-child@^3.1.0:
     cross-spawn "^7.0.0"
     signal-exit "^4.0.1"
 
-fs.realpath@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/fs.realpath/-/fs.realpath-1.0.0.tgz#1504ad2523158caa40db4a2787cb01411994ea4f"
-  integrity sha1-FQStJSMVjKpA20onh8sBQRmU6k8=
-
 fuse.js@^6.6.2:
   version "6.6.2"
   resolved "https://registry.yarnpkg.com/fuse.js/-/fuse.js-6.6.2.tgz#fe463fed4b98c0226ac3da2856a415576dc9a111"
@@ -227,13 +222,12 @@ geotiff@^2.0.7:
     web-worker "^1.2.0"
     xml-utils "^1.0.2"
 
-glob@^10.2.1:
-  version "10.2.1"
-  resolved "https://registry.yarnpkg.com/glob/-/glob-10.2.1.tgz#44288e9186b5cd5baa848728533ba21a94aa8f33"
-  integrity sha512-ngom3wq2UhjdbmRE/krgkD8BQyi1KZ5l+D2dVm4+Yj+jJIBp74/ZGunL6gNGc/CYuQmvUBiavWEXIotRiv5R6A==
+glob@^10.2.2:
+  version "10.2.2"
+  resolved "https://registry.yarnpkg.com/glob/-/glob-10.2.2.tgz#ce2468727de7e035e8ecf684669dc74d0526ab75"
+  integrity sha512-Xsa0BcxIC6th9UwNjZkhrMtNo/MnyRL8jGCP+uEwhA5oFOCY1f2s1/oNKY47xQ0Bg5nkjsfAEIej1VeH62bDDQ==
   dependencies:
     foreground-child "^3.1.0"
-    fs.realpath "^1.0.0"
     jackspeak "^2.0.3"
     minimatch "^9.0.0"
     minipass "^5.0.0"
