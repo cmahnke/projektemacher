@@ -7,10 +7,10 @@
   "dependencies": {
     "bootstrap": "^4.6.2",
     "fuse.js": "^6.6.2",
-    "glob": "^9.3.4",
-    "jquery": "^3.6.4",
+    "glob": "^10.2.7",
+    "jquery": "^3.7.0",
     "normalize.css": "^8.0.1",
-    "ol": "^7.3.0",
+    "ol": "^7.4.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
