@@ -25,7 +25,7 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           submodules: false  # Fetch Hugo themes (true OR recursive)
 
