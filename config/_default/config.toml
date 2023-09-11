@@ -1,0 +1,24 @@
+[params]
+    author = "Christian Mahnke"
+    homeTitle = "Projektemacher"
+    description = "Blog Potpourri"
+    keywords = "blog, book, digitization, history, cultural history"
+    info = "Blogfabrik"
+    logoUrl1 = "/images/laborant.svg"
+    logoUrl2 = "/images/laborant.svg"
+    logoLink = "logo/"
+    footercontent = ""
+
+    hideFooter = true
+    hideCredits = true
+    hideCopyright = true
+    since = 2020
+    news = 10
+
+    colorscheme = "light"
+
+    favicon_16 = "/images/favicon-16.png"
+    favicon_32 = "/images/favicon-32.png"
+    favicon_svg = "/images/cm.svg"
+    stylesheets = []
+    #stylesheets = ["https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"]
