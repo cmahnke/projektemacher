@@ -1,6 +1,7 @@
 node_modules
 docs
 resources
+patches
 .hugo_build.lock
 hugo_stats.json
 static/images/laborant.svg
@@ -12,4 +13,5 @@ yarn-error.log
 static/images/img*
 static/images/laborant.png
 static/iiif
+static/pdfjs
 projektemacher.ics
