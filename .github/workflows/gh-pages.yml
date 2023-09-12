@@ -11,13 +11,19 @@ jobs:
   deploy:
     runs-on: ubuntu-22.04
     steps:
-      - name: Maximize build space
-        uses: easimon/maximize-build-space@master
-        with:
-          root-reserve-mb: 4096
-          remove-android: 'true'
-          remove-haskell: 'true'
-          remove-dotnet: 'true'
+#      - name: Maximize build space
+#        uses: easimon/maximize-build-space@master
+#        with:
+#          root-reserve-mb: 4096
+#          temp-reserve-mb: 1096
+#          remove-android: 'true'
+#          remove-haskell: 'true'
+#          remove-codeql: 'true'
+#          remove-dotnet: 'true'
+
+      - name: Free some disk space
+        run: |
+          sudo rm -rf /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
 
       - name: Login to GitHub Packages Docker Registry
         uses: docker/login-action@v2.2.0
