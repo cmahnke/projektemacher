@@ -17,6 +17,7 @@
     "svgo": "^3.0.2"
   },
   "resolutions": {
-    "string-width": "^6.1.0"
+    "string-width": "^6.1.0",
+    "@isaacs/cliui": "npm:cliui@8.0.1"
   }
 }
