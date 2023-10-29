@@ -12,17 +12,17 @@
           <article class="portfolio">
 
             {{ $pages := where .Data.Pages "Section" .Section }}
-            {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-            {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-            {{- $sites := where $pages "Params.type" "==" "site" -}}
-            {{- $sites = (sort $sites ".Title" "asc") -}}
-            {{- $pages = where $pages "Params.type" "!=" "site" -}}
             {{- .Scratch.Set "pages" $pages -}}
             {{- $mainSite := .Sites.First -}}
             {{- if ne $mainSite .Site -}}
                 {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
             {{- end -}}
             {{- $pages := .Scratch.Get "pages" -}}
+            {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+            {{- $pages = where $pages "Params.displayInList" "!=" false -}}
+            {{- $sites := where $pages "Params.type" "==" "site" -}}
+            {{- $sites = (sort $sites ".Title" "asc") -}}
+            {{- $pages = where $pages "Params.type" "!=" "site" -}}
             {{- $sorted := (sort $pages ".Date" "asc").ByParam "status" -}}
 
             {{- if ($sites | len) -}}

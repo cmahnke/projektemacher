@@ -3,6 +3,7 @@ title: "Projektemacher Merch"
 description: "Produktentwürfe aus meinen Sammlungen"
 date: 2022-10-26T06:41:14+01:00
 link: "https://merch.projektemacher.org/"
+type: site
 archive: true
 news: true
 displayinlist: false
