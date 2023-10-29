@@ -209,6 +209,7 @@ article header h1.header {
 }
 
 .portfolio {
+    .portfolio-tiles,
     .blog-tiles {
         margin: auto;
         display: flex;
@@ -387,6 +388,7 @@ article header h1.header {
         }
     }
     @media only screen and (max-width: 768px) {
+        .portfolio-tiles,
         .blog-tiles {
             .blog {
                 width: 80%;

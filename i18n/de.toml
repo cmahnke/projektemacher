@@ -23,3 +23,9 @@ other = "Suchen"
 
 [results]
 other = "Ergebnisse für"
+
+[blogs]
+other = "Blogs"
+
+[sites]
+other = "Webseiten"

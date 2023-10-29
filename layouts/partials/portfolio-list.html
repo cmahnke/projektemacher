@@ -1,0 +1,53 @@
+<div class="blog-tiles portfolio-tiles">
+    {{ range . }}
+      <div class="blog">
+          {{- $link := "#" -}}
+          {{- if .Params.link -}}
+            {{- $link = .Params.link -}}
+          {{- end -}}
+          <a {{ if ne $link "#" -}} href="{{ $link }}"{{- end -}}>
+              {{ $status := .Params.status }}
+              {{ $lang := .Params.lang }}
+
+              {{- $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" -}}
+              {{- $preview := $screenshot.Resize "400x Lanczos jpg" -}}
+              <div class="screenshot">
+                  {{- if and (ne $status "") (ne $status nil) -}}
+                    <div class="ribbon ribbon-top-right {{ $status }}">
+                         {{- $statusString := (i18n $status | humanize) -}}
+                         <span>{{ $statusString }}
+                             {{- if and (eq $status "inactive") (.Params.yearsActive) -}}
+                                <em class="yearsActive"> ({{.Params.yearsActive}})</em>
+                             {{- end -}}
+                         </span>
+                    </div>
+                  {{- end -}}
+                  <img src="{{ $preview.RelPermalink }}" alt="Preview">
+                  {{ $counter := 0 }}
+                  {{- range $lang -}}
+                      {{/*
+                      <i class="fas fa-flag lang {{ . }}" title="{{ i18n . }}"></i>
+                      */}}
+                      {{- $flagPos := "" -}}
+                      {{- if gt $counter 0 -}}
+                        {{- $flagPos = printf "left: calc(1.5em + (2.5em) * %d);" $counter -}}
+                      {{- end -}}
+                      <i class="lang {{ . }}" title="{{ i18n . }}" style="{{ $flagPos | safeCSS }}"></i>
+                      {{- $counter = add $counter 1 -}}
+                  {{- end -}}
+              </div>
+              <div class="tile">
+                  <div class="blog-about">
+                      <span class="blog-title">{{ .Title }}</span>
+                      <span class="blog-description">
+                          {{- .Description -}}
+                      </span>
+                      <span class="blog-content">
+                          {{- replace .Content "<p></p>" "" | safeHTML -}}
+                      </span>
+                  </div>
+            </div>
+          </a>
+        </div>
+    {{- end -}}
+</div>

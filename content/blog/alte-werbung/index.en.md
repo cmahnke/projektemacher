@@ -14,6 +14,6 @@ resources:
   params:
     description: "Screenshot"
 ---
-Will be launched in winter 2021/2022.
+Will be launched in winter 2024/2025.
 
 Old advertisements: sometimes funny, sometimes questionable, sometimes weird ...
