@@ -6,6 +6,7 @@ link: "https://christianmahnke.de/"
 type: site
 archive: true
 news: true
+weight: 1
 lang:
 - de
 - en
