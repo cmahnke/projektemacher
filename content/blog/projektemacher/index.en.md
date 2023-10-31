@@ -4,8 +4,6 @@ description: "Umbrella blog (this Blog)"
 date: 2020-08-08T09:23:46+02:00
 archive: true
 news: true
-weight: 2
-type: site
 link: "https://projektemacher.org/"
 linkPrefix: ""
 status: "active"
