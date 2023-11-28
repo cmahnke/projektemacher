@@ -103,3 +103,9 @@ hugo serve -F --debug --disableFastRender  --disableLiveReload --watch=false --r
 ```
 hugo server -D --debug --disableFastRender --renderToDisk
 ```
+
+# Finding all required Hugo Versions
+
+```
+find blogs -ipath "*.github/workflows/*" -and \! -ipath "*/node_modules/*" -print -exec grep hugo-version {} \;
+```
