@@ -1,0 +1,41 @@
+{{- $url := .Get "url" -}}
+
+{{- $patternDescMeta := `(?s)<meta\s+(?:itemprop|name)=\s*"?description"?\s+content=\s*"?.*?"?\s*/?>` }}
+{{- $patternDescVal :=  `(?s).*content=\s*"?(.*?)".*` }}
+{{- $patternVersion := `(?s)<meta\s+name="?generator"?\s+content="Hugo\s.+?"\s*/?>` }}
+{{- $patternVersionVal := `.*"Hugo\s+v?(\d+\.\d+\.?\d*).*".*` }}
+
+{{- $description := "" }}
+{{- $title := "" }}
+{{- $version := "" }}
+
+{{- $opts := dict "headers" (dict "User-Agent" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36") }}
+{{- with resources.GetRemote $url $opts}}
+  {{- with .Err }}
+    {{- $description = printf "Unable to reach %s, skipping!" $url -}}
+    {{- warnf $description }}
+  {{- else }}
+
+    {{- with findRE $patternVersion .Content }}
+      {{- with index . 0 }}
+        {{- $version = replaceRE $patternVersionVal "$1" . }}
+      {{- end }}
+    {{- else }}
+      {{- $version = "Generater tag not set" }}
+    {{- end }}
+
+    {{- with findRE $patternDescMeta .Content }}
+      {{- with index . 0 }}
+        {{- $description = replaceRE $patternDescVal "$1" . | safeHTML }}
+      {{- end }}
+    {{- end }}
+  {{- end -}}
+{{- end -}}
+
+<table class="site-generator-shortcode">
+  <tr>
+    <td class="site-generator-url">{{ $url }}</td>
+    <td class="site-generator-version">{{ $version }}</td>
+    <td class="site-generator-desription">{{ $description }}</td>
+  </tr>
+</table>
