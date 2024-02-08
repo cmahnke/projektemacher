@@ -27,7 +27,7 @@ jobs:
 
       - name: Free some disk space
         run: |
-          sudo rm -rf /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
+          sudo rm -rf /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL /usr/local/graalvm/ /usr/local/share/powershell
 
       - name: Login to GitHub Packages Docker Registry
         uses: docker/login-action@v3.0.0
