@@ -15,3 +15,6 @@ static/images/laborant.png
 static/iiif
 static/pdfjs
 projektemacher.ics
+static/fonts/**
+assets/css/**
+**/vips-properties.xml
