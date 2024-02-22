@@ -137,7 +137,8 @@
 
                                     <span class="month">{{ $monthName }}</span>
                                     {{- range (where $yearPages ".Date.Month" "==" $month) -}}
-                                        {{- $dir := split (string (path.Dir .Path)) "/" -}}
+                                      {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+                                      {{- $dir = split $dir "/" -}}
 
                                         {{- $displayName := "" -}}
                                         {{- $postLink := "" -}}
@@ -146,8 +147,9 @@
                                         {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
                                         {{- $blogPage := .Site.GetPage $sectionHeading -}}
                                         {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
+                                        {{/* TODO:Check if this can be removed with Hugo 0.123 */}}
                                         {{- if and (in $prefix ".") (eq (printf "%T" $blogPage) "*page.nopPage") -}}
-                                            {{- $blogPage = .Site.GetPage (printf "%s/index.md" $sectionHeading) -}}
+                                            {{- $blogPage = .Site.GetPage (printf "/%s/index.md" $sectionHeading) -}}
                                         {{- end -}}
                                         {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
                                             {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
