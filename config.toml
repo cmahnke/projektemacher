@@ -8,6 +8,12 @@ disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
 
+[[cascade]]
+  [cascade._target]
+    kind = '{page,section}'
+    path = '/post/**'
+  [cascade.params]
+    ignoreincludes = true
 
 [module]
     [[module.mounts]]
