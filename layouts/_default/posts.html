@@ -68,7 +68,7 @@
                     {{- else -}}
                         {{ $linkPrefix = $blogPage.Param "link" -}}
                     {{- end -}}
-                    {{- $postLink = split (string .Path) "/" -}}
+                    {{- $postLink = split (substr (string .Path) 1) "/" -}}
                     {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
                     {{- $postLink = delimit $postLink "/" -}}
                     {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}

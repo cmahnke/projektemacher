@@ -159,7 +159,7 @@
                                         {{- else -}}
                                           {{ $linkPrefix = $blogPage.Param "link" -}}
                                         {{- end -}}
-                                        {{- $postLink = split (string .Path) "/" -}}
+                                        {{- $postLink = split (substr (string .Path) 1) "/" -}}
 
                                         {{- if eq (len $dir) 2 -}}
                                             {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
