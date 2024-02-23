@@ -104,16 +104,17 @@
           </div>
           <hr class="archive-hr">
           <div class="archive-content">
-              {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")) -}}
+              {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")).ByDate -}}
 
               {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
               {{- $lastYear := (index (last 1 $pages) 0).Date.Year -}}
+
               {{- if eq $firstYear 1 -}}
                 {{ warnf "%s" (index (first 1 $pages) 0) -}}
                 {{- warnf "Building archive for years %d to %d" $firstYear $lastYear -}}
                 {{- end -}}
 
-              {{- range (seq $firstYear $lastYear) -}}
+              {{- range (seq $lastYear $firstYear) -}}
                 {{ $year := . }}
                 {{- if len (where $pages ".Date.Year" "==" $year) -}}
                     <a class="year collapse-header" aria-expanded="false" data-toggle="collapse" data-bs-toggle="collapse" aria-controls="collapse-{{ $year }}" href="#year-{{ $year }}">
