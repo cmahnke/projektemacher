@@ -116,7 +116,7 @@
               {{- range (seq $firstYear $lastYear) -}}
                 {{ $year := . }}
                 {{- if len (where $pages ".Date.Year" "==" $year) -}}
-                    <a class="year collapse-header" aria-expanded="false" data-toggle="collapse" aria-controls="collapse-{{ $year }}" href="#year-{{ $year }}">
+                    <a class="year collapse-header" aria-expanded="false" data-toggle="collapse" data-bs-toggle="collapse" aria-controls="collapse-{{ $year }}" href="#year-{{ $year }}">
                         <i class="fas fa-plus"></i>
                         <i class="fas fa-minus"></i>
                         <h2 class="year-header">{{ $year }} <span class="count">({{ len (where $pages ".Date.Year" "==" $year) }})</span></h2>

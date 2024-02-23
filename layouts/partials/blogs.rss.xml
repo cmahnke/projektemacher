@@ -31,7 +31,8 @@
     {{ end }}
     {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
       <item>
-        {{- $dir := split (string (path.Dir .Path)) "/" -}}
+        {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+        {{- $dir = split $dir "/" -}}
 
         {{- $displayName := "" -}}
         {{- $postLink := "" -}}
