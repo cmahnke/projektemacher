@@ -82,7 +82,7 @@ defaultcontentlanguage = "de"
 
     [[module.mounts]]
         source = "blogs/labs.projektemacher.org/content"
-        target = "content/post/labs.projektemacher.org"
+        target = "content/post/labs.projektemacher"
 
     [[module.mounts]]
         source = "blogs/christianmahnke/content"
