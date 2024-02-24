@@ -78,7 +78,20 @@
     {{- end -}}
 
     "title": {{- .Title | jsonify -}},
-    {{- $content := .Content | plainify | chomp -}}
+    {{- $content := "" -}}
+    {{- if eq .Kind "section" -}}
+      {{- if and (and (isset .Params "indexrecursive") (.Param "indexrecursive")) (not (and (isset .Params "sectioncontent") (.Param "sectioncontent"))) -}}
+        {{/* TODO: Check if we need to limit to the current section like this (where .Pages "Section" "==" .CurrentSection).ByWeight*/}}
+        {{- range $child := .Pages -}}
+          {{- $content = printf "%s%s" $content ($child.Content | plainify | chomp) -}}
+        {{- end -}}
+      {{- else -}}
+        {{- $content = .Content | plainify | chomp -}}
+      {{- end -}}
+    {{- else -}}
+      {{- $content = .Content | plainify | chomp -}}
+    {{- end -}}
+
     {{/* replace "\n" " " | */}}
     "content": {{- (trim $content " \n") | jsonify -}}
 }
