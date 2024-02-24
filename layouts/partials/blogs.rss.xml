@@ -13,25 +13,25 @@
   {{- $pages = where $pages "Params.metaPage" "!=" true -}}
   {{- $pages = where $pages "Date.IsZero" "==" false -}}
 */}}
-  {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "news")) -}}
+  {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "feed")) -}}
 
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
     <generator>Hugo {{ hugo.Version }}</generator>
-    {{ with .Site.LanguageCode }}
-      <language>{{.}}</language>
-    {{end}}
+    {{- with .Site.LanguageCode -}}
+      <language>{{ . }}</language>
+    {{- end -}}
     {{ if not .Date.IsZero }}
       <lastBuildDate>
-        {{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}
+        {{- .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML -}}
       </lastBuildDate>
-    {{ end }}
-    {{ with .OutputFormats.Get "RSS" }}
-        {{ printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML }}
-    {{ end }}
-    {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
+    {{- end -}}
+    {{- with .OutputFormats.Get "RSS" -}}
+        {{- printf "<atom:link href=%q rel=\"self\" type=%q />" .Permalink .MediaType | safeHTML -}}
+    {{- end -}}
+    {{- range $pages -}}
       <item>
         {{- $dir := substr (string (path.Dir .Path)) 1 -}}
         {{- $dir = split $dir "/" -}}

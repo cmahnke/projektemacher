@@ -22,20 +22,6 @@
           </header>
           <div>{{- i18n "latestPosts" -}}</div>
           <ul>
-            {{/*
-            {{- $pages := where .Site.Pages "Section" "post" -}}
-            {{- .Scratch.Set "pages" $pages -}}
-            {{- $mainSite := .Sites.First -}}
-            {{- if ne $mainSite .Site -}}
-                {{ .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) }}
-            {{- end -}}
-            {{- $pages = .Scratch.Get "pages" -}}
-            {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-            {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-            {{- $pages = where $pages "Params.metaPage" "!=" true -}}
-            {{- $pages = where $pages "Date.IsZero" "==" false -}}
-            */}}
-
             {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "news")) -}}
             {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
 

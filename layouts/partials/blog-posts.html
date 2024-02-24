@@ -20,26 +20,33 @@
 {{- $pages = where $pages "Date.IsZero" "==" false -}}
 
 {{/* TODO: Also apply filters from blog config (see _default/archive.html) */}}
+{{- $filterType := $type -}}
+{{- if ne $type "" -}}
+  {{- if eq $type "feed" -}}
+    {{- $filterType = "news" -}}
+  {{- end -}}
+  {{- $pages = complement (where $pages (printf "Params.%s" $filterType) "==" false) $pages -}}
+{{- end -}}
 
-{{- range $filter := where $blogs (printf "Params.%s" $type) "==" false -}}
-    {{- $dir := split (string (path.Dir .Path)) "/" -}}
-    {{- $blogName := index $dir 1 -}}
-    {{- $filterPath := path.Join "post" (index $dir 1) -}}
+{{- range $filter := where $blogs (printf "Params.%s" $filterType) "==" false -}}
+  {{- $dir := split (string (path.Dir .Path)) "/" -}}
+  {{- $blogName := index $dir 1 -}}
+  {{- $filterPath := path.Join "post" (index $dir 1) -}}
 
-    {{- $filterPages := slice -}}
-    {{- range $p := $pages -}}
-        {{- if and (isset .Params $type) (eq (.Params.Get $type) false) -}}
-            {{- continue -}}
-        {{- end -}}
-        {{- if hasPrefix $p.File.Dir $filterPath -}}
-            {{- $filterPages = $filterPages | append $p -}}
-        {{- end -}}
-    {{- end -}}
-    {{- $pages = $pages | symdiff $filterPages -}}
+  {{- $filteredPages := slice -}}
+  {{- range $p := $pages -}}
+
+  {{- if hasPrefix $p.File.Dir $filterPath -}}
+    {{- $filteredPages = $filteredPages | append $p -}}
+  {{- end -}}
+  {{- end -}}
+  {{- $pages = $pages | symdiff $filteredPages -}}
 {{- end -}}
 
 {{- if eq $type "news" -}}
-    {{- $pages = where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) -}}
+  {{- $pages = where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) -}}
+{{- else if eq $type "feed" -}}
+  {{- $pages = last 20 $pages.ByDate -}}
 {{- end -}}
 
 {{- return $pages -}}

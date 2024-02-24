@@ -50,54 +50,35 @@
                 {{- end -}}
                 <script type="text/javascript">
                     function filter (elem) {
-                        var box;
-                        if (elem.is('input')) {
-                            box = elem;
+                      var box;
+                      if (elem.is('input')) {
+                        box = elem;
+                      } else {
+                        box = elem.siblings('input:checkbox');
+                        if (box.is(':checked')) {
+                          box.prop('checked', false);
                         } else {
-                            box = elem.siblings('input:checkbox');
-                            if (box.is(':checked')) {
-                                box.prop('checked', false);
-                            } else {
-                                box.prop('checked', true);
-                            }
+                          box.prop('checked', true);
                         }
-                        var blog = box.data('filter');
+                      }
+                      var blog = box.data('filter');
 
-                        $('.archive-content .' + blog).toggle();
-                        $('.archive-content ul.month-section').each(function () {
-                            var hide = true;
-                            $(this).find('li').each(function () {
-                                if ($(this).is(":visible")) {
-                                    hide = false;
-                                }
-                            });
-                            if (hide) {
-                                $(this).toggle();
-                            }
+                      $('.archive-content .' + blog).toggle();
+                      $('.archive-content ul.month-section').each(function () {
+                        var hide = true;
+                        $(this).find('li').each(function () {
+                          if ($(this).is(":visible")) {
+                            hide = false;
+                          }
                         });
-
-            /*
-                        $('.archive-content ul.year-section').each(function () {
-                            var hide = true;
-                            $(this).find('ul.month-section').each(function () {
-                                if ($(this).is(":visible")) {
-                                    hide = false;
-                                }
-                            });
-                            if (hide) {
-                                $(this).toggle();
-                                $(this).prev('.year').toggle();
-                            }
-                        });
-            */
-
-            /*
-                        $('.archive-content .collapse').addClass('show');
-            */
+                        if (hide) {
+                          $(this).toggle();
+                        }
+                      });
                     }
 
                     $('.archive-filter .filter').find('.blog-filter, .filter-checkbox:checked').on("click", function (e) {
-                        filter($(this));
+                      filter($(this));
                     });
                 </script>
             </div>
