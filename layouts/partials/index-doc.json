@@ -1,4 +1,5 @@
 {
+  {{/* TODO: Check if exclusions for archive work properly */}}
     {{- if not .Date.IsZero -}}
         "date": "{{ .Date }}",
         "displayDate": {{- trim  (partial "date.html" .) " \n" | jsonify  -}},
