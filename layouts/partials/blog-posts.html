@@ -46,7 +46,7 @@
 {{- if eq $type "news" -}}
   {{- $pages = where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) -}}
 {{- else if eq $type "feed" -}}
-  {{- $pages = last 20 $pages.ByDate -}}
+  {{- $pages = first 20 $pages.ByDate.Reverse -}}
 {{- end -}}
 
 {{- return $pages -}}
