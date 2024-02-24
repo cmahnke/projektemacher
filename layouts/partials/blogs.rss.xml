@@ -1,4 +1,5 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+{{/*
   {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
   {{- .Scratch.Set "pages" $pages -}}
   {{- $mainSite := .Sites.First -}}
@@ -7,17 +8,18 @@
   {{- end -}}
   {{- $pages = .Scratch.Get "pages" -}}
 
-  {{/* Filter non post pages */}}
   {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
   {{- $pages = where $pages "Params.displayInList" "!=" false -}}
   {{- $pages = where $pages "Params.metaPage" "!=" true -}}
   {{- $pages = where $pages "Date.IsZero" "==" false -}}
+*/}}
+  {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "news")) -}}
 
   <channel>
     <title>{{ if eq  .Title  .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
-    <generator>{{ hugo.Generator }}</generator>
+    <generator>Hugo {{ hugo.Version }}</generator>
     {{ with .Site.LanguageCode }}
       <language>{{.}}</language>
     {{end}}
