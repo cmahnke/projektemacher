@@ -10,7 +10,7 @@
     "fuse.js": "^7.0.0",
     "jquery": "^3.7.1",
     "normalize.css": "^8.0.1",
-    "ol": "^8.1.0",
+    "ol": "^9.0.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
