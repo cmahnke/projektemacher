@@ -58,3 +58,6 @@
 [submodule "blogs/vintagereality"]
 	path = blogs/vintagereality
 	url = https://github.com/cmahnke/vintagereality.git
+[submodule "blogs/xn--h-zfa.xyz"]
+	path = blogs/xn--h-zfa.xyz
+	url = https://github.com/cmahnke/xn--h-zfa.xyz.git
