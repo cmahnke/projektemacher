@@ -55,3 +55,6 @@
 [submodule "blogs/merch.projektemacher"]
 	path = blogs/merch.projektemacher
 	url = https://github.com/cmahnke/merch.projektemacher.git
+[submodule "blogs/vintagereality"]
+	path = blogs/vintagereality
+	url = https://github.com/cmahnke/vintagereality.git
