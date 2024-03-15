@@ -5,13 +5,25 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      github-actions:
+        patterns:
+        - '*'
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
       interval: "daily"
+    groups:
+      npm:
+        patterns:
+        - '*'
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
       interval: "daily"
     ignore:
       - dependency-name: "themes/hugo-coder"
+    groups:
+      blogs:
+        patterns:
+        - '*'
