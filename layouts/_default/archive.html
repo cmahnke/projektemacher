@@ -149,8 +149,13 @@
                                         {{- $postLink = delimit $postLink "/" -}}
                                         {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
                                         {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
-
                                         {{- $openExternal := true -}}
+                                        {{/* This is a hack, empty $linkPrefix means this site */}}
+                                        {{- if eq $linkPrefix nil -}}
+                                          {{- $postLink = $postLink -}}
+                                          {{- $openExternal = false -}}
+                                        {{- end -}}
+
 
                                         <li class="archive-link {{ $prefix }}" data-post-date="{{ .Date }}">
                                             <div class="post-heading">
