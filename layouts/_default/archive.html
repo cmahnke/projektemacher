@@ -121,58 +121,57 @@
                                       {{- $dir := substr (string (path.Dir .Path)) 1 -}}
                                       {{- $dir = split $dir "/" -}}
 
-                                        {{- $displayName := "" -}}
-                                        {{- $postLink := "" -}}
-                                        {{- $linkPrefix := "" -}}
-                                        {{- $prefix := index $dir 1 -}}
-                                        {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-                                        {{- $blogPage := .Site.GetPage $sectionHeading -}}
-                                        {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-                                            {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
-                                            {{- $sectionHeading = "" -}}
-                                            {{- $prefix = "projektemacher" -}}
-                                        {{- end -}}
+                                      {{- $displayName := "" -}}
+                                      {{- $postLink := "" -}}
+                                      {{- $linkPrefix := "" -}}
+                                      {{- $prefix := index $dir 1 -}}
+                                      {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+                                      {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                                      {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+                                          {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+                                          {{- $sectionHeading = "" -}}
+                                          {{- $prefix = "projektemacher" -}}
+                                      {{- end -}}
 
-                                        {{- $displayName = printf "%s: " $blogPage.Title -}}
-                                        {{- if ($blogPage.Param "linkPrefix") -}}
-                                          {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
-                                        {{- else -}}
-                                          {{ $linkPrefix = $blogPage.Param "link" -}}
-                                        {{- end -}}
-                                        {{- $postLink = split (substr (string .Path) 1) "/" -}}
+                                      {{- $displayName = printf "%s: " $blogPage.Title -}}
+                                      {{- if ($blogPage.Param "linkPrefix") -}}
+                                        {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+                                      {{- else -}}
+                                        {{ $linkPrefix = $blogPage.Param "link" -}}
+                                      {{- end -}}
+                                      {{- $postLink = split (substr (string .Path) 1) "/" -}}
 
-                                        {{- if eq (len $dir) 2 -}}
-                                            {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
-                                        {{ else }}
-                                            {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
-                                        {{- end -}}
-                                        {{- $postLink = delimit $postLink "/" -}}
-                                        {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
-                                        {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
-                                        {{- $openExternal := true -}}
-                                        {{/* This is a hack, empty $linkPrefix means this site */}}
-                                        {{- if eq $linkPrefix nil -}}
-                                          {{- $postLink = $postLink -}}
-                                          {{- $openExternal = false -}}
-                                        {{- end -}}
+                                      {{- if eq (len $dir) 2 -}}
+                                          {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
+                                      {{ else }}
+                                          {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+                                      {{- end -}}
+                                      {{- $postLink = delimit $postLink "/" -}}
+                                      {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+                                      {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+                                      {{- $openExternal := true -}}
+                                      {{/* This is a hack, empty $linkPrefix means this site */}}
+                                      {{- if eq $linkPrefix nil -}}
+                                        {{- $postLink = (string .Path) -}}
+                                        {{- $openExternal = false -}}
+                                      {{- end -}}
 
-
-                                        <li class="archive-link {{ $prefix }}" data-post-date="{{ .Date }}">
-                                            <div class="post-heading">
-                                                <span class="date">
-                                                    {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
-                                                </span>
-                                                <span class="link">
-                                                    {{- $postTitle := "" -}}
-                                                    {{- if eq .Title "" -}}
-                                                        {{- $postTitle = (i18n "untitledPost") -}}
-                                                    {{- else -}}
-                                                        {{- $postTitle = .Title -}}
-                                                    {{- end -}}
-                                                    <a class="title" href="{{ $postLink }}" {{- if $openExternal }} target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ $postTitle -}}</a>
-                                                </span>
-                                            </div>
-                                        </li>
+                                      <li class="archive-link {{ $prefix }}" data-post-date="{{ .Date }}">
+                                        <div class="post-heading">
+                                          <span class="date">
+                                            {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                                          </span>
+                                          <span class="link">
+                                            {{- $postTitle := "" -}}
+                                            {{- if eq .Title "" -}}
+                                                {{- $postTitle = (i18n "untitledPost") -}}
+                                            {{- else -}}
+                                                {{- $postTitle = .Title -}}
+                                            {{- end -}}
+                                            <a class="title" href="{{ $postLink }}" {{- if $openExternal }} target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ $postTitle -}}</a>
+                                          </span>
+                                        </div>
+                                      </li>
                                     {{- end -}}
                                 </ul>
                               </li>
