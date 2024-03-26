@@ -3,16 +3,14 @@ title: "Vintage Reality"
 description: "19th and 20th century \"virtual reality\""
 date: 2024-01-01T00:00:00+02:00
 link:
-status: planned
-draft: true
-private: true
+status: active
 lang:
 - de
-- en
 resources:
 - name: screenshot
   src: "screenshot.png"
   params:
     description: "Screenshot"
 ---
-Will be launched in winter 2023 / 2024.
+
+3D images are not a new invention - 3D viewers already existed at the end of the 19th century...
