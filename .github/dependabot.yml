@@ -24,6 +24,6 @@ updates:
     ignore:
       - dependency-name: "themes/hugo-coder"
     groups:
-      blogs:
+      gitsubmodule:
         patterns:
         - '*'
