@@ -2,7 +2,7 @@
 title: "Vintage Reality"
 description: "19th and 20th century \"virtual reality\""
 date: 2024-01-01T00:00:00+02:00
-link:
+link: https://vintagereality.projektemacher.org/
 status: active
 lang:
 - de
