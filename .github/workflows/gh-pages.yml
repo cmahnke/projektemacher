@@ -82,7 +82,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3.0.0
         with:
-          hugo-version: '0.125.6'
+          hugo-version: '0.126.0'
           extended: true
       - name: Build Hugo site
         run: hugo --printI18nWarnings --printUnusedTemplates
