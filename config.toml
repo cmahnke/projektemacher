@@ -246,3 +246,6 @@ defaultcontentlanguage = "de"
 
 [sitemap]
   changeFreq = 'weekly'
+
+[build]
+  writeStats = true
