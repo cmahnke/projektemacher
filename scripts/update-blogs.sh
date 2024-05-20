@@ -8,4 +8,5 @@ do
   cd blogs/$BLOG
   git pull origin main
   cd ../..
+  git add blogs/$BLOG
 done
