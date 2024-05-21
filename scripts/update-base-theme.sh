@@ -17,3 +17,8 @@ do
     cd ../../../..
   fi
 done
+
+cd themes/projektemacher-base
+git pull origin main
+cd ../..
+git add themes/projektemacher-base
