@@ -35,7 +35,7 @@ jobs:
           sudo apt-get clean
 
       - name: Login to GitHub Packages Docker Registry
-        uses: docker/login-action@v3.1.0
+        uses: docker/login-action@v3.2.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
