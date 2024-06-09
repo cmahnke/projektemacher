@@ -43,3 +43,13 @@ The [flag icons](https://github.com/lipis/flag-icon-css), the [SVG icons](https:
 The [logo](../logo) was vectorized and edited with [Inkscape](https://inkscape.org/).
 
 The page is hosted by [GitHub](https://github.com/).
+
+# Privacy policy
+
+The privacy policy is available [here](/privacy).
+
+# Contact
+
+"Projektemacher" is a project by **[Christian Mahnke](https://christianmahnke.de/)**.
+
+Contact is possible via [E-Mail](mailto:projektemacher@projektemacher.org).

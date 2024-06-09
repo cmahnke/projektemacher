@@ -50,3 +50,13 @@ Die [Icons für die Länderflaggen](https://github.com/lipis/flag-icon-css), die
 Das [Logo](../logo) wurde mit [Inkscape](https://inkscape.org/) vektorisiert und bearbeitet.
 
 Die Seite wird von [GitHub](https://github.com/) gehosted.
+
+# Datenschutzerklärung
+
+Die Datenschutzerklärung ist [hier](/privacy) verfügbar.
+
+# Kontakt
+
+"Projektemacher" ist ein Projekt von **[Christian Mahnke](https://christianmahnke.de/)**.
+
+Kontakt ist via [E-Mail](mailto:projektemacher@projektemacher.org) möglich.

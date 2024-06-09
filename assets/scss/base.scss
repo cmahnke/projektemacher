@@ -22,6 +22,7 @@ $nav-color: #293133 !default;
 @import "base";
 @import "content";
 @import "navigation";
+/* @import "ol"; */
 @import "ol-iiif";
 @import "icons";
 /**
@@ -825,4 +826,9 @@ footer {
     line-height: 2em;
     content: url($insta-dark);
     vertical-align: sub;
+}
+
+p.small {
+    font-size: smaller;
+    text-align: end;
 }
