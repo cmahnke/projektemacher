@@ -8,7 +8,7 @@ updates:
     groups:
       github-actions:
         patterns:
-        - '*'
+         - '*'
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -16,7 +16,7 @@ updates:
     groups:
       npm:
         patterns:
-        - '*'
+         - '*'
   - package-ecosystem: "gitsubmodule"
     directory: "/"
     schedule:
@@ -24,6 +24,9 @@ updates:
     ignore:
       - dependency-name: "themes/hugo-coder"
     groups:
-      gitsubmodule:
+      blogs:
         patterns:
-        - '*'
+          - 'blogs/*'
+      themes:
+        patterns:
+          - 'themes/*'
