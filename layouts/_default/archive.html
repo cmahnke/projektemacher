@@ -159,7 +159,10 @@
                                       <li class="archive-link {{ $prefix }}" data-post-date="{{ .Date }}">
                                         <div class="post-heading">
                                           <span class="date">
-                                            {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                                            {{- .Date | time.Format ":date_full" -}}
+                                            {{/*
+                                              {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                                            */}}
                                           </span>
                                           <span class="link">
                                             {{- $postTitle := "" -}}

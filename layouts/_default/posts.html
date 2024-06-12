@@ -69,7 +69,10 @@
 
 
                 <span class="date">
-                    {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                    {{- .Date | time.Format ":date_full" -}}
+                    {{/*
+                      {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                    */}}
                 </span>
                 <span class="link">
                     <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
