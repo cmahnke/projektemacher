@@ -423,8 +423,12 @@ article header h1.header {
                 color: #0b1e47;
             }
 
+            .date {
+                width: 23rem;
+            }
+
             .link {
-                width: calc(100% - 20rem);
+                width: calc(100% - 23rem);
             }
         }
 
