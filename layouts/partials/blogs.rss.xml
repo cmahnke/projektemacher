@@ -1,18 +1,4 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-{{/*
-  {{- $pages := where (where .Site.Pages "Section" "post") "Params.displayinlist" "!=" false -}}
-  {{- .Scratch.Set "pages" $pages -}}
-  {{- $mainSite := .Sites.First -}}
-  {{- if ne $mainSite .Site -}}
-      {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.Pages "Section" "post") ) -}}
-  {{- end -}}
-  {{- $pages = .Scratch.Get "pages" -}}
-
-  {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-  {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-  {{- $pages = where $pages "Params.metaPage" "!=" true -}}
-  {{- $pages = where $pages "Date.IsZero" "==" false -}}
-*/}}
   {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "feed")) -}}
 
   <channel>
@@ -70,6 +56,17 @@
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
         <guid>{{ .Permalink }}</guid>
         <description>{{- .Content | html -}}</description>
+        {{- $dir = .Path -}}
+        {{- range .Resources.ByType "audio" -}}
+          {{- $size := 0 -}}
+          {{- $pathPrefix := (substr $postLink (sub (len $linkPrefix) 1)) -}}
+          {{- $audioFilePath := (substr .RelPermalink (len $dir)) -}}
+          {{- $file := (path.Join "." (replace $sectionHeading "blog" "blogs") "content" $pathPrefix $audioFilePath) -}}
+          {{- if fileExists $file -}}
+            {{- $size = (os.Stat $file).Size -}}
+          {{- end -}}
+          <enclosure url="{{ (printf "%s%s" $postLink $audioFilePath) }}" length="{{ $size }}" type="{{ .MediaType.Type }}" />
+        {{- end -}}
       </item>
     {{ end }}
   </channel>
