@@ -4,7 +4,7 @@
 {{- range $image := $image -}}
   {{- $alt := "" -}}
   {{- $alt = $image.alt -}}
-  {{- if not $alt "" -}}
+  {{- if not (eq $alt "") -}}
     <div>{{ $alt }}</div>
   {{- end -}}
 {{- end -}}
