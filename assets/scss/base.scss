@@ -688,8 +688,11 @@ body {
     }
 
     .month {
-        font-size: large;
+        font-size: x-large;
         font-weight: bold;
+        margin-bottom: .6rem;
+        display: block;
+        margin-bottom: 1rem;
     }
 }
 
