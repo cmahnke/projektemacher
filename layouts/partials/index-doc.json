@@ -5,8 +5,15 @@
         "displayDate": {{- trim  (.Date | time.Format ":date_full") " \n" | jsonify  -}},
     {{- end -}}
     {{- if .Params.tags -}}
-    {{/* TODO: Also add translated tags here */}}
-        "tags": {{- .Params.tags | jsonify -}},
+        {{- $tags := slice -}}
+        {{- $tag := range .Params.tags -}}
+          {{- if ne (i18n $tag) "" -}}
+              {{- $tags = $tags | append (i18n $tag) -}}
+          {{- else -}}
+              {{- $tags = $tags | append $tag -}}
+          {{- end -}}
+        {{- end -}}
+        "tags": {{- $tags | jsonify -}},
     {{- end -}}
 
     {{- $dir := split (string (path.Dir .Path)) "/" -}}
