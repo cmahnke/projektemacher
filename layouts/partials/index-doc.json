@@ -4,9 +4,9 @@
         "date": "{{ .Date }}",
         "displayDate": {{- trim  (.Date | time.Format ":date_full") " \n" | jsonify  -}},
     {{- end -}}
-    {{- if .Params.tags -}}
+    {{- with .Params.tags -}}
         {{- $tags := slice -}}
-        {{- $tag := range .Params.tags -}}
+        {{- range $tag := .Params.tags -}}
           {{- if ne (i18n $tag) "" -}}
               {{- $tags = $tags | append (i18n $tag) -}}
           {{- else -}}
