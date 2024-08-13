@@ -6,7 +6,7 @@
     {{- end -}}
     {{- with .Params.tags -}}
         {{- $tags := slice -}}
-        {{- range $tag := .Params.tags -}}
+        {{- range $tag := . -}}
           {{- if ne (i18n $tag) "" -}}
               {{- $tags = $tags | append (i18n $tag) -}}
           {{- else -}}
