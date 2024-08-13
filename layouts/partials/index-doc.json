@@ -10,7 +10,7 @@
           {{- if ne (i18n $tag) "" -}}
               {{- $tags = $tags | append (i18n $tag) -}}
           {{- else -}}
-              {{- $tags = $tags | append $tag -}}
+              {{- $tags = $tags | append $tag -}}
           {{- end -}}
         {{- end -}}
         "tags": {{- $tags | jsonify -}},
