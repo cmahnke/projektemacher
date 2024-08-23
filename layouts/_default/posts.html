@@ -23,7 +23,7 @@
           <div>{{- i18n "latestPosts" -}}</div>
           <ul>
             {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "news")) -}}
-            {{ range where $pages "Page.Date" "ge" (now.AddDate 0 -1 0) }}
+            {{ range (where $pages "Page.Date" "ge" (now.AddDate 0 -1 0)).ByDate.Reverse }}
 
             <li>
               <div class="post-heading">
