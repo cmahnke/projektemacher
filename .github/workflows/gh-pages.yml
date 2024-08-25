@@ -51,9 +51,9 @@ jobs:
 
       - name: Checkout submodules
         run: |
-          git submodule update --init --depth 1 -j 4 themes/*
-          for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; rm -rf blogs/$dir/.git ; find blogs/$dir -type f -size +1M \( -name '*.jpg' -o -name '*.jxl' \) -print -exec rm {} \;  ; done
-#          ./scripts/git-checkout.sh
+#          git submodule update --init --depth 1 -j 4 themes/*
+#          for dir in `ls blogs/`; do echo "Checking out submodule blogs/$dir" ; git submodule update --depth 1 -j 4 --init blogs/$dir ; rm -rf blogs/$dir/.git ; find blogs/$dir -type f -size +1M \( -name '*.jpg' -o -name '*.jxl' \) -print -exec rm {} \;  ; done
+          ./scripts/github/checkout.sh
 
       - name: Set up Python
         uses: actions/setup-python@v5
