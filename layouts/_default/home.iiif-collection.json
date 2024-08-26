@@ -1,4 +1,5 @@
-{{- $pages := .Site.RegularPages -}}
+{{- $manifest := "collection.json" -}}
+{{- $pages := where site.Pages "Kind" "section" -}}
   {{- range .Site.Home.Translations -}}
   {{- $pages = $pages | lang.Merge .Site.RegularPages -}}
 {{- end -}}
@@ -43,27 +44,37 @@
     {{- end -}}
   },
   "items": [
-    {{- range $i, $item := $items -}}
+    {{- range $i, $item := $iiif -}}
       {
-        "id": "{{ printf "%s%s/%s" $.Site.BaseURL (substr $item.Path 1) $manifest }}",
+        {{- $dir := substr (string $item.Path) 1 -}}
+        {{- $dir = split (string $dir) "/" -}}
+        {{- $displayName := "" -}}
+        {{- $linkPrefix := "" -}}
+        {{- $prefix := index $dir 1 -}}
+        {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+        {{- $blogPage := $.Site.GetPage $sectionHeading -}}
+        {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+            {{- $blogPage = $.Site.GetPage "/blog/projektemacher/index.md" -}}
+            {{- $sectionHeading = "" -}}
+            {{- $prefix = "projektemacher" -}}
+        {{- end -}}
+
+        {{- $displayName = $blogPage.Title -}}
+        {{- if ($blogPage.Param "linkPrefix") -}}
+          {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+        {{- else -}}
+          {{ $linkPrefix = $blogPage.Param "link" -}}
+        {{- end -}}
+
+        "id": "{{ printf "%s%s" $linkPrefix $manifest }}",
         "type": "Collection",
         "label": {
-          "{{ $.Site.Language.Lang }}": [
-            "{{ $item.Title }}"
+          "none": [
+            {{ $displayName | jsonify }}
           ]
-          {{- if hugo.IsMultilingual -}}
-            {{- if .IsTranslated -}}
-              {{- range .Translations -}}
-                ,
-                "{{ .Lang }}": [
-                  "{{ .Title }}"
-                ]
-              {{- end -}}
-            {{- end -}}
-          {{- end -}}
         }
       }
-      {{- if ne $i (sub (len $items) 1) -}}
+      {{- if ne $i (sub (len $iiif) 1) -}}
        ,
       {{- end -}}
     {{- end -}}
