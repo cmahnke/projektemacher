@@ -3,7 +3,9 @@
   {{- range .Site.Home.Translations -}}
   {{- $pages = $pages | lang.Merge .Site.RegularPages -}}
 {{- end -}}
+{{/*
 {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
+*/}}
 
 {{- $iiif := slice -}}
 {{- range $pages -}}
