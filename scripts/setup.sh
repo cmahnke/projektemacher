@@ -8,9 +8,9 @@ convert -resize 1024x1024 -transparent white -density 600 "Source Files/Logo/Lab
 
 SOURCE="themes/projektemacher-base/static/images/cm.svg" OPTIONS="-transparent white static/images/favicon-128.png" ./themes/projektemacher-base/scripts/favicon.sh
 
-cp themes/projektemacher-base/static/images/cm.svg static/images/
-sed -i -E 's/fill-opacity:0.5/fill-opacity:1.0/g' static/images/cm.svg
-convert -density 2400 static/images/cm.svg -resize '1024x1024!' static/images/logo.png
+cp themes/projektemacher-base/static/images/cm.svg static/images/cm-solid.svg
+sed -i -E 's/fill-opacity:0.5/fill-opacity:1.0/g' static/images/cm-solid.svg
+convert -density 2400 static/images/cm-solid.svg -resize '1024x1024!' static/images/logo.png
 
 # IIIF tiles
 echo "Set SKIP_IIIF to something to disable generation of IIIF derivates"
