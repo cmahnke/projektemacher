@@ -226,6 +226,19 @@ enableGitInfo = true
     baseName = "collection"
     notAlternative = true
 
+  [outputFormats.activity-pub-actor]
+    mediaType = "application/activity+json"
+    isPlainText = true
+    isHTML = false
+    baseName = "actor"
+    notAlternative = true
+
+  [outputFormats.activity-pub-outbox]
+    mediaType = "application/activity+json"
+    isPlainText = true
+    isHTML = false
+    baseName = "outbox"
+    notAlternative = true
 
 [markup]
     defaultMarkdownHandler = 'goldmark'
