@@ -25,3 +25,6 @@
     #stylesheets = ["https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Lora:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap"]
     disableScale = true
     debug = true
+
+    [params.footer]
+        privacy = true
