@@ -8,6 +8,7 @@ disableKinds = ["term", "taxonomy"]
 languagecode = "de"
 defaultcontentlanguage = "de"
 enableGitInfo = true
+enableRobotsTXT = true
 
 [[cascade]]
   [cascade._target]
