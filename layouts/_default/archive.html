@@ -30,56 +30,44 @@
                 {{- $pages = sort $pages ".Title" "asc" -}}
                 {{- range $pages -}}
                     {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
-                        {{- continue -}}
+                      {{- continue -}}
                     {{/* (and (isset .Params "private") (eq .Params.private true)) */}}
                     {{- else if and (isset .Params "status") (eq .Params.status "planned") -}}
-                        {{- continue -}}
+                      {{- continue -}}
                     {{- end -}}
                     {{- if not (isset .Params "archive") -}}
-                        {{- if or (and (isset .Params "displayinlist") (ne .Params.displayinlist false)) (and (isset .Params "displayInList") (ne .Params.displayInList false)) -}}
-                            {{- continue -}}
-                        {{- end -}}
+                      {{- if or (and (isset .Params "displayinlist") (ne .Params.displayinlist false)) (and (isset .Params "displayInList") (ne .Params.displayInList false)) -}}
+                        {{- continue -}}
+                      {{- end -}}
                     {{- end -}}
 
-                    {{- $dir := split (string (path.Dir .Path)) "/" -}}
-                    {{- $prefix := index $dir 1 -}}
+                    {{- $dir := split (string .Path) "/" -}}
+                    {{- $prefix := index $dir 2 -}}
                     <div class="filter">
                         <input type="checkbox" id="{{ $prefix }}-checkbox" data-filter="{{ $prefix }}" class="filter-checkbox" checked>
                         <span class="blog-filter"> {{ .Title }}</span>
                     </div>
                 {{- end -}}
                 <script type="text/javascript">
-                    function filter (elem) {
-                      var box;
-                      if (elem.is('input')) {
-                        box = elem;
-                      } else {
-                        box = elem.siblings('input:checkbox');
-                        if (box.is(':checked')) {
-                          box.prop('checked', false);
-                        } else {
-                          box.prop('checked', true);
-                        }
-                      }
-                      var blog = box.data('filter');
+                  function filter(elem) {
+                    const box = elem.tagName === 'INPUT' ? elem : elem.closest('label').querySelector('input[type="checkbox"]');
+                    const blog = box.dataset.filter;
 
-                      $('.archive-content .' + blog).toggle();
-                      $('.archive-content ul.month-section').each(function () {
-                        var hide = true;
-                        $(this).find('li').each(function () {
-                          if ($(this).is(":visible")) {
-                            hide = false;
-                          }
-                        });
-                        if (hide) {
-                          $(this).toggle();
-                        }
-                      });
-                    }
+                    const contentItems = document.querySelectorAll('.archive-content .' + blog);
+                    contentItems.forEach(item => item.classList.toggle('hidden'));
 
-                    $('.archive-filter .filter').find('.blog-filter, .filter-checkbox:checked').on("click", function (e) {
-                      filter($(this));
+                    const monthSections = document.querySelectorAll('.archive-content ul.month-section');
+                    monthSections.forEach(section => {
+                      const visibleItems = section.querySelectorAll('li:not(.hidden)');
+                      section.style.display = visibleItems.length > 0 ? 'block' : 'none';
                     });
+                  }
+
+                  document.querySelectorAll('.archive-filter .filter .blog-filter, .archive-filter .filter .filter-checkbox:checked').forEach(elem => {
+                    elem.addEventListener('click', () => {
+                      filter(elem);
+                    });
+                  });
                 </script>
             </div>
           </div>

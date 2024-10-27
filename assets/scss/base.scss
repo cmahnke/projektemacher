@@ -623,6 +623,10 @@ body {
         }
     }
 
+    .hidden {
+      display: none !important;
+    }
+
     .year-header {
         line-height: unset;
         display: inline;

@@ -12,10 +12,5 @@ cascade:
     params:
       sitemap:
         disable: true
-#  - _target:
-#      kind: section
-#    params:
-#      sitemap:
-#        disable: true
 ---
 Aktuelle Beiträge aus allen Blogs, externe Artikel öffnen sich in einem neuen Fenster.
