@@ -102,6 +102,10 @@ enableRobotsTXT = true
       source = "content"
       target = "content"
 
+    [module.hugoVersion]
+      extended = true
+      min = '0.127.0'
+
 [languages]
     [languages.de]
         languagename = "Deutsch"

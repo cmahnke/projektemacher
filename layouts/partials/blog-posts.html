@@ -8,7 +8,7 @@
 {{/* Collect all relevant pages */}}
 {{- $pages := where $context.Site.Pages "Section" "post" -}}
 
-{{- $mainSite := $context.Sites.First -}}
+{{- $mainSite := $context.Sites.Default -}}
 {{- if ne $mainSite $context.Site -}}
     {{- $pages = ($pages | lang.Merge (where $mainSite.Pages "Section" "post")) -}}
 {{- end -}}

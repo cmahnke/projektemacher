@@ -26,7 +26,7 @@
             <h2 class="filter-header">{{ i18n "filter" }}</h2>
             <div class="filter-list">
                 {{- $pages := where .Data.Pages "Section" "blog" -}}
-                {{- $pages = ($pages | lang.Merge (where .Sites.First.RegularPages "Section" "blog") ) -}}
+                {{- $pages = ($pages | lang.Merge (where .Sites.Default.RegularPages "Section" "blog") ) -}}
                 {{- $pages = sort $pages ".Title" "asc" -}}
                 {{- range $pages -}}
                     {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
