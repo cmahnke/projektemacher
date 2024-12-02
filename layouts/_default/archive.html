@@ -66,6 +66,13 @@
                   document.querySelectorAll('.archive-filter .filter .blog-filter, .archive-filter .filter .filter-checkbox:checked').forEach(elem => {
                     elem.addEventListener('click', () => {
                       filter(elem);
+                      var box;
+                      if (elem instanceof HTMLInputElement) {
+                        box = elem;
+                      } else {
+                        box = elem.previousSibling;
+                      }
+                      box.checked = !box.checked;
                     });
                   });
                 </script>
