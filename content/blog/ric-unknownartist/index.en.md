@@ -7,6 +7,7 @@ status: active
 private: true
 lang:
 - en
+- de
 resources:
 - name: screenshot
   src: "screenshot.png"
