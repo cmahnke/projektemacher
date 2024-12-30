@@ -70,9 +70,10 @@
                       if (elem instanceof HTMLInputElement) {
                         box = elem;
                       } else {
-                        box = elem.previousSibling;
+                        box = elem.parent.querySelector('input');
+                        //box = elem.previousSibling;
                       }
-                      box.checked = !box.checked;
+                      //box.checked = !box.checked;
                     });
                   });
                 </script>
