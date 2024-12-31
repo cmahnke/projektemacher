@@ -21,7 +21,11 @@ fg([`${siteDir}/**/index.json`]).then((res) => {
         docs = [];
         res.forEach(function(file) {
             console.log('Found ' + file + ', indexing');
-            docs.push(JSON.parse(fs.readFileSync(file, 'utf8')))
+            try {
+              docs.push(JSON.parse(fs.readFileSync(file, 'utf8')))
+            } catch (e) {
+              console.warn(`Failed to index ${file}`, e)
+            }
         });
 
     //}

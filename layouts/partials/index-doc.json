@@ -16,54 +16,41 @@
         "tags": {{- $tags | jsonify -}},
     {{- end -}}
 
-    {{- $dir := split (string (path.Dir .Path)) "/" -}}
-    {{- $prefix := index $dir 1 -}}
-    {{- if ne $prefix "" -}}
-        "blog": {{- $prefix | jsonify -}},
-    {{- end -}}
-    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-    {{- $postLink := split (string .Path) "/" -}}
+    {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+    {{- $dir = split $dir "/" -}}
+
+    {{- $displayName := "" -}}
+    {{- $postLink := "" -}}
     {{- $linkPrefix := "" -}}
-    {{- $external := true -}}
-    {{- if and (ne $prefix nil) (ne (index $dir 0) "blog") -}}
-        {{- if not (fileExists $sectionHeading) -}}
-            {{- $external = false -}}
-        {{- else -}}
-            {{- $blogPage := .Site.GetPage $sectionHeading -}}
-            {{/* This is a workaround for a Hugo bug regarding dots in path names */}}
-            {{- if and (in $prefix ".") (eq (printf "%T" $blogPage) "*page.nopPage") -}}
-                {{- $blogPage = .Site.GetPage (printf "%s/index.md" $sectionHeading) -}}
-            {{- end -}}
-            {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-                {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
-                {{- $sectionHeading = "" -}}
-                {{- $prefix = "projektemacher" -}}
-            {{- end -}}
-            {{- if ($blogPage.Param "linkPrefix") -}}
-              {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
-            {{- else -}}
-              {{ $linkPrefix = $blogPage.Param "link" -}}
-            {{- end -}}
-        {{- end -}}
-    {{ else }}
-        {{- $external = false -}}
+    {{- $prefix := index $dir 1 -}}
+    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+    {{- $blogPage := .Site.GetPage $sectionHeading -}}
+    {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+        {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+        {{- $sectionHeading = "" -}}
+        {{- $prefix = "projektemacher" -}}
     {{- end -}}
 
-    {{- if $external -}}
-        {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
-        {{- $postLink = delimit $postLink "/" -}}
-        {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
-
-        {{/* If pages aren't contained in directories, rewrite them to directories */}}
-        {{- $postLink = replaceRE "[\\.den]{0,3}.md$" "/" $postLink -}}
-
-        {{- if in .Permalink (printf "/%s/" .Language.Lang) -}}
-            {{- $postLink = printf "%s/%s" .Language.Lang $postLink -}}
-        {{- end -}}
-
-        {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+    {{- $displayName = printf "%s: " $blogPage.Title -}}
+    {{- if ($blogPage.Param "linkPrefix") -}}
+      {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
+    {{- else -}}
+      {{ $linkPrefix = $blogPage.Param "link" -}}
+    {{- end -}}
+    {{- $postLink = split (substr (string .Path) 1) "/" -}}
+    {{/* TODO: Check why this is different from the archive */}}
+    {{- if or (eq (len $dir) 2) (eq (len $dir) 1) -}}
+        {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
     {{ else }}
-        {{- $postLink = .Permalink -}}
+        {{- $postLink = last (sub (len $postLink) 2) $postLink -}}
+    {{- end -}}
+    {{- $postLink = delimit $postLink "/" -}}
+    {{- $postLink = replaceRE "^(.*/)\\w*\\..*$" "$1" $postLink -}}
+    {{- $postLink = printf "%s%s" $linkPrefix $postLink -}}
+    {{/* This is a hack, empty $linkPrefix means this site */}}
+    {{- if eq $linkPrefix nil -}}
+      {{- $postLink = .Permalink -}}
+
     {{- end -}}
 
     "url": "{{ $postLink }}",
@@ -100,5 +87,13 @@
     {{- end -}}
 
     {{/* replace "\n" " " | */}}
-    "content": {{- (trim $content " \n") | jsonify -}}
+    {{ $skip := false }}
+    {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
+      {{ $skip = true }}
+    {{- else if and (isset .Params "private") (eq .Params.private true) -}}
+      {{ $skip = true }}
+    {{- end -}}
+    {{- if not $skip -}}
+      "content": {{- (trim $content " \n") | jsonify -}}
+    {{- end -}}
 }
