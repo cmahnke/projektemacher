@@ -776,6 +776,7 @@ footer {
     .search-button {
         background-color: $nav-color;
         width: 20%;
+        min-width: 10em;
         display: inline-block;
         cursor: pointer;
         text-decoration: none;
