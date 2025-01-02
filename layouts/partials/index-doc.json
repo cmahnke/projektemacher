@@ -1,5 +1,12 @@
 {
   {{/* TODO: Check if exclusions for archive work properly */}}
+
+    {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
+      {{- return -}}
+    {{- else if and (isset .Params "private") (eq .Params.private true) -}}
+      {{- return -}}
+    {{- end -}}
+
     {{- if not .Date.IsZero -}}
         "date": "{{ .Date }}",
         "displayDate": {{- trim  (.Date | time.Format ":date_full") " \n" | jsonify  -}},
@@ -87,13 +94,5 @@
     {{- end -}}
 
     {{/* replace "\n" " " | */}}
-    {{ $skip := false }}
-    {{- if and (isset .Params "archive") (eq .Params.archive false) -}}
-      {{ $skip = true }}
-    {{- else if and (isset .Params "private") (eq .Params.private true) -}}
-      {{ $skip = true }}
-    {{- end -}}
-    {{- if not $skip -}}
-      "content": {{- (trim $content " \n") | jsonify -}}
-    {{- end -}}
+    "content": {{- (trim $content " \n") | jsonify -}}
 }
