@@ -2,9 +2,8 @@
 title: "Wilma Bräuner"
 description: "Exhibition 6 to 17 December 2022 in the town gallery \"Alte Post\", Westerland"
 date: 2022-12-01T00:00:00+02:00
-link: https://xn--wilmabruner-r8a.de
+link: https://xn--wilmabruner-r8a.projektemacher.org/
 type: site
-draft: true
 private: true
 archive: false
 news: false
