@@ -4,6 +4,7 @@ description: "Ausstellung 6. Bis 17 Dezember 2022 in der Stadtgalerie „Alte Po
 date: 2022-12-01T00:00:00+02:00
 link: https://xn--wilmabruner-r8a.projektemacher.org/
 type: site
+status: inactive
 private: true
 archive: false
 news: false
