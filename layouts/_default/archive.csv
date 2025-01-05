@@ -35,7 +35,7 @@
           {{- else -}}
               {{- $postTitle = .Title -}}
           {{- end -}}
-          {{ .Date }}, {{ $displayName }}, "{{ $postTitle }}"{{ printf "\n" }}
+          {{ .Date }},{{ $displayName }},"{{ $postTitle }}"{{ printf "\n" }}
         {{- end -}}
       {{- end -}}
     {{- end -}}
