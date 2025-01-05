@@ -1,5 +1,4 @@
 // See https://observablehq.com/@d3/stacked-to-grouped-bars
-import * as d3 from 'd3-dsv';
 import { bb } from 'billboard.js';
 
 //TODO: This is currently just some example code
