@@ -14,6 +14,13 @@
   {{- errorf "[shortcodes/chart.html] No CSV file given for %s" $ctx.RelPermalink -}}
 {{- end -}}
 
+{{- $id := printf "_chart-%s" (md5 (printf "%s-%s" $csv now.UnixNano)) -}}
+
+<div id="{{ $id }}" class="chart">
+</div>
+<script type="text/javascript">
+  window.chart("{{ $csv }}", "#{{ $id | safeJS }}")
+</script>
 
 {{- define "partials/shortcodes/chart-metadata.html" -}}
   {{- (dict "css" slice "js" (slice "js/chart.js") "scss" (slice "scss/chart.scss")) | jsonify -}}

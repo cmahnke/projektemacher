@@ -8,3 +8,7 @@ outputs:
   - html
 ---
 Diese Seite listet chronologisch alle Beiträge der Projektemacher.org Blogs.
+
+{{< details summary="Statistische Auswertung" class="archive-statistics" >}}
+  {{< chart csv="statistics.csv" >}}
+{{< /details >}}

@@ -8,3 +8,7 @@ outputs:
   - html
 ---
 This page chronologically lists all contributions from the Projektemacher.org blogs.
+
+{{< details summary="Statistical analysis" class="archive-statistics" >}}
+  {{< chart csv="statistics.csv" >}}
+{{< /details >}}
