@@ -1,0 +1,20 @@
+{{- $ctx := .Page -}}
+
+{{- $csv := "" -}}
+{{- with .Get "csv" -}}
+  {{- $csv = . -}}
+  {{/*
+    {{- if eq (.Resources.Get $csv) nil -}}
+      {{- errorf "[shortcodes/chart.html] CSV file %s given for %s not found" $csv $ctx.RelPermalink -}}
+    {{- end -}}
+  */}}
+{{- end -}}
+
+{{- if eq $csv "" -}}
+  {{- errorf "[shortcodes/chart.html] No CSV file given for %s" $ctx.RelPermalink -}}
+{{- end -}}
+
+
+{{- define "partials/shortcodes/chart-metadata.html" -}}
+  {{- (dict "css" slice "js" (slice "js/chart.js") "scss" (slice "scss/chart.scss")) | jsonify -}}
+{{- end -}}
