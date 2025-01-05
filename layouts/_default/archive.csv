@@ -1,0 +1,44 @@
+{{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")).ByDate -}}
+
+{{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
+{{- $lastYear := (index (last 1 $pages) 0).Date.Year -}}
+
+{{- range (seq $firstYear $lastYear) -}}
+  {{ $year := . }}
+  {{- if len (where $pages ".Date.Year" "==" $year) -}}
+    {{- $yearPages := where $pages ".Date.Year" "==" . -}}
+    {{- range (seq 1 12 ) -}}
+      {{- $month := . -}}
+      {{- if len (where $yearPages ".Date.Month" "==" $month) -}}
+        {{- range (where $yearPages ".Date.Month" "==" $month).Reverse -}}
+          {{/* Blog name */}}
+          {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+          {{- $dir = split $dir "/" -}}
+
+          {{- $displayName := "" -}}
+          {{- $postLink := "" -}}
+          {{- $linkPrefix := "" -}}
+          {{- $prefix := index $dir 1 -}}
+          {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+          {{- $blogPage := .Site.GetPage $sectionHeading -}}
+          {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+              {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+              {{- $sectionHeading = "" -}}
+              {{- $prefix = "projektemacher" -}}
+          {{- end -}}
+          {{- $displayName = $blogPage.Title -}}
+
+          {{/* Post title */}}
+          {{- $postTitle := "" -}}
+          {{- if eq .Title "" -}}
+              {{- $postTitle = (i18n "untitledPost") -}}
+          {{- else -}}
+              {{- $postTitle = .Title -}}
+          {{- end -}}
+          {{ .Date }}, {{ $displayName }}, "{{ $postTitle }}"{{ printf "\n" }}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+{{- end -}}

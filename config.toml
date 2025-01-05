@@ -203,6 +203,8 @@ enableRobotsTXT = true
     suffixes = ["json"]
   [mediaTypes."application/activity+json"]
     suffixes = ["json"]
+  [mediaTypes."text/csv"]
+    suffixes = ["csv"]
 
 [outputFormats]
   [outputFormats.geojson]
@@ -245,6 +247,13 @@ enableRobotsTXT = true
     isPlainText = true
     isHTML = false
     baseName = "outbox"
+    notAlternative = true
+
+  [outputFormats.csv]
+    mediaType = "text/csv"
+    isPlainText = true
+    isHTML = false
+    baseName = "statistics"
     notAlternative = true
 
 [markup]
