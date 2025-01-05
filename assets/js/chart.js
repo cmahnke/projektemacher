@@ -3,6 +3,7 @@
 import * as echarts from 'echarts';
 
 const defaultHeightVH = 50;
+const addEmptyMonths = true
 
 const colors = [
     '#c23531',
@@ -17,6 +18,12 @@ const colors = [
     '#546570',
     '#c4ccd3'
   ];
+
+function formatIndex(dateStr) {
+  const date = new Date(dateStr);
+  const month = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+  return month;
+}
 
 async function loadCSVFromURL(url) {
   try {
@@ -39,10 +46,10 @@ async function loadCSVFromURL(url) {
       }
     }
 
-    const groupedData = {};
+    let groupedData = {};
     data.forEach(row => {
-      const date = new Date(row['Date']);
-      const month = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}`;
+
+      const month = formatIndex(row['Date'])
       if (!groupedData[month]) {
         groupedData[month] = {};
       }
@@ -50,7 +57,6 @@ async function loadCSVFromURL(url) {
       groupedData[month][category] = (groupedData[month][category] || 0) + 1;
     });
 
-    //return data[0].map((_, i) => data.map(row => row[i]));
     return groupedData;
   } catch (error) {
     console.error('Error loading CSV from URL:', error);
@@ -64,16 +70,34 @@ function chart(csvFile, element, options) {
   }
   loadCSVFromURL(csvFile).then(data => {
     const container = document.getElementById(element)
-    var width = container.offsetWidth;
+    let width = container.offsetWidth;
     if (width === 0) {
       width = container.parentElement.parentElement.offsetWidth;
     }
-    var height = container.offsetHeight;
+    let height = container.offsetHeight;
     if (height === 0) {
       height = Math.round(window.innerHeight / 100) * defaultHeightVH;
     }
 
-    const xAxisData = Object.keys(data);
+    let xAxisData = [];
+    if (addEmptyMonths) {
+      const filledData = {};
+      const first = new Date(Object.keys(data)[0]);
+      const last = new Date(Object.keys(data).slice(-1));
+      [...Array(last.getFullYear() - first.getFullYear()).keys()].forEach((i) => {
+        const y = first.getFullYear() + i;
+        [...Array(12).keys()].forEach((m) => {
+          if ((y == first.getFullYear() && m < first.getMonth()) || (y == last.getFullYear() && m > last.getMonth())) {
+            return
+          }
+          let missingMonth = `${y}-${(m + 1).toString().padStart(2, '0')}`
+          xAxisData.push(formatIndex(missingMonth))
+        });
+      });
+    } else {
+      xAxisData = Object.keys(data);
+    }
+
     const seriesData = [];
     let colorIndex = 0;
     const blogs = new Set(Object.keys(data).map((key) => { return Object.keys(data[key])[0] }));
@@ -83,7 +107,12 @@ function chart(csvFile, element, options) {
         name: blog,
         type: 'bar',
         stack: 'total',
-        data: xAxisData.map(month => data[month][blog] || 0),
+        data: xAxisData.map(month => {
+          if (month in data) {
+            return data[month][blog] || 0
+          }
+          return 0;
+        }),
         itemStyle: {
           color: colors[colorIndex % colors.length]
         },
@@ -94,7 +123,7 @@ function chart(csvFile, element, options) {
       colorIndex++;
     }
 
-    var chartOptions = {
+    let chartOptions = {
       color: colors,
       legend: {
         right: '15%',
@@ -141,7 +170,7 @@ function chart(csvFile, element, options) {
       chartOptions = {...chartOptions, ...options};
     }
 
-    var chart = echarts.init(container, null, { renderer: "svg", width: width, height: height});
+    let chart = echarts.init(container, null, { renderer: "svg", width: width, height: height});
     chart.setOption(chartOptions);
   });
 }
