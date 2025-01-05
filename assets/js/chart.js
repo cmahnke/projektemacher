@@ -118,7 +118,7 @@ function chart(csvFile, element, options) {
         label: "Date",
         axisLabel: {
           formatter: value => {
-            return new Date('2001-4').toLocaleString('default', { year: "numeric", month: "short"});
+            return new Date(value).toLocaleString('default', { year: "numeric", month: "short"});
           },
           align: 'center'
         }
