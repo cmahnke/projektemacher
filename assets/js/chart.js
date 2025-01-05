@@ -58,7 +58,7 @@ async function loadCSVFromURL(url) {
   }
 }
 
-function chart(csvFile, element) {
+function chart(csvFile, element, options) {
   if (element.startsWith('#')) {
     element = element.substring(1);
   }
@@ -77,7 +77,7 @@ function chart(csvFile, element) {
     const seriesData = [];
     let colorIndex = 0;
     const blogs = new Set(Object.keys(data).map((key) => { return Object.keys(data[key])[0] }));
-    //WTF for in won't work with Sets and only itereates over array index, JS is stupid as shit
+    //WTF: `for in` won't work with Sets and only itereates over array index, JS is stupid as shit
     for (const blog of [...blogs]) {
       seriesData.push({
         name: blog,
@@ -94,14 +94,12 @@ function chart(csvFile, element) {
       colorIndex++;
     }
 
-    var option = {
+    var chartOptions = {
       color: colors,
       legend: {
-        type: 'scroll',
-        orient: 'horizontal',
-        right: 10,
-        left: 10,
-        top: 10,
+        right: '15%',
+        left: '15%',
+        top: 5,
         data: seriesData.map(series => series.name)
       },
       tooltip: {
@@ -109,26 +107,42 @@ function chart(csvFile, element) {
         formatter: '{a} <br/>{b}: <b>{c}</b>'
       },
       grid: {
-        left: 0,
+        left: 56,
         right: 0,
-        top: 0
+        top: 20,
+        bottom: '10%'
       },
       xAxis: {
         type: 'category',
         data: xAxisData,
-        label: "Date"
+        label: "Date",
+        axisLabel: {
+          formatter: value => {
+            return new Date('2001-4').toLocaleString('default', { year: "numeric", month: "short"});
+          },
+          align: 'center'
+        }
       },
       yAxis: {
         type: 'value',
+        width: 54,
         label: "Posts",
-        scale: true
+        scale: true,
+        axisLabel: {
+          formatter: '{value} Posts',
+          align: 'center'
+        }
       },
       series: seriesData,
       dataZoom: []
     };
 
+    if (options !== undefined && options != null) {
+      chartOptions = {...chartOptions, ...options};
+    }
+
     var chart = echarts.init(container, null, { renderer: "svg", width: width, height: height});
-    chart.setOption(option);
+    chart.setOption(chartOptions);
   });
 }
 

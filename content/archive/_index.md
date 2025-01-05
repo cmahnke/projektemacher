@@ -10,5 +10,5 @@ outputs:
 Diese Seite listet chronologisch alle Beiträge der Projektemacher.org Blogs.
 
 {{< details summary="Statistische Auswertung" class="archive-statistics" >}}
-  {{< chart csv="statistics.csv" >}}
+  {{< chart csv="statistics.csv" opts=`{"textStyle": { "fontFamily": "Lato, Helvetica, sans-serif" }}` >}}
 {{< /details >}}

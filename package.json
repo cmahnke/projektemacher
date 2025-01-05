@@ -11,6 +11,7 @@
     "echarts-stat": "^1.2.0",
     "fuse.js": "^7.0.0",
     "jquery": "^3.7.1",
+    "luxon": "^3.5.0",
     "normalize.css": "^8.0.1",
     "ol": "^9.0.0",
     "popper.js": "^1.16.1"

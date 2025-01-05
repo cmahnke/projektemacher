@@ -1,6 +1,7 @@
 {{- $ctx := .Page -}}
 
 {{- $csv := "" -}}
+{{- $opts := "null" -}}
 {{- with .Get "csv" -}}
   {{- $csv = . -}}
   {{/*
@@ -8,6 +9,10 @@
       {{- errorf "[shortcodes/chart.html] CSV file %s given for %s not found" $csv $ctx.RelPermalink -}}
     {{- end -}}
   */}}
+{{- end -}}
+
+{{- with .Get "opts" -}}
+  {{- $opts = . -}}
 {{- end -}}
 
 {{- if eq $csv "" -}}
@@ -19,7 +24,7 @@
 <div id="{{ $id }}" class="chart">
 </div>
 <script type="text/javascript">
-  window.chart("{{ $csv }}", "#{{ $id | safeJS }}")
+  window.chart("{{ $csv }}", "#{{ $id | safeJS }}", {{ $opts | safeJS }})
 </script>
 
 {{- define "partials/shortcodes/chart-metadata.html" -}}

@@ -864,5 +864,7 @@ p.small {
 }
 
 .archive-statistics {
-    display: none;
+    @media (max-width: 36em) {
+        display: none;
+    }
 }
