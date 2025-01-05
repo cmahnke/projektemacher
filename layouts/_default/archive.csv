@@ -1,3 +1,4 @@
+Date,Blog,Title{{ printf "\n" }}
 {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "archive")).ByDate -}}
 
 {{- $firstYear := (index (first 1 $pages) 0).Date.Year -}}
@@ -35,7 +36,7 @@
           {{- else -}}
               {{- $postTitle = .Title -}}
           {{- end -}}
-          {{ .Date }},{{ $displayName }},"{{ $postTitle }}"{{ printf "\n" }}
+          {{ .Date | time.Format "2006-01-02T15:04:05Z07:00" }},{{ $displayName }},"{{ $postTitle }}"{{ printf "\n" }}
         {{- end -}}
       {{- end -}}
     {{- end -}}
