@@ -154,6 +154,12 @@ function chart(csvFile, element, options) {
       },
       yAxis: {
         type: 'value',
+        /*
+        min: 'dataMin',
+        max: 'dataMax',
+        type: 'log',
+        logBase: 2,
+        */
         width: 54,
         label: "Posts",
         scale: true,
