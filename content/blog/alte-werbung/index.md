@@ -14,6 +14,6 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Winter 2024/2025 gestartet.
+Wird im Winter 2027/2028 gestartet.
 
 Alte Werbung: Manchmal lustig, manchmal fragwürdig, manchmal eigenartig...

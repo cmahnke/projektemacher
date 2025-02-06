@@ -2,7 +2,7 @@
 title: "Kunst in Göttingen"
 description: "Artists and art from and in Göttingen"
 date: 2021-03-28T10:41:14+01:00
-link:
+link: https://art.goettingen.xyz
 status: planned
 draft: true
 private: true

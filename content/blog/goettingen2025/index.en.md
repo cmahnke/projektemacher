@@ -2,7 +2,7 @@
 title: "Göttingen"
 description: "Göttingen in 2025"
 date: 2020-10-02T18:45:20+02:00
-link: ""
+link: https://2025.goettingen.xyz
 status: planned
 draft: true
 private: true

@@ -1,8 +1,8 @@
 ---
-title: "Kaleidoskope"
-description: "This blog presents old kaleidoscopes"
-date: 2020-09-08T20:41:14+02:00
-link:
+title: "Never Build Göttingen"
+description: "This blog presents never-built architecture in Göttingen"
+date: 2025-02-06T18:41:14+02:00
+link: https://never-build.goettingen.xyz
 status: planned
 draft: true
 private: true

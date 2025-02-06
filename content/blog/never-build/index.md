@@ -1,8 +1,8 @@
 ---
-title: "Kaleidoskope"
-description: "Dieses Blog präsentiert Kaleidoskope"
-date: 2020-09-08T20:41:14+02:00
-link:
+title: "Never Build Göttingen"
+description: "Dieses Blog präsentiert nie gebaute Architektur in Göttingen"
+date: 2025-02-06T18:41:14+02:00
+link: https://never-build.goettingen.xyz
 status: planned
 draft: true
 private: true
@@ -15,5 +15,3 @@ resources:
     description: "Screenshot"
 ---
 Wird im Sommer 2025 gestartet.
-
-Ein optisches Gerät für Kinder...
