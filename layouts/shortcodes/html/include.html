@@ -1,0 +1,11 @@
+{{ $filename := "" }}
+{{ $content := "" }}
+{{ if (.Get "file") }}
+  {{ $filename = (.Get "file") }}
+{{ end }}
+
+{{- if fileExists $filename -}}
+  <div class="included-html">
+      {{- partial "html/html-body.html" (dict "context" . "src" $filename) -}}
+  </div>
+{{- end -}}
