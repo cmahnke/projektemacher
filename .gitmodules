@@ -61,3 +61,6 @@
 [submodule "blogs/xn--h-zfa.xyz"]
 	path = blogs/xn--h-zfa.xyz
 	url = https://github.com/cmahnke/xn--h-zfa.xyz.git
+[submodule "blogs/never-build"]
+	path = blogs/never-build
+	url = https://github.com/cmahnke/never-build.git

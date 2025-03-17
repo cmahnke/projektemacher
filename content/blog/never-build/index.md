@@ -1,11 +1,9 @@
 ---
 title: "Never Build Göttingen"
 description: "Dieses Blog präsentiert nie gebaute Architektur in Göttingen"
-date: 2025-02-06T18:41:14+02:00
+date: 2025-03-13T18:41:14+02:00
 link: https://never-build.goettingen.xyz
-status: planned
-draft: true
-private: true
+status: "active"
 lang:
 - de
 resources:
@@ -14,4 +12,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Sommer 2025 gestartet.
+Alternative Architekturgeschichte: Ambitionierte Bauprojekte für Göttingen, die das Stadtbild geändert hätten.

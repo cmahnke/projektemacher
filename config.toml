@@ -98,6 +98,14 @@ enableRobotsTXT = true
       source = "blogs/merch.projektemacher/content"
       target = "content/post/merch.projektemacher"
 
+#    [[module.mounts]]
+#      source = "blogs/schatten/content"
+#      target = "content/post/schatten"
+
+    [[module.mounts]]
+      source = "blogs/never-build/content"
+      target = "content/post/never-build"
+
     [[module.mounts]]
       source = "content"
       target = "content"

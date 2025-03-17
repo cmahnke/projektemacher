@@ -85,6 +85,10 @@ nav {
           .navigation-item span {
             margin-left: .8rem;
             margin-right: .8rem;
+
+            .navigation-link i.link-icon {
+                display: none;
+            }
           }
         }
 
@@ -92,6 +96,10 @@ nav {
             .navigation-item {
                 .navigation-link {
                     color: black;
+
+                    i.link-icon {
+                        display: none;
+                    }
                 }
             }
 

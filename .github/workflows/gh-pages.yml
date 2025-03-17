@@ -13,12 +13,12 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.143.1
+  HUGO_VERSION: 0.145.0
   DEPENDENCY_MANAGER: yarn
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
 #      - name: Maximize build space
 #        uses: easimon/maximize-build-space@master
