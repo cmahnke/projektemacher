@@ -1,5 +1,8 @@
+@use "functions/color" as *;
+
 @import "normalize";
 @import "bootstrap.scss";
+
 /* Variables */
 $text-font-family: Lora, Georgia, serif;
 $heading-font-family: Lato, Helvetica, sans-serif;
