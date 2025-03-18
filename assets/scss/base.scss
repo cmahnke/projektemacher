@@ -644,6 +644,11 @@ body {
             .filter-list {
                 columns: 2;
                 column-gap: 1em;
+                max-width: 100%;
+
+                .filter {
+                  hyphens: auto;
+                }
             }
         }
     }
