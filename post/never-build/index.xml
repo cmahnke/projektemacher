@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Never Build Göttingen on Projektemacher</title>
+    <link>https://projektemacher.org/post/never-build/collection.json</link>
+    <description>Recent content in Never Build Göttingen on Projektemacher</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://projektemacher.org/post/never-build/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>404 - Seite nicht gefunden!</title>
+      <link>https://projektemacher.org/post/never-build/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://projektemacher.org/post/never-build/404/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kartenansicht</title>
+      <link>https://projektemacher.org/post/never-build/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://projektemacher.org/post/never-build/map/</guid>
+      <description>&lt;p&gt;Auf dieser Seite werden die Einträge mit (rekonstruierten) Geo-Informationen auf einer Karte angezeigt.&#xA;{.meta-page-intro}&lt;/p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;download-link&#34;&gt;&#xA;  &#xA;    &lt;a class=&#34;link&#34; href=&#34;https://projektemacher.org/post/never-build/map/../post/map.geojson&#34; target=&#34;_blank&#34;&gt;Download GeoJSON&lt;/a&gt;&#xA;  &#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>https://projektemacher.org/post/never-build/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://projektemacher.org/post/never-build/links/</guid>
+      <description>&lt;h1 id=&#34;göttingen-allgemein&#34;&gt;&#xA;  Göttingen Allgemein&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#g%c3%b6ttingen-allgemein&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://freies-verlagshaus.de/&#34; target=&#34;_blank&#34;&gt;Freies Verlagshaus&lt;/a&gt; von Michel Graver&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://kulturmaps.de/&#34; target=&#34;_blank&#34;&gt;Kulturmaps Göttingen&lt;/a&gt; von Michel Graver&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://goest.de/&#34; target=&#34;_blank&#34;&gt;goettinger stadtinfo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;architektur-in-göttingen&#34;&gt;&#xA;  Architektur in Göttingen&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#architektur-in-g%c3%b6ttingen&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://freies-verlagshaus.de/architektur/&#34; target=&#34;_blank&#34;&gt;Architekturnotizen&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>Über diese Seite</title>
+      <link>https://projektemacher.org/post/never-build/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://projektemacher.org/post/never-build/about/</guid>
+      <description>&lt;h1 id=&#34;fehlende-einträge&#34;&gt;&#xA;  Fehlende Einträge&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#fehlende-eintr%c3%a4ge&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Derzeit fehlen noch (mindestens) die folgenden Entwürfe:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Kriegergedächniskirche von Dominikus Böhm um 1923, In: Ulrich Weisner (Hsg.) - Böhm: Väter und Söhne, Seite 49&lt;/li&gt;&#xA;&lt;li&gt;Entwürfe von &lt;a href=&#34;https://de.wikipedia.org/wiki/Lucy_Hillebrand&#34; target=&#34;_blank&#34;&gt;Lucy Hillebrand&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Entwürfe für die Umgestaltung der &lt;a href=&#34;https://de.wikipedia.org/wiki/Lokhalle_G%C3%B6ttingen&#34; target=&#34;_blank&#34;&gt;Lokhalle Göttingen&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Unterführung unter dem Nikolausberger Weg (Von Campus in den Botanischen Garten)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;kolophon&#34;&gt;&#xA;  Kolophon&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#kolophon&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Diese Seite wurde mit &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; generiert.&lt;/p&gt;&#xA;&lt;p&gt;Als Schriftarten kommen &lt;a href=&#34;https://github.com/theleagueof/league-spartan&#34; target=&#34;_blank&#34;&gt;League Spartan&lt;/a&gt; und &lt;a href=&#34;https://github.com/googlefonts/roboto-3-classic&#34; target=&#34;_blank&#34;&gt;Roboto Mono&lt;/a&gt; zum Einsatz.&lt;/p&gt;&#xA;&lt;p&gt;Die folgenden JavaScript und CSS Frameworks werden benutzt:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
