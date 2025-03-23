@@ -103,8 +103,8 @@ enableRobotsTXT = true
 #      target = "content/post/schatten"
 
     [[module.mounts]]
-      source = "blogs/never-build/content"
-      target = "content/post/never-build"
+      source = "blogs/never-built/content"
+      target = "content/post/never-built"
 
     [[module.mounts]]
       source = "content"
