@@ -1,5 +1,5 @@
 ---
-title: "Never Build Göttingen"
+title: "Never Built Göttingen"
 description: "This blog presents never-built architecture in Göttingen"
 date: 2025-03-13T18:41:14+02:00
 link: https://never-built.goettingen.xyz
