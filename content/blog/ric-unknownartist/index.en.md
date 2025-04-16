@@ -2,12 +2,13 @@
 title: "Ric - An unknown artist"
 description: "This blog tries to help to solve the mystery „Who was Ric?“"
 date: 2019-03-27T19:30:39Z
-link: https://ric-unknownartist.projektemacher.org/
-status: active
-private: true
-lang:
-- en
-- de
+params:
+  link: https://ric-unknownartist.projektemacher.org/
+  status: active
+  private: true
+  lang:
+  - en
+  - de
 resources:
 - name: screenshot
   src: "screenshot.png"

@@ -2,12 +2,13 @@
 title: "Hortenkachel"
 description: "Wir basteln uns eine Hortenkachel"
 date: 2020-10-09T09:41:14+02:00
-link:
-status: planned
+params:
+  link:
+  status: planned
+  private: true
+  lang:
+  - de
 draft: true
-private: true
-lang:
-- de
 resources:
 - name: screenshot
   src: "screenshot.png"

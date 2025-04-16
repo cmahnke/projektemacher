@@ -33,78 +33,97 @@ enableRobotsTXT = true
     [[module.mounts]]
       source = "blogs/kraehenbeisser/content"
       target = "content/post/kraehenbeisser"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/diapraesentation/content"
       target = "content/post/diapraesentation"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/flohmarktfunde/content"
       target = "content/post/flohmarktfunde"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/haesslicheplastiktiereundzeugs/content"
       target = "content/post/haesslicheplastiktiereundzeugs"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/ric-unknownartist/content"
       target = "content/post/ric-unknownartist"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/yaapb/content"
       target = "content/post/yaapb"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/kleiderbuegel/content"
       target = "content/post/kleiderbuegel"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/vorsatzpapier/content"
       target = "content/post/vorsatzpapier"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/schriftmuster/content"
       target = "content/post/schriftmuster"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/backsteinexpressionismus/content"
       target = "content/post/backsteinexpressionismus"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/blaufusstoelpel/content"
       target = "content/post/blaufusstoelpel"
+      excludeFiles = ['posts/**/*.jxl', 'posts/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/kinderbuecher/content"
       target = "content/post/kinderbuecher"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/vintagereality/content"
       target = "content/post/vintagereality"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/briefsteller/content"
       target = "content/post/briefsteller"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/labs.projektemacher.org/content"
       target = "content/post/labs.projektemacher"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/christianmahnke/content"
       target = "content/post/christianmahnke"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/merch.projektemacher/content"
       target = "content/post/merch.projektemacher"
-
-#    [[module.mounts]]
-#      source = "blogs/schatten/content"
-#      target = "content/post/schatten"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/never-built/content"
       target = "content/post/never-built"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+
+
+#    [[module.mounts]]
+#      source = "blogs/schatten/content"
+#      target = "content/post/schatten"
 
     [[module.mounts]]
       source = "content"
@@ -112,7 +131,7 @@ enableRobotsTXT = true
 
     [module.hugoVersion]
       extended = true
-      min = '0.127.0'
+      min = '0.146.5'
 
 [languages]
     [languages.de]

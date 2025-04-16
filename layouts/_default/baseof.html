@@ -19,7 +19,7 @@
     {{- end -}}
 
     {{ partial "html/head/meta.html" . }}
-    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" )) -}}
+    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" "vars" site.Params.style )) -}}
     {{- partial "html/head/script.html" . -}}
 
     {{- if eq .FirstSection .CurrentSection -}}

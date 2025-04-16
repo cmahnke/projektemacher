@@ -2,11 +2,12 @@
 title: "Yaapb"
 description: "Yet another analog photo blog"
 date:  2016-02-23T22:54:03Z
-link: https://yaapb.projektemacher.org/
-status: active
-private: true
-lang:
-- en
+params:
+  link: https://yaapb.projektemacher.org/
+  status: active
+  private: true
+  lang:
+  - en
 resources:
 - name: screenshot
   src: "screenshot.png"

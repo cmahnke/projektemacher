@@ -2,12 +2,13 @@
 title: Hässliche Plastiktiere und Zeugs
 description: Fotodokumentation über Tierparaden
 date: 2009-08-20T15:02:00Z
-private: true
-link: https://haesslicheplastiktiereundzeugs.projektemacher.org/
-status: inactive
-yearsActive: 2009 - 2016
-lang:
-- de
+params:
+  private: true
+  link: https://haesslicheplastiktiereundzeugs.projektemacher.org/
+  status: inactive
+  yearsActive: 2009 - 2016
+  lang:
+  - de
 resources:
 - name: screenshot
   src: "screenshot.png"

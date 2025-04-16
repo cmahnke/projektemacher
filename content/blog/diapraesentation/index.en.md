@@ -2,12 +2,13 @@
 title: "Diapraesentation"
 description: "Modern presentations with old technology"
 date: 2013-08-28T02:32:00Z
-link: https://diapraesentation.projektemacher.org/
-status: inactive
-yearsActive: 2013 - 2015
-private: true
-lang:
-- de
+params:
+  link: https://diapraesentation.projektemacher.org/
+  status: inactive
+  yearsActive: 2013 - 2015
+  private: true
+  lang:
+  - de
 resources:
 - name: screenshot
   src: "screenshot.png"

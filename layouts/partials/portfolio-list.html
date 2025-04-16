@@ -10,6 +10,9 @@
               {{ $lang := .Params.lang }}
 
               {{- $screenshot := ((.GetPage .Path).Resources.ByType "image").GetMatch "screenshot" -}}
+              {{- if eq $screenshot nil -}}
+                {{- warnf "[portfolio-lsit.html] Screenshot for %s is nil" .RelPermalink -}}
+              {{- end -}}
               {{- $preview := $screenshot.Resize "400x Lanczos jpg" -}}
               <div class="screenshot">
                   {{- if and (ne $status "") (ne $status nil) -}}

@@ -2,10 +2,11 @@
 title: "Briefsteller"
 description: "Beispielbriefe aus alten Briefstellern (um 1900)"
 date: 2021-01-31T13:04:53+02:00
-link: "https://briefsteller.de/"
-status: active
-lang:
-- de
+params:
+  link: "https://briefsteller.de/"
+  status: active
+  lang:
+  - de
 resources:
 - name: screenshot
   src: "screenshot.png"

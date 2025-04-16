@@ -2,11 +2,12 @@
 title: "Vorsatzpapier"
 description: "This blog presents old type tables"
 date: 2020-10-10T14:49:14+02:00
-link: https://schriftmuster.projektemacher.org/
-status: active
-lang:
-- de
-- en
+params:
+  link: https://schriftmuster.projektemacher.org/
+  status: active
+  lang:
+  - de
+  - en
 resources:
 - name: screenshot
   src: "screenshot.png"

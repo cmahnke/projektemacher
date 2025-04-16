@@ -2,10 +2,11 @@
 title: "Never Built Göttingen"
 description: "Dieses Blog präsentiert nie gebaute Architektur in Göttingen"
 date: 2025-03-13T18:41:14+02:00
-link: https://never-built.goettingen.xyz
-status: "active"
-lang:
-- de
+params:
+  link: https://never-built.goettingen.xyz
+  status: "active"
+  lang:
+  - de
 resources:
 - name: screenshot
   src: "screenshot.png"
