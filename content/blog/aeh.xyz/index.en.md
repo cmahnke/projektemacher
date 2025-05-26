@@ -12,6 +12,7 @@ params:
   news: false
   lang:
   - en
+draft: true
 resources:
 - name: screenshot
   src: "screenshot.png"
