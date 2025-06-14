@@ -232,6 +232,8 @@ enableRobotsTXT = true
     suffixes = ["json"]
   [mediaTypes."text/csv"]
     suffixes = ["csv"]
+  [mediaTypes."text/bibtex"]
+    suffixes = ["bib"]
 
 [outputFormats]
   [outputFormats.geojson]
@@ -282,6 +284,11 @@ enableRobotsTXT = true
     isHTML = false
     baseName = "statistics"
     notAlternative = true
+
+  [outputFormats.bibtex]
+    mediaType = "text/bibtex"
+    baseName = "citation"
+    isHTML = false
 
 [markup]
     defaultMarkdownHandler = 'goldmark'
