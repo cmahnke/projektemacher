@@ -1,0 +1,1015 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/en/</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo 0.147.6</generator><language>en</language>
+      <lastBuildDate>Mon, 30 Jun 2025 04:26:30 +0000</lastBuildDate><atom:link href="https://projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" /><item><title>Kleiderbügel: flebbe</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/143</link>
+        <pubDate>Tue, 24 Jun 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/143/</guid>
+        <description>&lt;p&gt;flebbe&lt;/p&gt;
+&lt;div class=&#34;notes&#34;&gt;
+Weitere Informationen:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.braunschweig.de/leben/stadtplanung_bauen/stadtbild_denkmalpflege/denkmalpflege/Datenblatt_Flebbe_Internet.pdf&#34;&gt;Das Flebbe-Haus bei der Denkmalpflege Braunschweig&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description></item>
+    <item><title>Never Built Göttingen: Städteforum 1977</title>
+        <link>https://never-built.goettingen.xyzpost/staedte-forum-1977</link>
+        <pubDate>Wed, 18 Jun 2025 17:15:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/never-built/post/staedte-forum-1977/manifest.json</guid>
+        <description></description></item>
+    <item><title>Never Built Göttingen: Sanierungsgebiet &#34;Neustadt-Ostseite&#34;</title>
+        <link>https://never-built.goettingen.xyzpost/staedte-forum-1977/neustadt</link>
+        <pubDate>Wed, 18 Jun 2025 17:15:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/never-built/post/staedte-forum-1977/neustadt/manifest.json</guid>
+        <description>&lt;p&gt;Eine weitere Variante einer umgestalteten Neustadt&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Diese späte Variante ist nicht mehr ganz so radikal, so bleibt hier das Theologische Stift in der Geiststraße erhalten. Die extremere Variante ist im &lt;a href=&#34;https://projektemacher.org/post/staedte-forum-1-71-goettingen/neustadt&#34;&gt;Städteforum 1/71&lt;/a&gt; zu finden.&lt;/p&gt;
+&lt;h1 id=&#34;realisierung&#34;&gt;
+  Realisierung
+  &lt;a class=&#34;heading-link&#34; href=&#34;#realisierung&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Aber auch diese wurde nicht vollständig umgesetzt, so ist z.B. die Bebauung am Christian-Gottlob-Heine-Ufer anders ausgefallen.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Wittke Größtes Herren-Spezialhaus Dithmarschens</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/142</link>
+        <pubDate>Tue, 17 Jun 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/142/</guid>
+        <description>&lt;p&gt;Wittke Größtes Herren-Spezialhaus Dithmarschens&lt;/p&gt;
+&lt;div class=&#34;notes&#34;&gt;
+Weitere Informationen:
+* [Ansichtskarte](https://ansichtskarten-lexikon.de/ak-221752.html)
+&lt;/div&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Vite und Git Symlink-Dateien</title>
+        <link>https://christianmahnke.de/post/vite-git-symlink-plugin</link>
+        <pubDate>Fri, 13 Jun 2025 16:02:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/vite-git-symlink-plugin/citation.bib</guid>
+        <description>&lt;p&gt;Today, Friday the 13th, I was stuck on the train in the middle of nowhere&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip; and since I only had a Windows laptop with me, some prototypes that I work on from time to time in such situations didn&amp;rsquo;t work. The background is that I usually add shared files as symlinks in the same Git repository to the respective source code directories.&lt;/p&gt;
+&lt;p&gt;This works fine under MacOS or Linux, of course, but if you simply check out a tree under Windows, the symlinks simply become normal files that contain the link target as a relative path. Since the network is poor / slow on the train, I have made a small &lt;a href=&#34;https://vite.dev/&#34; target=&#34;_blank&#34;&gt;Vite&lt;/a&gt;/&lt;a href=&#34;https://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup&lt;/a&gt; plugin that can analyse these files and load the necessary file.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node:path&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node:fs/promises&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;/**
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * A Vite plugin that resolves file content based on the first line.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * This is a common case in repositories created on MacOS or Linux using symlinks.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * When those get checked out under Windows, these symlinks are checked out as regular
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * files, just containig the target path of the original symlink. This plugin checks each import
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * if it contains a valid path on the first line load that instead transparently.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; * Otherwise, it loads the content of the original file.
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt; */&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;export&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;gitSymlinkResolverPlugin&lt;/span&gt;() {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;supportedExtensions&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.js&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.jsx&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.ts&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.tsx&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.css&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.scss&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.less&amp;#34;&lt;/span&gt;];
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;vite-plugin-git-symlink-resolver&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#a6e22e&#34;&gt;enforce&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;pre&amp;#34;&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;resolveId&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;importer&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;options&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;importer&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;startsWith&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\0&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;||&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;node_modules&amp;#34;&lt;/span&gt;)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;importedFilePath&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;resolve&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dirname&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;importer&lt;/span&gt;), &lt;span style=&#34;color:#a6e22e&#34;&gt;source&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ext&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;extname&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;importedFilePath&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#f92672&#34;&gt;!&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;supportedExtensions&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;includes&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;ext&lt;/span&gt;)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`\0git-symlink-resolver:&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;importedFilePath&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    },
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;async&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;load&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;startsWith&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\0git-symlink-resolver:&amp;#34;&lt;/span&gt;)) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;replace&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\0git-symlink-resolver:&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFileContent&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;readFile&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;firstLine&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFileContent&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;split&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;\n&amp;#34;&lt;/span&gt;)[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;?&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;trim&lt;/span&gt;();
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;firstLine&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;potentialRedirectPath&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;resolve&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dirname&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt;), &lt;span style=&#34;color:#a6e22e&#34;&gt;firstLine&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#66d9ef&#34;&gt;try&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;stats&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;stat&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;potentialRedirectPath&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;stats&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;isFile&lt;/span&gt;()) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                  &lt;span style=&#34;color:#e6db74&#34;&gt;`[GitSymlinkResolver] Redirecting &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;relative&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cwd&lt;/span&gt;(), &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; to &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;relative&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cwd&lt;/span&gt;(), &lt;span style=&#34;color:#a6e22e&#34;&gt;potentialRedirectPath&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                );
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;fs&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;readFile&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;potentialRedirectPath&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;utf-8&amp;#34;&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            } &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;              &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;log&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`[GitSymlinkResolver] File &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; isn&amp;#39;t a redirect`&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;e&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFileContent&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        } &lt;span style=&#34;color:#66d9ef&#34;&gt;catch&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;) {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#a6e22e&#34;&gt;console&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;(&lt;span style=&#34;color:#e6db74&#34;&gt;`[GitSymlinkResolver] Error reading original file &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;${&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;path&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;relative&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;process&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;cwd&lt;/span&gt;(), &lt;span style=&#34;color:#a6e22e&#34;&gt;originalFilePath&lt;/span&gt;)&lt;span style=&#34;color:#e6db74&#34;&gt;}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;:`&lt;/span&gt;, &lt;span style=&#34;color:#a6e22e&#34;&gt;error&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;null&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  };
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This can then simply be loaded in &lt;a href=&#34;https://vite.dev/config/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;vite.config.js&lt;/code&gt;&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;import&lt;/span&gt; { &lt;span style=&#34;color:#a6e22e&#34;&gt;gitSymlinkResolverPlugin&lt;/span&gt; } &lt;span style=&#34;color:#a6e22e&#34;&gt;from&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;./plugins/git-symlink-plugin.js&amp;#34;&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;and used:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;plugins&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;:&lt;/span&gt; [
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;gitSymlinkResolverPlugin&lt;/span&gt;(),
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;],
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Textil u. Modenhaus Gebr. Simon Steinheim</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/141</link>
+        <pubDate>Tue, 10 Jun 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/141/</guid>
+        <description>&lt;p&gt;Textil u. Modenhaus Gebr. Simon Steinheim&lt;/p&gt;
+&lt;div class=&#34;notes&#34;&gt;
+Weitere Informationen:
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tourismus.steinheim.de/Stadtgeschichte/Private-Stadtgeschichte/index.php?object=tx,3276.49.1&amp;amp;NavID=3276.18&amp;amp;La=1&#34;&gt;Private Stadtgeschichte Steinheim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Wallpaper virtual rooms!</title>
+        <link>https://christianmahnke.de/post/wallpaper-generator</link>
+        <pubDate>Mon, 09 Jun 2025 23:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/wallpaper-generator/citation.bib</guid>
+        <description>&lt;p&gt;Since I have an extensive collection of patterned papers, it was time to do something with them&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Since Corona, it has been common to look into each other&amp;rsquo;s booths in video conferences. While some tried interesting perspectives or the black and white mode, it became common during the subsequent AI boom to use filters to blur backgrounds so that you don&amp;rsquo;t have to screw an eccentric guitar, bicycle or art collection to the wall.&lt;/p&gt;
+&lt;p&gt;And to bring the two together, there is now an interactive toy for the &lt;a href=&#34;https://vorsatzpapier.projektemacher.org/generator/&#34; target=&#34;_blank&#34;&gt;‘Vorsatzpapier’ blog&lt;/a&gt; (book end paper), a pattern generator that can work directly with the IIIF manifests provided. On this page there is a variant where the source material can be freely selected:&lt;/p&gt;
+
+
+&lt;p&gt;The software is named after the designer &lt;a href=&#34;https://en.wikipedia.org/wiki/Lucienne_Day&#34; target=&#34;_blank&#34;&gt;Lucienne Day&lt;/a&gt;, who also became famous for her textile and wallpaper designs of the 50s and 60s.&lt;/p&gt;
+&lt;h1 id=&#34;technical-details&#34;&gt;
+  Technical details
+  &lt;a class=&#34;heading-link&#34; href=&#34;#technical-details&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;The following JavaScript modules were used for the implementation:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://openseadragon.github.io/&#34; target=&#34;_blank&#34;&gt;OpenSeadragon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/brunoocastro/openseadragon-fabric&#34; target=&#34;_blank&#34;&gt;OpenSeaDragon - FabricJS Plugin&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://allmaps.org/&#34; target=&#34;_blank&#34;&gt;Allmaps iiif-parser&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fabricjs.com/&#34; target=&#34;_blank&#34;&gt;Fabric.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.i18next.com/&#34; target=&#34;_blank&#34;&gt;i18next&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/i18next/i18next-browser-languageDetector&#34; target=&#34;_blank&#34;&gt;i18next-browser-languageDetector&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>Never Built Göttingen: Altenwohnstift am Warteberg (Planung) in Göttingen-Herberhausen</title>
+        <link>https://never-built.goettingen.xyzpost/bauinformation-nr1-1967/warteberg</link>
+        <pubDate>Wed, 04 Jun 2025 17:15:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/warteberg/manifest.json</guid>
+        <description>&lt;p&gt;Eine Seniorenresidenz im Wald bei Herberhausen&amp;hellip;&lt;/p&gt;
+&lt;h1 id=&#34;entwurf&#34;&gt;
+  Entwurf
+  &lt;a class=&#34;heading-link&#34; href=&#34;#entwurf&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Der genaue Ort lässt sich nicht präzise bestimmen.&lt;/p&gt;
+&lt;p&gt;Der Entwurf stammt von &lt;a href=&#34;https://de.wikipedia.org/wiki/Jochen_Brandi&#34; target=&#34;_blank&#34;&gt;Jochen Brandi&lt;/a&gt; aus Göttingen, von dem auch das realisierte EAM-Hochaus an der Kasseler Landstraße, oder die Deutsche Bank in der Innenstadt stammt.&lt;/p&gt;
+&lt;p&gt;Das Gebäude hätte über 10 Stockwerke hoch sein sollen und wäre somit auch recht auffällig gewesen.&lt;/p&gt;
+&lt;h1 id=&#34;grundriss&#34;&gt;
+  Grundriss
+  &lt;a class=&#34;heading-link&#34; href=&#34;#grundriss&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Der Grundriss zeigt eine Übersicht über die geplante Gesamtanlage.&lt;/p&gt;
+
+
+
+
+&lt;figure class=&#34;_efTrigger-inview-50px _effect-addclass-show&#34;&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/warteberg/manifest.json./blueprint.jpg&#34; alt=&#34;Grundriss&#34;/&gt; &lt;figcaption&gt;
+                
+                &lt;p&gt;
+                    Grundriss
+                    
+                        
+                        &lt;/p&gt;
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;</description></item>
+    <item><title>Kleiderbügel: </title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/140</link>
+        <pubDate>Tue, 03 Jun 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/140/</guid>
+        <description></description></item>
+    <item><title>ChristianMahnke.de: Site now searchable</title>
+        <link>https://christianmahnke.de/post/site-search</link>
+        <pubDate>Mon, 02 Jun 2025 17:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/site-search/citation.bib</guid>
+        <description>&lt;p&gt;You can now search this page&amp;hellip;&lt;/p&gt;
+&lt;p&gt;As there are now almost 100 posts, it was &lt;a href=&#34;https://projektemacher.org/post/tag-pairs/&#34;&gt;time&lt;/a&gt; to be able to search the page.&lt;/p&gt;
+&lt;p&gt;In order to better utilise the full depth of information, especially the blog posts, entities, e.g. links to Wikipedia, are used to &lt;a href=&#34;https://projektemacher.org/post/configure-pagefind&#34;&gt;enrich the index&lt;/a&gt;. For example, synonyms can also be taken into account for the search. In addition, search queries can also be narrowed down to entities&lt;/p&gt;
+&lt;p&gt;As the page only consists of static HTML and JavaScript, the &lt;a href=&#34;https://pagefind.app/&#34; target=&#34;_blank&#34;&gt;Pagefind&lt;/a&gt; software optimised for such scenarios is used. All search options can be found on the new &lt;a href=&#34;https://projektemacher.org/search/&#34;&gt;search page&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As there are still some minor errors, the site will be improved a little over the next few weeks&amp;hellip;&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Extending Pagefind</title>
+        <link>https://christianmahnke.de/post/configure-pagefind</link>
+        <pubDate>Fri, 30 May 2025 17:33:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/citation.bib</guid>
+        <description>&lt;p&gt;Since this page needs a search, I had a look at &lt;a href=&#34;https://pagefind.app/&#34; target=&#34;_blank&#34;&gt;Pagefind&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;and even though I originally had reservations about the integrability and flexibility, a very good friend (and the advantages) persuaded me to give it a try.&lt;/p&gt;
+&lt;p&gt;The advantages are quite simple:&lt;br&gt;
+My pages are basically static HTML, dynamic content is realised exclusively in the client in JavaScript (or TypeScript). Therefore, a search must also manage without a classic search server such as &lt;a href=&#34;https://solr.apache.org/&#34; target=&#34;_blank&#34;&gt;Solr&lt;/a&gt; or &lt;a href=&#34;https://www.elastic.co/elasticsearch&#34; target=&#34;_blank&#34;&gt;ElasticSearch&lt;/a&gt;.&lt;br&gt;
+So far, I have been using &lt;a href=&#34;https://www.fusejs.io/&#34; target=&#34;_blank&#34;&gt;Fuse.js&lt;/a&gt; for the &lt;a href=&#34;https://projektemacher.org/search/&#34; target=&#34;_blank&#34;&gt;Project Maker Search&lt;/a&gt;, for which the entire index is saved in a JSON file and always transferred in full to the searching client. Another JavaScript search that also works in this way is &lt;a href=&#34;https://lunrjs.com/&#34; target=&#34;_blank&#34;&gt;Lunr.js&lt;/a&gt;.&lt;br&gt;
+This makes indexing itself quite fast, but does not scale properly if you want to index many pages, as the size of the data to be transferred scales linearly with the number of pages. There is also a solution here to reduce the amount of data to be transferred, see &lt;a href=&#34;https://projektemacher.org/en/post/json-compression/&#34;&gt;article on JSON compression&lt;/a&gt;, but in the end the (possibly mobile) client still needs all the data in memory.&lt;/p&gt;
+&lt;p&gt;Pagefind works differently at this point, only the required fragments of the index are transferred. A more detailed description can be found on the homepage.&lt;br&gt;
+In addition, there are the relatively extensive options for enriching the index, which should also be used for this page.&lt;/p&gt;
+&lt;p&gt;From my point of view, the biggest disadvantage is a rather questionable design decision regarding configurability: what is classically known as index fields is realised in Pagefind via HTML data attributes (i.e. about as flexible or cool as inline CSS) or the use of the API. A simple external configuration file is not (yet) provided.&lt;/p&gt;
+&lt;h2 id=&#34;pagefind-configuration&#34;&gt;
+  Pagefind configuration
+  &lt;a class=&#34;heading-link&#34; href=&#34;#pagefind-configuration&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The following settings can be made via the data attributes; a rough distinction can be made between markers and playable fields. All begin with &lt;code&gt;data-pagefind-&lt;/code&gt;, omitted here for clarity:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Marker
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;body&lt;/code&gt; - The content to be indexed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ignore&lt;/code&gt; - Elements that can be ignored, e.g. headers, footers and menus, can optionally also be given a parameter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Field configuration
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;index-attrs&lt;/code&gt; - attributes that are to be indexed&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt; - Weighting of an element&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;meta&lt;/code&gt; - Additional metadata for a document, can include authors
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;image&lt;/code&gt; - metadata about images&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;title&lt;/code&gt; - The element for the title&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;filter&lt;/code&gt; - Filter, can be used e.g. for tags&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;external-configuration&#34;&gt;
+  External configuration
+  &lt;a class=&#34;heading-link&#34; href=&#34;#external-configuration&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;As the configuration is element-specific, it can be separated quite easily from the input document. The comparison to inline CSS above is not accidental, as CSS selectors are the means of choice for cleanly separating content and indexing (instructions) here too. All that is needed is a data structure that combines the two. And therein lies the novelty of the approach presented.&lt;/p&gt;
+&lt;p&gt;The basic structure is relatively simple: a list of CSS selectors can be assigned for each option above and parameters can then be specified depending on the type (see above).&lt;/p&gt;
+&lt;p&gt;This example illustrates the assignment:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;files&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;output&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;docs/index&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;source&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;docs&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;include&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;**/*.htm&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;**/*.html&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;exclude&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tags/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;en/tags/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;post/page/*/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;en/post/page/*/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;search/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;en/search/**&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;content&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;ignore&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;meta http-equiv=\&amp;#34;refresh\&amp;#34; content=\&amp;#34;0; url=&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;index&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Tagging attributes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#ae81ff&#34;&gt;.content-container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;ignore&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#ae81ff&#34;&gt;header.header&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;footer.footer&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;all&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;script&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;all&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;div.menu&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;all&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;weight&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h1&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;7.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h2&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h3&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;a[data-wikidata-entity]&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;5.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h4&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h5&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;h6&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Index fields&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;meta&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;meta[name=&amp;#34;author&amp;#34;]&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;wikidata&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;a[data-wikidata-entity]&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[data-wikidata-entity]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;variants&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;a[data-wikidata-entity]&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;function&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;variants&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;args&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;lang&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{lang}&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#ae81ff&#34;&gt;h1.post-title&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.section-head h1.section-head-title&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;.date time&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[datetime]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;selector&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;p, h1, h2&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;function&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;generate_css_selector&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;image&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;.gallery .gallery-image.caption&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[href]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;figure img&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[src]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;sort&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;date&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;&amp;#34;.date time&amp;#34;: &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[datetime]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;filter&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;tag&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.meta .tags a&amp;#34;&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;function&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;extract&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;args&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;pattern&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/#(.*)/$1/g&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;section&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;body&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;function&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;extract&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;args&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;attribute&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;class&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;pattern&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;s/.*section-(.[^ ]*).*/$1/g&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;index-attrs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[data-wikidata-entity]&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In addition to the general functionality already explained, a few special features also become clear:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;General configuration of directories and patterns for including and excluding the files to be indexed&lt;/li&gt;
+&lt;li&gt;Content-based filters for content, used here to exclude redirects&lt;/li&gt;
+&lt;li&gt;Weightings are also assigned to elements with certain attributes&lt;/li&gt;
+&lt;li&gt;Additional functions - these enable documents to be enriched with additional data. Examples can be a generated CSS selector that only addresses the input element, or typing of entities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;
+  Implementation
+  &lt;a class=&#34;heading-link&#34; href=&#34;#implementation&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The example implementation uses the Python API from Pagefind, mainly because I already have experience with the Python library &lt;a href=&#34;https://www.crummy.com/software/BeautifulSoup/&#34; target=&#34;_blank&#34;&gt;BeautifulSoup4&lt;/a&gt;, which is used for selection using CSS selectors.&lt;/p&gt;
+&lt;h3 id=&#34;source-code&#34;&gt;
+  Source code
+  &lt;a class=&#34;heading-link&#34; href=&#34;#source-code&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The source code is available as &lt;a href=&#34;https://gist.github.com/cmahnke/5049d42cd6dabc19cfd6c85161947fa2&#34; target=&#34;_blank&#34;&gt;Gist&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;outlook&#34;&gt;
+  Outlook
+  &lt;a class=&#34;heading-link&#34; href=&#34;#outlook&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The separation of content to be indexed and the configuration of the index now allows a few simple extensions that could massively increase the (re-)usability of the software:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Inline callbacks for CSS selectors&lt;/strong&gt;
+If it is possible to execute functions or callbacks for elements found via CSS selectors, these could also further enrich the index. These callbacks could of course be exchanged, so simple preprocessing pipelines could be realised, as known from &lt;a href=&#34;https://www.elastic.co/docs/reference/enrich-processor/pipeline-processor&#34; target=&#34;_blank&#34;&gt;ElasticSearch&lt;/a&gt;, for example
+&lt;strong&gt;Multiple output documents for one input document&lt;/strong&gt;
+It is also conceivable to create several indexing documents for one input document. This has the advantage that individual document fragments can also be searched and addressed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the configuration were realised in JavaScript (instead of YAML or JSON), the callbacks / plugins could also be defined or imported directly inline.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Wikidata Links in Hugo</title>
+        <link>https://christianmahnke.de/post/wikidata-entities-in-hugo</link>
+        <pubDate>Wed, 28 May 2025 18:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/wikidata-entities-in-hugo/citation.bib</guid>
+        <description>&lt;p&gt;Another step towards easier searchability of the site&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The Hugo template below is used when translating Markdown to HTML links. It uses:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.wikipedia.org/&#34; target=&#34;_blank&#34;&gt;Wikipedia&lt;/a&gt; links are enriched with the corresponding &lt;a href=&#34;https://wikidata.org/&#34; target=&#34;_blank&#34;&gt;Wikidata&lt;/a&gt; entity identifiers via the &lt;a href=&#34;https://www.mediawiki.org/wiki/API:Pageprops&#34; target=&#34;_blank&#34;&gt;Mediawiki API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;A shot in the dark: If it is an external URL (i.e. starts with &lt;code&gt;http&lt;/code&gt;), the &lt;a href=&#34;https://query.wikidata.org/sparql&#34; target=&#34;_blank&#34;&gt;Wikidata SPARQ endpoint&lt;/a&gt; is queried to find out whether the URL has been stored as &lt;code&gt;officialWebsite&lt;/code&gt; (P856), &lt;code&gt;officialBlog&lt;/code&gt; (P1581) or &lt;code&gt;onlineDatabaseURL&lt;/code&gt; (P1316) for an entity, if so, this identifier is used.&lt;/li&gt;
+&lt;li&gt;Wikidata links marked with a CSS class (&lt;code&gt;wikidata&lt;/code&gt;), and the identifier added&lt;/li&gt;
+&lt;li&gt;External links opened in a new tab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The file &lt;code&gt;layouts/_default/_markup/render-link.html&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Destination&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;findRE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`(?m)https://(.{2}).wikipedia.org/wiki/(.[^#]*)`&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;replaceRE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`(?m)https://(.{2}).wikipedia.org/wiki/(.[^#]*)`&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://$1.wikipedia.org/w/api.php?action=query&amp;amp;prop=pageprops&amp;amp;titles=$2&amp;amp;format=json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;resources&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.GetRemote&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Err&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unable to get remote resource %s: %s&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Value&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Content&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Unmarshal&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$keys&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;slice&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$k&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$_&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.query.pages&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$keys&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$keys&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$k&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$pageMeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.query.pages&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;first&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$keys&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$pageMeta&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.pageprops.wikibase_item&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unable to get remote resource %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hasPrefix&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://query.wikidata.org/sparql&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryOpts&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;method&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;get&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;headers&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Accept&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/sparql-results+json&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$query&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`SELECT ?item ?itemLabel ?officialWebsite ?officialBlog ?onlineDatabaseURL WHERE {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      ?item wdt:P856 &amp;lt;%s&amp;gt; . SERVICE wikibase:label { bd:serviceParam wikibase:language &amp;#34;[AUTO_LANGUAGE],en&amp;#34; . }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;      OPTIONAL { ?item wdt:P856 ?officialWebsite . } OPTIONAL { ?item wdt:P1581 ?officialBlog . } OPTIONAL { ?item wdt:P1316 ?onlineDatabaseURL . }
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    }`&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%s?query=%s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;urlquery&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$query&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;try&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;resources&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.GetRemote&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryOpts&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Err&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unable to get remote resource %s: %s&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Value&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Content&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Unmarshal&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;and&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;reflect&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.IsMap&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.results&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;isset&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.results&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;bindings&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;reflect&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.IsSlice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.results.bindings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;gt&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;len&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.results.bindings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$result&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$data&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.results.bindings&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;replaceRE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`(?m)https://www.wikidata.org/entity/(.*)`&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$result&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.item.value&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Unable to get remote resource %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$queryURL&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPrefix&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.wikidata.org/wiki/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;hasPrefix&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://www.wikidata.org/entity/&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;replaceRE&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;`(?m)https://www.wikidata.org/wiki/(.*)`&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;$1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$target&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;class&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;wikidata&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ne&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data-wikidata-entity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Destination&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;safeURL&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;strings&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.HasPrefix&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Destination&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Text&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;safeHTML&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;ne&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;data-wikidata-entity&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$wikidataID&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Destination&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;safeURL&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Title&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;strings&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.HasPrefix&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Destination&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;target&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;_blank&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Text&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;safeHTML&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;&amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;For the SPARQL query to work, the media type must be enabled in the Hugo configuration.&lt;/p&gt;
+&lt;p&gt;The following setting (&lt;a href=&#34;https://gohugo.io/configuration/security/#httpmediatypes&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;security.http&lt;/code&gt;&lt;/a&gt;) must be adjusted or added in &lt;code&gt;config.toml&lt;/code&gt; or &lt;code&gt;hugo.tml&lt;/code&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;security&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;http&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#a6e22e&#34;&gt;mediaTypes&lt;/span&gt; = [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^application/json$&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^application/json;\s?charset=[uU][tT][fF]-8$&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$&amp;#39;&lt;/span&gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;and-what-is-it-all-for&#34;&gt;
+  And what is it all for?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#and-what-is-it-all-for&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;In this way, entities in the source text can simply be labelled as (markdown) links in order to then be evaluated via JavaScript during display in the browser, for example. The entities can also be helpful for indexing, e.g. to give them a higher relevance in the search.&lt;/p&gt;
+&lt;p&gt;This CSS can be used to deactivate the links:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-css&#34; data-lang=&#34;css&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wikidata&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  pointer-events: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;text-decoration&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;none&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  colour: &lt;span style=&#34;color:#66d9ef&#34;&gt;unset&lt;/span&gt;;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Of course, the variants for &lt;code&gt;:link&lt;/code&gt; &lt;code&gt;:visited&lt;/code&gt;, &lt;code&gt;:hover&lt;/code&gt; and &lt;code&gt;:active&lt;/code&gt; also need to be adapted.&lt;/p&gt;
+&lt;h2 id=&#34;can-you-see-anything-yet&#34;&gt;
+  Can you see anything yet?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#can-you-see-anything-yet&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;No (or only in the source code of the page)&lt;/p&gt;</description></item>
+    <item><title>Never Built Göttingen: Demonstrativbauvorhaben Holtenser Berg, Göttingen</title>
+        <link>https://never-built.goettingen.xyzpost/bauinformation-nr1-1967/holtenser-berg</link>
+        <pubDate>Wed, 28 May 2025 17:15:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/holtenser-berg/manifest.json</guid>
+        <description>&lt;p&gt;Die Siedlung auf dem Holtenser Berg durchlief mehrere Planungsphasen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Einige sind in diesem Beitrag zu sehen. Allen ist gemeinsam, dass sie Wohngebäude verschiedener Größe um ein Zentrum anordnen: also einen kompletten funktionalen Stadtteil darstellen.&lt;/p&gt;
+&lt;h1 id=&#34;hintergrund&#34;&gt;
+  Hintergrund
+  &lt;a class=&#34;heading-link&#34; href=&#34;#hintergrund&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Als Demonstrativbauvorhaben &amp;ldquo;Holtenser Berg&amp;rdquo; des Bundesministers für Bauwesen projektiert, erstreckt sich die Siedlung auf 40 Hektar, 1967/68 bezogen die ersten Bewohner ihre Wohnungen.&lt;/p&gt;
+&lt;p&gt;Die Struktur wurde so angelegt, dass sich Wohnhäuser und Blöcke um ein Zentrum mit Läden und Arztpraxen gruppieren.&lt;/p&gt;
+&lt;h1 id=&#34;andere-entwürfe&#34;&gt;
+  Andere Entwürfe
+  &lt;a class=&#34;heading-link&#34; href=&#34;#andere-entw%c3%bcrfe&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+
+
+
+
+&lt;figure class=&#34;_efTrigger-inview-50px _effect-addclass-show&#34;&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/holtenser-berg/manifest.json./model-1.jpg&#34; alt=&#34;Entwurf 1&#34;/&gt; &lt;figcaption&gt;
+                
+                &lt;p&gt;
+                    Entwurf 1
+                    
+                        
+                        &lt;/p&gt;
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Hier ist das Highlight sicher die über den Hang zur Grone hängende Terrasse. Die Wohnfläche ist deutlich konzentrierter: weniger aber dafür größere Hochhäuser.&lt;/p&gt;
+
+
+
+
+&lt;figure class=&#34;_efTrigger-inview-50px _effect-addclass-show&#34;&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/holtenser-berg/manifest.json./model-2.jpg&#34; alt=&#34;Entwurf 2&#34;/&gt; &lt;figcaption&gt;
+                
+                &lt;p&gt;
+                    Entwurf 2
+                    
+                        
+                        &lt;/p&gt;
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;In diesem Entwurf ist die Hochhausbebauung auf den Norden des Gebiets konzentriert. Zusätzlich existieren zwei ansteigende, ca. 300 Meter lange Gebäude an den Rändern im Westen und Osten.&lt;/p&gt;
+
+
+
+
+&lt;figure class=&#34;_efTrigger-inview-50px _effect-addclass-show&#34;&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/holtenser-berg/manifest.json./model-3.jpg&#34; alt=&#34;Entwurf 3&#34;/&gt; &lt;figcaption&gt;
+                
+                &lt;p&gt;
+                    Entwurf 3
+                    
+                        
+                        &lt;/p&gt;
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Auch dieser Entwurf sieht einen deutlich höheren Grad der Konzentration der Wohnbauten vor. Dafür ist das Straßenraster schon relativ nah am tatsächlich umgesetzten.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: BAY TREE HOTELS LTD</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/139</link>
+        <pubDate>Tue, 27 May 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/139/</guid>
+        <description>&lt;p&gt;BAY TREE HOTELS LTD&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Keyword pairs visualised</title>
+        <link>https://christianmahnke.de/post/tag-pairs</link>
+        <pubDate>Sun, 25 May 2025 11:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/tag-pairs/citation.bib</guid>
+        <description>&lt;p&gt;Sometimes experiments don&amp;rsquo;t bring the desired results&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;also in this case:&lt;/p&gt;
+&lt;p&gt;After more than four years, the posts on this blog (now totalling around 100) are slowly becoming confusing, so I&amp;rsquo;ve been thinking for some time about how to make them more thematically accessible.&lt;/p&gt;
+&lt;p&gt;So here is an attempt to visualise keyword pairings.&lt;/p&gt;
+&lt;div id=&#34;chordContainer&#34; class=&#34;tag-ring&#34;&gt;
+  &lt;p style=&#34;text-align: center; color: #777&#34;&gt;Load diagram...&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;But since the whole thing does not work as well visually as hoped, some obvious weaknesses are no longer eliminated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The colours of the lines should change via a gradient when they run into the opposite block.&lt;/li&gt;
+&lt;li&gt;The display on mobile devices is suboptimal&lt;/li&gt;
+&lt;li&gt;Tags aren&amp;rsquo;t completely translated&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Maybe it&amp;rsquo;s time for a classic search function&amp;hellip;&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Paintings by Frank Walter (1926-2009)</title>
+        <link>https://christianmahnke.de/post/paintings-frank-walter</link>
+        <pubDate>Sat, 24 May 2025 15:38:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/paintings-frank-walter/citation.bib</guid>
+        <description>&lt;p&gt;I found some paintings by &lt;a href=&#34;https://en.wikipedia.org/wiki/Frank_Walter&#34; target=&#34;_blank&#34;&gt;Frank Walter&lt;/a&gt; (1926-2009)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;18 small ones, to be exact.&lt;/p&gt;
+&lt;div&gt;Front sides&lt;/div&gt;&lt;div&gt;Backsides&lt;/div&gt;&lt;div&gt;Single back&lt;/div&gt;&lt;div&gt;Bat&lt;/div&gt;&lt;div&gt;Dog&lt;/div&gt;&lt;div&gt;Egg&lt;/div&gt;&lt;div&gt;Fish&lt;/div&gt;&lt;div&gt;Giant&lt;/div&gt;&lt;div&gt;Indian&lt;/div&gt;&lt;div&gt;Key&lt;/div&gt;&lt;div&gt;Match&lt;/div&gt;&lt;div&gt;Nail&lt;/div&gt;&lt;div&gt;Orange&lt;/div&gt;&lt;div&gt;Pop&lt;/div&gt;&lt;div&gt;Queen&lt;/div&gt;&lt;div&gt;Urn&lt;/div&gt;&lt;div&gt;Vat&lt;/div&gt;&lt;div&gt;Wall&lt;/div&gt;&lt;div&gt;X&lt;/div&gt;&lt;div&gt;Zero&lt;/div&gt;&lt;div&gt;No name&lt;/div&gt;
+&lt;p&gt;The pictures were all signed on 2 February 1991. As he also designed frames, these are certainly also by him, here they are simply two glass plates glued together, with a back panel for hanging.&lt;/p&gt;
+&lt;p&gt;Frank Walter&amp;rsquo;s full name was Francis Archibald Wentworth Walter, as can be seen from the signature on the back. He lived in &lt;a href=&#34;https://de.wikipedia.org/wiki/Antigua_%28Lesser_Antilles%29&#34; target=&#34;_blank&#34;&gt;Antigua&lt;/a&gt; and was one of the better known artists in the Caribbean.&lt;/p&gt;
+&lt;p&gt;He only became known in this hemisphere in recent years, and his biography is also interesting: originally an agronomist, he lived in Europe for almost a decade, was politically active after his return in 1961 and then worked as a photographer. Perhaps this is why the pictures above have the character of Polaroid images.
+There are also pictures of him in his shop (e.g. here at &lt;a href=&#34;https://artguide.artforum.com/artguide/david-zwirner-hong-kong-16041/frank-walter-pastorale-221418&#34; target=&#34;_blank&#34;&gt;ArtForum&lt;/a&gt;), on the walls of which you can see many pictures in the form above in the Petersburg hanging.&lt;/p&gt;
+&lt;p&gt;His descendants run a &lt;a href=&#34;https://www.frankwalter.org/&#34; target=&#34;_blank&#34;&gt;homepage&lt;/a&gt;, which provides information about research into his work and estate, exhibitions and publications. There is also an &lt;a href=&#34;https://www.instagram.com/frankwalterantigua/&#34; target=&#34;_blank&#34;&gt;Instagram account&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Never Built Göttingen: Bauten für den Verkehr</title>
+        <link>https://never-built.goettingen.xyzpost/bauinformation-nr1-1967/verkehr</link>
+        <pubDate>Wed, 21 May 2025 17:15:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/never-built/post/bauinformation-nr1-1967/verkehr/manifest.json</guid>
+        <description>&lt;p&gt;Göttingen als autogerechte Stadt&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Wie viele andere Städte sollte auch Göttingen eine &lt;a href=&#34;https://de.wikipedia.org/wiki/Autogerechte_Stadt&#34; target=&#34;_blank&#34;&gt;autogerechte Stadt&lt;/a&gt; werden. Dieser Plan aus den späten 60ern gibt einen Überblick über geplante Straßenbauprojekte.&lt;/p&gt;
+&lt;p&gt;Der Plan sollte bis ca. 1990 umgesetzt sein.&lt;/p&gt;
+&lt;h1 id=&#34;neue-straßen&#34;&gt;
+  Neue Straßen
+  &lt;a class=&#34;heading-link&#34; href=&#34;#neue-stra%c3%9fen&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Östlich der Innenstadt ist die Ost-Tangente, also der Lückenschluss des Ringes zu sehen.&lt;/li&gt;
+&lt;li&gt;Der geplante Autobahnzubringer im Nordwesten wurde realisiert.&lt;/li&gt;
+&lt;li&gt;Die Verbindung von Geismar nach Rosdorf wurde so nicht realisiert, war aber unter dem Namen &lt;a href=&#34;https://www.hna.de/lokales/goettingen/premiere-suedspange-771076.html&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Südspange&amp;rdquo;&lt;/a&gt; bis 2010 in der kommunalpolitischen Diskussion.&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>ChristianMahnke.de: Information on donors in cultural heritage aggregators</title>
+        <link>https://christianmahnke.de/post/donation-metadata</link>
+        <pubDate>Wed, 21 May 2025 06:00:00 +0000</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/donation-metadata/citation.bib</guid>
+        <description>&lt;p&gt;From time to time I donate objects to cultural institutions&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;there are a few &lt;a href=&#34;https://christianmahnke.de/collections/#aktiver-spender&#34; target=&#34;_blank&#34;&gt;conditions&lt;/a&gt; for this, which include providing evidence in various portals. As already &lt;a href=&#34;https://projektemacher.org/post/archives-citizen-participation/&#34;&gt;written&lt;/a&gt;, I am of the opinion that this can promote civic participation&amp;hellip;
+As there have been queries in the past, I have compiled some technical information for the portals mentioned in the list.&lt;/p&gt;
+&lt;h2 id=&#34;technical-details&#34;&gt;
+  Technical details
+  &lt;a class=&#34;heading-link&#34; href=&#34;#technical-details&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The following section provides information on the provision of data for three important collaborative portals. As various software solutions, data conversions and other processes are used to create datasets, these cannot be dealt with in detail here. The following section is therefore mainly limited to the metadata fields required for data exchange.&lt;/p&gt;
+&lt;p&gt;If you need support for your organisation, please feel free to contact me.&lt;/p&gt;
+&lt;h3 id=&#34;german-digital-library-ddb&#34;&gt;
+  German Digital Library (DDB)
+  &lt;a class=&#34;heading-link&#34; href=&#34;#german-digital-library-ddb&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/&#34; target=&#34;_blank&#34;&gt;DDB&lt;/a&gt; uses formats that are common in the library sector for metadata provided by libraries. These are either &lt;a href=&#34;https://www.loc.gov/marc/&#34; target=&#34;_blank&#34;&gt;MARC&lt;/a&gt; or &lt;a href=&#34;https://www.loc.gov/standards/mets/&#34; target=&#34;_blank&#34;&gt;METS (Metadata Encoding and Transmission Schema)&lt;/a&gt; used in conjunction with &lt;a href=&#34;https://www.loc.gov/standards/mods/&#34; target=&#34;_blank&#34;&gt;MODS (Metadata Object Description Schema)&lt;/a&gt;. In Germany, there is also the &lt;a href=&#34;https://dfg-viewer.de/fileadmin/groups/dfgviewer/METS-Anwendungsprofil_2.3.1.pdf#page=27&#34; target=&#34;_blank&#34;&gt;Schema&lt;/a&gt; for the &lt;a href=&#34;https://dfg-viewer.de/&#34; target=&#34;_blank&#34;&gt;DFG Viewer&lt;/a&gt; (namespace &lt;code&gt;dv&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;A distinction must be made between two types of funding/sponsorship for the portal:&lt;/p&gt;
+&lt;h4 id=&#34;sponsorship-for-digitisation&#34;&gt;
+  Sponsorship for digitisation
+  &lt;a class=&#34;heading-link&#34; href=&#34;#sponsorship-for-digitisation&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;The documentation of the use of the &lt;code&gt;&amp;lt;dv:rights&amp;gt;&lt;/code&gt; element in the DDB can be found &lt;a href=&#34;https://wiki.deutsche-digitale-bibliothek.de/x/ssIeB&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:amdSec&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;AMD&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:rightsMD&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;RIGHTS&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:mdWrap&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MDTYPE=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;OTHER&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MIMETYPE=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text/xml&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#a6e22e&#34;&gt;OTHERMDTYPE=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DVRIGHTS&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:xmlData&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dv:rights&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;dv:sponsor&amp;gt;&lt;/span&gt;Förderer&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dv:sponsor&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;                &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/dv:rights&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:xmlData&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:mdWrap&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:rightsMD&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:amdSec&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The representation is as in this &lt;a href=&#34;http://www.deutsche-digitale-bibliothek.de/item/VOL7G43KNY6TE3ZRJSEBZHKTMM6USWPC&#34; target=&#34;_blank&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;donation-of-an-object-the-digitisation-template&#34;&gt;
+  Donation of an object (the digitisation template)
+  &lt;a class=&#34;heading-link&#34; href=&#34;#donation-of-an-object-the-digitisation-template&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;The situation is different if it is to be made clear that a book, for example, has been donated to an organisation. In this case, the details are stored in the MODS section (&lt;code&gt;&amp;lt;mods:name&amp;gt;&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;The documentation on the use of the &lt;code&gt;&amp;lt;mods:name&amp;gt;&lt;/code&gt; element in the DDB can be found &lt;a href=&#34;https://wiki.deutsche-digitale-bibliothek.de/spaces/DFD/pages/19006819/name&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. At the bottom of the page is an example of funding (digitisation) - MARC Relator &lt;a href=&#34;https://id.loc.gov/vocabulary/relators/fnd.html&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;fnd&lt;/code&gt; (funder)&lt;/a&gt;-&lt;/p&gt;
+&lt;p&gt;A donor can be specified as follows.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:dmdSec&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;ID=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;DMD&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:mdWrap&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;MDTYPE=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;MODS&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mets:xmlData&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:name&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;personal&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;valueURI=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://d-nb.info/gnd/1143543866&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:displayForm&amp;gt;&lt;/span&gt;Mustermann, Max&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:displayForm&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:role&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:roleTerm&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;authority=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;marcrelator&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;code&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            &lt;span style=&#34;color:#a6e22e&#34;&gt;valueURI=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://id.loc.gov/vocabulary/relators/dnr&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;dnr&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:roleTerm&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:roleTerm&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;text&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Spender&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:roleTerm&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:role&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:name&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:xmlData&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:mdWrap&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ...
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mets:dmdSec&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is also possible to specify the &lt;a href=&#34;https://wiki.deutsche-digitale-bibliothek.de/spaces/DFD/pages/19006846/note&#34; target=&#34;_blank&#34;&gt;Provenance&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;note&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ownership&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Dieses Buch gehörte Max Mustermann&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/note&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;museum-digital&#34;&gt;
+  museum-digital
+  &lt;a class=&#34;heading-link&#34; href=&#34;#museum-digital&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;As many institutions enter their data directly in &lt;a href=&#34;https://www.museum-digital.de/&#34; target=&#34;_blank&#34;&gt;museum-digital&lt;/a&gt;, it is of course possible to work directly with the input mask.&lt;/p&gt;
+&lt;p&gt;With direct entry, a donation can also be entered as part of the object history (in the &lt;a href=&#34;https://de.handbook.museum-digital.info/musdb/Objekte/Registerkarten-Standard/Verwaltung.html&#34; target=&#34;_blank&#34;&gt;‘Administration’&lt;/a&gt; tab, &amp;ldquo;Date of acquisition&amp;rdquo;, &amp;ldquo;As&amp;rdquo;). But this is not the only option: It is also possible to enter an acknowledgement or to use the &lt;a href=&#34;https://de.handbook.museum-digital.info/Grundkonzepte/Ereignistypen.html&#34; target=&#34;_blank&#34;&gt;Events&lt;/a&gt; ‘Ownership’ or ‘Transfer title’.
+More on this in the &lt;a href=&#34;https://de.handbook.museum-digital.info/musdb/Objekte/Registerkarten-Standard/Verwaltung.html&#34; target=&#34;_blank&#34;&gt;comprehensive manual&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, it is also possible to transfer the information during data import.
+For example, there is the field &lt;code&gt;owner_previous&lt;/code&gt; for the &lt;a href=&#34;https://csvxml.imports.museum-digital.org/&#34; target=&#34;_blank&#34;&gt;CSV import&lt;/a&gt;, but the other fields (&amp;ldquo;Date of acquisition&amp;rdquo;, &amp;ldquo;As&amp;rdquo;) do not seem to be supported by CSV.&lt;/p&gt;
+&lt;p&gt;In principle, museum-digital also offers a tool for &lt;a href=&#34;https://quality.museum-digital.org/&#34; target=&#34;_blank&#34;&gt;quality assurance&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;archivportal-d&#34;&gt;
+  Archivportal-D
+  &lt;a class=&#34;heading-link&#34; href=&#34;#archivportal-d&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;In the archive area (and thus the &lt;a href=&#34;https://www.archivportal-d.de/&#34; target=&#34;_blank&#34;&gt;Archivportal-D&lt;/a&gt;), the &lt;a href=&#34;https://www.loc.gov/ead/&#34; target=&#34;_blank&#34;&gt;EAD (Encoded Archival Description)&lt;/a&gt; format is used in the 2002 version in accordance with the &lt;a href=&#34;https://github.com/Deutsche-Digitale-Bibliothek/ddb-metadata-ead&#34; target=&#34;_blank&#34;&gt;EAD(DDB) 1.2&lt;/a&gt; application profile. There are currently no explicit fields for donors or sponsors.&lt;/p&gt;
+&lt;p&gt;Here too, a distinction can be made between a grant (for digitisation or indexing) and a donation:&lt;/p&gt;
+&lt;h4 id=&#34;sponsorship&#34;&gt;
+  Sponsorship
+  &lt;a class=&#34;heading-link&#34; href=&#34;#sponsorship&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;It is recommended to use the &lt;code&gt;&amp;lt;odd&amp;gt;&lt;/code&gt; element for sponsorship.&lt;/p&gt;
+&lt;p&gt;The documentation on the use of the &lt;code&gt;&amp;lt;odd&amp;gt;&lt;/code&gt; element in the Archive Portal-D can be found &lt;a href=&#34;https://wiki.deutsche-digitale-bibliothek.de/spaces/DFD/pages/25133350/odd&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;odd&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;Förderung&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Free text funding information&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;odd&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The representation is as in this &lt;a href=&#34;http://www.archivportal-d.de/item/HX25DBKQOI2VOPJ77FGM3FITCBHWJWPS&#34; target=&#34;_blank&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
+&lt;h4 id=&#34;donation-of-an-object&#34;&gt;
+  Donation of an object
+  &lt;a class=&#34;heading-link&#34; href=&#34;#donation-of-an-object&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h4&gt;
+&lt;p&gt;The donation of a physical object can be mapped via a provenance specification. The &lt;code&gt;&amp;lt;origination&amp;gt;&lt;/code&gt; element is used for this purpose&lt;/p&gt;
+&lt;p&gt;The documentation on the use of the &lt;code&gt;&amp;lt;origination&amp;gt;&lt;/code&gt; element in the Archive Portal-D can be found at [https://wiki.deutsche-digitale-bibliothek.de/spaces/DFD/pages/25133352/origination).&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;origination&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;label=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Provenienz&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;            
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;name&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;source=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;GND&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;authfilenumber=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1143543866&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Mustermann, Max&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/name&amp;gt;&lt;/span&gt;        
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/origination&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The use of the &lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; element is optional; it is used to link the provenance location with a standard data record.&lt;/p&gt;
+&lt;p&gt;The representation is as in this &lt;a href=&#34;https://www.archivportal-d.de/item/SJ4W777QFAG3T6UX5PTPGPUKWELI5QH5&#34; target=&#34;_blank&#34;&gt;example&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;potential-improvements&#34;&gt;
+  Potential improvements
+  &lt;a class=&#34;heading-link&#34; href=&#34;#potential-improvements&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;h3 id=&#34;german-digital-library-ddb---metsmods&#34;&gt;
+  German Digital Library (DDB) - METS/MODS
+  &lt;a class=&#34;heading-link&#34; href=&#34;#german-digital-library-ddb---metsmods&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;MODS also allows you to enter the acquisition in the &lt;code&gt;&amp;lt;mods:note&amp;gt;&lt;/code&gt; element with the &lt;code&gt;type=&amp;quot;acquisition&amp;quot;&lt;/code&gt; attribute; this can also be a donation / gift. This variant may be more precise, as &lt;code&gt;type=&amp;quot;ownership&amp;quot;&lt;/code&gt; only specifies &lt;em&gt;one&lt;/em&gt; previous owner.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;mods:note&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;acquisition&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;Donated by Max Mustermann&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/mods:note&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;archive-portal-d---ead&#34;&gt;
+  Archive portal-D - EAD
+  &lt;a class=&#34;heading-link&#34; href=&#34;#archive-portal-d---ead&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;For EAD, information can also be stored in &lt;a href=&#34;https://www.loc.gov/ead/EAD3taglib/EAD3-TL-eng.html#elem-acqinfo&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;lt;acqinfo&amp;gt;&lt;/code&gt;&lt;/a&gt; instead of &lt;a href=&#34;https://www.loc.gov/ead/EAD3taglib/EAD3-TL-eng.html#elem-odd&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;&amp;lt;odd&lt;/code&gt;&amp;gt;&lt;/a&gt;, as in this example from the &lt;a href=&#34;https://www.loc.gov/ead/EAD3taglib/EAD3-TL-eng.html&#34; target=&#34;_blank&#34;&gt;Encoded Archival Description Tag Library Version EAD3 1.1.2&lt;/a&gt;:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-xml&#34; data-lang=&#34;xml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;acqinfo&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;The collection (Donor No.
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;num&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;localtype=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;donor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; 8338 &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/num&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ) was donated by
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;persname&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;relator=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;donor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;part&amp;gt;&lt;/span&gt;Vonda Thomas&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/part&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/persname&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  and
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;persname&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;relator=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;donor&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;part&amp;gt;&lt;/span&gt;Francine Farrow&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/part&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/persname&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  in March 1995.&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;/acqinfo&amp;gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://www.loc.gov/ead/EAD3taglib/EAD3-TL-eng.html#elem-num&#34; target=&#34;_blank&#34;&gt;Quelle&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;acknowledgements&#34;&gt;
+  Acknowledgements
+  &lt;a class=&#34;heading-link&#34; href=&#34;#acknowledgements&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Joshua Enslin, &lt;a href=&#34;https://www.museum-digital.de/&#34; target=&#34;_blank&#34;&gt;museum-digital&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Timo Schleier and Stefanie Rühle, Library Centre of the &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/&#34; target=&#34;_blank&#34;&gt;German Digital Library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Dr Denise Ruisinger, Archive Department of the &lt;a href=&#34;https://www.deutsche-digitale-bibliothek.de/&#34; target=&#34;_blank&#34;&gt;German Digital Library&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;updates&#34;&gt;
+  Updates
+  &lt;a class=&#34;heading-link&#34; href=&#34;#updates&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Comments incorporated
+&lt;ul&gt;
+&lt;li&gt;METS/MODS as metadata formats for libraries not DDB in general&lt;/li&gt;
+&lt;li&gt;Distinction between digitisation funding (for DDB and Archivportal-D) and object donations clarified&lt;/li&gt;
+&lt;li&gt;EAD version and application profile added&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>Kleiderbügel: VOGEL SEIT 1924 KLEIDUNG</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/138</link>
+        <pubDate>Tue, 20 May 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/138/</guid>
+        <description>&lt;p&gt;SEIT 1924
+VOGEL KLEIDUNG&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: The Cold War in children&#39;s hands</title>
+        <link>https://christianmahnke.de/post/ship-quartet</link>
+        <pubDate>Sun, 18 May 2025 19:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/ship-quartet/citation.bib</guid>
+        <description>&lt;p&gt;About an unexpectedly contemporary game&amp;hellip;&lt;/p&gt;
+&lt;p&gt;As a child of the 80s and thus of the Cold War, you still know the effects of ‘war fitness’ on everyday life. It wasn&amp;rsquo;t just when you had to wait for the convoy on the school bus that one of the things you did to pass the journey through half the community was play a game of quartets. Of course, in addition to civilian things like cars and aeroplanes, fire engines etc., there were always military variants: Tanks, fighter planes or warships.&lt;/p&gt;
+&lt;h2 id=&#34;updatecycling&#34;&gt;
+  Up(date)cycling
+  &lt;a class=&#34;heading-link&#34; href=&#34;#updatecycling&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s an example of such a quartet with warships, only brought up to date: in other words, supplemented by the decommissioning and special features&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Submarines&lt;/div&gt;&lt;div&gt;Small combat vessels&lt;/div&gt;&lt;div&gt;Destroyer and Minelayer&lt;/div&gt;&lt;div&gt;Battleship and cruiser&lt;/div&gt;&lt;div&gt;Frigates&lt;/div&gt;&lt;div&gt;Guided missile destroyers&lt;/div&gt;&lt;div&gt;Guided missile cruisers&lt;/div&gt;&lt;div&gt;Aircraft carrier&lt;/div&gt;
+&lt;p&gt;From today&amp;rsquo;s perspective, it is striking that only Western countries and the Soviet Union are represented with ships.&lt;/p&gt;
+&lt;p&gt;And I would like to take this opportunity to remind you of the installation &lt;a href=&#34;https://www.sartle.com/artwork/all-the-submarines-of-the-united-states-of-america-chris-burden&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;All the Submarines of the United States of America&amp;rdquo;&lt;/a&gt;, 1987 by &lt;a href=&#34;https://en.wikipedia.org/wiki/Chris_Burden&#34; target=&#34;_blank&#34;&gt;Chris Burden&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Translated with &lt;a href=&#34;https://www.DeepL.com/Translator&#34; target=&#34;_blank&#34;&gt;www.DeepL.com/Translator&lt;/a&gt; (free version)&lt;/p&gt;
+&lt;h2 id=&#34;the-individual-cards&#34;&gt;
+  The individual cards
+  &lt;a class=&#34;heading-link&#34; href=&#34;#the-individual-cards&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Group&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Card&lt;/th&gt;
+          &lt;th&gt;Decommissioning&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Special features&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Submarines&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Ethan_Allen_%28SSBN-608%29&#34; target=&#34;_blank&#34;&gt;Ethan Allen&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1983&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Submarines&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Plunger_%28SSN-595%29&#34; target=&#34;_blank&#34;&gt;Plunger&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Submarines&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Soviet_submarine_K-3_Leninsky_Komsomol&#34; target=&#34;_blank&#34;&gt;Leninski Komosol&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1988&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Submarines&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Type_205_submarine&#34; target=&#34;_blank&#34;&gt;U 8&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1974&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Small combat vessels&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Barbe-class_utility_landing_craft&#34; target=&#34;_blank&#34;&gt;Butt&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1992&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Small combat vessels&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HNoMS_%C3%86ger&#34; target=&#34;_blank&#34;&gt;Aeger&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1992&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Small combat vessels&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://www.historisches-marinearchiv.de/projekte/minensucher/ausgabe.php?where_value=831&#34; target=&#34;_blank&#34;&gt;Stier&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1995&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Small combat vessels&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HSwMS_Spica_%28T121%29&#34; target=&#34;_blank&#34;&gt;Spica&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1989&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Museum ship&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Destroyer and Minelayer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/ORP_Warszawa_%281970%29&#34; target=&#34;_blank&#34;&gt;Spravedlivy&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1986&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Destroyer and Minelayer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HSwMS_G%C3%A4strikland_%28J22%29&#34; target=&#34;_blank&#34;&gt;Gästrikland&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1991&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Destroyer and Minelayer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/German_training_cruiser_Deutschland&#34; target=&#34;_blank&#34;&gt;Deutschland&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Destroyer and Minelayer&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/German_destroyer_Schleswig-Holstein&#34; target=&#34;_blank&#34;&gt;Schleswig-Holstein&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1994&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Battleship and cruiser&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/French_cruiser_Colbert_%28C611%29&#34; target=&#34;_blank&#34;&gt;Colbert&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1991&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Battleship and cruiser&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Soviet_cruiser_Sverdlov&#34; target=&#34;_blank&#34;&gt;Sverdlov&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1978&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Battleship and cruiser&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Iowa_%28BB-61%29&#34; target=&#34;_blank&#34;&gt;Iowa&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Battleship and cruiser&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Spanish_cruiser_Canarias&#34; target=&#34;_blank&#34;&gt;Canarias&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1975&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Frigates&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Italian_frigate_Luigi_Rizzo_%28F_596%29&#34; target=&#34;_blank&#34;&gt;Luigi Rizzo&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1980&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Frigates&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Petya-class_frigate&#34; target=&#34;_blank&#34;&gt;Typ Petya&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1989-1992&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Frigates&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HDMS_Peder_Skram_%28F352%29&#34; target=&#34;_blank&#34;&gt;Peder Skram&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Museum ship&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Frigates&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HNoMS_Oslo_%28F300%29&#34; target=&#34;_blank&#34;&gt;Oslo&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1994&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Sunk&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile destroyers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HMS_Kent_%28D12%29&#34; target=&#34;_blank&#34;&gt;Kent&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1980&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile destroyers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Soviet_cruiser_Varyag_%281963%29&#34; target=&#34;_blank&#34;&gt;Varyag&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile destroyers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Italian_destroyer_Impavido_%28D_570%29&#34; target=&#34;_blank&#34;&gt;Impavido&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1992&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile destroyers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/French_frigate_Suffren&#34; target=&#34;_blank&#34;&gt;Suffren&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2001&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile cruisers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Long_Beach_%28CGN-9%29&#34; target=&#34;_blank&#34;&gt;Long Beach&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1994&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile cruisers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/Italian_cruiser_Caio_Duilio&#34; target=&#34;_blank&#34;&gt;Caio Duilio&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1990&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile cruisers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Albany_%28CA-123%29&#34; target=&#34;_blank&#34;&gt;Albany&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1985&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Guided missile cruisers&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/HNLMS_De_Zeven_Provinci%C3%ABn_%28C802%29&#34; target=&#34;_blank&#34;&gt;De Zeven Provincien&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2000&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Sold&lt;/strong&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Aircraft carrier&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/French_aircraft_carrier_Foch&#34; target=&#34;_blank&#34;&gt;Foch&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2000&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Aircraft carrier&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/French_cruiser_Jeanne_d%27Arc_%28R97%29&#34; target=&#34;_blank&#34;&gt;Jeanne d&amp;rsquo;Arc&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;2010&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Aircraft carrier&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Okinawa_%28LPH-3%29&#34; target=&#34;_blank&#34;&gt;Okinawa&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1992&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Aircraft carrier&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://en.wikipedia.org/wiki/USS_Wasp_%28CV-18%29&#34; target=&#34;_blank&#34;&gt;Wasp&lt;/a&gt;&lt;/td&gt;
+          &lt;td&gt;1974&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;{.fitted .center .header-underline .content-left}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;The links usually lead to the English Wikipedia.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;As the cards are printed on paper that is too thick for a typewriter, they were processed using a &lt;a href=&#34;https://de.wikipedia.org/wiki/Famos_%28company%29&#34; target=&#34;_blank&#34;&gt;Famos&lt;/a&gt; children&amp;rsquo;s printer.&lt;/p&gt;</description></item>
+    
+  </channel>
+</rss>
