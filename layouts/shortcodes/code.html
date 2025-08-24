@@ -1,0 +1,51 @@
+{{- $lang := "" -}}
+{{- $class := "" -}}
+{{- $guessSyntax := true -}}
+{{- $title := "" -}}
+{{- $lineNumbers := false -}}
+{{- $lineNumbersIDPrefix := "" -}}
+
+{{- with .Get "lang" -}}
+  {{- $lang = . -}}
+  {{- $guessSyntax = false -}}
+{{- end -}}
+{{- with .Get "title" -}}
+  {{- $title = . -}}
+{{- end -}}
+{{- with .Get "class" -}}
+  {{- $class = . -}}
+{{- end -}}
+
+{{- if and (ne (.Get "lineNumbers") nil) (ne (.Get "lineNumbers") "") -}}
+  {{- $lineNumbers = .Get "lineNumbers" -}}
+{{- end -}}
+
+{{- with .Get "lineNumbersIDPrefix" -}}
+  {{- $lineNumbersIDPrefix = . -}}
+{{- end -}}
+
+{{- $input := "" -}}
+{{- if len .Inner -}}
+  {{- $input = substr .Inner 1 -}}
+{{- end -}}
+
+{{- $opts := dict "guessSyntax" $guessSyntax -}}
+
+{{- if $lineNumbers -}}
+  {{- $lineNumbersOpts := dict "lineNos" "inline" "anchorLineNos" "true" -}}
+
+  {{- if ne $lineNumbersIDPrefix "" -}}
+    {{/* See also https://github.com/alecthomas/chroma/blob/master/formatters/html/html.go#L113 */}}
+    {{- $lineNumbersOpts = merge $lineNumbersOpts (dict "lineAnchors" $lineNumbersIDPrefix)  -}}
+  {{- end -}}
+
+  {{- $opts = merge $opts $lineNumbersOpts -}}
+{{- end -}}
+
+<div class="highlight-container">
+  <div class="highlight-head">
+    <span class="highlight-title">{{ $title }}</span>
+  </div>
+  {{- transform.Highlight $input $lang $opts -}}
+  <textarea style="display:none;">{{ $input }}</textarea>
+</div>

@@ -57,6 +57,7 @@ async function loadCSVFromURL(url) {
       groupedData[month][category] = (groupedData[month][category] || 0) + 1;
     });
 
+    //console.log(groupedData);
     return groupedData;
   } catch (error) {
     console.error('Error loading CSV from URL:', error);
@@ -84,8 +85,11 @@ function chart(csvFile, element, options) {
       const filledData = {};
       const first = new Date(Object.keys(data)[0]);
       const last = new Date(Object.keys(data).slice(-1));
-      [...Array(last.getFullYear() - first.getFullYear()).keys()].forEach((i) => {
-        const y = first.getFullYear() + i;
+      const firstYear = first.getFullYear();
+      const lastYear = last.getFullYear();
+      const yearRange = Array.from({ length: lastYear - firstYear + 1 }, (_, i) => firstYear + i);
+      yearRange.forEach((i) => {
+        const y = i;
         [...Array(12).keys()].forEach((m) => {
           if ((y == first.getFullYear() && m < first.getMonth()) || (y == last.getFullYear() && m > last.getMonth())) {
             return
@@ -94,9 +98,11 @@ function chart(csvFile, element, options) {
           xAxisData.push(formatIndex(missingMonth))
         });
       });
+      //console.log(first, last, yearRange, xAxisData);
     } else {
       xAxisData = Object.keys(data);
     }
+
 
     const seriesData = [];
     let colorIndex = 0;
@@ -145,6 +151,7 @@ function chart(csvFile, element, options) {
         type: 'category',
         data: xAxisData,
         label: "Date",
+        //scale: true,
         axisLabel: {
           formatter: value => {
             return new Date(value).toLocaleString('default', { year: "numeric", month: "short"});
