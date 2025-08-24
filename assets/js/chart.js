@@ -5,6 +5,7 @@ import * as echarts from 'echarts';
 const defaultHeightVH = 50;
 const addEmptyMonths = true
 
+/*
 const colors = [
     '#c23531',
     '#2f4554',
@@ -18,6 +19,12 @@ const colors = [
     '#546570',
     '#c4ccd3'
   ];
+  */
+
+//const colors = ['#e6194B', '#3cb44b', '#ffe119', '#4363d8', '#f58231', '#911eb4', '#42d4f4', '#f032e6', '#bfef45', '#fabed4', '#469990', '#dcbeff', '#9A6324', '#fffac8', '#800000', '#aaffc3', '#808000', '#ffd8b1', '#000075', '#a9a9a9', '#ffffff', '#000000'];
+
+const colors = [
+  "#1f77b4", "#aec7e8", "#ff7f0e", "#ffbb78", "#2ca02c", "#98df8a", "#d62728", "#ff9896", "#9467bd", "#c5b0d5", "#8c564b", "#c49c94", "#e377c2", "#f7b6d2", "#7f7f7f", "#c7c7c7", "#bcbd22", "#dbdb8d", "#17becf", "#9edae5"];
 
 function formatIndex(dateStr) {
   const date = new Date(dateStr);
