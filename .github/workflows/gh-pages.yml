@@ -13,8 +13,8 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.148.2
-  DEPENDENCY_MANAGER: yarn
+  HUGO_VERSION: 0.152.2
+  DEPENDENCY_MANAGER: npm
   PYTHON_VERSION: '3.12'
 
 jobs:
@@ -40,14 +40,14 @@ jobs:
           sudo apt-get clean
 
       - name: Login to GitHub Packages Docker Registry
-        uses: docker/login-action@v3.3.0
+        uses: docker/login-action@v3.6.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           submodules: false  # Fetch Hugo themes (true OR recursive)
 
@@ -56,7 +56,7 @@ jobs:
           ./scripts/github/checkout.sh
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ env.PYTHON_VERSION }}
 
@@ -65,7 +65,7 @@ jobs:
           ./scripts/github-setup.sh
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4.2.0
+        uses: actions/setup-node@v5.0.0
         with:
           node-version-file: '.nvmrc'
 
