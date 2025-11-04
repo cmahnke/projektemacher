@@ -290,6 +290,18 @@ enableRobotsTXT = true
     baseName = "citation"
     isHTML = false
 
+  [outputFormats.xml-export]
+    mediaType = "application/xml"
+    baseName = "xml-export"
+    isPlainText = true
+    notAlternative = true
+
+  [outputFormats.print]
+    mediaType = "text/html"
+    baseName = "print"
+    isPlainText = true
+    notAlternative = true
+
 [markup]
     defaultMarkdownHandler = 'goldmark'
 
