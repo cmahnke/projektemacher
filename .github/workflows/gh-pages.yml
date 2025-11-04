@@ -73,8 +73,8 @@ jobs:
         with:
           version: 9
 
-      - name: Setup yarn
-        run: npm install -g yarn
+#      - name: Setup yarn
+#        run: npm install -g yarn
 
       - name: Generate Files
         env:
