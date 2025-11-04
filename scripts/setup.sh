@@ -34,5 +34,5 @@ else
 fi
 
 # NPM dependencies
-yarn install
-yarn run svgo
+npm install
+npm run svgo
