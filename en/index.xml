@@ -1,0 +1,268 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/en/</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo 0.152.2</generator><language>en</language>
+      <lastBuildDate>Sun, 23 Nov 2025 04:24:54 +0000</lastBuildDate><atom:link href="https://projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" /><item><title>Kleiderbügel: FRISIERCREME Brisa</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/163</link>
+        <pubDate>Tue, 11 Nov 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/163/</guid>
+        <description>&lt;p&gt;FRISIERCREME
+Brisa&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Arthur Johannsen</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/162</link>
+        <pubDate>Tue, 04 Nov 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/162/</guid>
+        <description>&lt;p&gt;Arthur
+Johannsen&lt;/p&gt;
+&lt;p&gt;Herren-Spezialgeschäft
+Niebüll Ruf 505&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Shared metadata for Hugo pages</title>
+        <link>https://christianmahnke.de/post/hugo-shared-metadata</link>
+        <pubDate>Sun, 02 Nov 2025 15:22:44 +0100</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/hugo-shared-metadata/citation.bib</guid>
+        <description>&lt;p&gt;Shared content for multiple Hugo pages (the &amp;ldquo;Hugo Shared Metadata Design Pattern&amp;rdquo;)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;For my collections (and also for this site), I use &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt;. In collections with similar objects, it often happens that information about several objects is identical. An example from the blog about brick expressionism:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://backsteinexpressionismus.projektemacher.org/post/kalender-1934-hannoverscher-anzeiger/&#34; target=&#34;_blank&#34;&gt;Calendar 1934 – Hannoverscher Anzeiger&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://backsteinexpressionismus.projektemacher.org/post/die-deutsche-zeitung/anzeiger-hochhaus/&#34; target=&#34;_blank&#34;&gt;Die deutsche Zeitung – Its Development, Nature and Impact: Anzeiger Hochhaus Hannover&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In the examples, the architect and links to Wikipedia and other directories are listed under &amp;ldquo;Additional information&amp;rdquo; (&amp;ldquo;Zusätzliche Informationen&amp;rdquo;). In addition, the geocoordinates for the map display are also stored centrally. This also applies to &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Main_Page&#34; target=&#34;_blank&#34;&gt;Wikidata links&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In this case, &lt;strong&gt;centrally&lt;/strong&gt; means that the respective data is not part of the respective pages, but is stored in the pages for the tags (in Hugo Term Pages). The template responsible for creating the respective page pulls the information from there:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#content/tags/Anzeiger-Hochhaus/_index.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Anzeiger Hochhaus&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;description&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;building&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;archinformID&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;projekte/7497&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;location&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Hannover&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;yearBuild&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1927-1928&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;geojson&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;coordinates&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;9.7293844&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;52.3770514&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* &lt;span style=&#34;color:#ae81ff&#34;&gt;Entworfen von [Fritz Höger](/tags/Fritz-Höger)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Das Anzeiger Hochhaus in der...&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* [&lt;span style=&#34;color:#ae81ff&#34;&gt;Wikipedia](https://de.wikipedia.org/wiki/Anzeiger-Hochhaus)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* [&lt;span style=&#34;color:#ae81ff&#34;&gt;Internationalen Architektur-Datenbank](https://deu.archinform.net/projekte/7497.htm)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;* [&lt;span style=&#34;color:#ae81ff&#34;&gt;Internationalen Datenbank und Galerie für Ingenieurbauwerke (Structurae)](https://structurae.net/de/bauwerke/anzeigerhochhaus)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The following fragment comes from the template for displaying a page or object:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tag&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Params.tags&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagUrl&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%s%s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;$tag&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;urlize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagPath&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;urls&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Parse&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagUrl&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Path&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.GetPage&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagPath&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Content&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;It is, of course, also possible to extract other parameters (in the example, &lt;code&gt;geojson&lt;/code&gt;) from the central file, which is why I call this approach the &amp;ldquo;Hugo Shared Metadata Design Pattern&amp;rdquo;. Compared to the classic &lt;a href=&#34;https://gohugo.io/content-management/data-sources/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;site.Data&lt;/code&gt;&lt;/a&gt; approach, this has the advantage that Markdown content can also be reused relatively easily.&lt;/p&gt;
+&lt;p&gt;When revising the &lt;a href=&#34;https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/&#34; target=&#34;_blank&#34;&gt;clothes hanger page (Kleiderbügel)&lt;/a&gt;, I wanted to avoid storing information that should be displayed on more than one page multiple times. The difference to the example above, however, is that some of the hangers were manufactured before 1945 and the printed place name therefore no longer corresponds to today&amp;rsquo;s name, as some places are now part of Poland. One could ignore this and use the old German place names, but this would have politically questionable implications.&lt;/p&gt;
+&lt;p&gt;Therefore, an additional requirement was that some tags (those of the old German place name) should be displayed, but always as a redirect to the tag of the current name. While this is fairly easy to do for the list view by implementing the old name as an alias, it is a problem when you need the linked information in a post.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;#content/tags/szczecin/_index.md&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Szczecin / Stettin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;aliases&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;/tags/stettin&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;params&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;place&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;wikidata&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Q393&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In the end, the solution was quite simple: if the page for the tag cannot be retrieved, simply search for the alias and include the page that contains it:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tag&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Params.tags&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagUrl&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;%s%s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tags/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;$tag&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;urlize&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagPath&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;urls&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Parse&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagUrl&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Path&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.GetPage&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$tagPath&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Content&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$termPages&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.AllPages&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.Kind&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;eq&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;term&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$alias&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/%s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$termPath&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$termPages&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;where&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$termPages&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;.Aliases&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;intersect&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;slice&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$alias&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$termPages&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Content&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;thanks&#34;&gt;
+  Thanks
+  &lt;a class=&#34;heading-link&#34; href=&#34;#thanks&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Thanks to &lt;a href=&#34;https://discourse.gohugo.io/u/irkode/summary&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;strong&gt;irkode&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt; from the Hugo Forum, who &lt;a href=&#34;https://discourse.gohugo.io/t/assign-multiple-slugs-to-one-file-page/56175/4&#34; target=&#34;_blank&#34;&gt;helped me find the solution&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Damen- u. Herrenmoden Wilh. Deppe Einbeck</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/161</link>
+        <pubDate>Tue, 28 Oct 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/161/</guid>
+        <description>&lt;p&gt;Damen- u. Herrenmoden
+Wilh. Deppe
+Einbeck&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Wäscherei Kleiderbad Meyer Chem. Reinigung</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/160</link>
+        <pubDate>Tue, 21 Oct 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/160/</guid>
+        <description>&lt;p&gt;Wäscherei Kleiderbad
+Meyer
+Chem. Reinigung&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Improvements 2025</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/news-2025</link>
+        <pubDate>Sun, 19 Oct 2025 07:30:07 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/kleiderbuegel/post/news-2025/</guid>
+        <description>&lt;p&gt;This page has been slightly revised for an upcoming exhibition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigation has been slightly improved&lt;/li&gt;
+&lt;li&gt;The current coat hanger is now displayed on the home page&lt;/li&gt;
+&lt;li&gt;The map is larger and has greater contrast&lt;/li&gt;
+&lt;li&gt;There is now a search function&lt;/li&gt;
+&lt;li&gt;Loading time has been significantly reduced&lt;/li&gt;
+&lt;li&gt;Statistics on the coat hangers are now available&lt;/li&gt;
+&lt;li&gt;An English translation is available&lt;/li&gt;
+&lt;li&gt;jQuery has been removed; the clothes rail visualization is now implemented with &lt;a href=&#34;https://swiperjs.com/&#34; target=&#34;_blank&#34;&gt;Swiper JS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;More information about the exhibition will be available in 2026!&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: &#34;Kleiderbügel&#34; revised</title>
+        <link>https://christianmahnke.de/post/kleiderbuegel-2025</link>
+        <pubDate>Sun, 19 Oct 2025 07:30:07 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/kleiderbuegel-2025/citation.bib</guid>
+        <description>&lt;p&gt;The &lt;a href=&#34;https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/&#34; target=&#34;_blank&#34;&gt;clothes hanger page&lt;/a&gt; has been slightly revised for an upcoming exhibition&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The most important innovations:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Navigation has been slightly improved&lt;/li&gt;
+&lt;li&gt;The current clothes hanger is now displayed on the home page&lt;/li&gt;
+&lt;li&gt;The map is larger and has greater contrast&lt;/li&gt;
+&lt;li&gt;There is now a search function&lt;/li&gt;
+&lt;li&gt;The loading time has been significantly accelerated&lt;/li&gt;
+&lt;li&gt;There are now statistics on the clothes hangers&lt;/li&gt;
+&lt;li&gt;There is an English translation&lt;/li&gt;
+&lt;li&gt;jQuery has been removed, the visualization of the clothes rail is now implemented with &lt;a href=&#34;https://swiperjs.com/&#34; target=&#34;_blank&#34;&gt;Swiper JS&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;More information about the exhibition will be available in 2026!&lt;/strong&gt;&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Camel</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/159</link>
+        <pubDate>Tue, 14 Oct 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/159/</guid>
+        <description>&lt;p&gt;[Nur das &lt;a href=&#34;https://de.wikipedia.org/wiki/Camel_%28Zigarettenmarke%29&#34; target=&#34;_blank&#34;&gt;Camel Logo&lt;/a&gt;]&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: </title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/158</link>
+        <pubDate>Tue, 07 Oct 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/kleiderbuegel/post/158/</guid>
+        <description></description></item>
+    <item><title>Kleiderbügel: Färberei HOTHO Reinigung</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/157</link>
+        <pubDate>Tue, 30 Sep 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/157/</guid>
+        <description>&lt;p&gt;Färberei HOTHO Reinigung&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: From Mirador to Tify</title>
+        <link>https://christianmahnke.de/post/tify-0.34</link>
+        <pubDate>Sat, 27 Sep 2025 11:22:44 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/tify-0.34/citation.bib</guid>
+        <description>&lt;p&gt;Projektemacher.org now uses Tify&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Until now, my &lt;a href=&#34;https://projektemacher.org/blogs/&#34; target=&#34;_blank&#34;&gt;Projektemacher blogs&lt;/a&gt; have used the IIIF viewer &amp;ldquo;&lt;a href=&#34;https://projectmirador.org/&#34; target=&#34;_blank&#34;&gt;Mirador&lt;/a&gt;&amp;rdquo; to display IIIF presentation manifests. This has now changed for various reasons:&lt;/p&gt;
+&lt;p&gt;In recent years, using Mirador has become increasingly complicated because a &lt;a href=&#34;https://github.com/ProjectMirador/mirador/pull/3029&#34; target=&#34;_blank&#34;&gt;change to support &amp;ldquo;gaps&amp;rdquo; in page sequences (PR #2029)&lt;/a&gt; was never incorporated into the main branch. Since the change was not further maintained, the viewer remained frozen at the status of a development version from early 2024.&lt;/p&gt;
+&lt;p&gt;At the same time, I have been flirting with the IIIF viewer &amp;ldquo;&lt;a href=&#34;https://tify.rocks/&#34; target=&#34;_blank&#34;&gt;Tify&lt;/a&gt;&amp;rdquo; for some time, partly because I know the people involved in its development. Until now, development has not been focused on widespread use, so there have also been problems with gaps in page sequences and deficits in full compatibility with static IIIF images (Level 0).&lt;/p&gt;
+&lt;p&gt;Now, last week, &lt;a href=&#34;https://github.com/tify-iiif-viewer/tify/releases/tag/v0.34.0&#34; target=&#34;_blank&#34;&gt;version 0.34 of Tify&lt;/a&gt; was released, and after years of waiting, this version finally offers support for IIIF Image API &lt;a href=&#34;https://iiif.io/api/presentation/2.1/#viewinghint&#34; target=&#34;_blank&#34;&gt;2.1 &lt;code&gt;viewingHint&lt;/code&gt;&lt;/a&gt; and &lt;a href=&#34;https://iiif.io/api/presentation/3.0/#behavior&#34; target=&#34;_blank&#34;&gt;3.0 &lt;code&gt;behavior&lt;/code&gt;&lt;/a&gt; as well as pre-generated thumbnails. In addition, Tify is significantly slimmer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;That&amp;rsquo;s why my blogs now use Tify to display IIIF presentation manifests!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Hopefully, development will continue along the new path toward a generally usable IIIF viewer and will also supplement the &lt;a href=&#34;https://github.com/tify-iiif-viewer/tify/issues/129&#34; target=&#34;_blank&#34;&gt;display of IIIF Image API endpoints&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Herrenkleidung flebbe Braunschweig</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/156</link>
+        <pubDate>Tue, 23 Sep 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/156/</guid>
+        <description>&lt;p&gt;Herrenkleidung
+flebbe
+Braunschweig&lt;/p&gt;
+</description></item>
+    <item><title>Hässliche Plastiktiere und Zeugs: Hannover Kröpke</title>
+        <link>https://haesslicheplastiktiereundzeugs.projektemacher.org/post/hannover-2025-4</link>
+        <pubDate>Sat, 20 Sep 2025 15:40:59 +0000</pubDate>
+        <guid>https://projektemacher.org/post/haesslicheplastiktiereundzeugs/post/hannover-2025-4/</guid>
+        <description>
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/haesslicheplastiktiereundzeugs/post/hannover-2025-4/IMG_0527.jpeg&#34;/&gt; &lt;/figure&gt;
+
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/haesslicheplastiktiereundzeugs/post/hannover-2025-4/IMG_0528.jpeg&#34;/&gt; &lt;/figure&gt;
+
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/haesslicheplastiktiereundzeugs/post/hannover-2025-4/IMG_0529.jpeg&#34;/&gt; &lt;/figure&gt;
+
+&lt;p&gt;Der rechte Bär hat seit &lt;a href=&#34;https://projektemacher.org/post/546309404/&#34;&gt;seinem letzten Auftritt&lt;/a&gt; vor 16 Jahren ein wenig gelitten und die Position gewechselt.&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Ihr Kleiderfachmann Bleyer Ihr Kleiderfachmann</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/155</link>
+        <pubDate>Tue, 16 Sep 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/155/</guid>
+        <description>&lt;p&gt;Ihr Kleiderfachmann
+Bleyer
+Ihr Kleiderfachmann&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Cloppenburg Union</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/154</link>
+        <pubDate>Tue, 09 Sep 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/154/</guid>
+        <description>&lt;p&gt;Cloppenburg
+Union-
+Record
+Cloppenburg&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Lithograph by František Gross (1909-1985)</title>
+        <link>https://christianmahnke.de/post/print-frantisek-gross</link>
+        <pubDate>Sun, 07 Sep 2025 14:00:00 +0200</pubDate>
+        <guid>https://projektemacher.org/en/post/christianmahnke/post/print-frantisek-gross/citation.bib</guid>
+        <description>&lt;p&gt;You have found a lithograph by &lt;a href=&#34;https://cs-m-wikipedia-org.translate.goog/wiki/Franti%C5%A1ek_Gross?_x_tr_sl=cs&amp;amp;_x_tr_tl=en&amp;amp;_x_tr_hl=en&amp;amp;_x_tr_pto=wapp&#34; target=&#34;_blank&#34;&gt;František Gross&lt;/a&gt; (automatic translation) (1909-1985)&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;František Gross (1909-1985) was an important Czech painter and graphic artist of the 20th century. He was one of the founding members of the &lt;a href=&#34;https://de.wikipedia.org/wiki/Gruppe_42&#34; target=&#34;_blank&#34;&gt;(artists&amp;rsquo;) group 42&lt;/a&gt;, which was dedicated to various aspects of modern technical civilization. These included urban peripheries, industrial landscapes and machines.&lt;/p&gt;
+&lt;p&gt;In his work, which was characterized by cubist and surrealist influences, he often used grotesque and absurd motifs in which he mixed machines with human figures. Little is known about Gross outside the Czech Republic, which is also reflected in the lack of German and English Wikipedia entries.&lt;/p&gt;
+&lt;p&gt;The sheet is dated 1963 and shows a small town or the outskirts of a town at night.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: ALANA FURS</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/153</link>
+        <pubDate>Tue, 02 Sep 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/153/</guid>
+        <description>&lt;p&gt;Cold Fur Storage &amp;amp; Repairs ALANA FURS 676 Yonge St. WA 5-3441&lt;/p&gt;
+</description></item>
+    <item><title>Backsteinexpressionismus: Broschek-Haus Hamburg</title>
+        <link>https://backsteinexpressionismus.projektemacher.org/post/die-deutsche-zeitung/broschek-haus</link>
+        <pubDate>Sun, 31 Aug 2025 18:25:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/backsteinexpressionismus/post/die-deutsche-zeitung/broschek-haus/</guid>
+        <description>&lt;p&gt;Seite 133: Das &lt;a href=&#34;https://projektemacher.org/tags/Broschek-Haus&#34;&gt;&amp;ldquo;Broschek-Haus&amp;rdquo;&lt;/a&gt; in Hamburg von &lt;a href=&#34;https://projektemacher.org/tags/Fritz-H%c3%b6ger&#34;&gt;Fritz Höger&lt;/a&gt;.
+Seite 10 des Anzeigenteils: Ein bisher nicht zugeordnete Entwurfszeichnung&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Karl Kühne, Mass-Schneiderei Unterrieden Witzenhausen</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/152</link>
+        <pubDate>Tue, 26 Aug 2025 12:47:44 +0200</pubDate>
+        <guid>https://projektemacher.org/post/kleiderbuegel/post/152/</guid>
+        <description>&lt;p&gt;Karl Kühne, Mass-Schneiderei Unterrieden Witzenhausen&lt;/p&gt;
+</description></item>
+    <item><title>Backsteinexpressionismus: Anzeiger Hochhaus Hannover</title>
+        <link>https://backsteinexpressionismus.projektemacher.org/post/die-deutsche-zeitung/anzeiger-hochhaus</link>
+        <pubDate>Sun, 24 Aug 2025 18:25:07 +0200</pubDate>
+        <guid>https://projektemacher.org/post/backsteinexpressionismus/post/die-deutsche-zeitung/anzeiger-hochhaus/</guid>
+        <description>&lt;p&gt;Seite 125 und 4 des Anzeigenteils: Das &lt;a href=&#34;https://projektemacher.org/tags/Anzeiger-Hochhaus&#34;&gt;&amp;ldquo;Anzeiger Hochhaus&amp;rdquo;&lt;/a&gt; in Hannover von &lt;a href=&#34;https://projektemacher.org/tags/Fritz-H%c3%b6ger&#34;&gt;Fritz Höger&lt;/a&gt;.&lt;/p&gt;
+</description></item>
+    
+  </channel>
+</rss>
