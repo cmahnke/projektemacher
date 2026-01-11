@@ -71,9 +71,12 @@
         <link href="{{ .RelPermalink }}" rel="alternate" type="application/ld+json;profile=http://iiif.io/api/presentation/3/context.json" title="{{ $.Site.Title | default "" }}" />
     {{ end }}
 
+    {{/*
     {{- if .IsHome -}}
       {{- partial "schema.org/organization.html" . -}}
     {{ end -}}
+    */}}
+    {{- partial "data/schema.org.html" . -}}
   </head>
 
   {{ $csClass := "colorscheme-light" }}
