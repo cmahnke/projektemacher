@@ -39,7 +39,7 @@
         {{- if ($blogPage.Param "linkPrefix") -}}
           {{ $linkPrefix = $blogPage.Param "linkPrefix" -}}
         {{- else -}}
-          {{ $linkPrefix = $blogPage.Param "link" -}}
+          {{- $linkPrefix = $blogPage.Param "link" -}}
         {{- end -}}
         {{- $postLink = split (substr (string .Path) 1) "/" -}}
 
@@ -54,15 +54,9 @@
         <title>{{- $displayName }}{{ .Title -}}</title>
         <link>{{ $postLink }}</link>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-        <guid>{{ (.OutputFormats.Get "html").Permalink }}</guid>
+        <guid>{{ $postLink }}</guid>
         {{- $content := (.Content | html) -}}
-        {{- if strings.Contains $content "https://projektemacher.org" -}}
-          {{ $pattern := `(?i)<a\s+[^>]*href="https://projektemacher\.org[^"]*"[^>]*>(.*?)</a>` }}
-          {{ $content = $content | replaceRE $pattern "$1" }}
-          {{/*
-            {{- $content = (.Plain | htmlUnescape) -}}
-          */}}
-        {{- end -}}
+        {{- $content = $content | replaceRE `href=&#34;(/.*?)&#34;` (printf `href=&#34;%s$1&#34;` (trim $linkPrefix  "/")) -}}
         <description>{{- $content | safeHTML -}}</description>
         {{- $dir = .Path -}}
         {{- range .Resources.ByType "audio" -}}
