@@ -55,7 +55,15 @@
         <link>{{ $postLink }}</link>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
         <guid>{{ .Permalink }}</guid>
-        <description>{{- .Plain | htmlUnescape -}}</description>
+        {{- $content := (.Content | html) -}}
+        {{- if string.Contains $content "https://projektemacher.org" -}}
+          {{ $pattern := `(?i)<a\s+[^>]*href="https://projektemacher\.org[^"]*"[^>]*>(.*?)</a>` }}
+          {{ $content = $content | replaceRE $pattern "$1" }}
+          {{/*
+            {{- $content = (.Plain | htmlUnescape) -}}
+          */}}
+        {{- end -}}
+        <description>{{- $content | safeHTML -}}</description>
         {{- $dir = .Path -}}
         {{- range .Resources.ByType "audio" -}}
           {{- $size := 0 -}}
