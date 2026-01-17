@@ -54,9 +54,9 @@
         <title>{{- $displayName }}{{ .Title -}}</title>
         <link>{{ $postLink }}</link>
         <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate>
-        <guid>{{ .Permalink }}</guid>
+        <guid>{{ (.OutputFormats.Get "html").Permalink }}</guid>
         {{- $content := (.Content | html) -}}
-        {{- if string.Contains $content "https://projektemacher.org" -}}
+        {{- if strings.Contains $content "https://projektemacher.org" -}}
           {{ $pattern := `(?i)<a\s+[^>]*href="https://projektemacher\.org[^"]*"[^>]*>(.*?)</a>` }}
           {{ $content = $content | replaceRE $pattern "$1" }}
           {{/*
