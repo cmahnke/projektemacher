@@ -22,3 +22,6 @@ data/stats.json
 static/images/cm.*
 static/images/logo.*
 static/images/apple-touch-icon.png
+
+assets/scss/npm-fonts/
+assets/scss/flags/
