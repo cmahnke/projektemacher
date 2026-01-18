@@ -1,1 +1,37 @@
-{{- partial "schema.org/organization.html" . -}}
+<script type="application/ld+json">
+  {
+    "@context" : "http://schema.org",
+    "@graph": [
+    {
+      "@type": "Organization",
+      "name" : "Projektemacher",
+      "url" : "https://projektemacher.org/",
+      "@id": "https://projektemacher.org/#organization",
+      "logo": "https://projektemacher.org/images/laborant.jpg",
+      "description": "Projects on digital everyday cultural heritage of the 20th century and hybrid media",
+      "founder": [
+        {
+          "@type": "Person",
+          "name" : "Christian Mahnke",
+          "givenName" : "Christian",
+          "@id": "https://christianmahnke.de/#person"
+        }
+      ]
+    }, {
+        "@type": "Collection",
+        "name": "Digital Collection",
+        "description": "A collection of IIIF-compliant digital collections.",
+        "mainEntityOfPage": "https://projektemacher.org/collection.json",
+        "url": "https://projektemacher.org/blogs/",
+        "isAccessibleForFree": true,
+        "creativeWorkStatus": "Published",
+        "creator": {
+          "@id": "https://christianmahnke.de/#person"
+        },
+        "provider": {
+          "@id": "https://projektemacher.org/#organization"
+        }
+      }
+    ]
+  }
+</script>
