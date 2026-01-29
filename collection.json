@@ -1,0 +1,1190 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Projektemacher"
+      ],
+        "en": [
+          "Projektemacher"
+        ]
+      },
+  "items": [{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--krhenbeisser-hcb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Krähenbeißer"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      }]
+}
