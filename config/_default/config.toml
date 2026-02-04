@@ -44,3 +44,8 @@
       alt-fg-color-dark = '#dadada'
       link-color-dark = '#42a5f5'
       nav-color = '#293133'
+
+  [params.author]
+      email = 'mail@christianmahnke.de'
+      name = 'Christian Mahnke'
+      uri = 'http://www.wikidata.org/entity/Q137668638'
