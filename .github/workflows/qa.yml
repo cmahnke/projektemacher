@@ -7,9 +7,9 @@ jobs:
   build:
     runs-on: "ubuntu-latest"
     steps:
-      - uses: "actions/checkout@v4"
+      - uses: "actions/checkout@v6.0.2"
       - name: "TODO to Issue"
-        uses: "alstr/todo-to-issue-action@v5"
+        uses: "alstr/todo-to-issue-action@v5.1.14"
         with:
           AUTO_ASSIGN: true
           LANGUAGES: "https://raw.githubusercontent.com/cmahnke/projektemacher-base/main/.syntax.json"
