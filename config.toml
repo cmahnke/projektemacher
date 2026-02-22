@@ -309,7 +309,7 @@ enableRobotsTXT = true
     baseName = "linkedart"
     notAlternative = true
 
-  [outputFormats.pdf]
+  [outputFormats.pdf-article]
     mediaType = "text/html"
     isPlainText = false
     isHTML = true
