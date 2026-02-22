@@ -309,6 +309,14 @@ enableRobotsTXT = true
     baseName = "linkedart"
     notAlternative = true
 
+  [outputFormats.pdf]
+    mediaType = "text/html"
+    isPlainText = false
+    isHTML = true
+    baseName = "article"
+    notAlternative = true
+    permalinkable = true
+
 [markup]
     defaultMarkdownHandler = 'goldmark'
 
