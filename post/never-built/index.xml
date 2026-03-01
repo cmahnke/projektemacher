@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Never Build Göttingen on Projektemacher</title>
+    <link>https://projektemacher.org/post/never-built/collection.json</link>
+    <description>Recent content in Never Build Göttingen on Projektemacher</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://projektemacher.org/post/never-built/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>404 - Seite nicht gefunden!</title>
+      <link>https://projektemacher.org/404.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/404.html</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kartenansicht</title>
+      <link>https://projektemacher.org/post/never-built/map/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/never-built/map/</guid>
+      <description>&lt;p&gt;Auf dieser Seite werden die Einträge mit (rekonstruierten) Geo-Informationen auf einer Karte angezeigt.&#xA;{.meta-page-intro}&lt;/p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;download-link&#34;&gt;&#xA;  &#xA;    &lt;a class=&#34;link&#34; href=&#34;https://projektemacher.org/post/never-built/map/../post/map.geojson&#34; target=&#34;_blank&#34;&gt;Download GeoJSON&lt;/a&gt;&#xA;  &#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Links</title>
+      <link>https://projektemacher.org/post/never-built/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/never-built/links/</guid>
+      <description>&lt;h1 id=&#34;göttingen&#34;&gt;&#xA;  Göttingen&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#g%c3%b6ttingen&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;allgemein&#34;&gt;&#xA;  Allgemein&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#allgemein&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://freies-verlagshaus.de/&#34; target=&#34;_blank&#34;&gt;Freies Verlagshaus&lt;/a&gt; von Michel Graver&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://kulturmaps.de/&#34; target=&#34;_blank&#34;&gt;Kulturmaps Göttingen&lt;/a&gt; von Michel Graver&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://goest.de/&#34; target=&#34;_blank&#34;&gt;goettinger stadtinfo&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;architektur-in-göttingen&#34;&gt;&#xA;  Architektur in Göttingen&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#architektur-in-g%c3%b6ttingen&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://freies-verlagshaus.de/architektur/&#34; target=&#34;_blank&#34;&gt;Architekturnotizen&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;nicht-gebaute-architektur&#34;&gt;&#xA;  Nicht gebaute Architektur&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#nicht-gebaute-architektur&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;litertur-und-bildbände&#34;&gt;&#xA;  Litertur und Bildbände&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#litertur-und-bildb%c3%a4nde&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.phaidon.com/store/architecture/atlas-of-never-built-architecture-9781838666538/&#34; target=&#34;_blank&#34;&gt;Sam Lubell und Greg Goldin: Atlas of Never Built Architecture&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.artbook.com/9781938922756.html&#34; target=&#34;_blank&#34;&gt;Sam Lubell und Greg Goldin: Never Built New York&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;ausstellungen&#34;&gt;&#xA;  Ausstellungen&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#ausstellungen&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://queensmuseum.org/exhibition/never-built-new-york/&#34; target=&#34;_blank&#34;&gt;Queens Museum: Never Built New York&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;artikel&#34;&gt;&#xA;  Artikel&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#artikel&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;*&lt;a href=&#34;https://neverwasmag.com/2018/12/unbuilt-new-york/&#34; target=&#34;_blank&#34;&gt;Never Was: Unbuilt New York&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Über diese Seite</title>
+      <link>https://projektemacher.org/post/never-built/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/never-built/about/</guid>
+      <description>&lt;h1 id=&#34;fehlende-einträge&#34;&gt;&#xA;  Fehlende Einträge&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#fehlende-eintr%c3%a4ge&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Derzeit fehlen noch (mindestens) die folgenden Entwürfe:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Kriegergedächniskirche von Dominikus Böhm um 1923, In: Ulrich Weisner (Hsg.) - Böhm: Väter und Söhne, Seite 49&lt;/li&gt;&#xA;&lt;li&gt;Entwürfe von &lt;a href=&#34;https://de.wikipedia.org/wiki/Lucy_Hillebrand&#34; target=&#34;_blank&#34;&gt;Lucy Hillebrand&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Heim für afrikanische, deutsche und asiatische Studenten&lt;/li&gt;&#xA;&lt;li&gt;Stadthalle und Mensa&lt;/li&gt;&#xA;&lt;li&gt;Nikolausberg&lt;/li&gt;&#xA;&lt;li&gt;Wohnhaushochhaus am Lohberg&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Entwürfe für die Umgestaltung der &lt;a href=&#34;https://de.wikipedia.org/wiki/Lokhalle_G%C3%B6ttingen&#34; target=&#34;_blank&#34;&gt;Lokhalle Göttingen&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Von Lucy Hillebrand&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Weende: An der Lutter&lt;/li&gt;&#xA;&lt;li&gt;Unterführung unter dem Nikolausberger Weg (Von Campus in den Botanischen Garten)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;kolophon&#34;&gt;&#xA;  Kolophon&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#kolophon&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;Diese Seite wurde mit &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; generiert.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

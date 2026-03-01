@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="911TV as desktop application">
+  <meta property="og:description" content="A website as a media installation using the example of 911TV">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-10-09T19:22:44+02:00">
+    <meta property="article:modified_time" content="2024-10-09T19:22:44+02:00">
+<title>
+  911TV as desktop application · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="A website as a media installation using the example of 911TV">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/article.html" /><meta property="og:title" content="911TV as desktop application" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Website, Electron, HybridMedia, Archive, JavaScript, MediaInstallation"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Website"><meta name="dc.subject" content="Electron"><meta name="dc.subject" content="HybridMedia"><meta name="dc.subject" content="Archive"><meta name="dc.subject" content="JavaScript"><meta name="dc.subject" content="MediaInstallation">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/911tv-desktop/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">911TV as desktop application</h1>
+        </header>
+        <p>I had some time, since I was ill:</p>
+<p>This time I am affected myself. This gave me the opportunity to renovate a project from <a href="https://christianmahnke.de/post/911tv/" target="_blank">last fall</a>:</p>
+<p><a href="https://911tv.projektemacher.org/" target="_blank">911TV</a> was &ldquo;finished&rdquo; last November - it did roughly what it was supposed to, but there were still minor problems and more ideas. The problems are significantly less now, especially with mobile clients. And the site is now also available as an application for the desktop:</p>
+
+
+
+
+<figure>
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/911tv-mac.png" alt="Screenshot 911TV Desktop Mac"/> <figcaption>
+                
+                <p>
+                    Screenshot 911TV Desktop on MacOS
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+<p>The availability as a desktop app also means that provision as a media station, i.e. a type of physical installation, is coming closer. If only because these are easier to handle and distribute than websites in a browser (no additional settings for lockdown / kiosk modes, no management of media handling).</p>
+<h2 id="technical-realization">
+  Technical realization
+  <a class="heading-link" href="#technical-realization">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The application is realized <a href="https://www.electronjs.org/" target="_blank">Electron</a> and is therefore in principle available for Windows, Linux and MacOS. However, the MacOS version is currently not created automatically.
+Apart from that, not much has changed implementation wise, some modules have been switched to <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a> and my next project will certainly not be made with the <a href="https://react.dev/" target="_blank">React</a> framework.</p>
+<h2 id="download-updated">
+  Download (updated)
+  <a class="heading-link" href="#download-updated">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>
+<p><strong>Windows</strong></p>
+</li>
+<li>
+<p>
+
+
+
+<figure>
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/favicon-32.png" alt="Screenshot 911TV Desktop Mac"/> </figure>
+<a href="https://github.com/cmahnke/911tv/releases/download/2024.10.21/911tv-win-x64.zip" target="_blank">Zip 64 Bit Intel</a></p>
+</li>
+<li>
+<p>
+
+
+
+<figure>
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/favicon-32.png" alt="Screenshot 911TV Desktop Mac"/> </figure>
+<a href="https://github.com/cmahnke/911tv/releases/download/2024.10.21/911tv-win-arm64.zip" target="_blank">Zip 64 Bit ARM</a></p>
+</li>
+<li>
+<p><strong>Linux</strong></p>
+</li>
+<li>
+<p>
+
+
+
+<figure>
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/favicon-32.png" alt="Screenshot 911TV Desktop Mac"/> </figure>
+<a href="https://github.com/cmahnke/911tv/releases/download/2024.10.21/911tv-linux-amd64.tgz" target="_blank">Tar.gz 64 Bit Intel</a></p>
+</li>
+<li>
+<p>
+
+
+
+<figure>
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/911tv-desktop/favicon-32.png" alt="Screenshot 911TV Desktop Mac"/> </figure>
+<a href="https://github.com/cmahnke/911tv/releases/download/2024.10.21/911tv-linux-arm64.tgz" target="_blank">Tar.gz 64 Bit ARM</a></p>
+</li>
+</ul>
+<p>The application can be downloaded from <a href="https://github.com/cmahnke/911tv/releases" target="_blank">GitHub</a>.</p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

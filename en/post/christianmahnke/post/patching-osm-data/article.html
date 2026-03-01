@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="&#34;Patching&#34; OpenStreetMap data">
+  <meta property="og:description" content="“Counterfactual architecture” yields almost no results on Google (at least in German)….">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-17T21:14:44+02:00">
+    <meta property="article:modified_time" content="2025-11-17T21:14:44+02:00">
+<title>
+  &#34;Patching&#34; OpenStreetMap data · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/article.html" /><meta property="og:title" content="&#34;Patching&#34; OpenStreetMap data" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Geodata, OpenStreetMap, Python"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Geodata"><meta name="dc.subject" content="OpenStreetMap"><meta name="dc.subject" content="Python">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/patching-osm-data/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">&#34;Patching&#34; OpenStreetMap data</h1>
+        </header>
+        <p>&ldquo;Counterfactual architecture&rdquo; yields almost no results on Google (at least in German)&hellip;.</p>
+<p>&hellip;which is why I&rsquo;m writing this post to change that:
+For the <a href="https://never-built.goettingen.xyz/" target="_blank">Never Built Göttingen</a> blog, which focuses on unrealised buildings, I tried to enrich this what-if scenario with map material.</p>
+<p>Based on <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> (OSM), this is not that difficult in principle. With <a href="https://josm.openstreetmap.de/" target="_blank">JOSM</a>, you can simply download the desired map section and then start drawing. It is important to mark your own buildings with ‘upload=false’ for safety reasons to prevent accidental uploads.</p>
+<p>However, at best, you will then have created a fork of the data in OSM XML format. If you prefer to continue working only with the difference to the real map in order to have future changes in the displayed map material, things get a little more complicated. One option is to use special tools for <a href="https://wiki.openstreetmap.org/wiki/Conflation" target="_blank">merging/conflating</a>.</p>
+<p>Another option, which focuses solely on meeting specific requirements, is outlined here:</p>
+<h1 id="procedure">
+  Procedure
+  <a class="heading-link" href="#procedure">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The prominent <a href="https://never-built.goettingen.xyz/post/staedte-forum-1-71-goettingen/gwz/" target="_blank">entry for the three blue towers</a> serves as an example; it was quite easy to model in JOSM.</p>
+<h2 id="extracting-the-changes">
+  Extracting the changes
+  <a class="heading-link" href="#extracting-the-changes">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The first step is to isolate your own changes. You can use <code>osmium</code> for this, for example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>osmium tags-filter -o filtered.osm.xml w/upload<span style="color:#f92672">=</span>false input.osm.xml
+</span></span></code></pre></div><p>Since the result was saved as XML, it can be opened again in JOSM:</p>
+
+
+
+
+<figure class="post-image">
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/josm.png" alt="JOSM"/> </figure>
+
+<h2 id="creating-a-mask">
+  Creating a mask
+  <a class="heading-link" href="#creating-a-mask">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The next step is to create a kind of mask from the isolated changes, which can then be used to filter a larger area. This and the following steps were done with <a href="https://docs.osmcode.org/pyosmium/latest/" target="_blank">PyOsmium</a>; for implementation, see below.</p>
+<p>When creating the mask, the OSM IDs of the changes are also adjusted: These are negative up to this point, as they are not ‘real’, i.e. part of the central OSM database. However, various libraries or even <a href="https://github.com/onthegomap/planetiler" target="_blank">Planetiler</a> do not like it when they are negative, so they are simply multiplied by -1.</p>
+<h2 id="cleaning-up-the-input-file">
+  Cleaning up the input file
+  <a class="heading-link" href="#cleaning-up-the-input-file">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The mask can now be used to clean up an OSM data dump. The entire desired map section is scanned and any OSM way that intersects the mask is discarded. This allows existing buildings, green spaces, etc. to be removed.</p>
+<h2 id="merging">
+  Merging
+  <a class="heading-link" href="#merging">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The final step is to merge the cleaned-up area with your own changes.</p>
+<h1 id="result">
+  Result
+  <a class="heading-link" href="#result">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The next step is to convert the OSM PBF file into vector tiles using <a href="https://github.com/onthegomap/planetiler" target="_blank">Planetiler</a>.</p>
+<p>And this is what the generated map data looks like in a provisional <a href="https://maplibre.org/maplibre-gl-js/docs/" target="_blank">Maplibre JS GL</a> renderer:</p>
+
+
+
+
+<figure class="post-image">
+    
+        <img src="https://projektemacher.org/en/post/christianmahnke/post/patching-osm-data/render.png" alt="Mapbox JS GL"/> <figcaption>
+                
+                <p>
+                    Map data: © OpenStreetMap contributors, elevation information: LGLN (2024)
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+<h1 id="implementation">
+  Implementation
+  <a class="heading-link" href="#implementation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>This Python function performs the steps above, the individual parameters:</p>
+<ul>
+<li><strong><code>base_file</code></strong> - The data dump of the entire area</li>
+<li><strong><code>patch</code></strong> - The cleaned-up changes created with JOSM</li>
+<li><strong><code>output_file</code></strong> - The target file</li>
+<li><strong><code>overwrite</code></strong> - Overwrite existing files (<code>True</code> | <code>False</code>)</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">merge</span> (base_file, patch, output_file, overwrite) <span style="color:#f92672">-&gt;</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IntersectionHandler</span>(osmium<span style="color:#f92672">.</span>SimpleHandler):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Handler to identify ways in an OSM file that intersect with a given set of polygons.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, target_polygons):
+</span></span><span style="display:flex;"><span>            super(IntersectionHandler, self)<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>target_polygons <span style="color:#f92672">=</span> target_polygons
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>wkbfactory <span style="color:#f92672">=</span> osmium<span style="color:#f92672">.</span>geom<span style="color:#f92672">.</span>WKBFactory()
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>intersecting_ways <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">#TODO: Check if we also need to remove nodes</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">way</span>(self, w):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> w<span style="color:#f92672">.</span>is_closed():
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>                    wkb_line <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>wkbfactory<span style="color:#f92672">.</span>create_linestring(w)
+</span></span><span style="display:flex;"><span>                    shapely_line <span style="color:#f92672">=</span> shapely<span style="color:#f92672">.</span>from_wkb(wkb_line)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                    <span style="color:#66d9ef">if</span> len(shapely_line<span style="color:#f92672">.</span>coords) <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">4</span>:
+</span></span><span style="display:flex;"><span>                        closed_way_polygon <span style="color:#f92672">=</span> Polygon(shapely_line)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">for</span> target_poly <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>target_polygons:
+</span></span><span style="display:flex;"><span>                            <span style="color:#66d9ef">if</span> closed_way_polygon<span style="color:#f92672">.</span>intersects(target_poly):
+</span></span><span style="display:flex;"><span>                                self<span style="color:#f92672">.</span>intersecting_ways<span style="color:#f92672">.</span>append({
+</span></span><span style="display:flex;"><span>                                    <span style="color:#e6db74">&#39;id&#39;</span>: w<span style="color:#f92672">.</span>id,
+</span></span><span style="display:flex;"><span>                                    <span style="color:#e6db74">&#39;tags&#39;</span>: dict(w<span style="color:#f92672">.</span>tags),
+</span></span><span style="display:flex;"><span>                                    <span style="color:#e6db74">&#39;geometry&#39;</span>: closed_way_polygon
+</span></span><span style="display:flex;"><span>                                })
+</span></span><span style="display:flex;"><span>                                <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">except</span> osmium<span style="color:#f92672">.</span>geom<span style="color:#f92672">.</span>GeometryError <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>                    logger<span style="color:#f92672">.</span>error(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Could not create geometry for Way </span><span style="color:#e6db74">{</span>w<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">IDChanger</span>(osmium<span style="color:#f92672">.</span>SimpleHandler):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        Handler to write OSM objects to a new file, changing their IDs to positive values.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, writer):
+</span></span><span style="display:flex;"><span>            super(IDChanger, self)<span style="color:#f92672">.</span><span style="color:#a6e22e">__init__</span>()
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>writer <span style="color:#f92672">=</span> writer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">node</span>(self, n):
+</span></span><span style="display:flex;"><span>            new_node <span style="color:#f92672">=</span> create_mutable_node(n)
+</span></span><span style="display:flex;"><span>            new_node<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> n<span style="color:#f92672">.</span>id <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Changing node ID from </span><span style="color:#e6db74">{</span>n<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74"> to </span><span style="color:#e6db74">{</span>new_node<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>writer<span style="color:#f92672">.</span>add_node(new_node)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">way</span>(self, w):
+</span></span><span style="display:flex;"><span>            new_way <span style="color:#f92672">=</span> create_mutable_way(w)
+</span></span><span style="display:flex;"><span>            new_way<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> w<span style="color:#f92672">.</span>id <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            new_way<span style="color:#f92672">.</span>nodes <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>            refs <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> w<span style="color:#f92672">.</span>nodes:
+</span></span><span style="display:flex;"><span>                r<span style="color:#f92672">.</span>ref <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>ref <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>                refs<span style="color:#f92672">.</span>append(r)
+</span></span><span style="display:flex;"><span>            new_way<span style="color:#f92672">.</span>nodes <span style="color:#f92672">=</span> refs
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Changing way ID from </span><span style="color:#e6db74">{</span>w<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74"> to </span><span style="color:#e6db74">{</span>new_way<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>writer<span style="color:#f92672">.</span>add_way(new_way)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">relation</span>(self, r):
+</span></span><span style="display:flex;"><span>            new_relation <span style="color:#f92672">=</span> create_mutable_relation(r)
+</span></span><span style="display:flex;"><span>            new_relation<span style="color:#f92672">.</span>id <span style="color:#f92672">=</span> r<span style="color:#f92672">.</span>id <span style="color:#f92672">*</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>            logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Changing relation ID from </span><span style="color:#e6db74">{</span>r<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74"> to </span><span style="color:#e6db74">{</span>new_relation<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>writer<span style="color:#f92672">.</span>add_relation(new_relation)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ExcludingIdFilter</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        A filter class for osmium.FileProcessor to exclude objects based on their IDs, see https://github.com/osmcode/pyosmium/issues/310
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">__init__</span>(self, ids):
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>ids <span style="color:#f92672">=</span> ids
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">node</span>(self, n):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> n<span style="color:#f92672">.</span>id <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>ids:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">way</span>(self, w):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> w<span style="color:#f92672">.</span>id <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>ids:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">relation</span>(self, r):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> r<span style="color:#f92672">.</span>id <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>ids:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">area</span>(self, a):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> a<span style="color:#f92672">.</span>id <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>ids:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">&#34;Generating mask and appying it to the input file.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 1: Process the patch file to change IDs to positive and extract polygons.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># This temporary file will hold the patch with inverted IDs.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> tempfile<span style="color:#f92672">.</span>NamedTemporaryFile(mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;w+t&#39;</span>, delete<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, suffix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.pbf&#34;</span>,) <span style="color:#66d9ef">as</span> temp:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> osmium<span style="color:#f92672">.</span>SimpleWriter(temp<span style="color:#f92672">.</span>name, overwrite<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) <span style="color:#66d9ef">as</span> writer:
+</span></span><span style="display:flex;"><span>            handler <span style="color:#f92672">=</span> IDChanger(writer)
+</span></span><span style="display:flex;"><span>            osmium<span style="color:#f92672">.</span>apply(patch, handler)
+</span></span><span style="display:flex;"><span>            writer<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>        wkbfab <span style="color:#f92672">=</span> osmium<span style="color:#f92672">.</span>geom<span style="color:#f92672">.</span>WKBFactory()
+</span></span><span style="display:flex;"><span>        polygons <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Read the transformed patch file to extract geometries for exclusion.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(temp<span style="color:#f92672">.</span>name, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            patch_buffer <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()
+</span></span><span style="display:flex;"><span>            patch_pbf <span style="color:#f92672">=</span> osmium<span style="color:#f92672">.</span>io<span style="color:#f92672">.</span>FileBuffer(patch_buffer, <span style="color:#e6db74">&#34;pbf&#34;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> o <span style="color:#f92672">in</span> osmium<span style="color:#f92672">.</span>FileProcessor(patch_pbf)<span style="color:#f92672">.</span>with_areas():
+</span></span><span style="display:flex;"><span>                logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generating </span><span style="color:#e6db74">{</span>o<span style="color:#f92672">.</span>type_str()<span style="color:#e6db74">}</span><span style="color:#e6db74"> filter primitive for </span><span style="color:#e6db74">{</span>o<span style="color:#f92672">.</span>type_str()<span style="color:#e6db74">}</span><span style="color:#e6db74">, id: </span><span style="color:#e6db74">{</span>o<span style="color:#f92672">.</span>id<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> o<span style="color:#f92672">.</span>is_way() <span style="color:#f92672">and</span> <span style="color:#f92672">not</span> o<span style="color:#f92672">.</span>is_closed():
+</span></span><span style="display:flex;"><span>                    wkb <span style="color:#f92672">=</span> shapely<span style="color:#f92672">.</span>from_wkb(wkbfab<span style="color:#f92672">.</span>create_linestring(o<span style="color:#f92672">.</span>nodes))
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">elif</span> o<span style="color:#f92672">.</span>is_area():
+</span></span><span style="display:flex;"><span>                    logger<span style="color:#f92672">.</span>debug(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Area: </span><span style="color:#e6db74">{</span>o<span style="color:#f92672">.</span>__dict__<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>                    wkb <span style="color:#f92672">=</span> shapely<span style="color:#f92672">.</span>from_wkb(wkbfab<span style="color:#f92672">.</span>create_multipolygon(o))
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                    wkb <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>                polygons<span style="color:#f92672">.</span>append(wkb)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Filter out any None values from the polygons list (e.g., non-closed ways, nodes, relations)</span>
+</span></span><span style="display:flex;"><span>    polygons <span style="color:#f92672">=</span> [item <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> polygons <span style="color:#66d9ef">if</span> item <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>]
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Extracted </span><span style="color:#e6db74">{</span>len(polygons)<span style="color:#e6db74">}</span><span style="color:#e6db74"> polygons to use as filter.&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 2: Identify ways in the base file that intersect with the extracted polygons.</span>
+</span></span><span style="display:flex;"><span>    handler <span style="color:#f92672">=</span> IntersectionHandler(polygons)
+</span></span><span style="display:flex;"><span>    handler<span style="color:#f92672">.</span>apply_file(base_file, locations<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, idx<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;flex_mem&#39;</span>)
+</span></span><span style="display:flex;"><span>    results <span style="color:#f92672">=</span> handler<span style="color:#f92672">.</span>intersecting_ways
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Collect IDs of ways to be excluded from the base file.</span>
+</span></span><span style="display:flex;"><span>    ids <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> results:
+</span></span><span style="display:flex;"><span>        ids<span style="color:#f92672">.</span>append(i[<span style="color:#e6db74">&#39;id&#39;</span>])
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>debug(ids)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Step 3: Create a temporary base file with intersecting ways removed.</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> tempfile<span style="color:#f92672">.</span>NamedTemporaryFile(mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;w+t&#39;</span>, delete<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, suffix<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;.pbf&#34;</span>) <span style="color:#66d9ef">as</span> temp:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> osmium<span style="color:#f92672">.</span>BackReferenceWriter(temp<span style="color:#f92672">.</span>name, base_file, overwrite<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>) <span style="color:#66d9ef">as</span> writer:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> o <span style="color:#f92672">in</span> osmium<span style="color:#f92672">.</span>FileProcessor(base_file)\
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span>with_filter(osmium<span style="color:#f92672">.</span>filter<span style="color:#f92672">.</span>EntityFilter(osmium<span style="color:#f92672">.</span>osm<span style="color:#f92672">.</span>WAY))\
+</span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span>with_filter(ExcludingIdFilter(ids)):
+</span></span><span style="display:flex;"><span>                writer<span style="color:#f92672">.</span>add(o)
+</span></span><span style="display:flex;"><span>        logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Generated masked file. Applying patch. Overwrite: </span><span style="color:#e6db74">{</span>overwrite<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># Step 4: Merge the filtered base file with the transformed patch file.</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">with</span> open(temp<span style="color:#f92672">.</span>name, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">with</span> osmium<span style="color:#f92672">.</span>SimpleWriter(output_file, overwrite<span style="color:#f92672">=</span>overwrite) <span style="color:#66d9ef">as</span> writer:
+</span></span><span style="display:flex;"><span>                reader <span style="color:#f92672">=</span>  osmium<span style="color:#f92672">.</span>MergeInputReader()
+</span></span><span style="display:flex;"><span>                reader<span style="color:#f92672">.</span>add_buffer(patch_buffer, <span style="color:#e6db74">&#34;pbf&#34;</span>)
+</span></span><span style="display:flex;"><span>                reader<span style="color:#f92672">.</span>add_buffer(f<span style="color:#f92672">.</span>read(), <span style="color:#e6db74">&#34;pbf&#34;</span>)
+</span></span><span style="display:flex;"><span>                reader<span style="color:#f92672">.</span>apply(writer)
+</span></span><span style="display:flex;"><span>                writer<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span>    logger<span style="color:#f92672">.</span>info(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Done, </span><span style="color:#e6db74">{</span>output_file<span style="color:#e6db74">}</span><span style="color:#e6db74"> written&#34;</span>)
+</span></span></code></pre></div>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

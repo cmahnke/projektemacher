@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/labs.projektemacher/post/node-dependencies/">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Node Abhängigkeiten aus Themes">
+  <meta property="og:description" content="Since the upgrade to a Hugo version above 0.75.0 there is an enhancement in the form of the command hugo mod npm pack to merge the node dependencies of a theme with those of a project.
+To use this new feature, the dependencies of a theme must be saved in a file package.hugo.json instead of package.json, it is sufficient to simply rename the file created by npm or yarn. A symlink alone doesn’t work because Hugo’s virtual filesystem (intentionally) doesn’t work with symlinks.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2021-03-13T12:22:44+02:00">
+    <meta property="article:modified_time" content="2021-03-13T12:22:44+02:00">
+<title>
+  Node Abhängigkeiten aus Themes · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/labs.projektemacher/post/node-dependencies/"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/labs.projektemacher/post/node-dependencies/" /><meta property="og:title" content="Node Abhängigkeiten aus Themes" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Hugo, Themes, Node"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Hugo"><meta name="dc.subject" content="Themes"><meta name="dc.subject" content="Node">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="application/json" href="https://projektemacher.org/en/post/labs.projektemacher/post/node-dependencies/index.json" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/labs.projektemacher/post/node-dependencies/">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Node Abhängigkeiten aus Themes</h1>
+        </header>
+        <p>Since the <a href="https://projektemacher.org/post/recent-hugo-version/">upgrade to a Hugo version above 0.75.0</a> there is an enhancement in the form of the command <a href="https://gohugo.io/commands/hugo_mod_npm_pack/" target="_blank"><code>hugo mod npm pack</code></a> to merge the node dependencies of a theme with those of a project.</p>
+<p>To use this new feature, the dependencies of a theme must be saved in a file <code>package.hugo.json</code> instead of<code> package.json</code>, it is sufficient to simply rename the file created by <code>npm</code> or<code> yarn</code>. A symlink alone doesn&rsquo;t work because Hugo&rsquo;s virtual filesystem (intentionally) doesn&rsquo;t work with symlinks.</p>
+<p>If it&rsquo;s just about merging the <code>dependencies</code> and<code> devDependencies</code> sections, that works very well. However, if you have defined special scripts (section <code>scripts</code> in<code> package.json</code>), e.g. to patch existing node libraries, the whole thing does not really help, because these sections (and all others that do not explicitly define dependencies) contribute the merge ignored.</p>
+<p>There is a [Hugo Feature Request] (<a href="https://github.com/gohugoio/hugo/issues/8319%29" target="_blank">https://github.com/gohugoio/hugo/issues/8319)</a>, but it is not yet clear whether and if so, when this will be implemented.</p>
+<p>Two solutions are possible:</p>
+<ul>
+<li>Create a patched Node dependency and publish it to it&rsquo;s own Node package repository - One can use <a href="https://docs.github.com/en/actions/guides/publishing-nodejs-packages" target="_blank">GitHub</a> for building and distribution. Just make sure your project is using this registry.</li>
+<li>Build your own merging logic using <a href="https://stedolan.github.io/jq/" target="_blank"><code>jq</code></a>:</li>
+</ul>
+<p>An example for two files:</p>
+<pre tabindex="0"><code>jq -s &#39;.[0] * .[1]&#39;  package.hugo.json themes/some-hugo-theme-with-npm-dependencies/package.hugo.json
+</code></pre><p>An Example using multiple themes (This only works with BSD <code>find</code> - not on GitHub):</p>
+<pre tabindex="0"><code>find . -name &#34;package.hugo.json&#34; -o -name &#34;package.json&#34; -depth 0 | xargs jq -s add &gt; package.json
+</code></pre>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

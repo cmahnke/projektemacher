@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/post/kraehenbeisser/collection.json</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <lastBuildDate>Tue, 28 Jul 2020 16:51:27 +0200</lastBuildDate>
+    <atom:link href="https://projektemacher.org/post/kraehenbeisser/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kontakt</title>
+      <link>https://projektemacher.org/post/kraehenbeisser/contact/</link>
+      <pubDate>Tue, 28 Jul 2020 16:51:27 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/kraehenbeisser/contact/</guid>
+      <description>&lt;p&gt;&amp;ldquo;Krähenbeißer&amp;rdquo; ist ein Projekt von &lt;strong&gt;Christian Mahnke&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;Kontakt ist via &lt;a href=&#34;mailto:kraehenbeisser@projektemacher.org&#34;&gt;E-Mail&lt;/a&gt; möglich.&lt;/p&gt;&#xA;&lt;img class=&#34;about-img&#34; alt=&#34;Krähenbeißer&#34; src=&#34;https://projektemacher.org/images/kraehenbeisser.svg&#34;&gt;</description>
+    </item>
+    <item>
+      <title>Über dieses Blog</title>
+      <link>https://projektemacher.org/post/kraehenbeisser/about/</link>
+      <pubDate>Tue, 28 Jul 2020 16:51:27 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/kraehenbeisser/about/</guid>
+      <description>&lt;p&gt;Diese Seite ist eine Sammlung historischer Abbildungen von Krähenbeißern, aus Gründen des Urheberrechtes werden dabei keine neueren Reproduktionen, wie sie manchmal in Büchern über Ostpreußen oder die Kurische Nehrung zu finden sind, aufgenommen.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Krähenbeisse.de&lt;/strong&gt; ist ein &lt;a href=&#34;https://projektemacher.org&#34; target=&#34;_blank&#34;&gt;Projektemacher.org Blog&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h1 id=&#34;über-krähenbeißer&#34;&gt;&#xA;  Über Krähenbeißer&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#%c3%bcber-kr%c3%a4henbei%c3%9fer&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;&amp;ldquo;Krähenbeißer&amp;rdquo; war ein Name für Fischer der Kurischen Nehrung bzw. des Kurischen Haffs, die Krähen fingen um sie eingepökelt als Winterverpflegung zu nutzen.&#xA;Die bisher hier zur Verfügung gestellten Abbildungen sieht man das anpflocken der Lockkrähen, das Warten in der Fangbude (-hütte), das Leeren der Netze und den Biß.&#xA;Der Name &amp;ldquo;Krähenbeißer&amp;rdquo; (oder im lokalen Dialekt: Krajebieter) rührt daher, dass die Krähen in den Schädel gebissen wurden um sie zu töten.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

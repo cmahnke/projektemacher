@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/gitlab-debian-repository/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Debian Repository with GitLab Pages">
+  <meta property="og:description" content="A simple Debian repository knitted by yourself…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-08-08T18:33:44+02:00">
+    <meta property="article:modified_time" content="2025-08-08T18:33:44+02:00">
+<title>
+  Debian Repository with GitLab Pages · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/gitlab-debian-repository/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/gitlab-debian-repository/article.html" /><meta property="og:title" content="Debian Repository with GitLab Pages" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="Debian, GitLab[Debian, GitLab], Git, SoftwareDevelopment"><meta name="dc.subject" content="Debian"><meta name="dc.subject" content="GitLab[Debian"><meta name="dc.subject" content="GitLab]"><meta name="dc.subject" content="Git"><meta name="dc.subject" content="SoftwareDevelopment">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/gitlab-debian-repository/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/gitlab-debian-repository/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/gitlab-debian-repository/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Debian Repository with GitLab Pages</h1>
+        </header>
+        <p>A simple Debian repository knitted by yourself&hellip;</p>
+<p>Sometimes you need your own Debian repository, e.g. to install <a href="https://www.electronjs.org/" target="_blank">Electron</a> applications with <a href="https://github.com/raspberrypi/rpi-image-gen" target="_blank"><code>rpi-image-gen</code></a>.</p>
+<p>Even if GitLab has an <a href="https://docs.gitlab.com/user/packages/debian_repository/" target="_blank">experimental feature</a> for this, it is not activated on every instance.</p>
+<h1 id="create-repository">
+  Create repository
+  <a class="heading-link" href="#create-repository">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Basically there are two ways or tools to create static Debian package repositories, <code>dpkg-scanpackages</code> and <code>reprepro</code>. The following examples assume that there is another one called <code>debian</code> below the working directory. This contains one or more &ldquo;<code>.deb</code>&rdquo; files.</p>
+<h2 id="dpkg-scanpackages">
+  <code>dpkg-scanpackages</code>
+  <a class="heading-link" href="#dpkg-scanpackages">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>This is the simpler variant. First, the package <code>dpkg-dev</code> must be installed (<code>apt install -y dpkg-dev</code>). The program can then be executed with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>dpkg-scanpackages -m debian /dev/null | gzip -9c &gt; debian/Packages.gz
+</span></span></code></pre></div><p>The <code>debian</code> directory can then be made available on a web storage area.</p>
+<h2 id="reprepro">
+  <code>reprepro</code>
+  <a class="heading-link" href="#reprepro">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>This is the variant that offers more possibilities, first the package <code>reprepro</code> must be installed (<code>apt install -y reprepro</code>). This variant has the advantage that you can also provide GPG keys&hellip;</p>
+<p>Since configuration files must also be created here, it is recommended to create an additional shell script in the repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>REPO_DIR<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>mkdir -p $REPO_DIR/<span style="color:#f92672">{</span>conf,incoming,debian<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>RELEASE_NAME<span style="color:#f92672">=</span>bookworm
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Using </span>$REPO_DIR<span style="color:#e6db74"> as local repository&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cat <span style="color:#e6db74">&lt;&lt;EOF &gt;&gt; $REPO_DIR/conf/distributions
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Origin: My Electron App
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Label: My Electron App
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Suite: stable
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Codename: $RELEASE_NAME
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Architectures: arm64 armhf
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Components: main
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Description: Personal Electron App software repository
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">EOF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>cd $REPO_DIR
+</span></span><span style="display:flex;"><span>reprepro createsymlinks
+</span></span><span style="display:flex;"><span>reprepro export
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> DEB in <span style="color:#e6db74">`</span>find $REPO_DIR/debian/ -name <span style="color:#e6db74">&#34;*.deb&#34;</span> -type f<span style="color:#e6db74">`</span>; <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    echo <span style="color:#e6db74">&#34;Adding </span>$DEB<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>    reprepro -b $REPO_DIR includedeb <span style="color:#e6db74">&#34;</span>$RELEASE_NAME<span style="color:#e6db74">&#34;</span> <span style="color:#e6db74">&#34;</span>$DEB<span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p><code>reprepro</code> also offers <a href="https://wiki.debian.org/DebianRepository/SetupWithReprepro" target="_blank">further parameters and options</a>.</p>
+<h1 id="create-directory-index">
+  Create directory index
+  <a class="heading-link" href="#create-directory-index">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>This step is optional and requires the programs <code>tree</code>and <code>find</code> (<code>apt install -y tree findutils</code>). <code>tree</code> can create directory listings in HTML format, <code>find</code> is used to run <code>tree</code> recursively:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>find . -type d -print -exec sh -c <span style="color:#e6db74">&#39;tree &#34;$0&#34; -H &#34;.&#34; -L 1 --noreport --houtro &#34;&#34; --dirsfirst --charset utf-8 -I &#34;index.html&#34; --timefmt &#34;%d-%b-%Y %H:%M&#34; -s -D -o &#34;$0/index.html&#34;&#39;</span> <span style="color:#f92672">{}</span> <span style="color:#ae81ff">\;</span>
+</span></span></code></pre></div><h1 id="deployment-on-the-web---example-for-gitlab">
+  Deployment on the Web - Example for GitLab
+  <a class="heading-link" href="#deployment-on-the-web---example-for-gitlab">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>This simple example creates a Debian repository on GitLab Pages.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># This collects all *.deb files from the workdir and creates the package index</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">packages</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stage</span>: <span style="color:#ae81ff">deploy</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>: <span style="color:#ae81ff">debian:bookworm</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">artifacts</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">paths</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">repo</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">before_script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">apt-get update</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">apt-get install -y dpkg-dev tree findutils</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">mkdir -p repo/debian</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">find . -name &#39;*.deb&#39; -print -exec cp {} repo/debian/ \;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">cd repo</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">find . -type d -print -exec sh -c &#39;tree &#34;$0&#34; -H &#34;.&#34; -L 1 --noreport --houtro &#34;&#34; --dirsfirst --charset utf-8 -I &#34;index.html&#34; --timefmt &#34;%d-%b-%Y %H:%M&#34; -s -D -o &#34;$0/index.html&#34;&#39; {} \;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">dpkg-scanpackages -m debian /dev/null | gzip -9c &gt; debian/Packages.gz</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This depends on the artifacts of the `packages` step and deploys them on GitLab pages</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">pages</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">stage</span>: <span style="color:#ae81ff">deploy</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">needs</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">packages</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">script</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">mkdir -p public</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">cp -r repo/debian public/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">artifacts</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">paths</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">public</span>
+</span></span></code></pre></div>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

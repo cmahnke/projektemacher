@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/pong/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Pong Visualisation">
+  <meta property="og:description" content="A 70s video game as a heat map">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2024-04-15T13:58:44+02:00">
+    <meta property="article:modified_time" content="2024-04-15T13:58:44+02:00">
+<title>
+  Pong Visualisation · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/pong/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="A 70s video game as a heat map">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/pong/article.html" /><meta property="og:title" content="Pong Visualisation" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="Pong, video game, browser automation, Playwright[Pong, video game, browser automation, Playwright], Light, Licht2024, Fun, Retrocomputing, DigitalImages, JavaScript, Game"><meta name="dc.subject" content="Pong"><meta name="dc.subject" content="video game"><meta name="dc.subject" content="browser automation"><meta name="dc.subject" content="Playwright[Pong"><meta name="dc.subject" content="video game"><meta name="dc.subject" content="browser automation"><meta name="dc.subject" content="Playwright]"><meta name="dc.subject" content="Light"><meta name="dc.subject" content="Licht2024"><meta name="dc.subject" content="Fun"><meta name="dc.subject" content="Retrocomputing"><meta name="dc.subject" content="DigitalImages"><meta name="dc.subject" content="JavaScript"><meta name="dc.subject" content="Game">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/pong/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/pong/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/pong/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Pong Visualisation</h1>
+        </header>
+        <p>For some reason I came up with the idea of visualising <a href="https://de.wikipedia.org/wiki/Pong" target="_blank">Pong</a>&hellip;</p>
+<p>I have a small collection of old game consoles from before 1980, <a href="https://en.wikipedia.org/wiki/List_of_first_generation_home_video_game_consoles" target="_blank">many</a> of which are based on the <a href="https://en.wikipedia.org/wiki/AY-3-8500" target="_blank">AY-3-8500 chip</a>. The most famous game made possible by this chip is Pong.</p>
+<h1 id="research">
+  Research
+  <a class="heading-link" href="#research">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Now of course you could make countless games, record them, digitise them and then visualise them, but that would take a long time, especially as you would also need two people, as the old systems do not allow a game against the &ldquo;computer&rdquo;. Therefore, a programmable simulation was needed. I came across the following interesting projects and sites during my research:</p>
+<ul>
+<li>
+<p><a href="https://www.pong-story.com/" target="_blank">PONG story: Great site about Pong and early consoles</a></p>
+<ul>
+<li><a href="https://www.pong-story.com/pcpong.htm" target="_blank">PONG Story: Pong for the PC</a></li>
+</ul>
+</li>
+<li>
+<p><a href="https://pathealy.itch.io/odyssey-now-hal" target="_blank">OdysseyNow</a> - Based on Unity</p>
+</li>
+<li>
+<p>Pong on the Arduino</p>
+<ul>
+<li><a href="http://searle.x10host.com/AVRPong/index.html" target="_blank">70&rsquo;s TV game recreation using an Arduino (Atmel ATmega328/168) processor.</a> - Extensive documentation for a faithful recreation</li>
+<li><a href="https://wolles-elektronikkiste.de/en/pong-for-arduino-computer-table-tennis" target="_blank">Pong for Arduino</a> - one of many other examples</li>
+</ul>
+</li>
+<li>
+<p>JavaScript implementation</p>
+<ul>
+<li><a href="https://codeincomplete.com/games/pong/" target="_blank">Javascript Pong by Jake Gordon</a> - see below</li>
+</ul>
+</li>
+<li>
+<p>Other</p>
+<ul>
+<li>
+<p><a href="https://github.com/ThomasVisvader/Pong" target="_blank">Pong Consoles Simulation</a></p>
+</li>
+<li>
+<p><a href="https://emulation.gametechwiki.com/index.php/POS_%28Pong_Consoles%29_CPUs_and_Other_Chips" target="_blank">POS (Pong Consoles) CPUs and Other Chips</a> in the <a href="https://emulation.gametechwiki.com/index.php/Main_Page" target="_blank">Emulation General Wiki</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h1 id="implementation">
+  Implementation
+  <a class="heading-link" href="#implementation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The image was generated on the basis of <a href="https://github.com/adam-s/typescript-pong" target="_blank"><code>typescript-pong</code></a>. This project is a fork (or TypeScript port) of <a href="https://github.com/jakesgordon/javascript-pong" target="_blank"><code>javascript-pong</code></a>. The <a href="https://codeincomplete.com/articles/javascript-pong/" target="_blank">documentation</a> for the project is very detailed, but the TypeScript variant is easier to customise. Basically, only infrastructural changes, e.g. a non-interactive mode, were necessary.</p>
+<p>This required a simple test based on <a href="https://playwright.dev/" target="_blank">Playwright</a>. This allows the recording of the games in the browser and the download of the recording to be automated.</p>
+<h1 id="post-processing">
+  Post-processing
+  <a class="heading-link" href="#post-processing">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>A few post-processing steps are necessary to generate the image based on the recordings:</p>
+<ul>
+<li>Add video frames together, inspired by <a href="https://github.com/mexitek/python-image-averaging" target="_blank"><code>python-image-averaging</code></a></li>
+<li>Separate static and dynamic image parts</li>
+<li>Gamma correction of the dynamic areas to emphasise differences, blur, then colourise</li>
+<li>merge areas again</li>
+</ul>
+<p><a href="https://opencv.org/" target="_blank">OpenCV</a> and <a href="https://numpy.org/" target="_blank">NumPy</a> are used for the image operations, <a href="https://matplotlib.org/" target="_blank">Matplotlib</a> for the colouring.</p>
+<h1 id="visualisation">
+  Visualisation
+  <a class="heading-link" href="#visualisation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<div>Pong Heatmap</div>
+<p>In the picture, the static areas are white, as in the game; the coloured areas show how often something happens in which part of the picture.</p>
+<p>The distribution follows this scale: On the left (cyan) little activity, on the right (magenta) a lot of activity.</p>
+<div style="content: ' '; display: block; width: 70%; height: 2rem; margin: auto; background: linear-gradient(90deg, rgba(0, 255, 255, 1) 0%, rgba(255, 0, 255, 1) 100%);"></div>
+<h1 id="statistics">
+  Statistics
+  <a class="heading-link" href="#statistics">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The image consists of 1777136 individual images, or 2:42 hours of gameplay, or 333 rounds.</p>
+<h1 id="update-992024">
+  Update 9.9.2024
+  <a class="heading-link" href="#update-992024">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>I&rsquo;m not the only one who has come up with the idea of using Pong for visualisation: <a href="https://victortao.substack.com/p/song-pong" target="_blank">Song Pong</a>.</p>
+
+<div class="iframe-wrapper" id="_iframe-0132c77469f7f360dfba1554fb14c714">
+  <div class="iframe">
+    <div class="opt-in">
+      <div class="opt-in-overlay"><img class='video-preview' src='./song-pong-preview.jpg' alt='Preview'><div class="opt-in-overlay-content">
+          <h3 class="opt-in-header">External Content</h3>
+          <p class="opt-in-text">External content is included at this point. Personal data might be transmitted to third-party platforms.</p>
+        </div>
+      </div>
+    </div>
+    <div class="iframe-content" id="_iframe-0132c77469f7f360dfba1554fb14c714-content">
+    </div>
+    <div class="switch-wrapper">
+      <label class="opt-in-switch">
+        <input type="checkbox">
+        <span class="opt-in-slider"></span>
+      </label>
+      <span class="opt-in-confirm">Allow external content</span>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var expire = 30 * 24 * 60 * 60;
+      var overlay = document.querySelector('#_iframe-0132c77469f7f360dfba1554fb14c714').querySelector('.opt-in');
+      var toggle = document.querySelector('#_iframe-0132c77469f7f360dfba1554fb14c714').querySelector('.opt-in-switch input');
+      addConsent(toggle, overlay, '0132c77469f7f360dfba1554fb14c714', '\n    \u003cdiv style=\u0022position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;\u0022\u003e\n          \u003ciframe allow=\u0022accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\u0022 loading=\u0022eager\u0022 referrerpolicy=\u0022strict-origin-when-cross-origin\u0022 src=\u0022https:\/\/www.youtube.com\/embed\/lxjElOAgkPg?autoplay=0\u0026amp;controls=1\u0026amp;end=0\u0026amp;loop=0\u0026amp;mute=0\u0026amp;start=0\u0022 style=\u0022position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;\u0022 title=\u0022Song Pong - Liszt - Hungarian Rhapsody No.8 in F sharp minor\u0022\u003e\u003c\/iframe\u003e\n        \u003c\/div\u003e\n\n');
+    });
+  </script>
+</div>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

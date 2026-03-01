@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/mapproxy-as-wms-downloader/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Mapproxy als WMS Downloader">
+  <meta property="og:description" content="Sometimes you need map tiles from a WMS server…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-11-13T20:14:44+02:00">
+    <meta property="article:modified_time" content="2025-11-13T20:14:44+02:00">
+<title>
+  Mapproxy als WMS Downloader · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/mapproxy-as-wms-downloader/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/mapproxy-as-wms-downloader/article.html" /><meta property="og:title" content="Mapproxy als WMS Downloader" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Geodata"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Geodata">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/mapproxy-as-wms-downloader/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/mapproxy-as-wms-downloader/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/mapproxy-as-wms-downloader/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Mapproxy als WMS Downloader</h1>
+        </header>
+        <p>Sometimes you need map tiles from a WMS server&hellip;</p>
+<p>Once again, I needed topographical (elevation) data, but unlike in the <a href="https://projektemacher.org/en/post/marmolada-woodcut/">post on climate change</a>, not to process it in Blender, but in a form that could be further processed in a browser. Unfortunately, they are only available via a <a href="https://en.wikipedia.org/wiki/Web_Map_Service" target="_blank">WMS service</a>&hellip;</p>
+<p>There are various programmes available, such as <a href="https://github.com/lmikolajczak/wms-tiles-downloader" target="_blank"><code>wms-tiles-downloader</code></a> or <a href="https://github.com/easz/wms-tile-get" target="_blank"><code>wms-tile-get</code></a>, but these have problems if the data is not delivered in the Web Mercator projection (EPSG:3857).</p>
+<p>Fortunately, there is <a href="https://mapproxy.org/" target="_blank">Mapproxy</a>. Even though it is not actually intended for this purpose, it does the job quickly and also offers advanced features such as reprojecting the tiles into different <a href="https://en.wikipedia.org/wiki/Spatial_reference_system" target="_blank">coordinate reference systems</a>.</p>
+<p>One example is the <a href="https://geoportal.geodaten.niedersachsen.de/harvest/srv/api/records/740e33da-3310-4173-bae1-d30c31124b3a" target="_blank">Digital Terrain Model (DGM1) for Lower Saxony</a>. This is provided online as a WMS endpoint by the <a href="https://www.lgln.niedersachsen.de/" target="_blank">State Office for Geoinformation and Land Surveying of Lower Saxony (LGLN)</a>.</p>
+<p>Mapproxy can use this endpoint and translate it directly into an access scheme other than WMS. For this example, we will use the <a href="https://wiki.openstreetmap.org/wiki/Slippy_map" target="_blank">Slippy Map URL scheme</a>, which is also used by OpenStreetMap.</p>
+<p>Mapproxy can either be installed easily via package management (<code>pip</code>, <code>brew</code>, <code>apk</code>, <code>apt-get</code>, <code>dnf</code>, etc.) or using a Docker image. For more information, see the <a href="https://mapproxy.github.io/mapproxy/latest/install.html" target="_blank">documentation</a>.</p>
+<p>Then, simply create an empty directory and place the following files in it.</p>
+<p>The configuration for the service itself:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e"># mapproxy.yaml</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -----------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MapProxy configuration.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -----------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">services</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is the webservice useful during setting up the configuration</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># See http://localhost:8080/demo/</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">demo</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The service to serve the tiles</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">tms</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">use_grid_names</span>: <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">origin</span>: <span style="color:#e6db74">&#39;nw&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">sources</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dgm1_wms</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">type</span>: <span style="color:#ae81ff">wms</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">supported_srs</span>: [<span style="color:#e6db74">&#39;EPSG:4326&#39;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">req</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">url</span>: <span style="color:#ae81ff">https://opendata.lgln.niedersachsen.de/doorman/noauth/dgm_wms?</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">layers</span>: <span style="color:#ae81ff">ni_dgm1_farbe</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">transparent</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">layers</span>:
+</span></span><span style="display:flex;"><span>  - <span style="color:#f92672">name</span>: <span style="color:#ae81ff">dgm1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span>: <span style="color:#ae81ff">DGM1</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sources</span>: [<span style="color:#ae81ff">dgm1_cache]</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">caches</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is the cache for the reprojected tiles, save them</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dgm1_cache</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">grids</span>: [<span style="color:#ae81ff">webmercator]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sources</span>: [<span style="color:#ae81ff">dgm1_cache_original]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This defines the location and directory structure of the downloaded tiles</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">cache</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">type</span>: <span style="color:#ae81ff">file</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">directory</span>: <span style="color:#ae81ff">./cache_data</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">directory_layout</span>: <span style="color:#ae81ff">tms</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">coverage</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This limits the downloaded tiles to a area arround Göttingen</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">bbox</span>: [<span style="color:#ae81ff">9.7</span>, <span style="color:#ae81ff">51.45</span>, <span style="color:#ae81ff">10.1</span>, <span style="color:#ae81ff">51.6</span>]
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">srs</span>: <span style="color:#ae81ff">EPSG:4326</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is the cache for the dowloaded tiles, don&#39;t save them</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dgm1_cache_original</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">sources</span>: [<span style="color:#ae81ff">dgm1_wms]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">grids</span>: [<span style="color:#ae81ff">dgm1_grid]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">disable_storage</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">grids</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The SRS for the source, needed to mal Mapproxy reproject the tiles</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dgm1_grid</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">srs</span>: <span style="color:#e6db74">&#39;EPSG:4326&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">webmercator</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">base</span>: <span style="color:#ae81ff">GLOBAL_WEBMERCATOR</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">globals</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">mapserver</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">working_dir</span>: <span style="color:#ae81ff">.</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">image</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">resampling_method</span>: <span style="color:#ae81ff">bicubic</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">formats</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">image/png</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#f92672">encoding_options</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># This is important for the topographic tiles, to make sure that the colors</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># match between tiles. Otherwise you&#39;ll see jups in height between tiles.</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">quantizer</span>: <span style="color:#ae81ff">mediancut</span>
+</span></span></code></pre></div><p>The configuration for the &ldquo;seeder&rdquo; (actually intended to fill the service&rsquo;s cache, but we use it as a downloader):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#75715e">#seed.yml</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -------------------------------</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># MapProxy seeding configuration.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># -------------------------------</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">seeds</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">dgm1_seed</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">caches</span>: [<span style="color:#ae81ff">dgm1_cache]</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">coverages</span>: [<span style="color:#ae81ff">goettingen]</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># It&#39;s possible to configure the (zoom) levels to be fetched</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">levels</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">from</span>: <span style="color:#ae81ff">11</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">to</span>: <span style="color:#ae81ff">15</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">coverages</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">goettingen</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">bbox</span>: [<span style="color:#ae81ff">9.7</span>, <span style="color:#ae81ff">51.45</span>, <span style="color:#ae81ff">10.1</span>, <span style="color:#ae81ff">51.6</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">srs</span>: <span style="color:#ae81ff">EPSG:4326</span>
+</span></span></code></pre></div><p>To test whether the configuration is correct, simply run <code>mapproxy-util serve-develop ./mapproxy.yaml</code>. Then open the address <a href="http://localhost:8080/demo/" target="_blank">http://localhost:8080/demo/</a> in your browser to test the configuration.</p>
+<p>If everything (output service, projections, image and directory formats) is configured correctly, the download can be started with the command <code>mapproxy-seed</code>:</p>
+<pre tabindex="0"><code>mapproxy-seed -s ./seed.yaml -f ./mapproxy.yaml
+</code></pre><p>Once the process is complete, the desired directories and files will be located in the <code>cache_data</code> directory.</p>
+<p>The subdirectory <code>tile-locks</code> can be deleted.</p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/build-vector-tiles-on-github/">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Build vector maps with GitHub">
+  <meta property="og:description" content="Since the use of freely available map services requires communication with external services as well as limited design, it was time for something of my own…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-07-01T20:14:44+02:00">
+    <meta property="article:modified_time" content="2023-07-01T20:14:44+02:00">
+<title>
+  Build vector maps with GitHub · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/build-vector-tiles-on-github/"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/build-vector-tiles-on-github/" /><meta property="og:title" content="Build vector maps with GitHub" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Projektemacher.org, Geodata, GitHub, Docker"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Projektemacher.org"><meta name="dc.subject" content="Geodata"><meta name="dc.subject" content="GitHub"><meta name="dc.subject" content="Docker">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/build-vector-tiles-on-github/citation.bib" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/build-vector-tiles-on-github/">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Build vector maps with GitHub</h1>
+        </header>
+        <p>Since the use of freely available map services requires <a href="https://projektemacher.org/post/maps/">communication with external services</a> as well as limited design, it was time for something of my own&hellip;</p>
+
+
+<h2 id="vector-tiles">
+  Vector tiles
+  <a class="heading-link" href="#vector-tiles">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Map materials on the web are usually organised in tiles according to zoom level and coordinates to enable access via a URL scheme. The format (pixels or vectors) is initially irrelevant. Viewers such as OpenLayers or Leaflet can work with both formats.<br>
+The <a href="https://github.com/mapbox/vector-tile-spec/tree/master/2.1" target="_blank">vector format</a> has the advantage that the display can be customised at runtime in the client. Examples include the thickness of roads, the colour of land areas, etc. It is also possible to simply switch off entire layers. And the whole thing can also be customised according to different zoom levels.<br>
+There are two common conventions for styling vector tiles:</p>
+<ul>
+<li><a href="https://docs.mapbox.com/style-spec/guides/" target="_blank">Mapbox Styles</a></li>
+<li><a href="https://maplibre.org/maplibre-style-spec/" target="_blank">MapLibre Styles</a></li>
+</ul>
+<p>These allow the creation of the map material to be decoupled from the planned display. And this is a great advantage if you potentially have several blogs, each of which has its own design and should also be reflected in the map material.<br>
+To apply the styles to vector tiles, there is a plugin, e.g. for <a href="https://github.com/openlayers/ol-mapbox-style" target="_blank">OpenLayers</a>.</p>
+<h2 id="planetiler">
+  Planetiler
+  <a class="heading-link" href="#planetiler">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><a href="https://github.com/onthegomap/planetiler" target="_blank">Planetiler</a> is a tool for generating vector tiles from OpenStreetMap data. Compared to other tools of this kind, it has the advantage of being able to work directly with the data dumps and not having to take the diversions via a database import. This not only means fewer transformation processes, but also greater efficiency in the utilisation of the available resources. At the same time, the configuration options are very extensive. For example, various layers can simply be ignored, such as house numbers, landmarks or air traffic routes.</p>
+<h2 id="prepare-github-runner">
+  Prepare GitHub Runner
+  <a class="heading-link" href="#prepare-github-runner">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="limitations">
+  Limitations
+  <a class="heading-link" href="#limitations">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Since the OpenstreetMap raw data is very extensive and the process also requires a lot of additional temporary data, a (relatively) large contiguous memory area is required. Although the standard GitHub runners are relatively well equipped, a large number of runtime environments and libraries are pre-installed in order to be able to serve many use cases without additional effort. In addition, the distribution between virtual ‘hard disks’ (mount points) is rather suboptimal for our purposes&hellip;</p>
+<p><strong>In addition, the runtime of a runner is limited: It is terminated after 6 hours at the latest</strong>.</p>
+<h3 id="creating-resources">
+  Creating resources
+  <a class="heading-link" href="#creating-resources">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The problems with the available memory can be solved during the runtime of the runner with actions and, if necessary, your own scripts: So delete / uninstall software and repartition the runner a little. There is a GitHub action for this, <a href="https://github.com/easimon/maximize-build-space" target="_blank"><code>maximise-build-space</code></a>.</p>
+<p>However, you may have to customise the repartitioning according to your own requirements. However, the procedure is always similar: deactivate the swap area (<a href="https://linux.die.net/man/8/swapoff" target="_blank"><code>swapoff</code></a>), unmount the areas to be edited (<a href="https://linux.die.net/man/8/umount" target="_blank"><code>umount</code></a>), delete the corresponding logical volumes (including the volume group if necessary), delete any loopback devices and create new ones if necessary. Then create a new logical volume (possibly a volume group beforehand)&hellip;<br>
+It is also possible to create files on different volumes, include them as loopback devices and then combine them into a logical storage area using <a href="https://sourceware.org/lvm2/" target="_blank">LVM</a>.</p>
+<p>Regardless of the desired memory layout, a new swap area must be created and activated at the end, as Planetiler requires more memory than the runner offers. The use of <code>fallocate</code> is recommended for the area, as this allocates the maximum available space in advance and thus prevents the area from having to grow. The expected memory requirement can be determined with local experiments: If you need 4G for Planetiler (start with <code>java -Xmx4g</code>), the swap area should also be correspondingly large.</p>
+<p>However, it is important to ensure that not too much is deleted: If, for example, you need a runtime environment up to a certain stage in the process, it can of course not be deleted immediately. It is also a good idea to delete docker images specifically. And, if possible, you should not simply delete programme files or directories, but uninstall them using package management, as this is then able to remove dependencies that are no longer required.</p>
+<p>In order to make the best possible use of the available runtime, it is also possible to outsource various preparation steps or carry them out in a different context. This can be achieved by creating a Docker image that not only contains Planetiler, but also the <a href="https://github.com/onthegomap/planetiler/blob/main/NOTICE.md#data" target="_blank">data</a> required independently of the map to be created, such as boundaries, coastlines / waterlines and any additional tools (see below).</p>
+<h2 id="generate-your-own-map-sections">
+  Generate your own map sections
+  <a class="heading-link" href="#generate-your-own-map-sections">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Since Planetiler (as well as other services based on OpenStreetMap) uses the <a href="https://download.geofabrik.de/" target="_blank">GeoFabrik</a> map sections, you are initially limited to the corresponding sections (countries, larger administrative units such as federal states or provinces). This may be somewhat less than would be desirable (examples could be maps of Central Europe or historical regional authorities).<br>
+In this case, you must first prepare the input material before creating vector tiles. Of course, this can also be done on a Runner, but it takes up a lot of time: both the download and the merging take time.<br>
+Roughly speaking, the workflow is as follows:</p>
+<ol>
+<li>download the desired sections, ideally overlapping<br>
+Osmium is able to deduce points, but paths remain cut off.</li>
+<li>merge<br>
+It may be advisable to merge the sections incrementally, as this allows you to delete the original data after each merge.</li>
+<li>cropping (optional)<br>
+To guarantee continuous quality in a rectangle, it is advisable to crop the input material.</li>
+</ol>
+<h3 id="clean-up-data">
+  Clean up data
+  <a class="heading-link" href="#clean-up-data">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>In addition, data can also be cleaned up before processing, e.g. the buildings can be removed from the dumps, which saves a lot of time and storage space.<br>
+It is also possible to remove individual or classes of OSM tags before processing. As a rule of thumb, the smaller the source material, the faster the process. However, the time required for filtering is also proportional to the size of the data dump, so it is not worthwhile for tags with few occurrences. Here you can either experiment or use <a href="https://taginfo.openstreetmap.org/" target="_blank">OSM-Taginfo</a> for an estimation. However, as the building data make up by far the largest part of a dump, it is always worth removing them (unless, of course, they are to be shown, in which case a further restriction is recommended, e.g. to listed buildings).</p>
+<p>The following tools are suitable for pre-processing (merging and filtering):</p>
+<ul>
+<li><a href="https://osmcode.org/osmium-tool/" target="_blank">Osmium</a></li>
+<li><a href="https://wiki.openstreetmap.org/wiki/Osmfilter" target="_blank">Osmfilter</a></li>
+</ul>
+<p>Merging and cleansing can also be combined; <code>osmium</code> can also filter data, but is somewhat slower.</p>
+<h2 id="creating-the-tiles">
+  Creating the tiles
+  <a class="heading-link" href="#creating-the-tiles">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Once you have prepared the data for the desired map section, you can transfer it to Planetiler.<br>
+As Planetiler saves the tiles in a single file in <a href="https://wiki.openstreetmap.org/wiki/MBTiles" target="_blank"><code>mbtiles</code></a> format, this can be extracted again immediately before further processing if you still have some runtime as a buffer. This can be done using the Python script <a href="https://github.com/mapbox/mbutil" target="_blank"><code>mbutil</code></a>, for example.</p>
+<h2 id="extraction-of-the-generated-data">
+  Extraction of the generated data
+  <a class="heading-link" href="#extraction-of-the-generated-data">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Once you have generated the tiles, you are faced with another problem: How do you get them out of the runner again? What sounds trivial at first is actually quite limited by the maximum size for GitHub artefacts. This is only 2 GB.<br>
+But GitHub allows a loophole: the limit does not apply to Docker images. Packaging therefore simply takes place as an image, which also offers advantages for further processing. However, this immediately leads to the next problem: Docker itself first copies the entire context in order to build an image from it, which means that you need three times the storage space at the end (source files, cache and the final image). This is remedied by the alternative implementation <a href="https://buildah.io/" target="_blank">Buildah</a> (Redhat offers a corresponding <a href="https://github.com/redhat-actions/buildah-build" target="_blank">GitHub Action</a>), which now requires the space for the input material and the final image. The generated image can then be pushed into the container registry using the <a href="https://github.com/redhat-actions/push-to-registry" target="_blank"><code>push-to-registry</code> GitHub Action</a>.</p>
+<p>Combinations are also possible here, so in order to be able to work on a very empty runner, the above steps can also be carried out in a build with a specialised base image that contains not only the necessary data but also programs.</p>
+<h2 id="next-steps">
+  Next steps
+  <a class="heading-link" href="#next-steps">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>There is still some potential for optimisation: it is conceivable to compile Planetiler natively using <a href="https://www.graalvm.org/" target="_blank">GraalVM</a>, which would have the advantage that the runtime would be reduced by a maximum of 30% and the memory space for the Java runtime environment could be eliminated. However, there are still a few small hurdles to overcome, as the current way of using the native functionality of the operating system is not compatible with GraalVM.</p>
+<p>It is also conceivable to provide some of the always necessary steps as a separate GitHub action, but so far it is not worth the effort for me.</p>
+<h2 id="can-you-see-anything-yet">
+  Can you see anything yet?
+  <a class="heading-link" href="#can-you-see-anything-yet">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>This article intentionally does not contain any configuration and code examples, as the actual execution must be strongly tailored to the desired map material due to the limited resources.</p>
+<p>Roughly speaking, you can create the dump for Europe without buildings up to zoom level 13 in just under 6 hours using all the tricks.</p>
+<h2 id="update">
+  Update
+  <a class="heading-link" href="#update">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li><strong>14.3.2025</strong>: <a href="https://never-built.goettingen.xyz/map/" target="_blank">Never Built Göttingen: Map based on self-generated material</a></li>
+</ul>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

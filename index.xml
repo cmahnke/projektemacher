@@ -1,0 +1,853 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/collection.json</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo 0.156.0</generator><language>de</language><atom:link href="https://projektemacher.org/index.xml" rel="self" type="application/rss+xml" /><item><title>Kleiderbügel: Reinigung Centralux Hannover</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/178</link>
+        <pubDate>Tue, 24 Feb 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/178</guid><description>&lt;p&gt;Reinigung Centralux Hannover&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Ein Rant über die Bahn</title>
+        <link>https://christianmahnke.de/post/bahn-dark-patterns</link>
+        <pubDate>Sun, 22 Feb 2026 10:39:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/bahn-dark-patterns</guid><description>&lt;p&gt;Dieser Beitrag entstand zum Teil im Zug, der 80 Minuten später als geplant am Zielort ankam.&lt;/p&gt;
+&lt;p&gt;Ich pendle mehrmals pro Woche zwischen Hannover und Göttingen und habe mich schon fast daran gewöhnt, dass Züge mal 30 Minuten zu spät sind. Heute war es jedoch besonders schlimm: Statt zweimal 35 Minuten hat es heute ca. 115 und 70 Minuten gedauert. Ein neuer Tiefpunkt.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ich wurde also zu diesem Beitrag geradezu genötigt:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Als Bahnkunde muss man sich in den letzten Jahren immer mehr gefallen lassen. Die Bahn hat ein massives Qualitätsproblem. Dazu kommt, dass man sich fragen kann, ob sie nicht auch Ressourcen dafür aufwendet, dieses Problem zu verschleiern. Ein Klassiker ist natürlich, dass ausgefallene Züge nicht als Verspätung zählen und &lt;a href=&#34;https://www.spiegel.de/wirtschaft/deutsche-bahn-laesst-offenbar-zuege-ausfallen-um-statistik-zu-verbessern-a-c98d916e-770e-4f61-90f5-83c9dcc3db12&#34; target=&#34;_blank&#34;&gt;die Bahn diesen Umstand zur Verbesserunge der Statistik ausnutzt&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Wenn man dann mal zu spät ist, gibt es zwar die Fahrgastrechte bzw. Erstattung, aber der Prozess ist nicht ansatzweise so einfach, wie er sein könnte bzw. sollte. Das fängt schon damit an, dass sich die notwendigen Daten nicht recherchieren lassen.&lt;/p&gt;
+&lt;p&gt;Die Informationspolitik der Bahn hat sich in den letzten zehn Jahren massiv verschlechtert. Es ist beispielsweise nicht mehr möglich, die Zugläufe aus der Vergangenheit herauszufinden. Die Bahn wird ihre Gründe haben.
+Das gilt auch für die Anzeige im DB Navigator: Dort werden die tatsächlichen Daten auch nicht bei den vergangenen Reisen angezeigt.&lt;/p&gt;
+&lt;p&gt;Daher ist ein Ökosystem externer Dienste entstanden, um dies zu kompensieren:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bahn.expert/&#34; target=&#34;_blank&#34;&gt;bahn.expert&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bahnvorhersage.de/&#34; target=&#34;_blank&#34;&gt;Bahn-Vorhersage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://verspaetung.net/&#34; target=&#34;_blank&#34;&gt;verspaetung.net&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.zugfinder.net/de/start&#34; target=&#34;_blank&#34;&gt;Zugfinder&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Wobei diese Liste sicher nicht vollständig ist.&lt;/p&gt;
+&lt;p&gt;Dies ist aus meiner Sicht ein klares Indiz dafür, dass es einen Transparenzbedarf gibt, den die &amp;ldquo;DB Navigator&amp;rdquo;-App oder die Website der Bahn nicht erfüllen kann.&lt;/p&gt;
+&lt;p&gt;Gerade an der App gibt es viel zu kritisieren. Von Problemen wie der Privatsphäre (&lt;a href=&#34;https://www.kuketz-blog.de/db-navigator-datenschutz-faellt-heute-aus-app-check-teil1/&#34; target=&#34;_blank&#34;&gt;durch Drittabieter-Cookies&lt;/a&gt;) der Nutzung der Bahn App will ich hier gar nicht anfangen, dazu haben andere schon viel geschrieben.&lt;/p&gt;
+&lt;p&gt;Hier soll es eher um die Erstattung über den &amp;ldquo;DB Navigator&amp;rdquo; gehen&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;der-vorgang-der-entschädigung&#34;&gt;
+  Der Vorgang der Entschädigung
+  &lt;a class=&#34;heading-link&#34; href=&#34;#der-vorgang-der-entsch%c3%a4digung&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Um ehrlich zu sein, stört mich auch, dass der Nutzer die Erstattung &amp;ldquo;beantragen&amp;rdquo; muss. Hier wäre eine Formulierung wünschenswert, die besser reflektiert, dass die Bahn vertragsbrüchig ist. Der Button muss ja nicht gleich &amp;ldquo;Absolution erteilen&amp;rdquo; heißen. Aber ich denke, man sollte eher von Entschädigung als von Erstattung sprechen.&lt;/p&gt;
+&lt;p&gt;Womit wir bei dem &amp;ldquo;Antrag&amp;rdquo; wären. Dieser ist so schlecht in die &amp;ldquo;DB Navigator&amp;rdquo; integriert, dass man sich fragen muss, ob man von Dark Patterns sprechen sollte, oder ob er &amp;ldquo;nur&amp;rdquo; Ausdruck von Inkompetenz in der Mediengestaltung darstellt.&lt;/p&gt;
+&lt;p&gt;Um es kurz zu machen: Es gibt das &lt;a href=&#34;https://www.bahn.de/wmedia/view/mdb/media/intern/fahrgastrechteformular.pdf&#34; target=&#34;_blank&#34;&gt;Papierformular&lt;/a&gt; und eine elektronische Form davon, die die Bahn den Nutzern der App zumutet. Und hier sieht man, was ich als inkompetente Mediengestaltung bezeichnen würde: Das Formular wird einfach nachgebaut, ohne dass die vorhandenen Daten in der Standardeinstellung genutzt werden. Bei mir sind alle für eine Erstattung erforderlichen Angaben in der App hinterlegt: die Bankverbindung (und selbst wenn diese nicht hinterlegt wäre, wäre sie noch am Datensatz zur BahnCard verknüpft)  und die Verbindung, in der ich gerade sitze. Grundsätzlich wäre es möglich, die Erstattung über einen Button neben dem &amp;ldquo;Komfort-Check-in&amp;rdquo; zu implementieren. Noch mal: &lt;strong&gt;Ein Button, kein Formular&lt;/strong&gt;, für die einfachen Fälle (einfache Fahrt ohne umsteigen).
+Die Folgen des implementierten Ansatzes kann man hier sehen: Der Screenshot zeigt meinen Versuch, eine Erstattung zu beantragen, bevor der Zug ankam – es funktioniert nicht.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/christianmahnke/post/bahn-dark-patterns/citation.biberstattung.jpeg&#34;/&gt; &lt;figcaption&gt;
+                
+                    &lt;h4&gt;Erstattung beantragen bevor der Zug ankommt&lt;/h4&gt;
+                
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Und spätestens hier drängt sich die Frage auf, ob es sich um Inkompetenz handelt oder ob hier nicht eher &lt;a href=&#34;https://de.wikipedia.org/wiki/Dark_Pattern&#34; target=&#34;_blank&#34;&gt;Dark Patterns&lt;/a&gt; wirken:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Wenn das Formular effizient optimiert worden wäre, würde die Zugnummer reichen. Stattdessen wird gefragt, welche geplanten Zeiten es gab (immerhin sind diese vorausgefüllt).&lt;/li&gt;
+&lt;li&gt;Warum muss man abwarten, bis man da ist? Zu dem Zeitpunkt war ich schon für die 60-minütige Erstattung qualifiziert. Warum kann man das nicht in der Zeit machen, die einem die Bahn ohnehin schon raubt? Warum muss man das überhaupt ausfüllen? Die Bahn kennt doch die Zugnummer.&lt;/li&gt;
+&lt;li&gt;Warum muss man alle persönlichen Daten neu ausfüllen? Auch diese sind in der App hinterlegt.&lt;/li&gt;
+&lt;li&gt;Warum kann man nicht zurückgehen, sondern nur abbrechen und von vorne anfangen? (Das ist mir erst beim Erstellen des Artikels aufgefallen.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Ein Teil der oben genannten Probleme liegt schlicht an der äußerst unglücklichen Art der Implementierung: Der Dialog ist Teil der Bahn-Webseite nicht der App. Dabei wird die Authentifizierung für den Zugriff auf das Nutzerkonto nicht mit durchgeschleift. Ein weiterer Grund ist der nach wie vor verbreitete Irrglaube, dass Online-Formulare Papier (oder PDF) eins zu eins abbilden müssen, als ob es keine Medienspezifika von Online-Medien gäbe. Zudem wird angenommen, dass ein Formular alle Fälle abdecken müsse. Deshalb werden auch bei einer einfachen Fahrt alle Optionen angezeigt – beides sind klassische Fehler der Verwaltungsdigitalisierung.&lt;/p&gt;
+&lt;p&gt;Idealerweise ist der Ablauf umzudrehen: Alle verfügbaren Daten werden übernommen und sobald ich den Prozess abschließen kann, ist das möglich. Zusätzliche optionale Daten, die nicht für alle Fälle (hier die einfache Fahrt) benötigt werden, beispielsweise Angaben zu zusätzlichen Auslagen oder ob Teilstrecken genutzt werden, werden erst nach der ersten Absendemöglichkeit abgefragt.&lt;/p&gt;
+&lt;p&gt;Ich hoffe, dass die Bahn APIs bereitstellt, mit denen Drittanbieter bessere Frontends (Apps) erstellen können, die einen besseren Service bieten. Diese APIs sollten selbstverständlich auch die Buchung, den &amp;ldquo;Comfort-Check-in&amp;rdquo;, die Hinterlegung von (Zeit-)Fahrkarten und die Erstattung ermöglichen, sodass sie einen vollwertigen Ersatz darstellen.&lt;/p&gt;
+&lt;h2 id=&#34;was-sollte-sich-ändern&#34;&gt;
+  Was sollte sich ändern:
+  &lt;a class=&#34;heading-link&#34; href=&#34;#was-sollte-sich-%c3%a4ndern&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Es ist schwer nachvollziehbar, warum in einem System, in dem die Streckenlängen unterschiedlich sind, mit absoluten Verspätungszeiten gerechnet wird.
+Ich würde vorschlagen, die zur Erstattung notwendige Verspätung relativ zur geplanten Fahrdauer auszurichten. Anstatt also mit festen Werten wie 60 oder 120 Minuten zu arbeiten, sollten die Stufen bei 100 %, 200 % und mehr Prozent der Überschreitung der geplanten Fahrzeit greifen. Ein Beispiel, orientiert an der Verbindung (ICE 583) aus der Einleitung:&lt;/p&gt;
+&lt;p&gt;Die geplante Abfahrt in Hannover war um 8:23 Uhr, die geplante Ankunft in Göttingen um 8:59 Uhr. Die tatsächliche Ankunft war um 10:19 Uhr, also mit einer Verspätung von einer Stunde und 20 Minuten.
+Da die geplante Reisezeit 36 Minuten beträgt, würde nach dem vorgeschlagenen Modell die erste Erstattungsstufe schon um 9:35 Uhr und die zweite um 10:01 Uhr erreicht werden. In dem konkreten Fall würde die Erstattung somit 50 % statt 25 % betragen.&lt;/p&gt;
+&lt;p&gt;Das bestehende System hat gerade für Pendler den Nachteil, dass es sich an der Einzelverbindung orientiert. Das bedeutet, dass ich, wenn ich 20-mal im Monat fahre und davon 10-mal 15 Minuten später ankomme, eine Verspätung von insgesamt 150 Minuten habe, aber trotzdem leer ausgehe. Erst ab mehreren Verspätungen von jeweils über 20 Minuten gibt es die Möglichkeit, diese zu addieren.&lt;/p&gt;
+&lt;p&gt;Es gibt außerdem eine Kappung: Beträge unter 4 Euro werden nicht ausgezahlt. Da diese Vorgänge hoffentlich hochgradig automatisiert sind, sehe ich dafür keinen echten Grund. Wenn es nur um die Auszahlung geht, kann die Bahn ein Schattenkonto einrichten und dort Beträge sammeln, bis die Grenze erreicht ist. Alternativ kann sie auch Gutscheine ausstellen oder das Geld spenden. Einbehalten sollte keine Option sein!&lt;/p&gt;
+&lt;p&gt;Dazu ist man angehalten, die Erstattung schnell zu veranlassen – als ob die Bahn sich irgendeine Kompetenz in Bezug auf Schnelligkeit oder Fristen anmaßen dürfte. Die Frist sollte daher zwölf Monate betragen.&lt;/p&gt;
+&lt;p&gt;Eine weitere Idee wäre, die Verspätung einfach als Verdienstausfall zu deklarieren und sich dabei am Lohn bzw. den Einkünften für die zusätzliche Zeit zu orientieren.&lt;/p&gt;
+&lt;h2 id=&#34;fazit&#34;&gt;
+  Fazit
+  &lt;a class=&#34;heading-link&#34; href=&#34;#fazit&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Die Bahn unternimmt viel, um die Durchsetzung von Ansprüchen zu erschweren. Das muss ein Ende haben!
+Im DB Navigator sollte die Erstattung einfacher sein als der &amp;ldquo;Komfort-Check-in&amp;rdquo;. Wer der Meinung ist, dass die Sauberkeit der Bahnhöfe ein wichtiges Problem ist, das es zu lösen gilt, ist entweder inkompetent oder versucht, die öffentliche Meinung zu manipulieren. Ich kann beim erzwungenen Warten gutes WLAN besser gebrauchen als &amp;ldquo;Sauberkeit&amp;rdquo;.
+Außerdem sollte eine Zuverlässigkeitsuntergrenze festgelegt werden, deren Überschreitung Preiserhöhungen rechtfertigt. Eine nächste Fahrpreiserhöhung sollte erst erfolgen, wenn die Quote sechs Monate lang über 70% liegt. Alles darunter ist eher ein Grund für eine Preisreduzierung.&lt;/p&gt;
+&lt;p&gt;Und zuletzt der &amp;ldquo;DB Navigator&amp;rdquo; und dessen Ökosystem, gerade weil die Bahn so viel dafür tut ihre Kunden in die App zu zwingen (z.B. keine Sparpreise mehr am Automaten):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Es sollte mindestens einen öffentlichen Bugtracker geben, damit transparenter wird, welche Prozesse und Verantwortlichkeiten z. B. dazu führen, dass man Verspätungen vergangener Fahrten nicht sehen kann oder warum Mehrfahrtentickets nach mindestens zwei Jahren immer noch nicht vernünftig integriert sind.&lt;/li&gt;
+&lt;li&gt;Die Bahn muss alle notwendigen APIs für die Implementierung vollwertiger &amp;ldquo;DB Navigator&amp;rdquo;-Klone durch Drittanbieter erlauben. Als Monopolist sollte es einem nicht auch noch erlaubt werden, Gatekeeper in eigener Sache zu spielen.&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>ChristianMahnke.de: Ausstellungen in Wikidata</title>
+        <link>https://christianmahnke.de/post/exhibitions-in-wikidata</link>
+        <pubDate>Sat, 21 Feb 2026 07:30:00 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/exhibitions-in-wikidata</guid><description>&lt;p&gt;Wie lassen sich digitale Objekte mit Ausstellungen verknüpfen?&lt;/p&gt;
+&lt;p&gt;Letztens fiel mir ein &lt;a href=&#34;https://openbiblio.social/@awinkler/116087107946746465&#34; target=&#34;_blank&#34;&gt;Mastodon-Post&lt;/a&gt; von Alexander Winkler auf: Mit einem fast unkommentierten Screenshot wurde (vielleicht sogar unintendiert?) eine Lösung für ein Problem präsentiert, das mich schon länger beschäftigt.&lt;/p&gt;
+&lt;p&gt;Der Screenshot zeigt den Wikidata-Eintrag für &lt;a href=&#34;https://www.wikidata.org/wiki/Q134475458&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Streuselkuchen im Wandel der Zeit&amp;rdquo;&lt;/a&gt;. Also eine konkrete Modellierung einer Ausstellung in Wikidata.&lt;/p&gt;
+&lt;h2 id=&#34;und-was-ist-daran-interessant&#34;&gt;
+  Und was ist daran interessant?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#und-was-ist-daran-interessant&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Ich suche (auch beruflich) schon länger nach Möglichkeiten, verschiedene Objekte mit Ausstellungen zu verknüpfen. Zum Beispiel, um Software-Publikationen mit ihren digitalen Ausstellungsexponaten und deren Rahmen (z. B. Entstehungs- und Präsentationskontext) zu verknüpfen.&lt;/p&gt;
+&lt;h2 id=&#34;beispiel&#34;&gt;
+  Beispiel
+  &lt;a class=&#34;heading-link&#34; href=&#34;#beispiel&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Als Beispiel habe dich die Ausstellung &lt;a href=&#34;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Was zum Quant?!&amp;rdquo;&lt;/a&gt;, die vom 27. März bis 5. Oktober 2025 im Rahmen des Quantenjahrs 2025 im Forum Wissen Göttingen gezeigt wurde, genommen.&lt;/p&gt;
+&lt;p&gt;Für die notwendigen und möglichen Felder existiert eine &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:WikiProject_Exhibitions&#34; target=&#34;_blank&#34;&gt;Dokumentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Hier die Eigenschaften für &lt;a href=&#34;https://www.wikidata.org/wiki/Q138337449&#34; target=&#34;_blank&#34;&gt;Q138337449&lt;/a&gt;:&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Eigenschaft&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Wert&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Fundstelle / URL&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Lde&lt;/code&gt; (Label de)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Was zum Quant?!&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Len&lt;/code&gt; (Label en)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Was zum Quant?!&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Dde&lt;/code&gt; (Desc de)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Sonderausstellung im Forum Wissen Göttingen (2025)&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P31&lt;/code&gt; (ist ein)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q29023906&lt;/code&gt; (Sonderausstellung)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P1476&lt;/code&gt; (Titel)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;de:&amp;quot;Was zum Quant?!&amp;quot;&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P276&lt;/code&gt; (Ort)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q112061919&lt;/code&gt; (Forum Wissen)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;``P664` (Organisator)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q112061919&lt;/code&gt; (Forum Wissen)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P580&lt;/code&gt; (Beginn)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;+2025-03-27T00:00:00Z/11&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P582&lt;/code&gt; (Ende)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;+2025-10-05T00:00:00Z/11&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P921&lt;/code&gt; (Thema)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q944&lt;/code&gt; (Quantenmechanik)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P856&lt;/code&gt; (URL)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/sonderausstellungen/was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;https://www.forum-wissen.de/event/eroeffnung-was-zum-quant/&lt;/code&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P1640&lt;/code&gt; (Kurator)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q136992263&lt;/code&gt; (Ramona Dölling)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;P361&lt;/code&gt; (Teil von)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;code&gt;Q132398295&lt;/code&gt; (International Year of Quantum Science and Technology)&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;{.top}&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+          &lt;td&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Diese lassen sich auch als &lt;a href=&#34;https://www.wikidata.org/wiki/Help:QuickStatements/de&#34; target=&#34;_blank&#34;&gt;QuickStatements&lt;/a&gt; ausdrücken, um das Anlegen zu automatisieren. Die Datumsangaben in der obigen Tabelle oben sind daher auch für das Werkzeug formatiert.&lt;/p&gt;
+&lt;p&gt;Mit diesem Eintrag kann beispielsweise in Zenodo gearbeitet werden. Für die Ausstellung wurde das digitale Exponat &amp;ldquo;Quantenkosmos Göttingen&amp;rdquo; erstellt, das auf Zenodo verfügbar ist. In den Metadaten wurde der entsprechende Wikidata-Eintrag unter &amp;ldquo;Related&amp;rdquo; mit den folgenden Werten eingetragen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Releation&lt;/strong&gt;: &lt;code&gt;Is part of&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identifier&lt;/strong&gt;: &lt;code&gt;https://www.wikidata.org/wiki/Q138337449&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scheme&lt;/strong&gt;: &lt;code&gt;URL&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resource type&lt;/strong&gt;: &lt;code&gt;Event&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+&lt;figure&gt;
+    &lt;a href=&#34;https://zenodo.org/records/18618940&#34; target=&#34;_blank&#34;&gt;
+        &lt;img src=&#34;https://projektemacher.org/post/christianmahnke/post/exhibitions-in-wikidata/citation.bibzenodo.png&#34;/&gt; &lt;/a&gt;&lt;figcaption&gt;
+                
+                    &lt;h4&gt;Ansicht der Metadaten bei Zenodo&lt;/h4&gt;
+                
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;dank&#34;&gt;
+  Dank
+  &lt;a class=&#34;heading-link&#34; href=&#34;#dank&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Vielen Dank an Alexander Winkler für die Inspiration!&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Teppich-Reinigung Testorp</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/177</link>
+        <pubDate>Tue, 17 Feb 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/177</guid><description>&lt;p&gt;Teppich-Reinigung qm DM 4,50 • TESTORP • Ruf 611661&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: August Wellhölter Herford</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/176</link>
+        <pubDate>Tue, 10 Feb 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/176</guid><description>&lt;p&gt;August Wellhölter Herford, Alter Markt II&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Ausstellungseröffnung &#34;Sammlungen erzählen&#34;</title>
+        <link>https://christianmahnke.de/post/exhibition-opening-sammlungen-erzaehlen</link>
+        <pubDate>Sat, 07 Feb 2026 15:30:00 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/exhibition-opening-sammlungen-erzaehlen</guid><description>&lt;p&gt;Heute (7.2.) um 17:30 findet die Eröffnung der Freiflächen-Ausstellung &amp;ldquo;Sammlungen erzählen&amp;rdquo; statt, wie chon angekündigt bin ich mit meiner Kleiderbügelsammlung vertreten.&lt;/p&gt;
+&lt;p&gt;Im Rahmen der Ausstellung wurde auch eine &lt;a href=&#34;https://sammlungen-erzaehlen.gbv.de/&#34; target=&#34;_blank&#34;&gt;Webseite erstellt&lt;/a&gt;, um die einzelnen präsentierten Sammlungen genauer vorzustellen, auch zu &lt;a href=&#34;https://sammlungen-erzaehlen.gbv.de/kleiderbuegel/&#34; target=&#34;_blank&#34;&gt;meiner Sammlung&lt;/a&gt;.&lt;/p&gt;
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/christianmahnke/post/exhibition-opening-sammlungen-erzaehlen/citation.bibPlakat.jpg&#34;/&gt; &lt;figcaption&gt;
+                
+                    &lt;h4&gt;Ausstellungsplakat&lt;/h4&gt;
+                
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;h2 id=&#34;update-8226&#34;&gt;
+  Update 8.2.26
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-8226&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Das Göttinger Tageblatt &lt;a href=&#34;https://www.goettinger-tageblatt.de/beruf-und-bildung/regional/was-steckt-hinter-unserer-sammelleidenschaft-wie-das-forum-wissen-in-goettingen-neue-einblicke-7CD2HD6XRFE65EFGDS7W2NAG6Q.html&#34; target=&#34;_blank&#34;&gt;berichtet auch über die Eröffnung&lt;/a&gt; und erwähnt den &lt;a href=&#34;https://christianmahnke.de/post/coat-hangers-book/&#34; target=&#34;_blank&#34;&gt;Katalog&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;update-12226&#34;&gt;
+  Update 12.2.26
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-12226&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Hier der Instagram Beitrag von &lt;a href=&#34;https://www.instagram.com/forumwissengoe/&#34; target=&#34;_blank&#34;&gt;@forumwissengoe&lt;/a&gt; zur Eröffnung:&lt;/p&gt;
+&lt;blockquote
+    class=&#34;instagram-media&#34;
+    data-instgrm-captioned
+    data-instgrm-permalink=&#34;https://www.instagram.com/p/DUoVhBbiS4V&#34;
+    data-instgrm-version=&#34;14&#34;
+    style=&#34;
+      background: #fff;
+      border: 0;
+      border-radius: 3px;
+      box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5), 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+      margin: 1px;
+      max-width: 540px;
+      min-width: 326px;
+      padding: 0;
+      width: 99.375%;
+      width: -webkit-calc(100% - 2px);
+      width: calc(100% - 2px);
+    &#34;
+  &gt;
+    &lt;div style=&#34;padding: 16px&#34;&gt;
+      &lt;a
+        href=&#34;https://www.instagram.com/p/DUoVhBbiS4V&#34;
+        style=&#34;
+          background: #ffffff;
+          line-height: 0;
+          padding: 0 0;
+          text-align: center;
+          text-decoration: none;
+          width: 100%;
+        &#34;
+        target=&#34;_blank&#34;
+      &gt;
+        &lt;div style=&#34;display: flex; flex-direction: row; align-items: center&#34;&gt;
+          &lt;div
+            style=&#34;
+              background-color: #f4f4f4;
+              border-radius: 50%;
+              flex-grow: 0;
+              height: 40px;
+              margin-right: 14px;
+              width: 40px;
+            &#34;
+          &gt;&lt;/div&gt;
+          &lt;div
+            style=&#34;
+              display: flex;
+              flex-direction: column;
+              flex-grow: 1;
+              justify-content: center;
+            &#34;
+          &gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                margin-bottom: 6px;
+                width: 100px;
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                border-radius: 4px;
+                flex-grow: 0;
+                height: 14px;
+                width: 60px;
+              &#34;
+            &gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;padding: 19% 0&#34;&gt;&lt;/div&gt;
+        &lt;div
+          style=&#34;display: block; height: 50px; margin: 0 auto 12px; width: 50px&#34;
+        &gt;
+          &lt;svg
+            width=&#34;50px&#34;
+            height=&#34;50px&#34;
+            viewBox=&#34;0 0 60 60&#34;
+            version=&#34;1.1&#34;
+            xmlns=&#34;https://www.w3.org/2000/svg&#34;
+            xmlns:xlink=&#34;https://www.w3.org/1999/xlink&#34;
+          &gt;
+            &lt;g stroke=&#34;none&#34; stroke-width=&#34;1&#34; fill=&#34;none&#34; fill-rule=&#34;evenodd&#34;&gt;
+              &lt;g transform=&#34;translate(-511.000000, -20.000000)&#34; fill=&#34;#000000&#34;&gt;
+                &lt;g&gt;
+                  &lt;path
+                    d=&#34;M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631&#34;
+                  &gt;&lt;/path&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+          &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;padding-top: 8px&#34;&gt;
+          &lt;div
+            style=&#34;
+              color: #3897f0;
+              font-family: Arial, sans-serif;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 550;
+              line-height: 18px;
+            &#34;
+          &gt;
+            View this post on Instagram
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div style=&#34;padding: 12.5% 0&#34;&gt;&lt;/div&gt;
+        &lt;div
+          style=&#34;
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 14px;
+            align-items: center;
+          &#34;
+        &gt;
+          &lt;div&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(0px) translateY(7px);
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                height: 12.5px;
+                transform: rotate(-45deg) translateX(3px) translateY(1px);
+                width: 12.5px;
+                flex-grow: 0;
+                margin-right: 14px;
+                margin-left: 2px;
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                height: 12.5px;
+                width: 12.5px;
+                transform: translateX(9px) translateY(-18px);
+              &#34;
+            &gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div style=&#34;margin-left: 8px&#34;&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                border-radius: 50%;
+                flex-grow: 0;
+                height: 20px;
+                width: 20px;
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                width: 0;
+                height: 0;
+                border-top: 2px solid transparent;
+                border-left: 6px solid #f4f4f4;
+                border-bottom: 2px solid transparent;
+                transform: translateX(16px) translateY(-4px) rotate(30deg);
+              &#34;
+            &gt;&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div style=&#34;margin-left: auto&#34;&gt;
+            &lt;div
+              style=&#34;
+                width: 0px;
+                border-top: 8px solid #f4f4f4;
+                border-right: 8px solid transparent;
+                transform: translateY(16px);
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                background-color: #f4f4f4;
+                flex-grow: 0;
+                height: 12px;
+                width: 16px;
+                transform: translateY(-4px);
+              &#34;
+            &gt;&lt;/div&gt;
+            &lt;div
+              style=&#34;
+                width: 0;
+                height: 0;
+                border-top: 8px solid #f4f4f4;
+                border-left: 8px solid transparent;
+                transform: translateY(-4px) translateX(8px);
+              &#34;
+            &gt;&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div
+          style=&#34;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: center;
+            margin-bottom: 24px;
+          &#34;
+        &gt;
+          &lt;div
+            style=&#34;
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              margin-bottom: 6px;
+              width: 224px;
+            &#34;
+          &gt;&lt;/div&gt;
+          &lt;div
+            style=&#34;
+              background-color: #f4f4f4;
+              border-radius: 4px;
+              flex-grow: 0;
+              height: 14px;
+              width: 144px;
+            &#34;
+          &gt;&lt;/div&gt;&lt;/div
+      &gt;&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/blockquote&gt;&lt;script async src=&#34;https://www.instagram.com/embed.js&#34;&gt;&lt;/script&gt;
+&lt;div class=&#34;related-post&#34;&gt;
+  &lt;h3 class=&#34;related-post-heading&#34;&gt;Verwandte Beiträge&lt;/h3&gt;
+    &lt;div class=&#34;related-post-content&#34;&gt;
+      Der Katalog meiner Sammlung ist auch &lt;a href=&#34;https://christianmahnke.de/post/coat-hangers-book/&#34;&gt;online verfügbar&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Ludwig Beck München</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/175</link>
+        <pubDate>Tue, 03 Feb 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/175</guid><description>&lt;p&gt;Ludwig
+Beck
+Am Rathauseck
+München&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Zechbauer Herrenausstatter</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/174</link>
+        <pubDate>Tue, 27 Jan 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/174</guid><description>&lt;p&gt;Zechbauer Herrenausstatter&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Geschw. Alsberg</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/173</link>
+        <pubDate>Tue, 20 Jan 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/173</guid><description>&lt;p&gt;1875 Geschw. Alsberg, Coblenz 1925&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Farbradierung von Alois Janák</title>
+        <link>https://christianmahnke.de/post/print-alois-janak</link>
+        <pubDate>Fri, 16 Jan 2026 13:07:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/print-alois-janak</guid><description>&lt;p&gt;Ich habe eine Farbradierung von &lt;a href=&#34;https://www.alois-janak.de/&#34; target=&#34;_blank&#34;&gt;Alois Janák&lt;/a&gt; (geb. 1924) gekauft&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Druck&lt;/div&gt;&lt;div&gt;Signatur&lt;/div&gt;
+&lt;p&gt;Alois Janák wurde 1924 in der Tschechoslowakei geboren, studierte in PRag und floh nach dem 2. Weltkrieg nach München, 1982 zog er in deie Schweiz um.&lt;/p&gt;
+&lt;p&gt;Das Bild zeigt eine &amp;ldquo;Buddelflugzeug&amp;rdquo; (also ein Flugzeug, das wie ein Buddelschiff ein eine Flasche eingesperrt ist).&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Mastodon Backups mit GitHub Actions</title>
+        <link>https://christianmahnke.de/post/github-action-mastodon-backup</link>
+        <pubDate>Thu, 15 Jan 2026 06:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/github-action-mastodon-backup</guid><description>&lt;p&gt;Aus aktuellem Anlass&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;auch wenn ich schon lange nichts mehr bei Mastodon gepostet habe, wollte ich meine Aktivitäten zwischen den Jahren dort mal wieder veröffentlichen.&lt;/p&gt;
+&lt;p&gt;Leider war &lt;a href=&#34;https://openbiblio.social/home&#34; target=&#34;_blank&#34;&gt;openbiblio.social&lt;/a&gt; &lt;a href=&#34;https://bibcourse.eu/t/https-openbiblio-social-down/284/19&#34; target=&#34;_blank&#34;&gt;down&lt;/a&gt;. Auch wenn ich es bisher nicht vorhabe, aber für den Fall, dass man mal umziehen will, hier ein Beispiel, wie man &lt;a href=&#34;https://github.com/features/actions&#34; target=&#34;_blank&#34;&gt;GitHub Actions&lt;/a&gt; nutzen kann, um ein Backup zu machen – für den Fall, dass man mal umziehen will. Prinzipiell kann man daraus auch eine statische Präsentation für die Seite erstellen.&lt;/p&gt;
+&lt;p&gt;Zur Sicherung  wird &lt;a href=&#34;https://github.com/kensanata/mastodon-archive&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;mastodon-archive&lt;/code&gt;&lt;/a&gt; eingesetzt. Da die Mastodon-API des Heimatsservers angezapft wird, muss der Zugang dazu konfiguriert werden.Hier ist zu beachten, dass die Authentifizierung ab und zu erneuert werden muss. Abschließend werden mit &lt;a href=&#34;https://jqlang.org/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;jq&lt;/code&gt;&lt;/a&gt; (&lt;code&gt;jq &#39;.mentions |= del(.[] | select(.visibility == &amp;quot;direct&amp;quot;))&#39;&lt;/code&gt;) noch Direktnachrichten aus der Sicherung entfernt.&lt;/p&gt;
+&lt;h2 id=&#34;konfiguration&#34;&gt;
+  Konfiguration
+  &lt;a class=&#34;heading-link&#34; href=&#34;#konfiguration&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Es braucht zwei Konfigurationsvariablen um &lt;code&gt;mastodon-archive&lt;/code&gt; zu nutzen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;MASTODON_USER_SECRET&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;MASTODON_SERVER_SECRET&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Die beiden benötigten Dateien können mit &lt;code&gt;mastodon-archive&lt;/code&gt; lokal generiert werden. Sie werden angelegt, wenn das Programm zum ersten Mal gestartet wird.&lt;/p&gt;
+&lt;h2 id=&#34;githubworkflowsmastodon-archiveyml&#34;&gt;
+  &lt;code&gt;.github/workflows/mastodon-archive.yml&lt;/code&gt;
+  &lt;a class=&#34;heading-link&#34; href=&#34;#githubworkflowsmastodon-archiveyml&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Backup Mastodon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;on&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;workflow_dispatch&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;schedule&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    - &lt;span style=&#34;color:#f92672&#34;&gt;cron&lt;/span&gt;:  &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;30 3 * * 1,3,6&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;env&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;MASTODON_USER&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;cmahnke@openbiblio.social&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;USER_SECRET_FILE&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;./openbiblio.social.user.cmahnke.secret&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;SERVER_SECRET_FILE&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;./openbiblio.social.server.secret&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;BACKUP_BRANCH&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;mastodon-backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;BACKUP_FILE&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;./openbiblio.social.user.cmahnke.json&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;BACKUP_DIRECTORY&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;./data/mastodon&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;concurrency&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;group&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ github.workflow }}-${{ github.ref }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;cancel-in-progress&lt;/span&gt;: &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;permissions&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;packages&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;write&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;contents&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;write&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;jobs&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#f92672&#34;&gt;backup&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;runs-on&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;ubuntu-24.04&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;permissions&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#f92672&#34;&gt;contents&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;write&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;steps&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/checkout@v6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;fetch-depth&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Create Backup Branch&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git checkout ${{ env.BACKUP_BRANCH }} || git switch --orphan ${{ env.BACKUP_BRANCH }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          mkdir -p ${{ env.BACKUP_DIRECTORY }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          echo &amp;#34;*.secret&amp;#34; &amp;gt; ${{ env.BACKUP_DIRECTORY }}/.gitignore&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install dependencies&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;sudo apt-get install -y moreutils jq&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Set up Python&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;uses&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;actions/setup-python@v6&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;with&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          &lt;span style=&#34;color:#f92672&#34;&gt;python-version&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;3.x&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;         
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Install mastodon-archive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;pip install mastodon-archive&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Setup Secrets&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          echo &amp;#34;${{ secrets.MASTODON_USER_SECRET }}&amp;#34; &amp;gt; ${{ env.USER_SECRET_FILE }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          echo &amp;#34;${{ secrets.MASTODON_SERVER_SECRET }}&amp;#34; &amp;gt; ${{ env.SERVER_SECRET_FILE }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Run backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;mastodon-archive archive --no-stopping --with-followers --with-following --with-mentions ${{ env.MASTODON_USER }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Clean backup&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          jq &amp;#39;(.mentions, .statuses) |= del(.[] | select(.visibility == &amp;#34;direct&amp;#34;))&amp;#39; ${{ env.BACKUP_FILE }} | sponge ${{ env.BACKUP_FILE }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Generate path name&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;id&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;media-path&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          echo &amp;#34;MEDIA_PATH=$(basename ${{ env.BACKUP_FILE }} .json)&amp;#34; &amp;gt;&amp;gt; $GITHUB_OUTPUT&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Get media&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          mastodon-archive media ${{ env.MASTODON_USER }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          mastodon-archive media --collection favourites --collection bookmarks ${{ env.MASTODON_USER }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          ls -R ${{ steps.media-path.outputs.MEDIA_PATH }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Clean secrets&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          rm ${{ env.USER_SECRET_FILE }}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          rm ${{ env.SERVER_SECRET_FILE }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      - &lt;span style=&#34;color:#f92672&#34;&gt;name&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Commit changes&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;working-directory&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;${{ env.BACKUP_DIRECTORY }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#f92672&#34;&gt;run&lt;/span&gt;: |&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config user.name &amp;#34;GitHub Actions Bot&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git config user.email &amp;#34;&amp;lt;&amp;gt;&amp;#34;          
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git add *.json
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git add ${{ steps.media-path.outputs.MEDIA_PATH }}/*
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git commit -m &amp;#34;Update Mastodon backup&amp;#34; || echo &amp;#34;No changes to commit&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;          git push -u origin ${{ env.BACKUP_BRANCH }}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;aufräumen&#34;&gt;
+  Aufräumen
+  &lt;a class=&#34;heading-link&#34; href=&#34;#aufr%c3%a4umen&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Wenn das Repository, in dem das Backup gespeichert wird, öffentlich einsehbar ist, möchte man unter Umständen weitere Informationen entfernen. Dazu können entweder die Optionen von &lt;code&gt;mastodon-archive&lt;/code&gt; angepasst werden oder, wenn mehr Präzision erforderlich ist, wieder &lt;code&gt;jq&lt;/code&gt; genutzt werden.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Metadaten für Software</title>
+        <link>https://christianmahnke.de/post/software-metadata</link>
+        <pubDate>Wed, 14 Jan 2026 19:52:22 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/software-metadata</guid><description>&lt;p&gt;Teil 2 über Software-Metadaten.&lt;/p&gt;
+&lt;p&gt;Während es im &lt;a href=&#34;https://christianmahnke.de/post/hugo-cff-codemeta/&#34;&gt;ersten Teil&lt;/a&gt; um die Einbindung von Metadaten zu Softwareprojekten ging, sollen nun mögliche Vorteile und Perspektiven beleuchtet werden. Diesmal soll es nicht um die Sichtbarkeit der Autoren (durch Zitation), sondern um die Sichtbarkeit des jeweiligen Produkts bzw. des Codes und deren Nachnutzung gehen.&lt;/p&gt;
+&lt;p&gt;Vor ungefähr einem Jahr habe ich bereits einen Beitrag über meine &lt;a href=&#34;https://christianmahnke.de/post/academic-software-publishing&#34;&gt;Erfahrungen&lt;/a&gt; mit der Integration von Softwareartefakten in die eigene Umgebung veröffentlicht. Während ich mich damals auf technische Herausforderungen wie Skalierbarkeit, Portabilität usw. beschränkt habe, war das nicht alles. Zu der beschriebenen Zeit ging es auch um maschinenlesbare Metadaten. Damals war gerade &lt;a href=&#34;https://en.wikipedia.org/wiki/DOAP&#34; target=&#34;_blank&#34;&gt;DAOP&lt;/a&gt; &amp;ldquo;modern&amp;rdquo; (und ist es in einigen Communities bis heute).&lt;/p&gt;
+&lt;p&gt;Bis heute gibt es jedoch keine Suchmaschine, die beispielsweise Projekte von unterschiedlich großen Code-Plattformen aggregiert und eine facettierte Suche über die jeweiligen Metadaten ermöglicht, um zielgerichtet eine Implementierung für ein spezialisiertes Problem zu finden.&lt;/p&gt;
+&lt;h2 id=&#34;aber-was-könnte-man-damit-machen-wenn-es-anders-wäre&#34;&gt;
+  Aber was könnte man damit machen, wenn es anders wäre?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#aber-was-k%c3%b6nnte-man-damit-machen-wenn-es-anders-w%c3%a4re&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Und wenn man solche Metadaten hat, kann man diese natürlich indexieren und danach suchen. Letzteres kann man sich ungefähr wie die Schlagwortsuche bei GitHub vorstellen. Es wäre ein großer Gewinn, wenn GitLab (sowohl zentral als auch eigene Instanzen), Codeberg, Gitea und andere vergleichbare Plattformen und Tools entsprechende Daten zur Indexierung bereitstellen würden.&lt;/p&gt;
+&lt;p&gt;Noch spannender wird es, wenn man Agenten dazu bringen kann, auf Basis von Metadaten Komponenten zusammenzustecken.
+Ein konstruiertes Beispiel, das sich an einem vergangenen &lt;a href=&#34;https://christianmahnke.de/post/vintagereality-ai/&#34;&gt;Beitrag&lt;/a&gt; orientiert, wäre das folgende:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Man instruiert einen Agenten, aus einer digitalen Sammlung eines Museums Stereogramme herauszusuchen. Diese müssten dafür natürlich als solche identifizierbar sein, dabei können auch Metadaten wie in diesem &lt;a href=&#34;https://christianmahnke.de/post/linkedart-metadata/&#34;&gt;Beitrag&lt;/a&gt; helfen (beisielsweise durch Suche nach &lt;a href=&#34;http://vocab.getty.edu/aat/300127197.json&#34; target=&#34;_blank&#34;&gt;http://vocab.getty.edu/aat/300127197&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;Dafür soll eine Segmentierungsmethode gesucht werden. Idealerweise vergleicht der Agent dazu die Metadaten der Eingangsmenge zum Medientyp mit denen von möglichen Implementierungen. Diese könnten mit &lt;a href=&#34;https://www.wikidata.org/wiki/Q35158&#34; target=&#34;_blank&#34;&gt;https://www.wikidata.org/wiki/Q35158&lt;/a&gt; und &lt;a href=&#34;https://www.wikidata.org/wiki/Q56933&#34; target=&#34;_blank&#34;&gt;https://www.wikidata.org/wiki/Q56933&lt;/a&gt; markiert sein, um die Funktionalität grob (ohne Verhältnis zueinander) mit den Anforderungen zu vergleichen.&lt;/li&gt;
+&lt;li&gt;Die gefundenen Implementierungen werden auf das Material angewendet und die Ergebnisse dem Auftraggeber zurückgegeben.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dabei ist das &amp;ldquo;Zusammenstecken&amp;rdquo; eher das langfristige Ziel; im ersten Schritt würde man auf diesem Wege vermutlich erst einmal Agenten benutzen, um Trainingsdaten zusammenzustellen.&lt;/p&gt;
+&lt;p&gt;Dafür fehlen jedoch noch normierte Schlagworte bzw. spezifisches kontrolliertes Vokabular. Da das Feld sehr dynamisch ist, wird es sicher auf eine Mischung aus beidem hinauslaufen, um auch nischigere Nutzungsszenarien abbilden zu können.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: CFF zu CodeMeta in Hugo</title>
+        <link>https://christianmahnke.de/post/hugo-cff-codemeta</link>
+        <pubDate>Tue, 13 Jan 2026 18:52:22 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/hugo-cff-codemeta</guid><description>&lt;p&gt;Für eine anstehende Veröffenlichung einer Software zur Voisualisierung einer Sammlung habe ich mich etwas mit &lt;a href=&#34;https://citation-file-format.github.io/&#34; target=&#34;_blank&#34;&gt;Citation File Format&lt;/a&gt; beschäftigt.&lt;/p&gt;
+&lt;p&gt;CFF (&lt;a href=&#34;https://citation-file-format.github.io/&#34; target=&#34;_blank&#34;&gt;Citation File Format&lt;/a&gt;) ist ein auf YAML basierender Standard, der Zitationsinformationen für Software (und Daten) in Textdateien bereitstellt. Dadurch sind sie sowohl für Menschen als auch für Maschinen lesbar. Dies ermöglicht es Nutzern, Vorschläge zu unterbreiten, wie Code (bzw. Daten) korrekt zitiert werden sollten.
+Die aktuelle Version (1.2.0) ist in Plattformen wie &lt;a href=&#34;https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://help.zenodo.org/docs/github/describe-software/citation-file/&#34; target=&#34;_blank&#34;&gt;Zenodo&lt;/a&gt; integriert und erlaubt dort den Export verschiedene Stile und Formate.
+Das erklärte Ziel ist es, die wissenschaftliche Sichtbarkeit von Softwareprojekten zu steigern.
+Zur Erleichterung der Erstellung und Pflege der Datei gibt es auch einen Assistenten: &lt;a href=&#34;https://citation-file-format.github.io/cff-initializer-javascript/#/&#34; target=&#34;_blank&#34;&gt;CFFInit&lt;/a&gt;, das Ergebnis wird einfach in der Wurzel des jeweiligen Git-Repositories als &lt;code&gt;CITATION.cff&lt;/code&gt; gespeichert (wie z.B. &lt;code&gt;README.md&lt;/code&gt;).&lt;/p&gt;
+&lt;h2 id=&#34;beispiel&#34;&gt;
+  Beispiel
+  &lt;a class=&#34;heading-link&#34; href=&#34;#beispiel&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Dies ist ein Beipsiel für eine &lt;code&gt;CITATION.cff&lt;/code&gt;-Datei.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;cff-version&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;1.2.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;title&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Kartenvisualisierung der Metadaten der Kirchhoff-Sammlung&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;message&lt;/span&gt;: &amp;gt;-&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  If you use this software, please cite it using the
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  metadata from this file.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;type&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;software&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;authors&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#f92672&#34;&gt;given-names&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Chrisitian&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;family-names&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Mahnke&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;orcid&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://orcid.org/0009-0003-1361-4159&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;affiliation&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;Universität Göttingen&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#f92672&#34;&gt;email&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;mahnke@kustodie.uni-goettingen.de&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;repository-code&lt;/span&gt;: &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;https://github.com/cmahnke/hermes-studie-10&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;abstract&lt;/span&gt;: &amp;gt;-&lt;span style=&#34;color:#e6db74&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  Es handelt sich um eine Visualisierung von Metadaten aus
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  dem Sammlungsportal der Universität Göttingen für die
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  Kirchhoff-Sammlung. Diese werden auf einer Weltkarte und
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;  als Wortwolke dargestellt.&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;keywords&lt;/span&gt;:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;Karte&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;Visualisierung&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  - &lt;span style=&#34;color:#ae81ff&#34;&gt;Wortwolke&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;license&lt;/span&gt;: &lt;span style=&#34;color:#ae81ff&#34;&gt;CC-BY-NC-4.0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;codemeta&#34;&gt;
+  CodeMeta
+  &lt;a class=&#34;heading-link&#34; href=&#34;#codemeta&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Da das grundlegende Ziel die Erhöhung der Sichtbarkeit durch Zitierung ist, sind andere Verwendungszwecke der Daten, wie die Indexierung (und damit das Auffinden), eher nachrangig. Hier kann ein anderes Format Abhilfe schaffen: &lt;a href=&#34;https://codemeta.github.io/&#34; target=&#34;_blank&#34;&gt;CodeMeta&lt;/a&gt;.
+Denn eines der Ziele dahinter ist, dass es auf &lt;a href=&#34;https://schema.org/&#34; target=&#34;_blank&#34;&gt;Schema.org&lt;/a&gt; basiert, einem Standard zur Auszeichnung strukturierter (Meta-)Daten, z. B. für Suchmaschinen. Softwarespezifische Daten werden dabei in einer JSON-LD-Datei gebündelt.
+Ein weiteres Ziel ist es, die Wiederverwendbarkeit bestehender Daten zu ermöglichen. Dazu dient der Standard auch als &lt;a href=&#34;https://codemeta.github.io/crosswalk/&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Übersetzungstabelle&amp;rdquo; (Cross-Walk)&lt;/a&gt; (mehr &lt;a href=&#34;https://github.com/codemeta/codemeta/tree/master/crosswalks&#34; target=&#34;_blank&#34;&gt;hier&lt;/a&gt;), um Daten aus anderen Schemata und Formaten zu übersetzen.&lt;/p&gt;
+&lt;h2 id=&#34;realisierung-in-hugo&#34;&gt;
+  Realisierung in Hugo
+  &lt;a class=&#34;heading-link&#34; href=&#34;#realisierung-in-hugo&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Um bestehende &lt;code&gt;CITATION.cff&lt;/code&gt;-Dateien in Hugo nutzen zu können, habe ich ein einfaches Hugo-Template geschrieben, das z. B. in den HTML-Header (meist in &lt;code&gt;/layouts/baseof.html&lt;/code&gt;) werden kann. Eine andere Möglichkeit ist ein eigenes &lt;a href=&#34;https://gohugo.io/configuration/output-formats/&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;OutputFormat&lt;/code&gt;&lt;/a&gt; zu definieren, um die Ausgabe in einer eigenen JSON-LD-Datei umzuleiten. Oder man bindet es in den jeweiligen Eintrag (z.B. &lt;code&gt;BlogArticle&lt;/code&gt; oder &lt;code&gt;CreativeWork&lt;/code&gt;) als &lt;code&gt;mentions&lt;/code&gt; ein.&lt;/p&gt;
+&lt;!--
+Damit die Datei mit `cff` in Hugo als YAML gelsen werden kann, muss noch der Medientyp in der Hugo Konfigurieration (`hugo.toml`, `config.toml`) definiert werden.
+
+```toml
+[mediaTypes]
+  [mediaTypes.&#34;application/yaml&#34;]
+    suffixes = [&#34;cff&#34;]
+```
+--&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-go-template&#34; data-lang=&#34;go-template&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cffFile&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;CITATION.cff&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.Resources.Get&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cffFile&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;transform&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.Unmarshal&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;format&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;yaml&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$authors&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;slice&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.authors&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$givenName&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;given-names&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$familyName&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;family-names&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Person&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;givenName&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$givenName&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;familyName&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$familyName&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;orcid&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;merge&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@id&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;affiliation&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;merge&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;affiliation&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Organization&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;))&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$authors&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$authors&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$a&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$datePublished&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;date-released&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@context&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://doi.org/10.5063/schema/codemeta-3.0&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;SoftwareSourceCode&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;name&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.title&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;softwareVersion&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.version&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;description&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.abstract&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;author&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$authors&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;datePublished&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$datePublished&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;license&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;printf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://spdx.org/licenses/%s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.license&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;codeRepository&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;repository-code&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;runtimePlatform&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;repository&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;default&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;with&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.keywords&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;merge&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;keywords&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;index&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;identifiers&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$ids&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;:=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;slice&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;range&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cff&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;.identifiers&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$ids&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$ids&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;append&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;@type&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;PropertyValue&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;propertyID&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.type&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;value&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.value&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;      &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;merge&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;dict&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;identifier&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$ids&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$codemeta&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;jsonify&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;errorf&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;[metadata/codemeta.json] %s not found at %s&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;$cffFile&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;.RelPermalink&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{-&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;end&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;-}}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Karstadt Stettin</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/172</link>
+        <pubDate>Tue, 13 Jan 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/172</guid><description>&lt;p&gt;Karstadt
+Stettin Breitestraße.&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Ausstellung “Sammlungen erzählen”</title>
+        <link>https://christianmahnke.de/post/sammlungen-erzaehlen</link>
+        <pubDate>Mon, 12 Jan 2026 07:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/sammlungen-erzaehlen</guid><description>&lt;p&gt;Eine meiner Sammlungen nimmt an einer Gruppenausstellung teil&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;&amp;hellip;wie schon &lt;a href=&#34;https://christianmahnke.de/post/kleiderbuegel-2025/&#34; target=&#34;_blank&#34;&gt;angekündigt&lt;/a&gt; werde ich einen kleinen Teil meiner Kleiderbügelsammlung im &lt;a href=&#34;https://www.forum-wissen.de/&#34; target=&#34;_blank&#34;&gt;Forum Wissen&lt;/a&gt; ausstellen. Wer die gesammte Sammlung sehen will, kann sich auch den &lt;a href=&#34;https://christianmahnke.de/post/coat-hangers-book/&#34;&gt;Sammlungskatalog&lt;/a&gt; ansehen.&lt;/p&gt;
+&lt;p&gt;Die Eröffnung findet am 7. Februar 2026, 17:30 im Forum Wissen statt.&lt;/p&gt;
+&lt;div class=&#34;related-post&#34;&gt;
+  &lt;h3 class=&#34;related-post-heading&#34;&gt;Verwandte Beiträge&lt;/h3&gt;
+    &lt;div class=&#34;related-post-content&#34;&gt;
+      Der Katalog meiner Sammlung ist auch &lt;a href=&#34;https://christianmahnke.de/post/coat-hangers-book/&#34;&gt;online verfügbar&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;</description></item>
+    <item><title>ChristianMahnke.de: Linked Art Metadaten</title>
+        <link>https://christianmahnke.de/post/linkedart-metadata</link>
+        <pubDate>Sun, 11 Jan 2026 13:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/linkedart-metadata</guid><description>&lt;p&gt;Zur Vorbereitung zukünftiger Experimente gibt es nun für einige Einträge Linked-Art-Metadaten&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;zumindest zu Beiträgen in denen es um &lt;a href=&#34;https://christianmahnke.de/tags/Art/&#34; target=&#34;_blank&#34;&gt;Kunstwerke&lt;/a&gt; geht.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://linked.art/&#34; target=&#34;_blank&#34;&gt;Linked Art&lt;/a&gt; ist ein Metadaten-Standard, der speziell für die Beschreibung von kulturellen Objekten und deren Provenienz (also Geschichte) entwickelt wurde. Er basiert auf dem &lt;a href=&#34;https://cidoc-crm.org/&#34; target=&#34;_blank&#34;&gt;CIDOC-CRM&lt;/a&gt; Datenmodell und nutzt &lt;a href=&#34;https://de.wikipedia.org/wiki/JSON-LD&#34; target=&#34;_blank&#34;&gt;JSON-LD&lt;/a&gt;, um Informationen über Kunstwerke, Künstler und Provenienzen web-basiert und maschinenlesbar austausche zu können. Damit ist es z.B. mit &lt;a href=&#34;https://de.wikipedia.org/wiki/Lightweight_Information_Describing_Objects&#34; target=&#34;_blank&#34;&gt;LIDO&lt;/a&gt; verwandt.&lt;/p&gt;
+&lt;p&gt;Beispiele für einzelne Posts / Seiten:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/collections/donations/spandau/linkedart.json&#34;&gt;Flamingo von Fritz Neumann&lt;/a&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/collections/donations/spandau/manifest.json&#34;&gt;Auch im IIIF Manifest referenziert&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/post/print-elsa-haensgen-dingkuhn/linkedart.json&#34;&gt;Kinder von Elsa Haensgen-Dingkuhn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/post/painting-kaczmarek-tadeusz/linkedart.json&#34;&gt;Boltenhagen von Tadeusz Kaczmarek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/post/painting-francois-poggi/linkedart.json&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Alte Steintreppe vor bäuerlichem Gehöft&amp;rdquo; von François Poggi&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Die jeweiligen JSON-LD Datein sind jeweils im HTML Header referenziert:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;link&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;rel&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;describedby&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://christianmahnke.de/post/painting-kaczmarek-tadeusz/linkedart.json&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;type&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;application/ld+json;profile=&amp;#39;https://linked.art/ns/v1/linked-art.json&amp;#39;&amp;#34;&lt;/span&gt;/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;kann-man-schon-was-sehen&#34;&gt;
+  Kann man schon was sehen?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#kann-man-schon-was-sehen&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Auf Anwendngen für Endnutzer muss man derzeit leider noch warten, bis es z.B. eine Browsererweiterung zur Anzeige gibt. Allerdings wird der Haupnutzen sicher im Hintergrund sein, also z.B. Vernatzung von sammlungen und Sammlungsobjeten oder die Dartellung von zusätzlichen Informationen auf einer Webseite&amp;hellip;&lt;/p&gt;</description></item>
+    <item><title>Ric - An unknown artist: Wikipedia Artikel über &#34;Kunstverlag J.C. Blumenberg&#34;</title>
+        <link>https://ric-unknownartist.projektemacher.org/post/jc-blumenberg-wikipedia</link>
+        <pubDate>Wed, 07 Jan 2026 17:33:02 +0000</pubDate>
+        <guid>https://ric-unknownartist.projektemacher.org/post/jc-blumenberg-wikipedia</guid><description>&lt;p&gt;Es gibt nun einen Wikipedia-Artikel über den &lt;a href=&#34;https://de.wikipedia.org/wiki/Kunstverlag_J.C._Blumenberg&#34; target=&#34;_blank&#34;&gt;&amp;ldquo;Kunstverlag J.C. Blumenberg&amp;rdquo;&lt;/a&gt;, den Verlag, in dem viele Drucke von Fritz Neumann und seiner Frau veröffentlicht wurden, in der deutschen Wikipedia. Er enthält auch Abbildungen des Blindstempels, um die Erkennung zu erleichtern (z. B. über Google Lens).&lt;/p&gt;
+&lt;p&gt;Vielen Dank an alle Mitwirkenden für ihre Hilfe!&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: DURELASTIC</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/171</link>
+        <pubDate>Tue, 06 Jan 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/171</guid><description></description></item>
+    <item><title>Projektemacher Merch: Die Kleiderbügel-Sammlung Christian Mahnke</title>
+        <link>https://merch.projektemacher.org/print/kleiderbuegel</link>
+        <pubDate>Thu, 01 Jan 2026 20:45:46 +0200</pubDate>
+        <guid>https://merch.projektemacher.org/print/kleiderbuegel</guid><description>&lt;p&gt;Das erste Buch zu einer meiner Sammlungen ist verfügbar: Der Katalog meiner &lt;a href=&#34;https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/&#34; target=&#34;_blank&#34;&gt;Kleiderbügel-Sammlung&lt;/a&gt;!&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Das Kleiderbügel-Blog als Buch</title>
+        <link>https://christianmahnke.de/post/coat-hangers-book</link>
+        <pubDate>Thu, 01 Jan 2026 10:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/coat-hangers-book</guid><description>&lt;p&gt;Das erste Buch zu einem meiner Blogs ist nun fertig&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Nachdem das &lt;a href=&#34;https://christianmahnke.de/post/kleiderbuegel-2025/&#34;&gt;Kleiderbügel-Blog im Herbst überarbeitet&lt;/a&gt; wurde, ist nun auch ein Sammlungskatalog verfügbar.&lt;/p&gt;
+
+
+&lt;p&gt;Für die Umsetzung kam wieder &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34;&gt;Hugo&lt;/a&gt; zum Einsatz, zum Setzen und für die PDF-Generierung wurde &lt;a href=&#34;https://vivliostyle.org/&#34; target=&#34;_blank&#34;&gt;Vivliostyle&lt;/a&gt; verwendet. Es ist das erste Projekt, dass ich mit CSS für den Druck realisiert habe. Meine Erfahrungen habe ich bereits in dem Beitrag &lt;a href=&#34;https://christianmahnke.de/post/paper-tiger-print-css/&#34;&gt;&amp;ldquo;Papiertiger CSS für den Druck&amp;rdquo;&lt;/a&gt; geschildert.&lt;/p&gt;
+&lt;p&gt;Auch wenn das Projekt nun abgeschlossen ist, bleibe ich bei der damaligen Einschätzung: &lt;strong&gt;CSS (und das mit dem Druck verbundene Ökosystem) ist noch nicht für die reibungslose Erstellung von gedruckten Büchern geeignet.&lt;/strong&gt;&lt;/p&gt;</description></item>
+    
+  </channel>
+</rss>

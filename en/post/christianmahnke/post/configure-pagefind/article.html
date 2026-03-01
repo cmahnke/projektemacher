@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Extending Pagefind">
+  <meta property="og:description" content="Since this page needs a search, I had a look at Pagefind…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2025-05-30T17:33:44+02:00">
+    <meta property="article:modified_time" content="2025-05-30T17:33:44+02:00">
+<title>
+  Extending Pagefind · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/article.html" /><meta property="og:title" content="Extending Pagefind" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="Pagefind[Pagefind], Search, Pagefind, Python"><meta name="dc.subject" content="Pagefind[Pagefind]"><meta name="dc.subject" content="Search"><meta name="dc.subject" content="Pagefind"><meta name="dc.subject" content="Python">
+<meta name="generator" content="Hugo 0.156.0">
+<meta name="projektemacher.org:build-date" content="2026-03-01 05:25:23.469889108 &#43;0000 UTC m=&#43;13.886235846"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5067&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.min.9e312a1385cd8a0a9b42110fe749082c05337c88e1df8799f014d3e0bddb2e9e.js" integrity="sha256-njEqE4XNigqbQhEP50kILAUzfIjh34eZ8BTT4L3bLp4="></script>
+
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/configure-pagefind/" title="Projektemacher" />
+    
+
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/configure-pagefind/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Extending Pagefind</h1>
+        </header>
+        <p>Since this page needs a search, I had a look at <a href="https://pagefind.app/" target="_blank">Pagefind</a>&hellip;</p>
+<p>&hellip;and even though I originally had reservations about the integrability and flexibility, a very good friend (and the advantages) persuaded me to give it a try.</p>
+<p>The advantages are quite simple:<br>
+My pages are basically static HTML, dynamic content is realised exclusively in the client in JavaScript (or TypeScript). Therefore, a search must also manage without a classic search server such as <a href="https://solr.apache.org/" target="_blank">Solr</a> or <a href="https://www.elastic.co/elasticsearch" target="_blank">ElasticSearch</a>.<br>
+So far, I have been using <a href="https://www.fusejs.io/" target="_blank">Fuse.js</a> for the <a href="https://projektemacher.org/search/" target="_blank">Project Maker Search</a>, for which the entire index is saved in a JSON file and always transferred in full to the searching client. Another JavaScript search that also works in this way is <a href="https://lunrjs.com/" target="_blank">Lunr.js</a>.<br>
+This makes indexing itself quite fast, but does not scale properly if you want to index many pages, as the size of the data to be transferred scales linearly with the number of pages. There is also a solution here to reduce the amount of data to be transferred, see <a href="https://projektemacher.org/en/post/json-compression/">article on JSON compression</a>, but in the end the (possibly mobile) client still needs all the data in memory.</p>
+<p>Pagefind works differently at this point, only the required fragments of the index are transferred. A more detailed description can be found on the homepage.<br>
+In addition, there are the relatively extensive options for enriching the index, which should also be used for this page.</p>
+<p>From my point of view, the biggest disadvantage is a rather questionable design decision regarding configurability: what is classically known as index fields is realised in Pagefind via HTML data attributes (i.e. about as flexible or cool as inline CSS) or the use of the API. A simple external configuration file is not (yet) provided.</p>
+<h2 id="pagefind-configuration">
+  Pagefind configuration
+  <a class="heading-link" href="#pagefind-configuration">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The following settings can be made via the data attributes; a rough distinction can be made between markers and playable fields. All begin with <code>data-pagefind-</code>, omitted here for clarity:</p>
+<ul>
+<li>Marker
+<ul>
+<li><code>body</code> - The content to be indexed</li>
+<li><code>ignore</code> - Elements that can be ignored, e.g. headers, footers and menus, can optionally also be given a parameter</li>
+</ul>
+</li>
+<li>Field configuration
+<ul>
+<li><code>index-attrs</code> - attributes that are to be indexed</li>
+<li><code>weight</code> - Weighting of an element</li>
+<li><code>meta</code> - Additional metadata for a document, can include authors
+<ul>
+<li><code>image</code> - metadata about images</li>
+<li><code>title</code> - The element for the title</li>
+</ul>
+</li>
+<li><code>filter</code> - Filter, can be used e.g. for tags</li>
+</ul>
+</li>
+</ul>
+<h2 id="external-configuration">
+  External configuration
+  <a class="heading-link" href="#external-configuration">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>As the configuration is element-specific, it can be separated quite easily from the input document. The comparison to inline CSS above is not accidental, as CSS selectors are the means of choice for cleanly separating content and indexing (instructions) here too. All that is needed is a data structure that combines the two. And therein lies the novelty of the approach presented.</p>
+<p>The basic structure is relatively simple: a list of CSS selectors can be assigned for each option above and parameters can then be specified depending on the type (see above).</p>
+<p>This example illustrates the assignment:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#f92672">files</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">output</span>: <span style="color:#ae81ff">docs/index</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">source</span>: <span style="color:#ae81ff">docs</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">include</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;**/*.htm&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;**/*.html&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">exclude</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;tags/**&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;en/tags/**&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;post/page/*/**&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;en/post/page/*/**&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;search/**&#39;</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#39;en/search/**&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">content</span>:
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ignore</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#e6db74">&#34;&lt;meta http-equiv=\&#34;refresh\&#34; content=\&#34;0; url=&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">index</span>:
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Tagging attributes</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">body</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">.content-container</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">ignore</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#ae81ff">header.header</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">footer.footer</span>: <span style="color:#ae81ff">all</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">script</span>: <span style="color:#ae81ff">all</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;div.menu&#34;: </span><span style="color:#ae81ff">all</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">weight</span>:
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h1&#34;: </span><span style="color:#ae81ff">7.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h2&#34;: </span><span style="color:#ae81ff">6.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h3&#34;: </span><span style="color:#ae81ff">5.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;a[data-wikidata-entity]&#34;: </span><span style="color:#ae81ff">5.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h4&#34;: </span><span style="color:#ae81ff">4.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h5&#34;: </span><span style="color:#ae81ff">3.0</span>
+</span></span><span style="display:flex;"><span>    - <span style="color:#f92672">&#34;h6&#34;: </span><span style="color:#ae81ff">2.0</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Index fields</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">meta</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">author</span>: <span style="color:#e6db74">&#39;meta[name=&#34;author&#34;]&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">wikidata</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">&#34;a[data-wikidata-entity]&#34;: </span><span style="color:#e6db74">&#34;[data-wikidata-entity]&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">variants</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;a[data-wikidata-entity]&#34;</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">function</span>: <span style="color:#ae81ff">variants</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">args</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">lang</span>: <span style="color:#e6db74">&#34;{lang}&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">title</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#ae81ff">h1.post-title</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;.section-head h1.section-head-title&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">date</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">&#34;.date time&#34;: </span><span style="color:#e6db74">&#34;[datetime]&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">selector</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;p, h1, h2&#34;</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">function</span>: <span style="color:#ae81ff">generate_css_selector</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">image</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">&#34;.gallery .gallery-image.caption&#34;: </span><span style="color:#e6db74">&#34;[href]&#34;</span>
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">&#34;figure img&#34;: </span><span style="color:#e6db74">&#34;[src]&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">sort</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">date</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">&#34;.date time&#34;: </span><span style="color:#e6db74">&#34;[datetime]&#34;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">filter</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">tag</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#e6db74">&#34;.meta .tags a&#34;</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">function</span>: <span style="color:#ae81ff">extract</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">args</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">pattern</span>: <span style="color:#e6db74">&#34;s/#(.*)/$1/g&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">section</span>:
+</span></span><span style="display:flex;"><span>      - <span style="color:#f92672">body</span>:
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">function</span>: <span style="color:#ae81ff">extract</span>
+</span></span><span style="display:flex;"><span>          <span style="color:#f92672">args</span>:
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">attribute</span>: <span style="color:#e6db74">&#34;class&#34;</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">pattern</span>: <span style="color:#e6db74">&#34;s/.*section-(.[^ ]*).*/$1/g&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">index-attrs</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">a</span>: <span style="color:#e6db74">&#34;[data-wikidata-entity]&#34;</span>
+</span></span></code></pre></div><p>In addition to the general functionality already explained, a few special features also become clear:</p>
+<ul>
+<li>General configuration of directories and patterns for including and excluding the files to be indexed</li>
+<li>Content-based filters for content, used here to exclude redirects</li>
+<li>Weightings are also assigned to elements with certain attributes</li>
+<li>Additional functions - these enable documents to be enriched with additional data. Examples can be a generated CSS selector that only addresses the input element, or typing of entities</li>
+</ul>
+<h2 id="implementation">
+  Implementation
+  <a class="heading-link" href="#implementation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The example implementation uses the Python API from Pagefind, mainly because I already have experience with the Python library <a href="https://www.crummy.com/software/BeautifulSoup/" target="_blank">BeautifulSoup4</a>, which is used for selection using CSS selectors.</p>
+<h3 id="source-code">
+  Source code
+  <a class="heading-link" href="#source-code">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The source code is available as <a href="https://gist.github.com/cmahnke/5049d42cd6dabc19cfd6c85161947fa2" target="_blank">Gist</a>.</p>
+<h2 id="outlook">
+  Outlook
+  <a class="heading-link" href="#outlook">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The separation of content to be indexed and the configuration of the index now allows a few simple extensions that could massively increase the (re-)usability of the software:</p>
+<ul>
+<li><strong>Inline callbacks for CSS selectors</strong>
+If it is possible to execute functions or callbacks for elements found via CSS selectors, these could also further enrich the index. These callbacks could of course be exchanged, so simple preprocessing pipelines could be realised, as known from <a href="https://www.elastic.co/docs/reference/enrich-processor/pipeline-processor" target="_blank">ElasticSearch</a>, for example
+<strong>Multiple output documents for one input document</strong>
+It is also conceivable to create several indexing documents for one input document. This has the advantage that individual document fragments can also be searched and addressed.</li>
+</ul>
+<p>If the configuration were realised in JavaScript (instead of YAML or JSON), the callbacks / plugins could also be defined or imported directly inline.</p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>
