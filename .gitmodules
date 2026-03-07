@@ -64,3 +64,6 @@
 [submodule "blogs/never-built"]
 	path = blogs/never-built
 	url = https://github.com/cmahnke/never-built.git
+[submodule "blogs/plastikwarenfabrik"]
+	path = blogs/plastikwarenfabrik
+	url = https://github.com/cmahnke/plastikwarenfabrik.git
