@@ -14,4 +14,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Ergebnnisse verschiedner KI Experimente: Hauptsächlich Kochrezepte und Bilder.
+Ergebnisse verschiedener KI-Experimente: Es erscheinen hauptsächlich Kochrezepte und Bilder.

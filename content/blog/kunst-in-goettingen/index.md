@@ -15,4 +15,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Frühjahr 2024 gestartet.
+Wird im Frühjahr 2028 gestartet.

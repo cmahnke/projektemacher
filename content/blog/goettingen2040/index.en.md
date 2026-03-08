@@ -1,9 +1,9 @@
 ---
 title: "Göttingen"
-description: "Göttingen im Jahr 2025"
+description: "Göttingen in 20404"
 date: 2020-10-02T18:45:20+02:00
 params:
-  link: https://2025.goettingen.xyz
+  link: https://2040.goettingen.xyz
   status: planned
   private: true
   lang:
@@ -16,4 +16,4 @@ resources:
   params:
     description: "Screenshot"
 ---
-Wird im Frühjahr 2024 gestartet.
+Will be launched in spring 2028.
