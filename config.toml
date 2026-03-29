@@ -120,6 +120,10 @@ enableRobotsTXT = true
       target = "content/post/never-built"
       excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
+    [[module.mounts]]
+      source = "blogs/plastikwarenfabrik/content"
+      target = "content/post/plastikwarenfabrik"
+      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
 
 #    [[module.mounts]]
 #      source = "blogs/schatten/content"

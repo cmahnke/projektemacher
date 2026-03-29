@@ -7,7 +7,6 @@ params:
   status: "active"
   lang:
   - de
-draft: true
 resources:
 - name: screenshot
   src: "screenshot.png"
