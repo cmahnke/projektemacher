@@ -321,6 +321,12 @@ enableRobotsTXT = true
     notAlternative = true
     permalinkable = true
 
+  [outputFormats.llms]
+    mediaType = "text/plain"
+    baseName = "llms"
+    isPlainText = true
+    notAlternative = true
+
 [markup]
     defaultMarkdownHandler = 'goldmark'
 
