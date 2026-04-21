@@ -327,6 +327,13 @@ enableRobotsTXT = true
     isPlainText = true
     notAlternative = true
 
+  [outputFormats.codemeta]
+    mediaType = "application/ld+json"
+    isPlainText = true
+    isHTML = false
+    baseName = "codemeta"
+    notAlternative = true
+
 [markup]
     defaultMarkdownHandler = 'goldmark'
 
