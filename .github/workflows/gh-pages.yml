@@ -86,11 +86,22 @@ jobs:
         run: |
           docker run -v ${PWD}:${PWD} ghcr.io/cmahnke/iiif-action:latest-jxl-uploader sh -c "cd ${PWD} && ./scripts/iiif.sh"
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3.0.0
+      # - name: Setup Hugo
+      #   uses: peaceiris/actions-hugo@v3.0.0
+      #   with:
+      #     hugo-version: ${{ env.HUGO_VERSION }}
+      #     extended: true
+
+      - name: Install Hugo
+        run: |
+          ./themes/projektemacher-base/scripts/github/setup-hugo.sh ${{ env.HUGO_VERSION }}
+
+      - name: Get Hugo cache
+        uses: actions/cache@v5
         with:
-          hugo-version: ${{ env.HUGO_VERSION }}
-          extended: true
+          path: resources
+          key: hugo-cache-${{ runner.os }}-${{ github.run_id }}
+          restore-keys: hugo-cache-${{ runner.os }}
 
       - name: Generate stats
         run: |
