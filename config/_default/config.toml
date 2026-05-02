@@ -25,6 +25,7 @@
   disableScale = true
   wikidata = false
   debug = true
+  useragent = "HugoBot/1.0 (https://projektemacher.org/; User:CMahnke)"
 
   [params.footer]
     privacy = true
