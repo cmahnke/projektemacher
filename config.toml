@@ -33,97 +33,97 @@ enableRobotsTXT = true
     [[module.mounts]]
       source = "blogs/kraehenbeisser/content"
       target = "content/post/kraehenbeisser"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/diapraesentation/content"
       target = "content/post/diapraesentation"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/flohmarktfunde/content"
       target = "content/post/flohmarktfunde"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['/**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/haesslicheplastiktiereundzeugs/content"
       target = "content/post/haesslicheplastiktiereundzeugs"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/ric-unknownartist/content"
       target = "content/post/ric-unknownartist"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/yaapb/content"
       target = "content/post/yaapb"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/kleiderbuegel/content"
       target = "content/post/kleiderbuegel"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/vorsatzpapier/content"
       target = "content/post/vorsatzpapier"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/schriftmuster/content"
       target = "content/post/schriftmuster"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/backsteinexpressionismus/content"
       target = "content/post/backsteinexpressionismus"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/blaufusstoelpel/content"
       target = "content/post/blaufusstoelpel"
-      excludeFiles = ['posts/**/*.jxl', 'posts/**/*.jpg']
+      files = ['! posts/**/*.jxl', '! posts/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/kinderbuecher/content"
       target = "content/post/kinderbuecher"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/vintagereality/content"
       target = "content/post/vintagereality"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/briefsteller/content"
       target = "content/post/briefsteller"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/labs.projektemacher.org/content"
       target = "content/post/labs.projektemacher"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/christianmahnke/content"
       target = "content/post/christianmahnke"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/merch.projektemacher/content"
       target = "content/post/merch.projektemacher"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/never-built/content"
       target = "content/post/never-built"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/plastikwarenfabrik/content"
       target = "content/post/plastikwarenfabrik"
-      excludeFiles = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '! /**/*.jpg', '! /content/post/_index.md']
 
 #    [[module.mounts]]
 #      source = "blogs/schatten/content"
@@ -390,7 +390,13 @@ enableRobotsTXT = true
 
 [security]
   [security.http]
-    mediaTypes = ['^application/json$', '^application/json;\s?charset=[uU][tT][fF]-8$', '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$']
+    mediaTypes = ['^application/json$',
+                  '^application/json;\s?charset=[uU][tT][fF]-8$',
+                  '^application/ld\+json;charset=[uU][tT][fF]-8$',
+                  '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$',
+                  '^application/sparql-results\+json$']
+    urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://www\.wikidata\.org/.*', '^https://query\.wikidata\.org/.*', '^https://(de|en)\.wikipedia\.org/.*', '^https?://vocab\.getty\.edu/.*', '^https?://data\.getty\.edu/vocab/.*', '^https://qlever\.dev/api/.*']
+
 
 [caches]
   [caches.assets]
