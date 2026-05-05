@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/wasm-dx/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="My experience with WASM">
+  <meta property="og:description" content="For the last two blog posts on SPARQL and triple stores, I had to grapple with WASM…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-04-26T06:22:44+02:00">
+    <meta property="article:modified_time" content="2026-04-26T06:22:44+02:00">
+<title>
+  My experience with WASM · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/wasm-dx/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/wasm-dx/article.html" /><meta property="og:title" content="My experience with WASM" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, JavaScript, SoftwareDevelopment, Hugo"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="JavaScript"><meta name="dc.subject" content="SoftwareDevelopment"><meta name="dc.subject" content="Hugo">
+<meta name="generator" content="Hugo 0.161.1">
+<meta name="projektemacher.org:build-date" content="2026-05-05 06:17:42.375620048 &#43;0000 UTC m=&#43;254.565766737"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5027&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.b2e49c9008711b4eac4bcf7393e6737345621be0028d21a66415f5589fa69c03.js" integrity="sha256-suSckAhxG06sS89zk+Zzc0ViG+ACjSGmZBX1WJ+mnAM="></script>
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/wasm-dx/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/wasm-dx/" title="Projektemacher" />
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/wasm-dx/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">My experience with WASM</h1>
+        </header>
+        <p>For the last two blog posts on SPARQL and triple stores, I had to grapple with <a href="https://webassembly.org/" target="_blank">WASM</a>&hellip;</p>
+<p>&hellip;and was genuinely surprised at how poor browser integration and the developer experience (DX) still are.</p>
+<p>The former becomes apparent relatively quickly once you’ve embedded the component on a webpage that reloads with every change via a watcher. After a while, the evidence mounts that the browser isn’t reliably clearing out old resources. In Chrome, this can manifest as tabs freezing or crashing, or even esoteric memory errors in the WASM application.
+You can get used to this after a while, and the effects certainly don’t manifest in this form for the end user, but WASM still feels, for the time being, like a botched job.</p>
+<p>The main problem, however, is the integration of WASM artefacts into JavaScript (for the browser): it is complicated or counterintuitive, particularly if you also have to use a bundler. Simply because you are forced to include the WASM code as a separate asset in its own right, following its own loading semantics (asynchronous initialisation), whilst simultaneously ensuring that the JavaScript wrapper for the code is loaded into the WASM file. The <a href="https://developer.mozilla.org/en-US/docs/WebAssembly" target="_blank">MDN documentation</a> provides an example of this complexity.</p>
+<p>For older readers: The whole thing seems heavily inspired by the use of inline assembler for various architectures in C. After all, it does contain the word ‘Assembly’ in its name.</p>
+<h2 id="digression">
+  Digression
+  <a class="heading-link" href="#digression">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Admittedly, the structure of this blog is also quite complicated:</p>
+<ul>
+<li>I first develop more complex JavaScript functionalities based on <a href="https://www.typescriptlang.org/" target="_blank">Vite</a> and <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>.</li>
+<li>These are then bundled together using <a href="https://rollupjs.org/" target="_blank">Rollup</a> (as it makes it easier to generate various artefacts from a single source tree) (one JS and one CSS artefact each)</li>
+<li>A wrapper is then created from this as a <a href="https://gohugo.io/content-management/shortcodes/" target="_blank">Hugo shortcode</a> – this step is not yet automated. Linking the JavaScript artefact to the shortcode is described here: <a href="https://christianmahnke.de/post/hugo-shared-metadata/" target="_blank">Split metadata for Hugo pages</a></li>
+<li>Hugo then uses <a href="https://esbuild.github.io/" target="_blank">esbuild</a> to generate the JavaScript for the browser.</li>
+</ul>
+<p>The fact that it takes more than one step to transform JavaScript (also known as compiling) is a well-known problem in modern web development and is far from ideal.</p>
+<p>This includes the fact that the entire JavaScript ecosystem is designed to cope with its own shortcomings. For more traditional reasons, dating back to the pre-tree-shaking era (i.e. code optimisation where unused functions are prevented from entering the client-side code, as the page load time improves due to the transmission of less data), the entire community tends to atomise its software artefacts and package them into very small units.
+Others have written better and wiser things on this issue (and other problems of ‘modern’ JavaScript in the sense of contemporary, not innovative JavaScript), e.g. in <a href="https://43081j.com/2026/03/three-pillars-of-javascript-bloat" target="_blank">The Three Pillars of JavaScript Bloat</a></p>
+<p>This pattern is generally regarded as an anti-pattern in other communities, yet it is used in almost everything, including build tools such as bundlers. Consequently, one inevitably has to spend more time on one’s build infrastructure than one would like.
+This has the ‘amusing’ consequence, for example, that not all of these tools cover the full range of modern web technologies on their own.
+For instance, <a href="https://rollupjs.org/" target="_blank">Rollup</a> or <a href="https://vite.dev/" target="_blank">Vite</a> require plugins for Wasm.</p>
+<h2 id="back-to-wasm">
+  Back to Wasm:
+  <a class="heading-link" href="#back-to-wasm">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The main problem is probably that, although it’s called WebAssembly, it was designed to be used across many platforms. So if you take the name as an indication of its intended purpose, it suffers from over-generalisation.</p>
+<p>Twenty years ago, with Java, we had something in the browser that was already more advanced in this respect. Admittedly, the language doesn’t have as many fans anymore, but the embedding and also the access to DOM elements on the page where the applet was running were significantly better.</p>
+<h2 id="how-could-it-be-improved">
+  How could it be improved?
+  <a class="heading-link" href="#how-could-it-be-improved">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>But WASM also has other theoretical advantages, such as increased execution speed or the ability to use legacy code as a starting point.
+Nevertheless, developers could benefit if the focus were primarily on the web as a platform. The usage scenario should be designed to feel like JavaScript. For example, one could do away with the necessary external JS wrappers by bundling them into the WASM file (or the WASM bytecode into a JS file), so that they are automatically available upon instantiation.
+Building on this, a simplified API would also have been helpful:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">wasm_obj</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> <span style="color:#a6e22e">WebAssembly</span>.<span style="color:#66d9ef">new</span>(<span style="color:#960050;background-color:#1e0010">‘</span>.<span style="color:#f92672">/</span><span style="color:#a6e22e">simple</span>.<span style="color:#a6e22e">wasm</span><span style="color:#960050;background-color:#1e0010">’</span>);
+</span></span></code></pre></div><p>Instead of all that faff of fetching (<code>fetch</code>), possibly compiling, instantiating and &ldquo;marrying&rdquo; it with the JS wrapper code – which you’d also have to bundle or load. So it really is &ldquo;seamless&rdquo;. Of course, this would be optional. Anyone who prefers the existing API should, of course, still be able to use it.</p>
+<p>As this change is not expected in the browser JS API, the solution must be implemented at the bundler or bundling stage. Unfortunately, the only viable method currently available is to distribute the WASM artefact as a Base64-encoded part of a JavaScript file. The downside, however, is that the encoding increases the file size by 33–37%.</p>
+<p>So, if you are distributing a WASM file via NPM, you should ensure that there is at least one method of inclusion where the WASM artefact is part of a JS file. Tools currently frequently used in this area, such as <a href="https://github.com/wasm-bindgen/wasm-pack" target="_blank"><code>wasm-pack</code></a> (for Rust), should do this by default.</p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/developer-platforms-fediverse/">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Fediverse integration for development platforms">
+  <meta property="og:description" content="GitHub is currently facing a lot of issues – what does it take to switch?">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-04-30T17:30:00+02:00">
+    <meta property="article:modified_time" content="2026-04-30T17:30:00+02:00">
+<title>
+  Fediverse integration for development platforms · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/developer-platforms-fediverse/"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/developer-platforms-fediverse/" /><meta property="og:title" content="Fediverse integration for development platforms" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, SoftwareDevelopment, ProjectIdea, GitHub, DigitalSovereignty"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="SoftwareDevelopment"><meta name="dc.subject" content="ProjectIdea"><meta name="dc.subject" content="GitHub"><meta name="dc.subject" content="DigitalSovereignty">
+<meta name="generator" content="Hugo 0.161.1">
+<meta name="projektemacher.org:build-date" content="2026-05-05 06:17:42.375620048 &#43;0000 UTC m=&#43;254.565766737"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5027&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.b2e49c9008711b4eac4bcf7393e6737345621be0028d21a66415f5589fa69c03.js" integrity="sha256-suSckAhxG06sS89zk+Zzc0ViG+ACjSGmZBX1WJ+mnAM="></script>
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/developer-platforms-fediverse/citation.bib" title="Projektemacher" />
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/developer-platforms-fediverse/">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Fediverse integration for development platforms</h1>
+        </header>
+        <p>GitHub is currently facing a lot of issues – what does it take to switch?</p>
+<p>A great deal has already been written about the technical issues (reliability, security problems, etc.), and numerous videos have been produced. There is also plenty of information available on the topics of digital sovereignty and independence from Microsoft.</p>
+<p>To cut a long story short: there are good reasons to look for alternatives to GitHub. And at first glance, there is a fair selection available:</p>
+<ul>
+<li><a href="https://about.gitlab.com/" target="_blank">GitLab</a></li>
+<li><a href="https://codeberg.org/" target="_blank">Codeberg</a></li>
+<li><a href="https://about.gitea.com/" target="_blank">Gitea</a></li>
+<li><a href="https://forgejo.org/" target="_blank">Forgejo</a></li>
+<li><a href="https://bitbucket.org/" target="_blank">Bitbucket</a></li>
+</ul>
+<p>Some of these offer only hosting services, whilst others also provide the software for local installation.</p>
+<p>However, hosting services have a few drawbacks compared to GitHub (at least if you have an old account). GitHub offers a vast array of resources, orders of magnitude more than the competition:</p>
+<ul>
+<li>Storage space: Particularly with my image-heavy blogs, a repository can sometimes run to several gigabytes in size. There are also the odd files that are around 50 MB in size.</li>
+<li>Container images of a few gigabytes in size can also be stored.</li>
+<li>The runners have a maximum runtime of six hours and provide a virtual machine which, with a bit of <a href="https://christianmahnke.de/post/build-vector-tiles-on-github/" target="_blank">fiddling</a>, offers a mid-double-digit gigabyte amount of free space, thereby also allowing for extensive data transformations.</li>
+</ul>
+<p>In addition, there are CI infrastructures and other automation tools that can be set up on GitHub.</p>
+<p>Another factor arising from the platform’s scale is the <a href="https://de.wikipedia.org/wiki/Netzwerkeffekt" target="_blank">network effect</a>, which receives little attention. In my view, this is a major oversight if one is seriously advocating for a replacement.</p>
+<h2 id="github-is-a-social-network">
+  GitHub is a social network
+  <a class="heading-link" href="#github-is-a-social-network">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Simply because so many projects, particularly from the JavaScript and TypeScript communities, can now be found on GitHub, they are interconnected not only in terms of software but also in terms of the people involved. Although these are primarily working relationships, one should not forget that a simple @ mention in an issue or comment can be used to draw other people’s attention to something. The same applies to linking information between projects. GitHub also recognises these links and integrates them into various history views (issues, comments, discussions, pull requests, etc.).</p>
+<p>In other words: <strong>GitHub is a social network</strong>, and so for many people, concerns about sovereignty or dependence on the big tech giant Microsoft are simply not a sufficient reason to leave this convenient ecosystem.</p>
+<p>The prospect of having to maintain their code on a small island, cut off from their community, is unlikely to inspire much enthusiasm for switching. For smaller projects in particular, the network effect also means potentially increased visibility – for example, when maintaining one’s own projects to improve one’s prospects on the job market.</p>
+<h2 id="development-platforms-must-join-the-fediverse">
+  Development platforms must join the Fediverse!
+  <a class="heading-link" href="#development-platforms-must-join-the-fediverse">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Therefore, the following applies: anyone who is serious about reducing the use of GitHub or replacing it with decentralised European solutions or providers must advocate for the interconnection of platforms. Digital sovereignty alone isn’t really that appealing.</p>
+<p><a href="https://de.wikipedia.org/wiki/ActivityPub" target="_blank">ActivityPub</a> (the technical foundation of the Fediverse) provides all the necessary mechanisms. Every platform must be able to address at least the following entities:</p>
+<ul>
+<li>Users</li>
+<li>Issues / Discussions – and comments where applicable</li>
+<li>Pull / Merge Requests</li>
+<li>Tags / Releases</li>
+</ul>
+<p>At the presentation level, the platforms must then provide various ‘inboxes’ and display them in the appropriate contexts, e.g. notifications or issue discussions for users.</p>
+<p>Meanwhile, the platforms also offer additional features such as simple project management or boards, and documentation or wikis. But let’s start with the basics first.</p>
+<p>The idea isn’t new; there’s <a href="https://forgefed.org/" target="_blank">ForgeFed</a>, for example, but the integration has been fairly limited so far. Instead, the focus tends to be on hype topics such as &ldquo;Agentic AI&rdquo;. These certainly have their place, particularly when you need to attract customers using buzzwords (e.g. organisations as). But you won’t reach (informal open-source) communities that way.</p>
+<p><strong>Anyone who wants a future of open-source collaboration free from dependence on Big Tech must not treat interconnectivity as a mere additional feature, but must recognise it as an infrastructural necessity.</strong></p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

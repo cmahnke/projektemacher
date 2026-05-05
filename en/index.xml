@@ -1,0 +1,703 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/en/</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo 0.161.1</generator><language>en</language>
+      <lastBuildDate>Tue, 05 May 2026 06:17:44 +0000</lastBuildDate><atom:link href="https://projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" /><item><title>Plastikwarenfabrik: Abkürzungsgenerator</title>
+        <link>https://plastikwarenfabrik.projektemacher.org/post/acronym-generator</link>
+        <pubDate>Mon, 04 May 2026 08:33:09 +0200</pubDate>
+        <guid>https://plastikwarenfabrik.projektemacher.org/post/acronym-generator</guid><description>&lt;p&gt;Kein gutes Projekt kann ohne einen Kurz- bzw. Projektnamen auskommen. Er beschreibt das Ziel, ist leicht zu merken und wirkt somit identitätsstiftend für alle Beteiligten.&lt;/p&gt;
+&lt;p&gt;Mit diesem Prompt kann man z.B. Abkürzungen für ein Webseitenprojekt auf Basis von Kubernetes erstellen:&lt;/p&gt;
+&lt;div class=&#34;quote&#34;&gt;
+    
+    &lt;blockquote  class=&#34;quote-body&#34;&gt;
+        &lt;p&gt;Erstelle mehrere Akronyme für ein Webprojekt, bei denen „K“ für Kubernetes steht.
+Die Akronyme sollen gleichzeitig echte Namen aus der griechischen Mythologie sein (z. B. Götter, Titanen, Helden).&lt;/p&gt;
+&lt;p&gt;Bedingungen:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fokus auf Web/Website (Begriffe wie Web, Online, Sites, Internet müssen im Akronym vorkommen)&lt;/li&gt;
+&lt;li&gt;Kein Bezug zu AI&lt;/li&gt;
+&lt;li&gt;Für jeden Vorschlag:
+0. Akronym + ausgeschriebene Bedeutung
+0. Kurze Erklärung der mythologischen Figur dahinter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Halte die Vorschläge kurz, klar und möglichst natürlich klingend (keine zu erzwungenen Backronyme).&lt;/p&gt;
+
+    &lt;/blockquote &gt;
+    
+    
+&lt;/div&gt;
+
+&lt;h2 id=&#34;antworten-von-qwen3&#34;&gt;
+  Antworten von QWEN3
+  &lt;a class=&#34;heading-link&#34; href=&#34;#antworten-von-qwen3&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;1. KRONOS – Kubernetes Realms Online Network System&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Mythologische Figur:&lt;/em&gt; &lt;strong&gt;Kronos&lt;/strong&gt; – Titan der Zeit, Vater der Götter. Er symbolisiert die kontinuierliche, strukturierte Bewegung von Ereignissen.&lt;br&gt;
+&lt;em&gt;Erklärung:&lt;/em&gt; Wie Kronos die Zeit regiert, so verwaltet das System die kontinuierliche Bereitstellung und Skalierung von Web-Infrastrukturen – stetig, zuverlässig, im Rhythmus der Digitalität.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;2. KALLISTO – Kubernetes Advanced Live Linking System for Online Tech&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Mythologische Figur:&lt;/em&gt; &lt;strong&gt;Kallisto&lt;/strong&gt; – eine der Titaninnen, Tochter von Titan Iapetus. Sie wurde von Zeus geliebt und in die Sterne erhoben.&lt;br&gt;
+&lt;em&gt;Erklärung:&lt;/em&gt; Kallisto steht für Schönheit und Stabilität im Himmel – ebenso wie das Projekt, das Webseiten elegant, sicher und stetig online hält.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;3. KEPHALOS – Kubernetes Engine for Public High-Performance Online Sites&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Mythologische Figur:&lt;/em&gt; &lt;strong&gt;Kephalos&lt;/strong&gt; – ein berühmter Jäger und Held, der durch seine Präzision und Weisheit auffiel.&lt;br&gt;
+&lt;em&gt;Erklärung:&lt;/em&gt; Wie Kephalos den richtigen Pfeil trifft, so sorgt das System für präzise, schnelle und stabile Web-Auslieferung – ohne Abweichung.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;4. KLEOS – Kubernetes Layer for Efficient Online Systems&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Mythologische Figur:&lt;/em&gt; &lt;strong&gt;Kleos&lt;/strong&gt; – das griechische Wort für „Ruhm“ oder „ewige Anerkennung“, oft mit Helden verbunden.&lt;br&gt;
+&lt;em&gt;Erklärung:&lt;/em&gt; Ein Webprojekt, das durch Kubernetes stabil und leistungsstark läuft, erlangt selbst „Kleos“ – Anerkennung in der digitalen Welt.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;5. KORYBANTIS – Kubernetes Orchestrated Responsive Yield for Browsers &amp;amp; Sites&lt;/strong&gt;&lt;br&gt;
+&lt;em&gt;Mythologische Figur:&lt;/em&gt; &lt;strong&gt;Korybanten&lt;/strong&gt; – die tanzenden, rituellen Krieger, die den jungen Zeus beschützten.&lt;br&gt;
+&lt;em&gt;Erklärung:&lt;/em&gt; Wie die Korybanten den Himmel mit Lärm und Energie erfüllten, so sorgt das System für dynamische, reaktive Web-Performance – laut, aber geordnet.&lt;/p&gt;
+&lt;hr&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Fediverse integration for development platforms</title>
+        <link>https://christianmahnke.de/post/developer-platforms-fediverse</link>
+        <pubDate>Thu, 30 Apr 2026 17:30:00 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/developer-platforms-fediverse</guid><description>&lt;p&gt;GitHub is currently facing a lot of issues – what does it take to switch?&lt;/p&gt;
+&lt;p&gt;A great deal has already been written about the technical issues (reliability, security problems, etc.), and numerous videos have been produced. There is also plenty of information available on the topics of digital sovereignty and independence from Microsoft.&lt;/p&gt;
+&lt;p&gt;To cut a long story short: there are good reasons to look for alternatives to GitHub. And at first glance, there is a fair selection available:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34;&gt;GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://codeberg.org/&#34; target=&#34;_blank&#34;&gt;Codeberg&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://about.gitea.com/&#34; target=&#34;_blank&#34;&gt;Gitea&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://forgejo.org/&#34; target=&#34;_blank&#34;&gt;Forgejo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34;&gt;Bitbucket&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of these offer only hosting services, whilst others also provide the software for local installation.&lt;/p&gt;
+&lt;p&gt;However, hosting services have a few drawbacks compared to GitHub (at least if you have an old account). GitHub offers a vast array of resources, orders of magnitude more than the competition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Storage space: Particularly with my image-heavy blogs, a repository can sometimes run to several gigabytes in size. There are also the odd files that are around 50 MB in size.&lt;/li&gt;
+&lt;li&gt;Container images of a few gigabytes in size can also be stored.&lt;/li&gt;
+&lt;li&gt;The runners have a maximum runtime of six hours and provide a virtual machine which, with a bit of &lt;a href=&#34;https://christianmahnke.de/post/build-vector-tiles-on-github/&#34; target=&#34;_blank&#34;&gt;fiddling&lt;/a&gt;, offers a mid-double-digit gigabyte amount of free space, thereby also allowing for extensive data transformations.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, there are CI infrastructures and other automation tools that can be set up on GitHub.&lt;/p&gt;
+&lt;p&gt;Another factor arising from the platform’s scale is the &lt;a href=&#34;https://de.wikipedia.org/wiki/Netzwerkeffekt&#34; target=&#34;_blank&#34;&gt;network effect&lt;/a&gt;, which receives little attention. In my view, this is a major oversight if one is seriously advocating for a replacement.&lt;/p&gt;
+&lt;h2 id=&#34;github-is-a-social-network&#34;&gt;
+  GitHub is a social network
+  &lt;a class=&#34;heading-link&#34; href=&#34;#github-is-a-social-network&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Simply because so many projects, particularly from the JavaScript and TypeScript communities, can now be found on GitHub, they are interconnected not only in terms of software but also in terms of the people involved. Although these are primarily working relationships, one should not forget that a simple @ mention in an issue or comment can be used to draw other people’s attention to something. The same applies to linking information between projects. GitHub also recognises these links and integrates them into various history views (issues, comments, discussions, pull requests, etc.).&lt;/p&gt;
+&lt;p&gt;In other words: &lt;strong&gt;GitHub is a social network&lt;/strong&gt;, and so for many people, concerns about sovereignty or dependence on the big tech giant Microsoft are simply not a sufficient reason to leave this convenient ecosystem.&lt;/p&gt;
+&lt;p&gt;The prospect of having to maintain their code on a small island, cut off from their community, is unlikely to inspire much enthusiasm for switching. For smaller projects in particular, the network effect also means potentially increased visibility – for example, when maintaining one’s own projects to improve one’s prospects on the job market.&lt;/p&gt;
+&lt;h2 id=&#34;development-platforms-must-join-the-fediverse&#34;&gt;
+  Development platforms must join the Fediverse!
+  &lt;a class=&#34;heading-link&#34; href=&#34;#development-platforms-must-join-the-fediverse&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Therefore, the following applies: anyone who is serious about reducing the use of GitHub or replacing it with decentralised European solutions or providers must advocate for the interconnection of platforms. Digital sovereignty alone isn’t really that appealing.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://de.wikipedia.org/wiki/ActivityPub&#34; target=&#34;_blank&#34;&gt;ActivityPub&lt;/a&gt; (the technical foundation of the Fediverse) provides all the necessary mechanisms. Every platform must be able to address at least the following entities:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Users&lt;/li&gt;
+&lt;li&gt;Issues / Discussions – and comments where applicable&lt;/li&gt;
+&lt;li&gt;Pull / Merge Requests&lt;/li&gt;
+&lt;li&gt;Tags / Releases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At the presentation level, the platforms must then provide various ‘inboxes’ and display them in the appropriate contexts, e.g. notifications or issue discussions for users.&lt;/p&gt;
+&lt;p&gt;Meanwhile, the platforms also offer additional features such as simple project management or boards, and documentation or wikis. But let’s start with the basics first.&lt;/p&gt;
+&lt;p&gt;The idea isn’t new; there’s &lt;a href=&#34;https://forgefed.org/&#34; target=&#34;_blank&#34;&gt;ForgeFed&lt;/a&gt;, for example, but the integration has been fairly limited so far. Instead, the focus tends to be on hype topics such as &amp;ldquo;Agentic AI&amp;rdquo;. These certainly have their place, particularly when you need to attract customers using buzzwords (e.g. organisations as). But you won’t reach (informal open-source) communities that way.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Anyone who wants a future of open-source collaboration free from dependence on Big Tech must not treat interconnectivity as a mere additional feature, but must recognise it as an infrastructural necessity.&lt;/strong&gt;&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Rollup plugin für WASM Inlining</title>
+        <link>https://christianmahnke.de/post/rollup-plugin-wasm-brotli</link>
+        <pubDate>Tue, 28 Apr 2026 21:45:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/rollup-plugin-wasm-brotli</guid><description>&lt;p&gt;Based on my &lt;a href=&#34;https://christianmahnke.de/post/wasm-dx/&#34;&gt;experience with WASM&lt;/a&gt;, I’ve written my own &lt;a href=&#34;https://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup&lt;/a&gt; plugin.&lt;/p&gt;
+&lt;p&gt;A few years ago, there was an &lt;a href=&#34;https://christianmahnke.de/post/json-compression/&#34; target=&#34;_blank&#34;&gt;article&lt;/a&gt; here that introduced an innovative approach to JSON compression called &lt;code&gt;brotli-unicode&lt;/code&gt;. Now that I’ve had to get to grips with WASM, it made sense to use it to compensate for the shortcomings described.&lt;/p&gt;
+&lt;p&gt;The result is a plugin for Rollup that significantly simplifies the bundling of WASM files by simply integrating the file into the generated JavaScript file (inline), without the classic drawbacks of Base64 encoding (33–37% increase in size).&lt;/p&gt;
+&lt;h2 id=&#34;comparative-figures&#34;&gt;
+  Comparative figures
+  &lt;a class=&#34;heading-link&#34; href=&#34;#comparative-figures&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;This comparison is based on the implementation from this &lt;a href=&#34;https://christianmahnke.de/post/blog-sparql/&#34; target=&#34;_blank&#34;&gt;blog post&lt;/a&gt;, which includes &lt;a href=&#34;https://github.com/oxigraph/oxigraph&#34; target=&#34;_blank&#34;&gt;OxiGraph&lt;/a&gt; and the &lt;a href=&#34;https://github.com/KonradHoeffner/hdt&#34; target=&#34;_blank&#34;&gt;HDT Rust module&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;without-plugin&#34;&gt;
+  Without plugin
+  &lt;a class=&#34;heading-link&#34; href=&#34;#without-plugin&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Size (bytes)&lt;/th&gt;
+          &lt;th&gt;File&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1,191,284&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.js&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2,609,124&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.js.map&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;714&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.scss&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;181,638&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/hdt_bg.wasm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3,954,968&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/web_bg.wasm&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Ohne das Plugin werden die Datei &lt;code&gt;wikidata-hdt/dist/client-sparql.js&lt;/code&gt; sowie beide WASM-Dateien benötigt. Insgesamt 5.327.890 Byte.&lt;/p&gt;
+&lt;h3 id=&#34;with-plugin&#34;&gt;
+  With plugin
+  &lt;a class=&#34;heading-link&#34; href=&#34;#with-plugin&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;Size (bytes)&lt;/th&gt;
+          &lt;th&gt;File&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3,060,899&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.js&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4,493,750&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.js.map&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;714&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/client-sparql.scss&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;181,638&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/hdt_bg.wasm&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3,954,968&lt;/td&gt;
+          &lt;td&gt;wikidata-hdt/dist/web_bg.wasm&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The plugin requires only the file &lt;code&gt;wikidata-hdt/dist/client-sparql.js&lt;/code&gt;. Total size: 3,060,899 bytes. This corresponds to approximately 57.4% of the original size.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://www.npmjs.com/package/@projektemacher/rollup-plugin-wasm-brotli&#34; target=&#34;_blank&#34;&gt;plugin is available via NPM&lt;/a&gt;, and the source code is available on &lt;a href=&#34;https://github.com/cmahnke/rollup-plugin-wasm-brotli&#34; target=&#34;_blank&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: hettlage</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/187</link>
+        <pubDate>Tue, 28 Apr 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/187</guid><description>&lt;p&gt;hettlage&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: My experience with WASM</title>
+        <link>https://christianmahnke.de/post/wasm-dx</link>
+        <pubDate>Sun, 26 Apr 2026 06:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/wasm-dx</guid><description>&lt;p&gt;For the last two blog posts on SPARQL and triple stores, I had to grapple with &lt;a href=&#34;https://webassembly.org/&#34; target=&#34;_blank&#34;&gt;WASM&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;and was genuinely surprised at how poor browser integration and the developer experience (DX) still are.&lt;/p&gt;
+&lt;p&gt;The former becomes apparent relatively quickly once you’ve embedded the component on a webpage that reloads with every change via a watcher. After a while, the evidence mounts that the browser isn’t reliably clearing out old resources. In Chrome, this can manifest as tabs freezing or crashing, or even esoteric memory errors in the WASM application.
+You can get used to this after a while, and the effects certainly don’t manifest in this form for the end user, but WASM still feels, for the time being, like a botched job.&lt;/p&gt;
+&lt;p&gt;The main problem, however, is the integration of WASM artefacts into JavaScript (for the browser): it is complicated or counterintuitive, particularly if you also have to use a bundler. Simply because you are forced to include the WASM code as a separate asset in its own right, following its own loading semantics (asynchronous initialisation), whilst simultaneously ensuring that the JavaScript wrapper for the code is loaded into the WASM file. The &lt;a href=&#34;https://developer.mozilla.org/en-US/docs/WebAssembly&#34; target=&#34;_blank&#34;&gt;MDN documentation&lt;/a&gt; provides an example of this complexity.&lt;/p&gt;
+&lt;p&gt;For older readers: The whole thing seems heavily inspired by the use of inline assembler for various architectures in C. After all, it does contain the word ‘Assembly’ in its name.&lt;/p&gt;
+&lt;h2 id=&#34;digression&#34;&gt;
+  Digression
+  &lt;a class=&#34;heading-link&#34; href=&#34;#digression&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Admittedly, the structure of this blog is also quite complicated:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I first develop more complex JavaScript functionalities based on &lt;a href=&#34;https://www.typescriptlang.org/&#34; target=&#34;_blank&#34;&gt;Vite&lt;/a&gt; and &lt;a href=&#34;https://www.typescriptlang.org/&#34; target=&#34;_blank&#34;&gt;TypeScript&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;These are then bundled together using &lt;a href=&#34;https://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup&lt;/a&gt; (as it makes it easier to generate various artefacts from a single source tree) (one JS and one CSS artefact each)&lt;/li&gt;
+&lt;li&gt;A wrapper is then created from this as a &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/&#34; target=&#34;_blank&#34;&gt;Hugo shortcode&lt;/a&gt; – this step is not yet automated. Linking the JavaScript artefact to the shortcode is described here: &lt;a href=&#34;https://christianmahnke.de/post/hugo-shared-metadata/&#34; target=&#34;_blank&#34;&gt;Split metadata for Hugo pages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Hugo then uses &lt;a href=&#34;https://esbuild.github.io/&#34; target=&#34;_blank&#34;&gt;esbuild&lt;/a&gt; to generate the JavaScript for the browser.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The fact that it takes more than one step to transform JavaScript (also known as compiling) is a well-known problem in modern web development and is far from ideal.&lt;/p&gt;
+&lt;p&gt;This includes the fact that the entire JavaScript ecosystem is designed to cope with its own shortcomings. For more traditional reasons, dating back to the pre-tree-shaking era (i.e. code optimisation where unused functions are prevented from entering the client-side code, as the page load time improves due to the transmission of less data), the entire community tends to atomise its software artefacts and package them into very small units.
+Others have written better and wiser things on this issue (and other problems of ‘modern’ JavaScript in the sense of contemporary, not innovative JavaScript), e.g. in &lt;a href=&#34;https://43081j.com/2026/03/three-pillars-of-javascript-bloat&#34; target=&#34;_blank&#34;&gt;The Three Pillars of JavaScript Bloat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This pattern is generally regarded as an anti-pattern in other communities, yet it is used in almost everything, including build tools such as bundlers. Consequently, one inevitably has to spend more time on one’s build infrastructure than one would like.
+This has the ‘amusing’ consequence, for example, that not all of these tools cover the full range of modern web technologies on their own.
+For instance, &lt;a href=&#34;https://rollupjs.org/&#34; target=&#34;_blank&#34;&gt;Rollup&lt;/a&gt; or &lt;a href=&#34;https://vite.dev/&#34; target=&#34;_blank&#34;&gt;Vite&lt;/a&gt; require plugins for Wasm.&lt;/p&gt;
+&lt;h2 id=&#34;back-to-wasm&#34;&gt;
+  Back to Wasm:
+  &lt;a class=&#34;heading-link&#34; href=&#34;#back-to-wasm&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The main problem is probably that, although it’s called WebAssembly, it was designed to be used across many platforms. So if you take the name as an indication of its intended purpose, it suffers from over-generalisation.&lt;/p&gt;
+&lt;p&gt;Twenty years ago, with Java, we had something in the browser that was already more advanced in this respect. Admittedly, the language doesn’t have as many fans anymore, but the embedding and also the access to DOM elements on the page where the applet was running were significantly better.&lt;/p&gt;
+&lt;h2 id=&#34;how-could-it-be-improved&#34;&gt;
+  How could it be improved?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#how-could-it-be-improved&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;But WASM also has other theoretical advantages, such as increased execution speed or the ability to use legacy code as a starting point.
+Nevertheless, developers could benefit if the focus were primarily on the web as a platform. The usage scenario should be designed to feel like JavaScript. For example, one could do away with the necessary external JS wrappers by bundling them into the WASM file (or the WASM bytecode into a JS file), so that they are automatically available upon instantiation.
+Building on this, a simplified API would also have been helpful:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;const&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;wasm_obj&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;await&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;WebAssembly&lt;/span&gt;.&lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt;(&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;‘&lt;/span&gt;.&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;simple&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;wasm&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;’&lt;/span&gt;);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Instead of all that faff of fetching (&lt;code&gt;fetch&lt;/code&gt;), possibly compiling, instantiating and &amp;ldquo;marrying&amp;rdquo; it with the JS wrapper code – which you’d also have to bundle or load. So it really is &amp;ldquo;seamless&amp;rdquo;. Of course, this would be optional. Anyone who prefers the existing API should, of course, still be able to use it.&lt;/p&gt;
+&lt;p&gt;As this change is not expected in the browser JS API, the solution must be implemented at the bundler or bundling stage. Unfortunately, the only viable method currently available is to distribute the WASM artefact as a Base64-encoded part of a JavaScript file. The downside, however, is that the encoding increases the file size by 33–37%.&lt;/p&gt;
+&lt;p&gt;So, if you are distributing a WASM file via NPM, you should ensure that there is at least one method of inclusion where the WASM artefact is part of a JS file. Tools currently frequently used in this area, such as &lt;a href=&#34;https://github.com/wasm-bindgen/wasm-pack&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;wasm-pack&lt;/code&gt;&lt;/a&gt; (for Rust), should do this by default.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: &#34;Formen am Meer (Sylt)&#34; (Shapes by the Sea (Sylt)) by Otto Eglau (1917-1988)</title>
+        <link>https://christianmahnke.de/post/print-otto-eglau</link>
+        <pubDate>Sat, 25 Apr 2026 10:34:44 +0100</pubDate>
+        <guid>https://christianmahnke.de/post/print-otto-eglau</guid><description>&lt;p&gt;I’ve found an etching by &lt;a href=&#34;https://de.wikipedia.org/wiki/Otto_Eglau&#34; target=&#34;_blank&#34;&gt;Otto Eglau&lt;/a&gt; (German) (1917–1988) (&lt;a href=&#34;https://www.artnet.com/artists/otto-eglau/&#34; target=&#34;_blank&#34;&gt;on artnet&lt;/a&gt;)&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;Otto Eglau studied at the &lt;a href=&#34;https://en.wikipedia.org/wiki/Berlin_University_of_the_Arts&#34; target=&#34;_blank&#34;&gt;Berlin University of the Arts&lt;/a&gt;. In 1953, he became a lecturer in free painting and drawing at the Faculty of Architecture at the Technical University of Berlin. Between 1951 and 1970, he undertook extensive study trips.&lt;/p&gt;
+&lt;p&gt;He maintained a lifelong connection with Sylt. From 1983 onwards, he also ran a studio in Kampen. Consequently, stages were a recurring motif for him, though it was not only the North Frisian coast that he captured in abstract views.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: 503</title>
+        <link>https://christianmahnke.de/post/503-ticket-machine</link>
+        <pubDate>Fri, 24 Apr 2026 14:39:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/503-ticket-machine</guid><description>&lt;p&gt;Spotted at Hanover Central Station&amp;hellip;&lt;/p&gt;
+&lt;div&gt;&lt;/div&gt;</description></item>
+    <item><title>ChristianMahnke.de: Blog metadata visualised</title>
+        <link>https://christianmahnke.de/post/blog-visualisation</link>
+        <pubDate>Tue, 21 Apr 2026 15:49:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/blog-visualisation</guid><description>&lt;p&gt;About a year ago, I tried &lt;a href=&#34;https://christianmahnke.de/en/post/tag-pairs/&#34;&gt;visualising the blog content&lt;/a&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;hellip;but that was more of a failure.&lt;/p&gt;
+&lt;p&gt;Now I’ve given it another go. This time I’ve used the &lt;a href=&#34;https://christianmahnke.de/en/post/blog-sparql/&#34;&gt;Triple Store from the last post&lt;/a&gt; and the result is certainly impressive:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;It may take a moment for the graph to load and calculate.&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Contains data from &lt;a href=&#34;https://www.wikidata.org/&#34; target=&#34;_blank&#34;&gt;Wikidata&lt;/a&gt;, licensed under &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Text_of_the_Creative_Commons_Public_Domain_Dedication&#34; target=&#34;_blank&#34;&gt;CC0&lt;/a&gt;.
+{.wikidata-attribution}&lt;/p&gt;
+&lt;p&gt;For mobile devices, available as a &lt;a href=&#34;./graph.pdf&#34;&gt;PDF download&lt;/a&gt;; the file is not updated when new posts are added.&lt;/p&gt;
+&lt;h2 id=&#34;explanations&#34;&gt;
+  Explanations
+  &lt;a class=&#34;heading-link&#34; href=&#34;#explanations&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The red rectangles represent the individual blog posts.&lt;/li&gt;
+&lt;li&gt;The yellow diamonds represent blog tags.&lt;/li&gt;
+&lt;li&gt;Blue circles are Wikidata entities (which also serve as tags).&lt;/li&gt;
+&lt;li&gt;Green circles represent entities on the page (e.g. linked articles or other metadata entries).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some objects have coloured borders, which indicate the type. However, only a few types are currently configured.&lt;/p&gt;
+&lt;h3 id=&#34;pre-selection&#34;&gt;
+  Pre-selection
+  &lt;a class=&#34;heading-link&#34; href=&#34;#pre-selection&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The following query is used to visualise the data for the graph above:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sparql&#34; data-lang=&#34;sparql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; schema: &amp;lt;http://schema.org/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; ?s ?p ?o ?isTagged &lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &amp;lt;https://christianmahnke.de/post/&amp;gt; schema:&lt;span style=&#34;color:#f92672&#34;&gt;blogPost&lt;/span&gt; ?post .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?post ?p ?o .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;BIND&lt;/span&gt;(?post &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; ?s)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(?p &lt;span style=&#34;color:#66d9ef&#34;&gt;NOT IN&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    schema:&lt;span style=&#34;color:#f92672&#34;&gt;author&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    schema:&lt;span style=&#34;color:#f92672&#34;&gt;url&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    schema:&lt;span style=&#34;color:#f92672&#34;&gt;workTranslation&lt;/span&gt;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &amp;lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(?o &lt;span style=&#34;color:#66d9ef&#34;&gt;NOT IN&lt;/span&gt; (
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    schema:&lt;span style=&#34;color:#f92672&#34;&gt;BlogPosting&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ))
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;OPTIONAL&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ?post schema:&lt;span style=&#34;color:#f92672&#34;&gt;identifier&lt;/span&gt; ?ident .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ?ident &lt;span style=&#34;color:#66d9ef&#34;&gt;a&lt;/span&gt; schema:&lt;span style=&#34;color:#f92672&#34;&gt;PropertyValue&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            schema:&lt;span style=&#34;color:#f92672&#34;&gt;propertyID&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;projektemacher&amp;#34;&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            schema:&lt;span style=&#34;color:#f92672&#34;&gt;value&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;tag&amp;#34;&lt;/span&gt; .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;BIND&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; ?isTagged)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;implementation&#34;&gt;
+  Implementation
+  &lt;a class=&#34;heading-link&#34; href=&#34;#implementation&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;In addition to the combination of HDT and OxiGraph mentioned in the last post, &lt;a href=&#34;https://js.cytoscape.org/&#34; target=&#34;_blank&#34;&gt;Cytoscape&lt;/a&gt; is used for visualisation. The PDF export was created using &lt;a href=&#34;https://github.com/kinimesi/cytoscape-svg&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;cytoscape-svg&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;h1 id=&#34;why&#34;&gt;
+  Why?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#why&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;p&gt;Sure, the graph looks nice, but it also has other advantages:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It allows navigation outside the confines of this blog.&lt;/li&gt;
+&lt;li&gt;The outer rings used for classification provide insight into the hierarchy of object relationships (&amp;ldquo;is a&amp;rdquo;). For example, the &lt;a href=&#34;http://www.wikidata.org/entity/Q1797167&#34; target=&#34;_blank&#34;&gt;Dötlingen Artists’ Colony (Q1797167)&lt;/a&gt; is neither a place, nor a group, nor an organisation.&lt;/li&gt;
+&lt;li&gt;It can help with quality control of tagging; for example, it highlights that &lt;a href=&#34;https://www.wikidata.org/wiki/Q99738405&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;libjxl&lt;/code&gt; (Q99738405)&lt;/a&gt;, i.e. the implementation, and &lt;a href=&#34;https://www.wikidata.org/wiki/Q72885392&#34; target=&#34;_blank&#34;&gt;JPEG XL (Q72885392)&lt;/a&gt;, i.e. the file format, have so far been assigned inconsistently.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-improvements&#34;&gt;
+  Further improvements
+  &lt;a class=&#34;heading-link&#34; href=&#34;#further-improvements&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;There is still room for improvement:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The visualisation of the base classes (e.g. people, places, organisations, software) is not yet complete.&lt;/li&gt;
+&lt;li&gt;The thematic proximity of the nodes could be utilised further in the graph layout.&lt;/li&gt;
+&lt;li&gt;In general, the layout could be improved.&lt;/li&gt;
+&lt;li&gt;Cytoscape offers visually appealing visualisations that are more attractive than the one shown above.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;update-22-april-2026&#34;&gt;
+  Update 22 April 2026
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-22-april-2026&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;As &lt;a href=&#34;https://github.com/KonradHoeffner/hdt/issues/107#issuecomment-4295799504&#34; target=&#34;_blank&#34;&gt;suggested by Konrad Höffner&lt;/a&gt;, there is now a full-screen mode and Cytoscape now uses &lt;a href=&#34;https://en.wikipedia.org/wiki/WebGL&#34; target=&#34;_blank&#34;&gt;WebGL&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: J. Clausen</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/186</link>
+        <pubDate>Tue, 21 Apr 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/186</guid><description>&lt;p&gt;Ihr Kleiderberater
+J. Clausen
+Schleswig&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Querying blog metadata via SPARQL</title>
+        <link>https://christianmahnke.de/post/blog-sparql</link>
+        <pubDate>Fri, 17 Apr 2026 22:39:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/blog-sparql</guid><description>&lt;p&gt;Since the start of 2025, I have been recording additional metadata for the posts on this blog.&lt;/p&gt;
+&lt;p&gt;The suggestion came from &lt;a href=&#34;https://www.vermessungs-bibliothek.de/&#34; target=&#34;_blank&#34;&gt;Frank Reichert&lt;/a&gt; via Mastodon as a comment on the post &lt;a href=&#34;https://christianmahnke.de/en/post/archives-citizen-participation/&#34;&gt;Archives: Fostering collection development through citizen participation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;To this end, at the start of the year I added further &lt;a href=&#34;https://en.wikipedia.org/wiki/JSON-LD&#34; target=&#34;_blank&#34;&gt;JSON-LD&lt;/a&gt;-based metadata formats such as &lt;a href=&#34;https://codemeta.github.io/&#34; target=&#34;_blank&#34;&gt;Codemeta&lt;/a&gt; and &lt;a href=&#34;https://linked.art/&#34; target=&#34;_blank&#34;&gt;Linked Art&lt;/a&gt; for some posts and improved the &lt;a href=&#34;https://schema.org/&#34; target=&#34;_blank&#34;&gt;Schema.org&lt;/a&gt;.&lt;/p&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;Source data&lt;/summary&gt;
+  &lt;p&gt;Only this Schema.org &lt;a href=&#34;https://christianmahnke.de/meta/schema.org/index.json&#34;&gt;source file&lt;/a&gt; is used to capture the necessary triplets. All necessary data and their sources are extracted from this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Wikidata Q-IDs&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linked Art&lt;/strong&gt;, see &lt;a href=&#34;https://christianmahnke.de/en/post/linkedart-metadata/&#34;&gt;Linked Art metadata&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;CodeMeta&lt;/strong&gt;, see &lt;a href=&#34;https://christianmahnke.de/en/post/software-metadata/&#34;&gt;Metadata for software&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+
+&lt;p&gt;Even though there are still no &amp;ldquo;great&amp;rdquo; applications, &lt;a href=&#34;https://de.wikipedia.org/wiki/SPARQL&#34; target=&#34;_blank&#34;&gt;SPARQL&lt;/a&gt; queries can now be run on this data. To keep things interesting, some data from Wikidata has been included in the corpus.&lt;/p&gt;
+&lt;p&gt;To create this, the blog&amp;rsquo;s Schema.org data is used as a starting point, with LinkedArt and CodeMeta entries incorporated. The resulting graph is then enriched with data from Wikidata and converted into the &lt;a href=&#34;https://en.wikipedia.org/wiki/HDT_%28data_format%29&#34; target=&#34;_blank&#34;&gt;HDT format&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This approach is necessary because the number of entities has risen massively, particularly since the start of this year: originally, only the tags were mapped to the respective Wikidata entities, but now there is a script that extracts them semi-automatically from the respective texts. A Python script based on SpaCy is used for this purpose.
+Due to the rate limit, executing queries via SPARQL from Wikidata very quickly results in error messages. On the other hand, serialising the data into a JSON-LD graph results in a large file.&lt;/p&gt;
+&lt;h2 id=&#34;query&#34;&gt;
+  Query
+  &lt;a class=&#34;heading-link&#34; href=&#34;#query&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Please note: The queries may take a while&amp;hellip;&lt;/strong&gt;&lt;/p&gt;
+
+
+&lt;p&gt;Contains data from &lt;a href=&#34;https://www.wikidata.org/&#34; target=&#34;_blank&#34;&gt;Wikidata&lt;/a&gt;, licensed under &lt;a href=&#34;https://www.wikidata.org/wiki/Wikidata:Text_of_the_Creative_Commons_Public_Domain_Dedication&#34; target=&#34;_blank&#34;&gt;CC0&lt;/a&gt;.
+{.wikidata-attribution}&lt;/p&gt;
+&lt;h2 id=&#34;examples&#34;&gt;
+  Examples
+  &lt;a class=&#34;heading-link&#34; href=&#34;#examples&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog posts about artists born in the 19th century; this query returns even more results, but the data isn&amp;quot;t available yet.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sparql&#34; data-lang=&#34;sparql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; schema: &amp;lt;http://schema.org/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; wdt: &amp;lt;http://www.wikidata.org/prop/direct/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; wd: &amp;lt;http://www.wikidata.org/entity/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; xsd: &amp;lt;http://www.w3.org/2001/XMLSchema#&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; ?blogPost ?artist ?artistLabel 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       (&lt;span style=&#34;color:#a6e22e&#34;&gt;GROUP_CONCAT&lt;/span&gt;(&lt;span style=&#34;color:#66d9ef&#34;&gt;DISTINCT&lt;/span&gt; ?occLabel; &lt;span style=&#34;color:#a6e22e&#34;&gt;separator&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;, &amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; ?occupations)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;       ?birthDate
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?blogPost &lt;span style=&#34;color:#66d9ef&#34;&gt;a&lt;/span&gt; schema:&lt;span style=&#34;color:#f92672&#34;&gt;BlogPosting&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            schema:&lt;span style=&#34;color:#f92672&#34;&gt;about&lt;/span&gt; ?artist .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?artist wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P106&lt;/span&gt; ?directOccupation .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?directOccupation wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P279&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; ?occupation .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;VALUES&lt;/span&gt; ?occupation {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q483507&lt;/span&gt;   &lt;span style=&#34;color:#75715e&#34;&gt;# Künstler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q1028181&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Maler&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q1281618&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Bildhauer&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q42973&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Architekt&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q15296&lt;/span&gt;    &lt;span style=&#34;color:#75715e&#34;&gt;# Schriftsteller&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;OPTIONAL&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ?artist rdfs:&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt; ?artistLabel .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;LANG&lt;/span&gt;(?artistLabel) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;de&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;OPTIONAL&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ?directOccupation rdfs:&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt; ?occLabel .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;LANG&lt;/span&gt;(?occLabel) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?artist wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P569&lt;/span&gt; ?birthDate .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;year&lt;/span&gt;(xsd:&lt;span style=&#34;color:#f92672&#34;&gt;dateTime&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;str&lt;/span&gt;(?birthDate))) &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1900&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;GROUP BY&lt;/span&gt; ?blogPost ?artist ?artistLabel ?birthDate
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;ORDER BY&lt;/span&gt; ?birthDate
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;The coordinates of the locations mentioned in blog posts containing the keywords &amp;ldquo;museum&amp;rdquo; and &amp;ldquo;exhibition&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sparql&#34; data-lang=&#34;sparql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; schema: &amp;lt;http://schema.org/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; wdt: &amp;lt;http://www.wikidata.org/prop/direct/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; wd: &amp;lt;http://www.wikidata.org/entity/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DISTINCT&lt;/span&gt; ?blogPost ?place ?placeLabel ?coordinates
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?blogPost &lt;span style=&#34;color:#66d9ef&#34;&gt;a&lt;/span&gt; schema:&lt;span style=&#34;color:#f92672&#34;&gt;BlogPosting&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;            schema:&lt;span style=&#34;color:#f92672&#34;&gt;about&lt;/span&gt; ?place .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?place wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P31&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P279&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; ?type .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;VALUES&lt;/span&gt; ?type { wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q33506&lt;/span&gt; wd:&lt;span style=&#34;color:#f92672&#34;&gt;Q464980&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?place wdt:&lt;span style=&#34;color:#f92672&#34;&gt;P625&lt;/span&gt; ?coordinates .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;OPTIONAL&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    ?place rdfs:&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt; ?placeLabel .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;FILTER&lt;/span&gt;(&lt;span style=&#34;color:#a6e22e&#34;&gt;LANG&lt;/span&gt;(?placeLabel) &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;en&amp;#34;&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Search for articles matching the term (keyword) &amp;ldquo;woodcut&amp;rdquo; from the &lt;a href=&#34;https://de.wikipedia.org/wiki/Art_and_Architecture_Thesaurus&#34; target=&#34;_blank&#34;&gt;Getty ATT Thesaurus&lt;/a&gt; (&lt;code&gt;http://vocab.getty.edu/aat/300041405&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sparql&#34; data-lang=&#34;sparql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; schema: &amp;lt;http://schema.org/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; aat: &amp;lt;http://vocab.getty.edu/aat/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; crm: &amp;lt;http://www.cidoc-crm.org/cidoc-crm/&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;PREFIX&lt;/span&gt; rdfs: &amp;lt;http://www.w3.org/2000/01/rdf-schema#&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;DISTINCT&lt;/span&gt; ?article ?object ?technique ?techniqueLabel
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?article &lt;span style=&#34;color:#66d9ef&#34;&gt;a&lt;/span&gt; schema:&lt;span style=&#34;color:#f92672&#34;&gt;BlogPosting&lt;/span&gt; ; 
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;           schema:&lt;span style=&#34;color:#f92672&#34;&gt;about&lt;/span&gt; ?object .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?object &lt;span style=&#34;color:#66d9ef&#34;&gt;a&lt;/span&gt; crm:&lt;span style=&#34;color:#f92672&#34;&gt;E22_Human-Made_Object&lt;/span&gt; ;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;          crm:&lt;span style=&#34;color:#f92672&#34;&gt;P108i_was_produced_by&lt;/span&gt; ?production .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?production crm:&lt;span style=&#34;color:#f92672&#34;&gt;P32_used_general_technique&lt;/span&gt; ?technique .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;VALUES&lt;/span&gt; ?technique { aat:&lt;span style=&#34;color:#f92672&#34;&gt;300041405&lt;/span&gt; }
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?technique rdfs:&lt;span style=&#34;color:#f92672&#34;&gt;label&lt;/span&gt; ?techniqueLabel .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Number of triplets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-sparql&#34; data-lang=&#34;sparql&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;SELECT&lt;/span&gt; (&lt;span style=&#34;color:#a6e22e&#34;&gt;COUNT&lt;/span&gt;(&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;) &lt;span style=&#34;color:#66d9ef&#34;&gt;AS&lt;/span&gt; ?count)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;WHERE&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ?s ?p ?o .
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;potential-issues&#34;&gt;
+  Potential issues
+  &lt;a class=&#34;heading-link&#34; href=&#34;#potential-issues&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;During implementation, I noticed a few minor issues with Chrome: after reloading the page several times, memory errors occurred – presumably the browser is not clearing a tab’s memory properly or is caching more than necessary. In this case, an error message (e.g. &lt;code&gt;memory access out of bounds&lt;/code&gt;) appears in the status bar and the browser needs to be restarted.&lt;/p&gt;
+&lt;h2 id=&#34;implementation&#34;&gt;
+  Implementation
+  &lt;a class=&#34;heading-link&#34; href=&#34;#implementation&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The HDT file created in the first step is loaded using the &lt;a href=&#34;https://en.wikipedia.org/wiki/WebAssembly&#34; target=&#34;_blank&#34;&gt;WASM&lt;/a&gt; variant of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Rust_%28programming_language%29&#34; target=&#34;_blank&#34;&gt;Rust&lt;/a&gt; library &lt;a href=&#34;https://github.com/KonradHoeffner/hdt&#34; target=&#34;_blank&#34;&gt;HDT&lt;/a&gt;. The contents are then converted in memory so that they can be used in &lt;a href=&#34;https://github.com/oxigraph/oxigraph&#34; target=&#34;_blank&#34;&gt;OxiGraph&lt;/a&gt; (also compiled from Rust to Wasm). Strictly speaking, OxiGraph is not actually necessary at this stage, as HDT can also execute SPARQL queries. However, OxiGraph has the advantage of being able to execute distributed SPARQL queries as well.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/aatauil/sparql-editor&#34; target=&#34;_blank&#34;&gt;&lt;code&gt;sparql-editor&lt;/code&gt;&lt;/a&gt; is used to display the code.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The entire application therefore runs directly in the browser, without any dynamic server components.&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;
+  Next steps
+  &lt;a class=&#34;heading-link&#34; href=&#34;#next-steps&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;At present, only the blog content is being retrieved and included in the dataset. The next step will be to integrate the &lt;a href=&#34;https://christianmahnke.de/collections/&#34; target=&#34;_blank&#34;&gt;collection page&lt;/a&gt; and other metadata formats (such as IIIF manifests).&lt;/p&gt;
+&lt;h2 id=&#34;update-21-april-2026&#34;&gt;
+  Update 21 April 2026
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-21-april-2026&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The graph from this post can also be used to visualise the topics covered on this blog: &lt;a href=&#34;https://christianmahnke.de/post/blog-visualisation/&#34; target=&#34;_blank&#34;&gt;Blog metadata visualised&lt;/a&gt;&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: UNITED COLORS OF BENETTON.</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/185</link>
+        <pubDate>Tue, 14 Apr 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/185</guid><description>&lt;p&gt;UNITED COLORS
+OF BENETTON.&lt;/p&gt;
+</description></item>
+    <item><title>Plastikwarenfabrik: Über den Dächern von Prag</title>
+        <link>https://plastikwarenfabrik.projektemacher.org/post/above-the-roofs-of-prague</link>
+        <pubDate>Sat, 11 Apr 2026 15:33:09 +0200</pubDate>
+        <guid>https://plastikwarenfabrik.projektemacher.org/post/above-the-roofs-of-prague</guid><description>&lt;p&gt;Die Comicfassung eines Selbstporträts über den Dächern von Prag.&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Digital &#34;Lost Places&#34;</title>
+        <link>https://christianmahnke.de/post/digital-lost-places</link>
+        <pubDate>Tue, 07 Apr 2026 19:30:44 +0100</pubDate>
+        <guid>https://christianmahnke.de/post/digital-lost-places</guid><description>&lt;p&gt;A chance find online that gets you thinking&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Here it is: the &lt;a href=&#34;https://www.saturn.de/&#34; target=&#34;_blank&#34;&gt;Saturn branch&lt;/a&gt; in Göttingen, which closed in 2021. Google Maps shows images from 2016 – almost ten years ago now.&lt;/p&gt;
+
+&lt;div class=&#34;iframe-wrapper&#34; id=&#34;_iframe-9d00464f3066bb9a0c09112d5bfa20ea&#34;&gt;
+  &lt;div class=&#34;iframe&#34;&gt;
+    &lt;div class=&#34;opt-in&#34;&gt;
+      &lt;div class=&#34;opt-in-overlay&#34;&gt;&lt;div class=&#34;opt-in-overlay-content&#34;&gt;
+          &lt;h3 class=&#34;opt-in-header&#34;&gt;External Content&lt;/h3&gt;
+          &lt;p class=&#34;opt-in-text&#34;&gt;External content is included at this point. Personal data might be transmitted to third-party platforms.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;iframe-content&#34; id=&#34;_iframe-9d00464f3066bb9a0c09112d5bfa20ea-content&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;switch-wrapper&#34;&gt;
+      &lt;label class=&#34;opt-in-switch&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span class=&#34;opt-in-slider&#34;&gt;&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;span class=&#34;opt-in-confirm&#34;&gt;Allow external content&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function() {
+      var expire = 30 * 24 * 60 * 60;
+      var overlay = document.querySelector(&#39;#_iframe-9d00464f3066bb9a0c09112d5bfa20ea&#39;).querySelector(&#39;.opt-in&#39;);
+      var toggle = document.querySelector(&#39;#_iframe-9d00464f3066bb9a0c09112d5bfa20ea&#39;).querySelector(&#39;.opt-in-switch input&#39;);
+      addConsent(toggle, overlay, &#39;9d00464f3066bb9a0c09112d5bfa20ea&#39;, &#39;\n  \u003ciframe src=\u0022https:\/\/www.google.com\/maps\/embed?pb=!4v1775645022514!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRDRvOTdrVHc.!2m2!1d51.53664820863535!2d9.933949864245097!3f178.73895025970097!4f-19.22467550177673!5f0.7820865974627469\u0022 width=\u0022100%\u0022 height=\u0022450\u0022 style=\u0022border:0; margin: 1rem;\u0022 allowfullscreen=\u0022\u0022 loading=\u0022lazy\u0022 referrerpolicy=\u0022no-referrer-when-downgrade\u0022\u003e\u003c\/iframe\u003e\n&#39;);
+    });
+  &lt;/script&gt;
+&lt;/div&gt;
+
+
+&lt;p&gt;This image, for example, shows the department for recordable optical media – a type of media that has now almost disappeared.&lt;/p&gt;
+&lt;h2 id=&#34;so-what&#34;&gt;
+  So what?
+  &lt;a class=&#34;heading-link&#34; href=&#34;#so-what&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Local economic history is always part of everyday culture: artefacts need to be acquired, and electronics shops are indispensable in this regard, as they supply the devices necessary for the consumption of media and thus for a significant part of culture. Electronics shops can also be social spaces. One need only think of joint visits to the CD or DVD sections.&lt;/p&gt;
+&lt;p&gt;If one takes this line of thought to its conclusion, they are not merely points of sale, but also interfaces between global (device and cultural) production and local consumption. Added to this is the shift from brick-and-mortar retail (for both devices and data storage media) to online retail and streaming.&lt;/p&gt;
+&lt;p&gt;Images such as the one shown above are therefore like a time capsule, or rather: a double ‘lost place’. They are lost in time, from an era when media consumption habits were different, and also spatially, as this store (and many other Saturn branches) no longer exists today.&lt;/p&gt;
+&lt;h2 id=&#34;save-it&#34;&gt;
+  Save it!
+  &lt;a class=&#34;heading-link&#34; href=&#34;#save-it&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;As stated in the &lt;a href=&#34;https://support.google.com/contributionpolicy/answer/7422880&#34; target=&#34;_blank&#34;&gt;Terms of Service&lt;/a&gt;, Google generally reserves the right to delete outdated data from Google Maps, Google Earth and Google Street View. The same applies to the person who uploaded the data. The time capsule could therefore disappear at any time. It would therefore be advisable to back up the data/images before this happens.&lt;/p&gt;
+&lt;p&gt;And even though the ‘official’ street views from Google Street View (and similar services) are likely to remain available in the long term, it would certainly be a good idea to back these up as well.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Do city archives actually already carry out web archiving? If not, it is high time they did!&lt;/strong&gt;&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Stabil</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/184</link>
+        <pubDate>Tue, 07 Apr 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/184</guid><description>&lt;p&gt;Stabil&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Etching by Max Liebermann (1847-1935)</title>
+        <link>https://christianmahnke.de/post/print-max-liebermann</link>
+        <pubDate>Mon, 06 Apr 2026 13:30:44 +0100</pubDate>
+        <guid>https://christianmahnke.de/post/print-max-liebermann</guid><description>&lt;p&gt;I have bought an etching by &lt;a href=&#34;https://en.wikipedia.org/wiki/Max_Liebermann&#34; target=&#34;_blank&#34;&gt;Max Liebermann&lt;/a&gt; (1847–1935) (&lt;a href=&#34;https://www.artnet.com/artists/max-liebermann/&#34; target=&#34;_blank&#34;&gt;at artnet&lt;/a&gt;)&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;
+&lt;p&gt;The etching is entitled &amp;ldquo;Am Strande&amp;rdquo; and depicts a beach scene in &lt;a href=&#34;https://en.wikipedia.org/wiki/Noordwijk&#34; target=&#34;_blank&#34;&gt;Noordwijk&lt;/a&gt;. Liebermann often spent the summer months there. The print is a drypoint etching. It appeared as sheet 4 in the 1915 portfolio ‘Freunde Graphischer Kunst’.
+It appears to be neither signed nor numbered. Various versions can be found online, including signed and unsigned copies, as well as those that are heavily faded. It is therefore impossible to determine whether this is an original without removing it from its frame.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://guide.lindenau-museum.de/menschenleben-audio/max-liebermann&#34; target=&#34;_blank&#34;&gt;Lindenau Museum in Altenburg&lt;/a&gt; also dedicates an entry to the print in its audio guide.&lt;/p&gt;
+&lt;p&gt;Max Liebermann was a major pioneer of German modernism and, as the long-standing president of the &lt;a href=&#34;https://en.wikipedia.org/wiki/Berlin_Secession&#34; target=&#34;_blank&#34;&gt;Berliner Secession&lt;/a&gt;, shaped the transition from realism to &lt;a href=&#34;https://en.wikipedia.org/wiki/Impressionism&#34; target=&#34;_blank&#34;&gt;Impressionism&lt;/a&gt;. As a Jewish artist, he was banned from exhibiting by the Nazis and forced into social isolation, which ultimately compelled him to resign himself to withdrawing from the Academy of Arts, which he had helped to found.&lt;/p&gt;
+&lt;p&gt;Von ihm stammt der Satz: &amp;ldquo;Ick kann jar nich soville fressen, wie ick kotzen möchte.&amp;rdquo; (I can&amp;rsquo;t eat as much as I&amp;rsquo;d like to throw up)&lt;/p&gt;
+&lt;h2 id=&#34;update-26-april-2026&#34;&gt;
+  Update 26 April 2026
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-26-april-2026&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The print is published in Gustav Schiefler’s catalogue raisonné on page 98 under number 155: &lt;em&gt;Schiefler, Gustav, and Max Liebermann. 1991. Max Liebermann: Sein Graphisches Werk = the Graphic Work: 1876–1923. 4th, expanded ed. San Francisco: A. Wofsy.&lt;/em&gt;
+Also available on the &lt;a href=&#34;https://archive.org/details/maxliebermanngra0000gust/mode/2up&#34; target=&#34;_blank&#34;&gt;Internet Archive&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Plastikwarenfabrik: Neo MacIntosch</title>
+        <link>https://plastikwarenfabrik.projektemacher.org/post/neo-macintosch</link>
+        <pubDate>Wed, 01 Apr 2026 15:33:09 +0200</pubDate>
+        <guid>https://plastikwarenfabrik.projektemacher.org/post/neo-macintosch</guid><description>&lt;p&gt;In einer sterilen Megalopolis muss der letzte Highlander sich entscheiden, ob er die digitale Illusion der &amp;ldquo;Agents&amp;rdquo; akzeptiert oder die Realität entfesselt.&lt;/p&gt;
+&lt;p&gt;Mit der Macht des Blitzes fordert er das System heraus, während eine Armee farbenfroher Anzugträger versucht, seine Rebellion im Keim zu ersticken.&lt;/p&gt;
+&lt;p&gt;Es ist der ultimative Kampf zwischen archaischer Freiheit und perfekt designter Kontrolle.&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Feed Poisoning Angriffe</title>
+        <link>https://christianmahnke.de/post/feed-poisoning-attack</link>
+        <pubDate>Wed, 01 Apr 2026 08:00:00 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/feed-poisoning-attack</guid><description>&lt;p&gt;A spectre is haunting cyberspace&amp;hellip;&lt;/p&gt;
+&lt;h2 id=&#34;feed-poisoning&#34;&gt;
+  Feed Poisoning
+  &lt;a class=&#34;heading-link&#34; href=&#34;#feed-poisoning&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;&amp;ldquo;Feed Poisoning&amp;rdquo; is an attack vector that exploits the way modern social media systems process viewing and consumption behaviour. It involves sending links designed to deliberately disrupt the recipient&amp;rsquo;s recommendation algorithm, for example to influence suggestions or advertisements.&lt;/p&gt;
+&lt;p&gt;This attack is known as &amp;ldquo;feed poisoning&amp;rdquo; and falls into the category of social engineering attacks.&lt;/p&gt;
+&lt;h2 id=&#34;risks&#34;&gt;
+  Risks
+  &lt;a class=&#34;heading-link&#34; href=&#34;#risks&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;The risks are manifold, as most attacks are designed to have a long-lasting (and insidious) effect. The more harmless variants merely result in new suggestions in one&amp;rsquo;s personal social media feed that do not correspond to one&amp;rsquo;s own habits (so-called &amp;ldquo;bubble popping&amp;rdquo;). The consequences, however, can be far more dramatic.
+Particularly in the English-speaking world, the phenomenon of so-called &amp;ldquo;pipelines&amp;rdquo; has been described in detail.
+For YouTube, for example, this is the &lt;a href=&#34;https://en.wikipedia.org/wiki/Alt-right_pipeline&#34; target=&#34;_blank&#34;&gt;Alt-Right Pipeline&lt;/a&gt;, which has already been replicated in a large number of self-experiments. In this context, the platform&amp;rsquo;s algorithmic escalation means that with increased consumption of, for example, &amp;ldquo;science-critical&amp;rdquo; content, Bitcoin/finance content or even the so-called &lt;a href=&#34;https://de.wikipedia.org/wiki/Manosphere&#34; target=&#34;_blank&#34;&gt;Manosphere&lt;/a&gt;, more and more right-wing content is gradually suggested.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Feed poisoning can therefore also become a serious problem for democracy&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;antivirus-scanners-do-not-detect-feed-poisoning&#34;&gt;
+  Antivirus scanners do not detect feed poisoning
+  &lt;a class=&#34;heading-link&#34; href=&#34;#antivirus-scanners-do-not-detect-feed-poisoning&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;As feed poisoning involves sending links to legitimate content that appear harmless, antivirus scanners do not recognise the threat.&lt;/p&gt;
+&lt;h2 id=&#34;feed-poisoning-is-cross-platform&#34;&gt;
+  Feed poisoning is cross-platform.
+  &lt;a class=&#34;heading-link&#34; href=&#34;#feed-poisoning-is-cross-platform&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;Unlike traditional viruses, feed poisoning takes effect via the server of the compromised social media account.&lt;/p&gt;
+&lt;p&gt;Consequently, there is no protection for users of niche operating systems such as Linux or macOS. As most social networks now also offer native mobile applications that are equally capable of resolving and opening links to their content, these are not protected from attacks either.&lt;/p&gt;
+&lt;h2 id=&#34;this-is-how-cyber-propagandists-operate&#34;&gt;
+  This is how cyber-propagandists operate:
+  &lt;a class=&#34;heading-link&#34; href=&#34;#this-is-how-cyber-propagandists-operate&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;A feed poisoning attack usually begins with the sending of one or more links, which are generally intended to introduce the subject of manipulation. The number of links clicked by the end user significantly increases the likelihood of success.
+Once a relationship of trust has been established, experienced propagandists follow up by continuing to send links that continuously condition the algorithm of the social media platform used by the target of the attack in the desired direction.&lt;/p&gt;
+&lt;h3 id=&#34;variants&#34;&gt;
+  Variants
+  &lt;a class=&#34;heading-link&#34; href=&#34;#variants&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;Combined attacks have also been observed. For example, it is possible to transmit the malicious URL via a QR code (quishing).&lt;/p&gt;
+&lt;h2 id=&#34;tips-to-avoid-falling-for-feed-poisoning&#34;&gt;
+  Tips to avoid falling for feed poisoning:
+  &lt;a class=&#34;heading-link&#34; href=&#34;#tips-to-avoid-falling-for-feed-poisoning&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Check the sender carefully. Do you know them personally? Are they trustworthy?&lt;/li&gt;
+&lt;li&gt;Don&amp;quot;t open links from messaging apps or emails by clicking on them; instead, copy the URL into a browser in incognito mode. Do the same on a mobile device.&lt;/li&gt;
+&lt;li&gt;Use a different browser to your default browser for social media, so that links aren&amp;quot;t opened in it.&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>Kleiderbügel: Centralhaus elg. Herrenmode, Stettin</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/183</link>
+        <pubDate>Tue, 31 Mar 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/183</guid><description>&lt;p&gt;Centralhaus elg. Herrenmode, Stettin, Kl. Domstr. 181&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: New blog for AI Slop</title>
+        <link>https://christianmahnke.de/post/plastikwarenfabrik</link>
+        <pubDate>Sun, 29 Mar 2026 17:58:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/plastikwarenfabrik</guid><description>&lt;p&gt;AI is on everyone’s lips, and the potential for it to produce nonsense is nothing to be sniffed at. That’s why I’ve decided to set up a separate blog for my &amp;ldquo;highlights&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://plastikwarenfabrik.projektemacher.org/&#34; target=&#34;_blank&#34;&gt;Klaus-Ingo&amp;rsquo;s Plastic Goods Factory&lt;/a&gt; is launching with a few generated recipes and images.&lt;/p&gt;
+&lt;p&gt;The site itself is largely coded using AI, though some manual tweaks were necessary as the prompts proved too time-consuming. Especially when it came to finer details such as layout, responsiveness and minor UX improvements, it was ultimately quicker to do it myself rather than running through further iterations via prompts.&lt;/p&gt;
+&lt;p&gt;I’ll be expanding the site bit by bit, adding new content and perhaps trying out the odd feature or two. Let’s see where the journey takes us.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;P.S.: Half of this post is also generated.&lt;/strong&gt;&lt;/p&gt;</description></item>
+    <item><title>Plastikwarenfabrik: Die Prager Helden</title>
+        <link>https://plastikwarenfabrik.projektemacher.org/post/prague</link>
+        <pubDate>Tue, 24 Mar 2026 15:33:09 +0200</pubDate>
+        <guid>https://plastikwarenfabrik.projektemacher.org/post/prague</guid><description>&lt;p&gt;Ich war für eine Woche in Prag - eine tolle Stadt!&lt;/p&gt;
+&lt;p&gt;Besonders die Kühlschrankmagneten in den Souvenir Shops. Die bekanntesten Motive hier als AI Slop.&lt;/p&gt;
+</description></item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/windows-remote/article.html">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Windows Remote Management">
+  <meta property="og:description" content="Many systems for remote control of Windows-based computers require their own client on the respective system….">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-03-04T19:22:44+02:00">
+    <meta property="article:modified_time" content="2026-03-04T19:22:44+02:00">
+<title>
+  Windows Remote Management · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/windows-remote/article.html"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/windows-remote/article.html" /><meta property="og:title" content="Windows Remote Management" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Windows, Python"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Windows"><meta name="dc.subject" content="Python">
+<meta name="generator" content="Hugo 0.161.1">
+<meta name="projektemacher.org:build-date" content="2026-05-05 06:17:42.375620048 &#43;0000 UTC m=&#43;254.565766737"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5027&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.b2e49c9008711b4eac4bcf7393e6737345621be0028d21a66415f5589fa69c03.js" integrity="sha256-suSckAhxG06sS89zk+Zzc0ViG+ACjSGmZBX1WJ+mnAM="></script>
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/windows-remote/citation.bib" title="Projektemacher" />
+    <link rel="canonical" type="text/html" href="https://projektemacher.org/en/post/christianmahnke/post/windows-remote/" title="Projektemacher" />
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/windows-remote/article.html">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Windows Remote Management</h1>
+        </header>
+        <p>Many systems for remote control of Windows-based computers require their own client on the respective system&hellip;.</p>
+<p>&hellip;Examples of this include changing the volume of a media station or shutting down the computer. This is usually implemented via <a href="https://de.wikipedia.org/wiki/MQTT" target="_blank">MQTT</a> or proprietary protocols. However, this makes the setup unnecessarily complicated, especially if you are trying to customise the respective systems as little as possible.</p>
+<p>As with the <a href="https://projektemacher.org/post/windows-deployer/">last project on Windows remote installation</a>, the following applies: for cases where there are no tools available, you have to build your own:</p>
+<p>An alternative built into Windows is: <a href="https://de.wikipedia.org/wiki/Windows_Management_Instrumentation" target="_blank">WMI (Windows Management Instrumentation)</a>. This can be used to start processes, for example. At the same time, a (<a href="https://de.wikipedia.org/wiki/PowerShell" target="_blank">PowerShell</a>) script can also be transferred.</p>
+<p>This combination offers many possibilities for manipulating a Windows client, especially since it is also possible to load additional components via <a href="https://de.wikipedia.org/wiki/NuGet" target="_blank">NuGet</a>).</p>
+<p>The Python library <a href="https://github.com/fortra/impacket/" target="_blank">impacket</a> is used for implementation, which makes it possible to address WMI without (Windows) native dependencies (e.g. from Linux systems). To do this, the WMI service only needs to be configured for external access on the client.</p>
+<p>Das Skript (inklusive Docker-Image und REST-Service) ist auf <a href="https://github.com/cmahnke/mediastation-remote" target="_blank">GitHub</a> verfügbar.</p>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>

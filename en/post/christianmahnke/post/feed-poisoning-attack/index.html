@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/feed-poisoning-attack/">
+  <meta property="og:site_name" content="Projektemacher">
+  <meta property="og:title" content="Feed Poisoning Angriffe">
+  <meta property="og:description" content="A spectre is haunting cyberspace…">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2026-04-01T08:00:00+02:00">
+    <meta property="article:modified_time" content="2026-04-01T08:00:00+02:00">
+<title>
+  Feed Poisoning Angriffe · Projektemacher
+</title><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/feed-poisoning-attack/"><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="Blog factory">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/feed-poisoning-attack/" /><meta property="og:title" content="Feed Poisoning Angriffe" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="blog, book, digitization, history, cultural history, Fun, CyberSecurity, SocialMedia"><meta name="dc.subject" content="blog"><meta name="dc.subject" content="book"><meta name="dc.subject" content="digitization"><meta name="dc.subject" content="history"><meta name="dc.subject" content="cultural history"><meta name="dc.subject" content="Fun"><meta name="dc.subject" content="CyberSecurity"><meta name="dc.subject" content="SocialMedia">
+<meta name="generator" content="Hugo 0.161.1">
+<meta name="projektemacher.org:build-date" content="2026-05-05 06:17:42.375620048 &#43;0000 UTC m=&#43;254.565766737"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5027&#34;,&#34;latest&#34;:&#34;2027-10-19T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.da70574f9d939ceb6c2b98417c8559a15bdcab44b3c80c7fd03e43eb4da25843.css" rel="stylesheet" integrity="sha256-2nBXT52TnOtsK5hBfIVZoVvcq0SzyAx/0D5D602iWEM=">
+<script src="https://projektemacher.org/js/5d85c20c8f862f9ecfa0aee0edbc8fe4.b2e49c9008711b4eac4bcf7393e6737345621be0028d21a66415f5589fa69c03.js" integrity="sha256-suSckAhxG06sS89zk+Zzc0ViG+ACjSGmZBX1WJ+mnAM="></script>
+
+    
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16">
+    
+        <link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+    
+    <link rel="alternate" type="text/bibtex" href="https://projektemacher.org/en/post/christianmahnke/post/feed-poisoning-attack/citation.bib" title="Projektemacher" />
+    </head>
+
+  
+  
+  <body class="colorscheme-light ">
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />
+        Projektemacher</a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/blogs/">Sites &amp; Blogs</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/posts/">News</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/archive/">Archive</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/search/">Search</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://merch.projektemacher.org/en/">Merch</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://projektemacher.org/en/contact/">Contact</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="https://projektemacher.org/post/christianmahnke/post/feed-poisoning-attack/">Deutsch</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article>
+        <header>
+          <h1 class="header">Feed Poisoning Angriffe</h1>
+        </header>
+        <p>A spectre is haunting cyberspace&hellip;</p>
+<h2 id="feed-poisoning">
+  Feed Poisoning
+  <a class="heading-link" href="#feed-poisoning">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>&ldquo;Feed Poisoning&rdquo; is an attack vector that exploits the way modern social media systems process viewing and consumption behaviour. It involves sending links designed to deliberately disrupt the recipient&rsquo;s recommendation algorithm, for example to influence suggestions or advertisements.</p>
+<p>This attack is known as &ldquo;feed poisoning&rdquo; and falls into the category of social engineering attacks.</p>
+<h2 id="risks">
+  Risks
+  <a class="heading-link" href="#risks">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The risks are manifold, as most attacks are designed to have a long-lasting (and insidious) effect. The more harmless variants merely result in new suggestions in one&rsquo;s personal social media feed that do not correspond to one&rsquo;s own habits (so-called &ldquo;bubble popping&rdquo;). The consequences, however, can be far more dramatic.
+Particularly in the English-speaking world, the phenomenon of so-called &ldquo;pipelines&rdquo; has been described in detail.
+For YouTube, for example, this is the <a href="https://en.wikipedia.org/wiki/Alt-right_pipeline" target="_blank">Alt-Right Pipeline</a>, which has already been replicated in a large number of self-experiments. In this context, the platform&rsquo;s algorithmic escalation means that with increased consumption of, for example, &ldquo;science-critical&rdquo; content, Bitcoin/finance content or even the so-called <a href="https://de.wikipedia.org/wiki/Manosphere" target="_blank">Manosphere</a>, more and more right-wing content is gradually suggested.</p>
+<p><strong>Feed poisoning can therefore also become a serious problem for democracy</strong></p>
+<h2 id="antivirus-scanners-do-not-detect-feed-poisoning">
+  Antivirus scanners do not detect feed poisoning
+  <a class="heading-link" href="#antivirus-scanners-do-not-detect-feed-poisoning">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>As feed poisoning involves sending links to legitimate content that appear harmless, antivirus scanners do not recognise the threat.</p>
+<h2 id="feed-poisoning-is-cross-platform">
+  Feed poisoning is cross-platform.
+  <a class="heading-link" href="#feed-poisoning-is-cross-platform">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Unlike traditional viruses, feed poisoning takes effect via the server of the compromised social media account.</p>
+<p>Consequently, there is no protection for users of niche operating systems such as Linux or macOS. As most social networks now also offer native mobile applications that are equally capable of resolving and opening links to their content, these are not protected from attacks either.</p>
+<h2 id="this-is-how-cyber-propagandists-operate">
+  This is how cyber-propagandists operate:
+  <a class="heading-link" href="#this-is-how-cyber-propagandists-operate">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>A feed poisoning attack usually begins with the sending of one or more links, which are generally intended to introduce the subject of manipulation. The number of links clicked by the end user significantly increases the likelihood of success.
+Once a relationship of trust has been established, experienced propagandists follow up by continuing to send links that continuously condition the algorithm of the social media platform used by the target of the attack in the desired direction.</p>
+<h3 id="variants">
+  Variants
+  <a class="heading-link" href="#variants">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>Combined attacks have also been observed. For example, it is possible to transmit the malicious URL via a QR code (quishing).</p>
+<h2 id="tips-to-avoid-falling-for-feed-poisoning">
+  Tips to avoid falling for feed poisoning:
+  <a class="heading-link" href="#tips-to-avoid-falling-for-feed-poisoning">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<ul>
+<li>Check the sender carefully. Do you know them personally? Are they trustworthy?</li>
+<li>Don&quot;t open links from messaging apps or emails by clicking on them; instead, copy the URL into a browser in incognito mode. Do the same on a mobile device.</li>
+<li>Use a different browser to your default browser for social media, so that links aren&quot;t opened in it.</li>
+</ul>
+      </article>
+    </section>
+</div>
+
+
+
+    </main>
+    <footer class="footer"><div class="footer-container">
+    <p class="projektemacher">
+        Projektemacher is a <a href="https://projektemacher.org/en/">Projektemacher</a> blog <a title="Christian Mahnke" class="footer-link-cm" href="https://christianmahnke.de/"><img src="https://projektemacher.org/images/cm.svg" style="height: 16px; margin-left: .5rem;"></a>
+    </p><p class="copyright">&copy; 2009 - 2026 </p><p class="privacy"><a href="https://projektemacher.org/privacy" title="Privacy policy">Privacy policy</a></p>Powered by <div class="footer-powered-by"><a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.</div></div>
+
+  </footer>
+  </body>
+
+</html>
