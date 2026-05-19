@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/post/briefsteller/collection.json</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://projektemacher.org/post/briefsteller/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Über dieses Blog</title>
+      <link>https://projektemacher.org/post/briefsteller/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+      <guid>https://projektemacher.org/post/briefsteller/about/</guid>
+      <description>&lt;p&gt;Bevor es YouTube Tutorials über Umgangsformen und Mails schreiben gab, wurde diese Aufgabe von Briefstellern, vielleicht einer der ersten Gattungen von Ratgeberliteratur, erledigt. Bevor das Telefon (oder hochmoderne Verfahren zur schriftlichen Kommunikation wie das Telegramm, der Fernschreiber oder gar das Fax) erfunden wurden, waren Briefe und vielleicht noch Postkarten das Mittel zur &lt;a href=&#34;https://de.wikipedia.org/wiki/Telekommunikation&#34; target=&#34;_blank&#34;&gt;Telekommunikation&lt;/a&gt;. Damit bei diesen schriftlichen Kommunikation auch die Form gewahrt bleibt und man nicht mit vermeidbaren Peinlichkeiten seine Ehre riskiert, gab es eine besondere Gattung von Büchern, die Musterbriefe für verschiedene Situationen beinhalteten: Die Briefsteller.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Merch on Projektemacher</title>
+    <link>https://projektemacher.org/en/post/merch.projektemacher/collection.json</link>
+    <description>Recent content in Merch on Projektemacher</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+    <webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://projektemacher.org/en/post/merch.projektemacher/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
