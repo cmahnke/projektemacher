@@ -115,7 +115,9 @@ jobs:
           ./scripts/post-build.sh
 
       - name: Puppeteer
-        run: ./themes/projektemacher-base/scripts/github/check-js-errors.sh
+        run: |
+          npx puppeteer browsers install chrome
+          ./themes/projektemacher-base/scripts/github/check-js-errors.sh
 
       - name: Archive links
         run: python ./themes/projektemacher-base/scripts/archive.py -d docs/ -e projektemacher.org -a 14
