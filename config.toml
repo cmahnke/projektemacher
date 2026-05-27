@@ -389,6 +389,8 @@ enableRobotsTXT = true
   lastmod = ['lastmod', ':git', 'modified', 'date', 'publishdate', 'pubdate', 'published']
 
 [security]
+  allowContent = ['^text/html$', '^text/markdown$']
+
   [security.http]
     mediaTypes = ['^application/json$',
                   '^application/json;\s?charset=[uU][tT][fF]-8$',
