@@ -81,7 +81,7 @@ jobs:
           SKIP_IIIF: yes
         run: |
           ./scripts/setup.sh
-          puppeteer install chrome@latest
+          npx puppeteer install chrome@latest
 
       - name: Create IIIF derivates
         run: |
