@@ -8,7 +8,7 @@ convert -resize 1024x1024 -transparent white -density 600 "Source Files/Logo/Lab
 # Favicons
 # See https://gist.github.com/pfig/1808188
 
-SOURCE="themes/projektemacher-base/static/images/cm.svg" OPTIONS="-transparent white static/images/favicon-128.png" ./themes/projektemacher-base/scripts/favicon.sh
+SOURCE="themes/projektemacher-base/static/images/cm.svg" OPTIONS="-transparent white" ./themes/projektemacher-base/scripts/favicon.sh
 
 cp themes/projektemacher-base/static/images/cm.svg static/images/cm-solid.svg
 sed -i -E 's/fill-opacity:0.5/fill-opacity:1.0/g' static/images/cm-solid.svg
