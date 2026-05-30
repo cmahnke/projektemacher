@@ -81,7 +81,6 @@ jobs:
           SKIP_IIIF: yes
         run: |
           ./scripts/setup.sh
-          npx puppeteer install chrome@latest
 
       - name: Create IIIF derivates
         run: |
@@ -117,7 +116,8 @@ jobs:
 
       - name: Puppeteer
         run: |
-          npx puppeteer browsers install chrome
+          npx puppeteer install chrome@stable
+          #npx puppeteer browsers install chrome
           ./themes/projektemacher-base/scripts/github/check-js-errors.sh
 
       - name: Archive links
