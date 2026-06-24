@@ -9,8 +9,8 @@ params:
   news: true
   weight: 1
   lang:
-  - de
-  - en
+    - de
+    - en
 resources:
 - name: screenshot
   src: "screenshot.png"

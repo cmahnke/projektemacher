@@ -33,17 +33,17 @@ enableRobotsTXT = true
     [[module.mounts]]
       source = "blogs/kraehenbeisser/content"
       target = "content/post/kraehenbeisser"
-      files = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/diapraesentation/content"
       target = "content/post/diapraesentation"
-      files = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/flohmarktfunde/content"
       target = "content/post/flohmarktfunde"
-      files = ['/**/*.jxl', '/**/*.jpg']
+      files = ['! /**/*.jxl', '/**/*.jpg']
 
     [[module.mounts]]
       source = "blogs/haesslicheplastiktiereundzeugs/content"
@@ -124,6 +124,11 @@ enableRobotsTXT = true
       source = "blogs/plastikwarenfabrik/content"
       target = "content/post/plastikwarenfabrik"
       files = ['! /**/*.jxl', '! /**/*.jpg', '! /content/post/_index.md']
+
+    # [[module.mounts]]
+    #   source = "blogs/flugzeugbesteck/content"
+    #   target = "content/post/flugzeugbesteck"
+    #   files = ['! /**/*.jxl', '! /**/*.jpg', '! /content/post/_index.md']
 
 #    [[module.mounts]]
 #      source = "blogs/schatten/content"

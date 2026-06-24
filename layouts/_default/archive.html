@@ -105,16 +105,7 @@
                             {{- if len (where $yearPages ".Date.Month" "==" $month) -}}
                               <li class="month-section">
                                 <ul class="month-section month-{{ $month }}">
-                                    {{- $monthName := "" -}}
-                                    {{/*
-                                    {{ if eq "de" $.Site.Language.Lang }}
-                                        {{ $monthName = (index $.Site.Data.months (printf "%d" $month)) }}
-                                    {{- else -}}
-                                    */}}
-                                        {{- $monthName = (dateFormat "January" (printf "2001-%02d-01" $month)) -}}
-                                    {{/*
-                                    {{- end -}}
-                                    */}}
+                                    {{- $monthName := (dateFormat "January" (printf "2001-%02d-01" $month)) -}}
 
                                     <span class="month">{{ $monthName }}</span>
                                     {{- range (where $yearPages ".Date.Month" "==" $month).Reverse -}}

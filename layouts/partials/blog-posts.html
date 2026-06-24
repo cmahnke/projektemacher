@@ -35,10 +35,9 @@
 
   {{- $filteredPages := slice -}}
   {{- range $p := $pages -}}
-
-  {{- if hasPrefix $p.File.Dir $filterPath -}}
-    {{- $filteredPages = $filteredPages | append $p -}}
-  {{- end -}}
+    {{- if hasPrefix $p.File.Dir $filterPath -}}
+      {{- $filteredPages = $filteredPages | append $p -}}
+    {{- end -}}
   {{- end -}}
   {{- $pages = $pages | symdiff $filteredPages -}}
 {{- end -}}
