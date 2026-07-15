@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 env:
-  HUGO_VERSION: 0.163.3
+  HUGO_VERSION: 0.164.0
   DEPENDENCY_MANAGER: npm
   PYTHON_VERSION: '3.12'
 
@@ -47,9 +47,10 @@ jobs:
           password: ${{ secrets.CR_PAT }}
           logout: false
 
-      - uses: actions/checkout@v6.0.2
+      - name: Checkout
+        uses: actions/checkout@v7
         with:
-          submodules: false  # Fetch Hugo themes (true OR recursive)
+          submodules: false
 
       - name: Checkout submodules
         run: |
@@ -65,11 +66,11 @@ jobs:
           ./scripts/github-setup.sh
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6.2.0
+        uses: actions/setup-node@v7.0.0
         with:
           node-version-file: '.nvmrc'
 
-      - uses: pnpm/action-setup@v4.2.0
+      - uses: pnpm/action-setup@v6
         with:
           version: 9
 
@@ -124,7 +125,7 @@ jobs:
         run: python ./themes/projektemacher-base/scripts/archive.py -d docs/ -e projektemacher.org -a 14
 
       - name: Deploy site
-        uses: peaceiris/actions-gh-pages@v4.0.0
+        uses: peaceiris/actions-gh-pages@v4.1.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
