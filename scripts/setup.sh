@@ -35,6 +35,11 @@ else
     echo "Skipping IIIF generation"
 fi
 
+echo "Make sure './scripts/post-build/index.sh' is executed"
+if [ -d ./scripts/post-build ] ; then
+    echo "Don't forget to run post build scripts after 'hugo'!"
+fi
+
 # NPM dependencies
-npm install
+#npm install
 npm run svgo

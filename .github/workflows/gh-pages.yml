@@ -111,6 +111,10 @@ jobs:
       - name: Build Hugo site
         run: hugo --printI18nWarnings --printUnusedTemplates
 
+      - name: Run post build scripts
+        run: |
+          ./scripts/post-build/index.sh
+
       - name: Index and cleanup
         run: |
           ./scripts/post-build.sh

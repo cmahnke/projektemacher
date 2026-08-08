@@ -31,6 +31,14 @@ enableRobotsTXT = true
       target = "static"
 
     [[module.mounts]]
+      source = "node_modules/@pagefind/modular-ui/css/"
+      target = "assets/scss/pagefind"
+
+    [[module.mounts]]
+      source = "node_modules/@pagefind/default-ui"
+      target = "assets/js/pagefind"
+
+    [[module.mounts]]
       source = "blogs/kraehenbeisser/content"
       target = "content/post/kraehenbeisser"
       files = ['! /**/*.jxl', '! /**/*.jpg']

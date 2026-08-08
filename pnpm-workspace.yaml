@@ -9,3 +9,5 @@ allowBuilds:
   tify: true
 blockExoticSubdeps: false
 ignoreScripts: false
+minimumReleaseAgeExclude:
+  - markdownlint-cli@0.49.1
