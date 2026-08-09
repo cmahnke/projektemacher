@@ -2,9 +2,10 @@
 
 set -e
 
-PYTHON=`which python3.13`
-
-if [ -z "$PYTHON" ] ; then
+if [ -z "$(which python)" ] ; then
+  echo "Python interpreter not installed, exiting!"
+  exit 1
+else
   PYTHON=`which python`
 fi
 
