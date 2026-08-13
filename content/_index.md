@@ -4,16 +4,14 @@ outputs:
   - html
   - rss
 cascade:
-  - _target:
+  - target:
       kind: 'page'
       path: '/privacy'
-      lang: '*'
     params:
       sitemap:
         disable: true
-  - _target:
+  - target:
       kind: 'page'
-      lang: '*'
       path: 'privacy'
     params:
       sitemap:

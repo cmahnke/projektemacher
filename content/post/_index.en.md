@@ -5,16 +5,14 @@ displayinlist: false
 metaPage: true
 layout: posts
 cascade:
-  - _target:
+  - target:
       kind: '*'
-      lang: '*'
       path: '**'
     params:
       sitemap:
         disable: true
-  - _target:
+  - target:
       kind: section
-      lang: '*'
       path: '**'
       params:
         sitemap_exclude: true

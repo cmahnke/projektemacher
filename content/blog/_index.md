@@ -3,7 +3,7 @@ url: blogs
 title: Blogs
 layout: portfolio
 cascade:
-  - _target:
+  - target:
       kind: 'page'
     params:
       sitemap:

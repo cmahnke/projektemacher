@@ -29,6 +29,11 @@ $nav-color: #293133 !default;
 /* @import "ol"; */
 @import "ol-iiif";
 @import "icons";
+
+$color-body-text: $fg-color;
+$font-heading: $heading-font-family;
+$frame-bg-color: #a9a9a9;
+@import "pagefind";
 /**
  * Fontawesome SVGs - taken fom https://github.com/FortAwesome/Font-Awesome
  * URL encoder for SVG: https://yoksel.github.io/url-encoder/

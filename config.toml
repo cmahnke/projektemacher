@@ -152,7 +152,7 @@ enableRobotsTXT = true
 
 [languages]
     [languages.de]
-        languagename = "Deutsch"
+        label = "Deutsch"
 
         [languages.de.params]
             tagLines = ["Blog Potpourri", "Blogfabrik"]
@@ -195,7 +195,7 @@ enableRobotsTXT = true
                 url = "contact/"
 
     [languages.en]
-        languagename = "English"
+        label = "English"
 
         [languages.en.params]
             info = "Blog factory"

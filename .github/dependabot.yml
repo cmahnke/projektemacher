@@ -30,3 +30,6 @@ updates:
       themes:
         patterns:
           - 'themes/*'
+    cooldown:
+      exclude:
+        - projektemacher-base
