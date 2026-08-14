@@ -247,13 +247,23 @@ $color-body-text: black !default;
 /* Projektemacher additions */
 .search-content.result-list {
   .pagefind-modular-list-result {
-    display: flex;
     flex-direction: row;
+    padding: unset;
 
     .pagefind-modular-list-thumb {
       margin-right: 2rem;
       max-width: 10rem;
       display: none;
+    }
+
+    .pagefind-modular-list-inner {
+      .pagefind-modular-list-title {
+        color: #0d6efd;
+        
+        .pagefind-modular-list-link {
+          color: #0d6efd;
+        }
+      }
     }
 
     .pagefind-modular-list-title {
