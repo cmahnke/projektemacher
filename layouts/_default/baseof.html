@@ -12,18 +12,21 @@
 
     {{- template "_internal/opengraph.html" . -}}
 
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-
-    {{- partial "html/head/meta.html" . -}}
-    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" "vars" site.Params.style )) -}}
-    {{- partial "html/head/script.html" . -}}
+    {{- $externalPost := partial "page-url.html" . -}}
     {{- if (in .Section "post") -}}
-      {{- $pageUrl := partial "page-url.html" . -}}
+      {{- $pageUrl := index $externalPost "link" -}}
+      {{- $titlePrefix := index $externalPost "title" -}}
       {{- if and (not (hasPrefix $pageUrl site.BaseURL)) (ne $pageUrl "") (not (hasPrefix $pageUrl "/")) -}}
         <meta http-equiv="refresh" content="0; URL={{ $pageUrl }}">
         <link rel="canonical" href="{{  $pageUrl }}">
       {{- end -}}
     {{- end -}}
+
+    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+
+    {{- partial "html/head/meta.html" . -}}
+    {{- partial "html/head/style.html" (dict "context" . "includes" (slice "node_modules/bootstrap/scss" "vars" site.Params.style )) -}}
+    {{- partial "html/head/script.html" . -}}
     {{- if  or (eq .Site.Params.colorscheme "auto") (eq .Site.Params.colorscheme "dark") -}}
       {{- if .Site.IsServer -}}
         {{- $cssOpts := (dict "targetPath" "css/coder-dark.css" "enableSourceMap" true ) -}}

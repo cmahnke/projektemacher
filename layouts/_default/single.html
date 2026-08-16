@@ -1,6 +1,12 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
-{{ end }}
+  {{- if (in .Section "post") -}}
+    {{- $externalPost := partial "page-url.html" . -}}
+    {{- $titlePrefix := index $externalPost "title" -}}
+    {{- $titlePrefix }}: {{ .Title -}}
+  {{- else -}}
+    {{- .Title }} · {{ .Site.Title -}}
+  {{- end -}}
+{{- end -}}
 {{ define "content" }}
   {{ partial "page.html" . }}
 {{ end }}

@@ -2,6 +2,7 @@
 {{- $defaultPrefix := "projektemacher" -}}
 
 {{- $postLink := "" -}}
+{{- $title := "" -}}
 
 {{- with . -}}
   {{- $dir := substr (string (.Path)) 1 -}}
@@ -18,7 +19,8 @@
   {{- $linkPrefix := "" -}}
 
   {{- if ne $prefix nil -}}
-    {{- $linkPrefix = index (site.Store.Get "linkPrefix") $prefix -}}
+    {{- $linkPrefix = index (index (site.Store.Get "blogs") $prefix) "linkPrefix" -}}
+    {{- $title = index (index (site.Store.Get "blogs") $prefix) "title" -}}
   {{- end -}}
 
   {{- if not $linkPrefix -}}
@@ -36,8 +38,10 @@
       {{- $linkPrefix = $blogPage.Param "link" -}}
     {{- end -}}
 
+    {{- $title := $blogPage.Title -}}
+
     {{- if ne $linkPrefix nil -}}
-      {{- site.Store.SetInMap "linkPrefix" $prefix $linkPrefix -}}
+      {{- site.Store.SetInMap "blogs" $prefix (dict "title" $title "linkPrefix" $linkPrefix) -}}
     {{- end -}}
   {{- end -}}
 
@@ -77,4 +81,4 @@
 {{- if $debug -}}
   {{- warnf "[page-url.html] Resolved %s to %s" . $postLink -}}
 {{- end -}}
-{{- return $postLink -}}
+{{- return (dict "link" $postLink "title" $title) -}}

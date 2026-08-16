@@ -1,10 +1,38 @@
 <div class="content page">
     <section class="container page {{ .Page.Params.slug }}">
-      <article>
+      <article class="content-container">
+        <div class="date" style="dispaly: none;">
+          <time class="post-date" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+            {{- .Date | time.Format ":date_full" -}}
+          </time>
+        </div>
         <header>
-          <h1 class="header">{{ .Title }}</h1>
+          {{- if (in .Section "post") -}}
+            {{- $externalPost := partial "page-url.html" . -}}
+            {{- $titlePrefix := index $externalPost "title" -}}
+            <h1 class="header post-title">{{- $titlePrefix }}: {{ .Title }}</h1>
+          {{- else -}}
+            <h1 class="header">{{ .Title }}</h1>
+          {{- end -}}
         </header>
         {{ .Content }}
+        {{- if isset .Params "tags" -}}
+          <div class="tags">
+            {{- range $tag := .Params.tags -}}
+              {{- if or (hasPrefix $tag "hidden_") (hasPrefix $tag "_") -}}
+                {{- continue -}}
+              {{- end -}}
+              {{- if ne $tag "" -}}
+                {{- $i18nTag := i18n $tag -}}
+                {{- if eq $i18nTag "" -}}
+                  #{{ partial "tagcloud/tag-humanize.html" $tag }}
+                {{- else -}}
+                  #{{ $i18nTag }}
+                {{- end -}}
+              {{- end -}}
+            {{- end -}}
+          </div>
+        {{- end -}}
       </article>
     </section>
 </div>
