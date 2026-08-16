@@ -1,0 +1,80 @@
+{{- $debug := partialCached "functions/debug/enabled.html" . -}}
+{{- $defaultPrefix := "projektemacher" -}}
+
+{{- $postLink := "" -}}
+
+{{- with . -}}
+  {{- $dir := substr (string (.Path)) 1 -}}
+  {{- $dir := split $dir "/" -}}
+  {{- $lang := "" -}}
+  {{- $prefix := "" -}}
+  {{- if in (index $dir 1) (slice "en" "de") -}}
+    {{- $prefix = index $dir 2 -}}
+    {{- $lang = index $dir 1 -}}
+  {{- else -}}
+    {{- $prefix = index $dir 1 -}}
+  {{- end -}}
+
+  {{- $linkPrefix := "" -}}
+
+  {{- if ne $prefix nil -}}
+    {{- $linkPrefix = index (site.Store.Get "linkPrefix") $prefix -}}
+  {{- end -}}
+
+  {{- if not $linkPrefix -}}
+    {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
+    {{- $blogPage := .Site.GetPage $sectionHeading -}}
+
+    {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
+      {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+      {{- $prefix = $defaultPrefix -}}
+    {{- end -}}
+
+    {{- if $blogPage.Param "linkPrefix" -}}
+      {{- $linkPrefix = $blogPage.Param "linkPrefix" -}}
+    {{- else -}}
+      {{- $linkPrefix = $blogPage.Param "link" -}}
+    {{- end -}}
+
+    {{- if ne $linkPrefix nil -}}
+      {{- site.Store.SetInMap "linkPrefix" $prefix $linkPrefix -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- $postPath := substr (string .Path) 1 -}}
+  {{- $postLinkParts := split $postPath "/" -}}
+
+  {{- if ne $linkPrefix "" -}}
+    {{- $linkSuffix := "" -}}
+
+    {{- if and (ne $prefix $defaultPrefix) (ne $prefix nil) -}}
+      {{/* Sanity check */}}
+      {{- if lt (sub (len $postLinkParts) 2) 0 -}}
+        {{- errorf "[page-url.html] Path length is to short for %s (path prefix resolved to %s)" .RelPermalink $prefix -}}
+      {{- end -}}
+
+      {{- $postLinkParts = last (sub (len $postLinkParts) 2) $postLinkParts -}}
+    {{- end -}}
+
+    {{- if ne $lang "" -}}
+      {{- $postLinkParts = slice $lang | append $postLinkParts -}}
+    {{- else -}}
+
+    {{- end -}}
+    {{- $linkSuffix = delimit $postLinkParts "/" -}}
+
+    {{- $postLink = printf "%s%s" $linkPrefix $linkSuffix -}}
+    {{- if not (hasSuffix $postLink "/") -}}
+      {{- $postLink = printf "%s/" $postLink -}}
+    {{- end -}}
+
+  {{- else -}}
+    {{- $linkPrefix = site.BaseURL -}}
+  {{- end -}}
+{{- else -}}
+  {{- errorf "[page-url.html] Error getting full URL for post, %s" . -}}
+{{- end -}}
+{{- if $debug -}}
+  {{- warnf "[page-url.html] Resolved %s to %s" . $postLink -}}
+{{- end -}}
+{{- return $postLink -}}

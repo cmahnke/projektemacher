@@ -31,6 +31,7 @@ files:
 content:
   ignore:
     - "<meta http-equiv=\"refresh\" content=\"0; url="
+url_handling: redirect
 index:
 # Tagging attributes
   body:
