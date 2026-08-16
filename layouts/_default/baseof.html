@@ -78,6 +78,11 @@
   {{ else if eq .Site.Params.colorscheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
+  {{- $dir := substr (string (.Path)) 1 -}}
+  {{- $prefix := index $dir 1 -}}
+  {{- if ne $prefix "" -}}
+    {{- $csClass := printf "%s blog-%s" $csClass $prefix -}}
+  {{- end -}}
   <body class="{{ $csClass }} {{ if .IsHome }} home {{ end }}">
     <main class="wrapper">
       {{ partial "header.html" . }}

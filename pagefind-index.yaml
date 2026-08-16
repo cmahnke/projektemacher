@@ -84,12 +84,12 @@ index:
           function: extract
           args:
             pattern: "s/#(.*)/$1/g"
-    section:
+    blog:
       - body:
           function: extract
           args:
             attribute: "class"
-            pattern: "s/.*section-(.[^ ]*).*/$1/g"
+            pattern: "s/.*blog-(.[^ ]*).*/$1/g"
             ignore_unchanged: "true"
 
   index-attrs:
