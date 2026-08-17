@@ -2,7 +2,13 @@
   {{- if (in .Section "post") -}}
     {{- $externalPost := partial "page-url.html" . -}}
     {{- $titlePrefix := index $externalPost "title" -}}
-    {{- $titlePrefix }}: {{ .Title -}}
+    {{- $postTitle := "" -}}
+    {{- if eq .Title "" -}}
+        {{- $postTitle = (i18n "untitledPost") -}}
+    {{- else -}}
+        {{- $postTitle = .Title -}}
+    {{- end -}}
+    {{- $titlePrefix }}: {{ $postTitle -}}
   {{- else -}}
     {{- .Title }} · {{ .Site.Title -}}
   {{- end -}}

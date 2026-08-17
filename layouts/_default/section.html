@@ -1,6 +1,18 @@
 {{ define "title" }}
-  {{ .Title }} · {{ .Site.Title }}
-{{ end }}
+  {{- if (in .Section "post") -}}
+    {{- $externalPost := partial "page-url.html" . -}}
+    {{- $titlePrefix := index $externalPost "title" -}}
+    {{- $postTitle := "" -}}
+    {{- if eq .Title "" -}}
+        {{- $postTitle = (i18n "untitledPost") -}}
+    {{- else -}}
+        {{- $postTitle = .Title -}}
+    {{- end -}}
+    {{- $titlePrefix }}: {{ $postTitle -}}
+  {{- else -}}
+    {{- .Title }} · {{ .Site.Title -}}
+  {{- end -}}
+{{- end -}}
 {{ define "content" }}
     {{- if ne .CurrentSection .FirstSection -}}
         {{ partial "page.html" . }}
