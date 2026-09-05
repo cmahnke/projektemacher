@@ -1,0 +1,299 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
+    <title>Projektemacher</title>
+    <link>https://projektemacher.org/en/</link>
+    <description>Recent content on Projektemacher</description>
+    <generator>Hugo 0.165.0</generator><language>en</language>
+      <lastBuildDate>Sat, 05 Sep 2026 08:05:21 +0000</lastBuildDate><atom:link href="https://projektemacher.org/en/index.xml" rel="self" type="application/rss+xml" /><item><title>Kleiderbügel: Union elegant</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/205</link>
+        <pubDate>Tue, 01 Sep 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/205</guid><description>&lt;p&gt;Union elegant&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: T.F. Damm, Norden</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/204</link>
+        <pubDate>Tue, 25 Aug 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/204</guid><description>&lt;p&gt;T.F. Damm, Norden&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Poor infrastructure</title>
+        <link>https://christianmahnke.de/post/linux-iphone-tethering</link>
+        <pubDate>Thu, 20 Aug 2026 20:14:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/linux-iphone-tethering</guid><description>&lt;p&gt;Today I was travelling by train between Hanover, Paderborn and Göttingen&amp;hellip;&lt;/p&gt;
+&lt;p&gt;As someone who otherwise travels almost exclusively by ICE, I was shocked at just how poor the passenger facilities can be in some areas.
+Not only are there still areas with no mobile coverage in this region, just like in the 2000s, but power sockets and Wi-Fi on the train are apparently not as standard as one might expect.&lt;/p&gt;
+&lt;p&gt;The connection between &lt;a href=&#34;https://de.wikipedia.org/wiki/Bahnstrecke_G%C3%B6ttingen%E2%80%93Bodenfelde&#34; target=&#34;_blank&#34;&gt;Paderborn and Göttingen&lt;/a&gt; stands out as particularly poor. There are evidently still areas with no mobile coverage on railway lines. I was honestly surprised that 100 per cent network coverage isn&amp;quot;t mandatory for the regional train network (which has been scaled back over the years) in passenger transport.&lt;/p&gt;
+&lt;p&gt;Of course, there is no Wi-Fi, and the power supply at seats is also a well-known problem; unfortunately, however, the current situation is set to remain in place until the end of 2029. From the end of 2025, the contract with the current operator, &lt;a href=&#34;https://de.wikipedia.org/wiki/NordWestBahn&#34; target=&#34;_blank&#34;&gt;NordWestBahn&lt;/a&gt; &lt;a href=&#34;https://www.lok-report.de/news/deutschland/aus-den-laendern/54273-hessen-niedersachsen-nrw-vertragsverlaengerung-mit-der-nordwestbahn-zum-owl-dieselnetz-sued.html&#34; target=&#34;_blank&#34;&gt;was extended without a tender process&lt;/a&gt;, as it was foreseeable that a new tender could not be carried out. It could not be ascertained why the contract could not at least have been extended for a significantly shorter period.&lt;/p&gt;
+&lt;h2 id=&#34;modern-technology-held-back-by-poor-infrastructure&#34;&gt;
+  Modern technology held back by poor infrastructure
+  &lt;a class=&#34;heading-link&#34; href=&#34;#modern-technology-held-back-by-poor-infrastructure&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h2&gt;
+&lt;p&gt;However, this article isn&amp;quot;t actually about such infrastructure problems, but rather about an issue caused by such gaps when using a Linux laptop. You&amp;quot;d think that the lack of Wi-Fi could be compensated for by using a mobile phone with hotspot functionality.  And with an iPhone, this usually works quite well. However, if you&amp;quot;re using Linux and the mobile connection isn&amp;quot;t stable, you may observe an interesting cascade of errors: you drive through a dead spot and not only does the connection drop, but eventually the hotspot stops working altogether.
+The following messages appear on the laptop:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ sudo dmesg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Limiting TX power to &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; dBm as advertised by XX:XX:XX:XX:XX:XX
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;The long explanation:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The iPhone loses its connection to the mobile network.&lt;/li&gt;
+&lt;li&gt;The iPhone attempts to save power and instructs the laptop to reduce the signal strength (in this case to 0).&lt;/li&gt;
+&lt;li&gt;The client follows this instruction blindly and sets the signal strength to zero, effectively cutting off the connection.&lt;/li&gt;
+&lt;li&gt;The iPhone detects that no client is connected and deactivates the SSID to save even more power.&lt;/li&gt;
+&lt;li&gt;This effectively prevents an automatic reconnection, as the client can no longer find the hotspot.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Now, one could argue about whose fault the problem is, but the error message originates from the &lt;code&gt;mac80211&lt;/code&gt; kernel module. Unfortunately, disabling power management for Wi-Fi didn&amp;quot;t really help either. The background to this is &amp;ldquo;&lt;a href=&#34;https://de.wikipedia.org/wiki/Transmitter_Power_Control&#34; target=&#34;_blank&#34;&gt;Transmit Power Control/Management (TPC)&lt;/a&gt;&amp;rdquo;, which is defined in &lt;a href=&#34;https://de.wikipedia.org/wiki/IEEE_802.11a#Sendeleistung&#34; target=&#34;_blank&#34;&gt;IEEE 802.11h-2003&lt;/a&gt;. According to this, Wi-Fi devices are actually required to comply with the specifications; there is no lower limit. Strictly speaking, the standard therefore allows for the possibility that it may fail to function as intended.&lt;/p&gt;
+&lt;p&gt;And why doesn&amp;quot;t this happen with Windows, for example? Because it presumably cannot be told by the access point to disable the function. That is the only sensible course of action for a client operating system.&lt;/p&gt;
+&lt;p&gt;So, ultimately, this is also a form of infrastructure deficit&amp;hellip;&lt;/p&gt;
+&lt;h3 id=&#34;solution&#34;&gt;
+  Solution
+  &lt;a class=&#34;heading-link&#34; href=&#34;#solution&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h3&gt;
+&lt;p&gt;The solution is quite simple: the kernel must no longer be allowed to set the value to 0 – even if this is &amp;ldquo;requested&amp;rdquo; by the AP:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-patch&#34; data-lang=&#34;patch&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;--- a/mlme.c	2026-08-20 16:53:55.881324546 +0200
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+++ b/mlme.c	2026-08-20 16:58:25.384436651 +0200
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;@@ -2164,7 +2164,12 @@
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 		if (link-&amp;gt;ap_power_level == new_ap_level)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 			return 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+		if (new_ap_level &amp;lt;= 0) {
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+			sdata_dbg(sdata,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+				&amp;#34;Intercepting advertised deactivation (tried to limit TX power to %d dBm by %pM)\n&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+                          	new_ap_level, link-&amp;gt;u.mgd.bssid);
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+			new_ap_level = 12;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;+		}
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 		sdata_dbg(sdata,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 			  &amp;#34;Limiting TX power to %d dBm as advertised by %pM\n&amp;#34;,
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt; 			  pwr_level_cisco, link-&amp;gt;u.mgd.bssid);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;I have also &lt;a href=&#34;https://github.com/cmahnke/sane-mac80211&#34; target=&#34;_blank&#34;&gt;made&lt;/a&gt; the solution available on GitHub as a &lt;a href=&#34;https://de.wikipedia.org/wiki/Dynamic_Kernel_Module_Support&#34; target=&#34;_blank&#34;&gt;DKMS&lt;/a&gt; module; installation is quite straightforward:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;curl -fsSL https://cmahnke.github.io/sane-mac80211/repo-dist/public.gpg | sudo gpg --dearmor -o /etc/apt/keyrings/sane-mac80211.gpg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;echo &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;deb [signed-by=/etc/apt/keyrings/sane-mac80211.gpg] https://cmahnke.github.io/sane-mac80211/repo-dist/ ./&amp;#34;&lt;/span&gt; | sudo tee /etc/apt/sources.list.d/sane-mac80211.list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt update &lt;span style=&#34;color:#f92672&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; sudo apt install sane-mac80211
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Gustav Köstermeyer, Herrenkleider-Fabrik</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/203</link>
+        <pubDate>Tue, 18 Aug 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/203</guid><description>&lt;p&gt;UNION
+Record
+Gustav Köstermeyer, Herrenkleider-Fabrik, Lübbecke/Westf.&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Großwäscherei „Edelweiß“ Hagen i.W.</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/202</link>
+        <pubDate>Tue, 11 Aug 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/202</guid><description>&lt;p&gt;Großwäscherei „Edelweiß“ Hagen i.W.&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Never Built Göttingen in 3D</title>
+        <link>https://christianmahnke.de/post/never-built-goettingen-3d</link>
+        <pubDate>Sun, 09 Aug 2026 23:30:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/never-built-goettingen-3d</guid><description>&lt;p&gt;Following the launch of &amp;ldquo;&lt;a href=&#34;https://never-built.goettingen.xyz/&#34; target=&#34;_blank&#34;&gt;Never Built Göttingen&lt;/a&gt;&amp;rdquo; in spring 2025, a new 3D visualisation is now available.&lt;/p&gt;
+&lt;p&gt;Compared to the prototype from &lt;a href=&#34;https://christianmahnke.de/en/post/patching-osm-data/&#34;&gt;November 2025&lt;/a&gt;, the visualisation is now &amp;ldquo;prettier&amp;rdquo;: anti-aliasing has been applied and trees are displayed. The data processing is also much more sophisticated, meaning that alternative road alignments are now shown as well.&lt;/p&gt;
+
+
+&lt;p&gt;As only a fraction of the buildings are currently modelled, this is merely a preview that is not yet linked on the page itself.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/onthegomap/planetiler&#34; target=&#34;_blank&#34;&gt;Planetier&lt;/a&gt; was used to create the vector tiles featuring the buildings and trees, whilst &lt;a href=&#34;https://maplibre.org/projects/gl-js/&#34; target=&#34;_blank&#34;&gt;Maplibe GL JS&lt;/a&gt; was used for 3D rendering in the browser.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Aquatint etching by Anna Kloubek-Schrutz (1878–?)</title>
+        <link>https://christianmahnke.de/post/print-anna-kloubek-schrutz</link>
+        <pubDate>Sat, 08 Aug 2026 12:15:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/print-anna-kloubek-schrutz</guid><description>&lt;p&gt;I bought an etching by Anna Kloubek-Schrutz (1878–?) (&lt;a href=&#34;https://www.artnet.com/artists/anna-schrutz/&#34; target=&#34;_blank&#34;&gt;on artnet&lt;/a&gt;)&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;Not much could be found out about her: she was born in 1878 as Anna Schrutz and studied at the &lt;a href=&#34;https://en.wikipedia.org/wiki/Academy_of_Arts,_Architecture_and_Design_in_Prague&#34; target=&#34;_blank&#34;&gt;School of Applied Arts in Prague&lt;/a&gt; &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. There, she also took part in &lt;a href=&#34;https://databazevystav.udu.cas.cz/en/person?db=umelci&amp;amp;searchsurname=Schrutz&amp;amp;searchname=Anna&#34; target=&#34;_blank&#34;&gt;several exhibitions&lt;/a&gt;. She was a member of the &lt;a href=&#34;https://de.wikipedia.org/wiki/Metznerbund&#34; target=&#34;_blank&#34;&gt;Metznerbund&lt;/a&gt; (all links in German), an association of German-speaking artists in Czechoslovakia, as well as the &lt;a href=&#34;https://de.wikipedia.org/wiki/K%C3%BCnstlervereinigungen_deutschsprachiger_K%C3%BCnstler_aus_B%C3%B6hmen,_M%C3%A4hren_und_Schlesien_vor_1945#Verein_deutscher_bildender_K%C3%BCnstler_in_B%C3%B6hmen_%281895%E2%80%931920%29&#34; target=&#34;_blank&#34;&gt;Association of German Visual Artists in Bohemia&lt;/a&gt; and the &lt;a href=&#34;https://de.wikipedia.org/wiki/K%C3%BCnstlervereinigungen_deutschsprachiger_K%C3%BCnstler_aus_B%C3%B6hmen,_M%C3%A4hren_und_Schlesien_vor_1945#Deutschb%C3%B6hmischer_K%C3%BCnstlerbund_%281908%E2%80%931920%29&#34; target=&#34;_blank&#34;&gt;German-Bohemian Artists’ Federation&lt;/a&gt;. She also designed bookplates and posters.&lt;/p&gt;
+&lt;p&gt;The picture shows a scene in a Dutch harbour. This is evident from the type of boat (flat-bottomed boat) and the traditional costumes, such as the klompen (wooden clogs).
+The location is thought to be the harbour on the island of &lt;a href=&#34;https://en.wikipedia.org/wiki/Marken&#34; target=&#34;_blank&#34;&gt;Marken&lt;/a&gt; in the &lt;a href=&#34;https://en.wikipedia.org/wiki/Zuiderzee&#34; target=&#34;_blank&#34;&gt;Zuiderzee&lt;/a&gt; (now the &lt;a href=&#34;https://en.wikipedia.org/wiki/Markermeer&#34; target=&#34;_blank&#34;&gt;Markermeer&lt;/a&gt;) (&lt;a href=&#34;https://geohack.toolforge.org/geohack.php?params=52.458508_N_5.101093_E&#34; target=&#34;_blank&#34;&gt;approximate location on GeoHack&lt;/a&gt;).
+Comparative images can be found in the &lt;a href=&#34;https://www.zuiderzeecollectie.nl/&#34; target=&#34;_blank&#34;&gt;Zuiderzee Collection&lt;/a&gt; and on &lt;a href=&#34;https://commons.wikimedia.org/wiki/Category:Havenbuurt_%28Marken%29&#34; target=&#34;_blank&#34;&gt;Wikimedia Commons&lt;/a&gt;. One example is &lt;a href=&#34;https://www.zuiderzeecollectie.nl/object/collect/Zuiderzee_museum-36792&#34; target=&#34;_blank&#34;&gt;the houses on the right-hand side&lt;/a&gt;. A &lt;a href=&#34;https://www.zuiderzeecollectie.nl/object/collect/Zuiderzee_museum-36199&#34; target=&#34;_blank&#34;&gt;further image from 1916&lt;/a&gt; shows a denser development, suggesting that the illustration was probably created earlier.&lt;/p&gt;
+&lt;p&gt;From the end of the 19th century onwards, the island was frequently visited by artists.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;&lt;a href=&#34;https://databazevystav.udu.cas.cz/archiv/exhib_cz/1908_k_nj.pdf#page=58&#34; target=&#34;_blank&#34;&gt;Anniversary exhibition of the Artists’ Association for Bohemia in Prague, 1908&lt;/a&gt;&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Korbmacher</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/201</link>
+        <pubDate>Tue, 04 Aug 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/201</guid><description>&lt;p&gt;Korbmacher&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Ludwig Piper, Saarlouis</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/200</link>
+        <pubDate>Tue, 28 Jul 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/200</guid><description>&lt;p&gt;Ludwig Piper, Saarlouis&lt;/p&gt;
+</description></item>
+    <item><title>Kleiderbügel: Karl Busam Herrenbekleidung</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/199</link>
+        <pubDate>Tue, 21 Jul 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/199</guid><description>&lt;p&gt;Karl Busam Herrenbekleidung&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Colour lithograph by Karl Korab (*1937)</title>
+        <link>https://christianmahnke.de/post/print-karl-korab</link>
+        <pubDate>Tue, 14 Jul 2026 19:57:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/print-karl-korab</guid><description>&lt;p&gt;I bought a colour lithograph by &lt;a href=&#34;https://de.wikipedia.org/wiki/Karl_Korab&#34; target=&#34;_blank&#34;&gt;Karl Korab&lt;/a&gt; (born 1937) (&lt;a href=&#34;https://www.artnet.com/artists/karl-korab/&#34; target=&#34;_blank&#34;&gt;at artnet&lt;/a&gt;)&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;Karl Korab is an Austrian artist who works as a painter, graphic artist and set designer. His subjects are often landscapes or still lifes, such as this piece. He studied at the Academy of Fine Arts in Vienna from 1957 to 1964.&lt;/p&gt;
+&lt;p&gt;The painting depicts a kind of surrealist still life, composed of geometric and organic forms, such as a face.&lt;/p&gt;
+&lt;p&gt;Incidentally, another copy of this painting was &lt;a href=&#34;https://www.dorotheum.com/en/l/7283887/&#34; target=&#34;_blank&#34;&gt;auctioned at the Dorotheum&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: UNION Golf</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/198</link>
+        <pubDate>Tue, 14 Jul 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/198</guid><description>&lt;p&gt;UNION
+Golf&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: Holzschnitt unbekannter Herkunft</title>
+        <link>https://christianmahnke.de/post/print-unknown-6</link>
+        <pubDate>Sat, 11 Jul 2026 12:31:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/print-unknown-6</guid><description>&lt;p&gt;I have found a colour woodcut whose artist is unknown&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;The picture shows a young woman in a dress, stockings and red shoes, holding a small black cat in her arms.&lt;/p&gt;
+&lt;p&gt;There is a sticker on the back:&lt;/p&gt;
+&lt;div style=&#34;color:white;font-weight:bold;background: black;width:fit-content;padding:1rem;margin:1rem auto;&#34;&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Kunsthandel und&lt;/span&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Bildereinrahmung&lt;/span&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Theodor Harms&lt;/span&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Oldenburg (Oldb)&lt;/span&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Schlossplatz 23&lt;/span&gt;
+  &lt;span style=&#34;display:block;text-transform:uppercase;&#34;&gt;Fernsprecher 4427&lt;/span&gt;
+&lt;/div&gt;
+&lt;p&gt;Although one might think that a relatively large castle situated above a river bend would not be all that common, unfortunately no information has yet come to light.&lt;/p&gt;</description></item>
+    <item><title>ChristianMahnke.de: Woodcut print of unknown origin</title>
+        <link>https://christianmahnke.de/post/print-unknown-5</link>
+        <pubDate>Sat, 11 Jul 2026 11:31:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/print-unknown-5</guid><description>&lt;p&gt;I&amp;rsquo;ve found a colour woodcut by an unknown artist&amp;hellip;&lt;/p&gt;
+&lt;div&gt;Print&lt;/div&gt;&lt;div&gt;Signature&lt;/div&gt;
+&lt;p&gt;The picture shows a highly stylised portrait of a girl or a young woman. On the plate, the contours of the face have been coloured black and the hair bow magenta.&lt;/p&gt;
+&lt;p&gt;The signature can be read as &amp;ldquo;Herzig&amp;rdquo;, but so far it has not been possible to attribute it to anyone with certainty.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Modehaus Wagner Göttingen</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/197</link>
+        <pubDate>Tue, 07 Jul 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/197</guid><description></description></item>
+    <item><title>ChristianMahnke.de: Entex Soccer: A handheld game from 1979</title>
+        <link>https://christianmahnke.de/post/entex-soccer</link>
+        <pubDate>Thu, 02 Jul 2026 18:30:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/entex-soccer</guid><description>&lt;p&gt;I also collect old electronic games; today I found a handheld console from 1979 at &lt;a href=&#34;http://zeitzeug.de/&#34; target=&#34;_blank&#34;&gt;Zeitzeug&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The game was manufactured by the American company &lt;a href=&#34;https://en.wikipedia.org/wiki/Entex_Industries&#34; target=&#34;_blank&#34;&gt;Entex Industries&lt;/a&gt;. The company initially produced building block sets and later switched to manufacturing LCD and LED games (such as this one).&lt;/p&gt;
+&lt;div&gt;Ansicht von oben&lt;/div&gt;
+&lt;p&gt;The rules of the game are quite simple: there are two players, one of whom has the ball at any given time. A round ends as soon as a player loses the ball or scores a goal. The LED of the player in possession of the ball is brighter. The player’s position can be controlled using the arrow keys. The defending player has an additional player on the halfway line, who cannot be controlled but simply moves up and down. As soon as one of the defending players reaches the position of the player in possession of the ball, the round ends and the defender becomes the attacker.
+When a player is in front of the goal, they can press the ‘Kick’ button. Right in front of the goal, every shot is a goal, but the further away they are, the lower the chance of scoring. If the player scores, the console emits a sound, the LEDs in the goal flash three times and the score on the side increases.&lt;/p&gt;
+&lt;p&gt;The game can also be found in various collections:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;At the &lt;a href=&#34;https://data.tmw.at/object/239617/&#34; target=&#34;_blank&#34;&gt;Vienna Technical Museum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://electronicplastic.com/game/?company=entex&amp;amp;id=245&amp;amp;skip=&amp;amp;filter=&amp;amp;search=display:LED&#34; target=&#34;_blank&#34;&gt;Electronic Plastic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://handheldmuseum.com/Entex/Soccer.htm&#34; target=&#34;_blank&#34;&gt;Handheld Games Museum&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is also a video on YouTube showing the restoration of a console:&lt;/p&gt;
+
+&lt;div class=&#34;iframe-wrapper&#34; id=&#34;_iframe-16c14502a2f7e286fe4d130734589ef7&#34;&gt;
+  &lt;div class=&#34;iframe&#34;&gt;
+    &lt;div class=&#34;opt-in&#34;&gt;
+      &lt;div class=&#34;opt-in-overlay&#34;&gt;&lt;img class=&#39;video-preview&#39; src=&#39;video-preview.jpg&#39; alt=&#39;Vorschau&#39;&gt;&lt;div class=&#34;opt-in-overlay-content&#34;&gt;
+          &lt;h3 class=&#34;opt-in-header&#34;&gt;External Content&lt;/h3&gt;
+          &lt;p class=&#34;opt-in-text&#34;&gt;External content is included at this point. Personal data might be transmitted to third-party platforms.&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;iframe-content&#34; id=&#34;_iframe-16c14502a2f7e286fe4d130734589ef7-content&#34;&gt;
+    &lt;/div&gt;
+    &lt;div class=&#34;switch-wrapper&#34;&gt;
+      &lt;label class=&#34;opt-in-switch&#34;&gt;
+        &lt;input type=&#34;checkbox&#34;&gt;
+        &lt;span class=&#34;opt-in-slider&#34;&gt;&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;span class=&#34;opt-in-confirm&#34;&gt;Allow external content&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;script&gt;
+    document.addEventListener(&#34;DOMContentLoaded&#34;, function() {
+      var expire = 30 * 24 * 60 * 60;
+      var overlay = document.querySelector(&#39;#_iframe-16c14502a2f7e286fe4d130734589ef7&#39;).querySelector(&#39;.opt-in&#39;);
+      var toggle = document.querySelector(&#39;#_iframe-16c14502a2f7e286fe4d130734589ef7&#39;).querySelector(&#39;.opt-in-switch input&#39;);
+      addConsent(toggle, overlay, &#39;16c14502a2f7e286fe4d130734589ef7&#39;, &#39;\n    \u003cdiv class=\u0022youtube-video\u0022\u003e\n    \t\t\t\u003ciframe allow=\u0022accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen\u0022 loading=\u0022eager\u0022 referrerpolicy=\u0022strict-origin-when-cross-origin\u0022 src=\u0022https:\/\/www.youtube.com\/embed\/aw74gcQJh_U?autoplay=0\u0026amp;controls=1\u0026amp;end=0\u0026amp;loop=0\u0026amp;mute=0\u0026amp;start=0\u0022 title=\u0022Entex SOCCER Handheld Electronic Game 1979 | Can I RESTORE it?\u0022\u003e\u003c\/iframe\u003e\n    \t\t\u003c\/div\u003e\n\n&#39;);
+    });
+  &lt;/script&gt;
+&lt;/div&gt;</description></item>
+    <item><title>Kleiderbügel: Otto-Versand Hamburg</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/196</link>
+        <pubDate>Tue, 30 Jun 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/196</guid><description>&lt;p&gt;Otto-Versand, Hamburg&lt;/p&gt;
+</description></item>
+    <item><title>ChristianMahnke.de: The forgotten whalebones of Göttingen</title>
+        <link>https://christianmahnke.de/post/whalebone-arch-levin-park</link>
+        <pubDate>Sun, 28 Jun 2026 19:22:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/whalebone-arch-levin-park</guid><description>&lt;p&gt;In 2017, I worked a lot of overtime and so spent half the spring in &lt;a href=&#34;https://de.wikipedia.org/wiki/Levinscher_Park&#34; target=&#34;_blank&#34;&gt;Levinschen Park&lt;/a&gt; (German)&amp;hellip;&lt;/p&gt;
+&lt;p&gt;Ever since then, I’ve been wondering whether it might just be a whale’s lower jaw lying there, without anyone having noticed.&lt;/p&gt;
+&lt;p&gt;I was reminded of this again during the week and took a few photos. &lt;a href=&#34;https://geohack.toolforge.org/geohack.php?params=51.544451_N_9.908932_E_scale:10000&#34; target=&#34;_blank&#34;&gt;The exact location on various map providers&lt;/a&gt;.&lt;/p&gt;
+&lt;div&gt;Current status&lt;/div&gt;&lt;div&gt;Reconstruction&lt;/div&gt;&lt;div&gt;Detail 1: Porous structure (spongiosa)&lt;/div&gt;&lt;div&gt;Detail 2: Fibres&lt;/div&gt;
+&lt;p&gt;Now only half of the object remains. However, on Google Maps I found it looking just as I remember it:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/v9HepKjN1ujBAq4EA&#34; target=&#34;_blank&#34;&gt;Image from July 2021&lt;/a&gt;. On the right-hand edge of the picture.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://maps.app.goo.gl/Dnhx4ZmbtxEWKUvHA&#34; target=&#34;_blank&#34;&gt;Image from June 2022&lt;/a&gt;. Behind the red climbing frame on the right.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I have seen structures like this on several occasions, for example in North Frisia. Here you can see the much larger whale bone portal at the Dr Carl Häberlin Frisian Museum in Wyk on Föhr.&lt;/p&gt;
+
+
+
+
+
+&lt;figure&gt;
+    
+        &lt;img src=&#34;https://projektemacher.org/post/christianmahnke/post/whalebone-arch-levin-park/citation.bibimg/Friesenmuseum.jpeg&#34; alt=&#34;Portal of the Dr Carl Häberlin Frisian Museum in Wyk auf Föhr&#34;/&gt; &lt;figcaption&gt;
+                
+                
+                    Image by &lt;a href=&#34;https://commons.wikimedia.org/wiki/File:Friesenmuseum.JPG&#34; target=&#34;_blank&#34;&gt;amras_wi&lt;/a&gt;, public domain
+                    
+                        
+                        
+                
+            &lt;/figcaption&gt;&lt;/figure&gt;
+
+&lt;p&gt;Wikimedia Commons contains many &lt;a href=&#34;https://commons.wikimedia.org/wiki/Category:Whale_bone_arches&#34; target=&#34;_blank&#34;&gt;comparative images of arches made from baleen&lt;/a&gt; (more specifically: the lower jaws of baleen whales).&lt;/p&gt;
+&lt;p&gt;On closer inspection, even more details become apparent:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The material is fibrous in the upper layers and porous in the deeper layers.&lt;/li&gt;
+&lt;li&gt;Organic-looking, upward-facing openings are visible on the front, which are thought to be blood vessels.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;There is no mention of it in the entry for &lt;a href=&#34;https://denkmalatlas.niedersachsen.de/viewer/metadata/01cbe2c6-9bfa-4156-8db9-4d8fbff5f988/&#34; target=&#34;_blank&#34;&gt;Levinscher Park in the Lower Saxony Monument Atlas&lt;/a&gt; either.&lt;/p&gt;
+&lt;p&gt;The biologist and photographer Dirk Pfuhl regularly documents the wildlife of &lt;a href=&#34;http://stadt-natur-wildnis.de/category/lebensraeume/levinscher-park-goettingen/&#34; target=&#34;_blank&#34;&gt;Levinschen Park&lt;/a&gt; and has also written about the &lt;a href=&#34;http://stadt-natur-wildnis.de/geschichte-des-levinschen-parks/&#34; target=&#34;_blank&#34;&gt;history of the park&lt;/a&gt;, but there are no further clues to be found there either&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;Perhaps it’s time to find out how the bones ended up there, and maybe put up a small information board as well.&lt;/p&gt;
+&lt;h1 id=&#34;update-582026&#34;&gt;
+  Update 5.8.2026
+  &lt;a class=&#34;heading-link&#34; href=&#34;#update-582026&#34;&gt;
+    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;The layout can also be &lt;a href=&#34;https://www.openstreetmap.org/node/14075420382&#34; target=&#34;_blank&#34;&gt;found on OpenStreetMap&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Further information about Levinschen Park is available from &lt;a href=&#34;https://goest.de/levinpark.htm&#34; target=&#34;_blank&#34;&gt;goettinger stadtinfo (goest)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</description></item>
+    <item><title>ChristianMahnke.de: The art collection as a separate pages</title>
+        <link>https://christianmahnke.de/post/art-collection</link>
+        <pubDate>Thu, 25 Jun 2026 19:39:44 +0200</pubDate>
+        <guid>https://christianmahnke.de/post/art-collection</guid><description>&lt;p&gt;Until now, the art collection was only available as overviews under the relevant keywords&amp;hellip;&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://christianmahnke.de/en/art-collection/&#34;&gt;art collection&lt;/a&gt; is now available online, featuring all the works I still have. The gallery is presenting the so-called &lt;a href=&#34;https://de.wikipedia.org/wiki/Salonh%C3%A4ngung&#34; target=&#34;_blank&#34;&gt;Petersburg hanging&lt;/a&gt; (German).&lt;/p&gt;
+&lt;p&gt;There are also galleries for different techniques:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/collage/&#34;&gt;Collages&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/computerart/&#34;&gt;Computer art&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/painting/&#34;&gt;Paintings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/woodblockprint/&#34;&gt;Woodcuts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/linocut/&#34;&gt;Linocuts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/lithography/&#34;&gt;Lithographs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/photo/&#34;&gt;Photographs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/etching/&#34;&gt;Etchings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/serigraphy/&#34;&gt;Screen prints&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/drawing/&#34;&gt;Drawings&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In addition, the following regional groupings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/goettingen/&#34;&gt;Göttingen&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/en/art-collection/niedersachsen/&#34;&gt;Lower Saxony&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://christianmahnke.de/art-collection/czechia/&#34;&gt;Czechia&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And an overview of all &lt;a href=&#34;https://christianmahnke.de/en/art-collection/unknownartist/&#34;&gt;works by unknown artists&lt;/a&gt;.&lt;/p&gt;</description></item>
+    <item><title>Kleiderbügel: Rosbach &amp; Risse</title>
+        <link>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/195</link>
+        <pubDate>Tue, 23 Jun 2026 12:47:44 +0200</pubDate>
+        <guid>https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/post/195</guid><description>&lt;p&gt;Rosbach &amp;amp; Risse&lt;/p&gt;
+</description></item>
+    
+  </channel>
+</rss>
