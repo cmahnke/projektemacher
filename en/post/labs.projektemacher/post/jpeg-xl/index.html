@@ -1,0 +1,94 @@
+<h1 id="why-jpeg-xl">
+  Why JPEG XL?
+  <a class="heading-link" href="#why-jpeg-xl">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p><a href="https://en.wikipedia.org/wiki/JPEG_XL" target="_blank">JPEG XL</a> is a new format for raster images, in fact, is&rsquo;s so recent (at the time this text was written) there haven&rsquo;t even been an entry in the German Wikipedia.</p>
+<p>You can read there what exactly JPEG XL does differently or better than the well-known JPEG. We limit ourselves here to the advantages for the Projektemacher blogs:</p>
+<ul>
+<li>Less storage space required</li>
+<li>Lossless compression available</li>
+</ul>
+<p>Disadvantages are currently:</p>
+<ul>
+<li>Few programs can handle it</li>
+<li>The existing algorithms are not yet optimized - it is slower</li>
+</ul>
+<p>The reference implementation can be found on <a href="https://gitlab.com/wg1/jpeg-xl" target="_blank">GitLab</a>.</p>
+<h1 id="how">
+  How?
+  <a class="heading-link" href="#how">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Since the conversion to IIIF derivatives on GitHub is done by a <a href="https://github.com/cmahnke/iiif-action" target="_blank">Docker image</a>, the easiest way to integrate the use of the new format into the tool chain is to add JPEG XL support to this image. For the used <a href="https://github.com/libvips/libvips" target="_blank">LibVIPS</a> there is a <a href="https://github.com/libvips/libvips/pull/2181" target="_blank">Pull Request</a>, which supports the JPEG XL reference implementation. This is now built into a variant of the image for conversion:</p>
+<pre tabindex="0"><code>docker pull ghcr.io/cmahnke/iiif-action:latest-jxl
+</code></pre><h1 id="preparations">
+  Preparations
+  <a class="heading-link" href="#preparations">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<h2 id="start-an-interactive-container">
+  Start an interactive container
+  <a class="heading-link" href="#start-an-interactive-container">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The image can also be used to create the source files.</p>
+<pre tabindex="0"><code>docker run -it -v ${PWD}:${PWD} &#39;ghcr.io/cmahnke/iiif-action:latest-jxl&#39; /bin/bash -c &#34;cd ${PWD}; $SHELL&#34;
+</code></pre><h2 id="file-conversion">
+  File conversion
+  <a class="heading-link" href="#file-conversion">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Using <code>vips</code> directly has the advantage that you can use any supported input file format.</p>
+<pre tabindex="0"><code>vips copy front.tif front.jxl[Q=100]
+</code></pre><p>The following issues have been discovered:</p>
+<ul>
+<li><code>vips jxlsave</code> does not support parameters</li>
+<li>The parameter <code>effort</code> can lead to a crash if it is greater than <code>7</code> - might be a memory problem, not yet tested with <code>cjxl</code></li>
+</ul>
+<p><code>cjxl</code> can also be used, but you should use a losslessly compressed (e.g. PNG) input file:</p>
+<pre tabindex="0"><code>cjxl front.png front.jxl
+</code></pre><p>The possible options are linked here:</p>
+<ul>
+<li><a href="https://github.com/libvips/libvips/blob/add-jxl/libvips/foreign/jxlsave.c" target="_blank"><code>vips jxlsave</code></a></li>
+<li><a href="https://gitlab.com/wg1/jpeg-xl/-/blob/master/doc/man/cjxl.txt" target="_blank"><code>cjxl</code></a></li>
+</ul>
+<h2 id="options">
+  Options
+  <a class="heading-link" href="#options">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>Since the use of JPEG XL is primarily intended here to reduce the storage requirement and with the same or higher quality, it is important to take this into account during the conversion. If possible, the processed master images (i.e. uncompressed image data) should be used directly to create the derivatives. JPEG files (ImageMagick quality level 95) are currently the source material for creating IIIF derivates.</p>
+<p><a href="https://github.com/google/butteraugli" target="_blank"><code>butteraugli</code></a> is used to assess the quality.</p>
+<h3 id="generate-comparison-file">
+  Generate comparison file
+  <a class="heading-link" href="#generate-comparison-file">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<pre tabindex="0"><code>convert front.tif -quality 95 front.jpg
+</code></pre><p><code>butteraugli</code> can read JPEG or PNG files.</p>
+<h2 id="results">
+  Results
+  <a class="heading-link" href="#results">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>This post does not claim to achieve the most optimal results. In addition, the JPEG XL encoder is very memory-hungry and can therefore not be fully tried out in the Docker environment. For these reasons there are no benchmarks, comparisons of file sizes, etc.</p>
+<p>Basically what was known at the beginning remains: files are smaller with a similar quality.</p>
+<h1 id="iiif">
+  IIIF
+  <a class="heading-link" href="#iiif">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>After you have created a few JPEG XL files, you can now generate IIIF derivatives:</p>
+<pre tabindex="0"><code>vips dzsave front.jxl front -t 512 --layout iiif
+</code></pre>
+

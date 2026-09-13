@@ -1,0 +1,59 @@
+<h1 id="preparations">
+  Preparations
+  <a class="heading-link" href="#preparations">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Before posts can be displayed on maps, the following steps must be taken:</p>
+<ul>
+<li>Geocoding of posts and / or tags</li>
+<li>Generation of an application-specific representations (GeoJSON, KML)</li>
+</ul>
+<p>After this has been done, the next step can be approached.</p>
+<p>An example of the <a href="https://projektemacher.org/future/3d/">old 3D images</a> can be found <a href="https://projektemacher.org/future/3d/map.geojson">here</a>.</p>
+<h1 id="plotting-data-on-a-map-in-a-browser">
+  Plotting data on a map in a browser
+  <a class="heading-link" href="#plotting-data-on-a-map-in-a-browser">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The map material provided by <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> can be used to display the generated data in the browser. An external server generates the images needed to display a map.</p>
+<p>This example shows the locations of the 3D images on a map:</p>
+
+<div class="iframe-wrapper" id="_iframe-14ce2ff9363996f5e54256be08b40693">
+  <div class="iframe">
+    <div class="opt-in">
+      <div class="opt-in-overlay"><div class="opt-in-overlay-content">
+          <h3 class="opt-in-header">External Content</h3>
+          <p class="opt-in-text">External content is included at this point. Personal data might be transmitted to third-party platforms.</p>
+        </div>
+      </div>
+    </div>
+    <div class="iframe-content" id="_iframe-14ce2ff9363996f5e54256be08b40693-content">
+    </div>
+    <div class="switch-wrapper">
+      <label class="opt-in-switch">
+        <input type="checkbox">
+        <span class="opt-in-slider"></span>
+      </label>
+      <span class="opt-in-confirm">Allow external content</span>
+    </div>
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var expire = 30 * 24 * 60 * 60;
+      var overlay = document.querySelector('#_iframe-14ce2ff9363996f5e54256be08b40693').querySelector('.opt-in');
+      var toggle = document.querySelector('#_iframe-14ce2ff9363996f5e54256be08b40693').querySelector('.opt-in-switch input');
+      addConsent(toggle, overlay, '14ce2ff9363996f5e54256be08b40693', '\n    \n\n');
+    });
+  </script>
+</div>
+
+
+<h1 id="next-steps">
+  Next steps
+  <a class="heading-link" href="#next-steps">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>Now only the last step is missing, generating your own map material in order to be independent of external services and also to have the possibility to change the appearance&hellip;</p>
