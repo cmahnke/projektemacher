@@ -13,7 +13,7 @@ do
     git reflog expire --expire-unreachable=now --all
     git gc --aggressive --prune=all
   else
-    git pull origin main
+    git pull --recurse-submodules origin main
   fi
   cd ../..
   git add blogs/$BLOG

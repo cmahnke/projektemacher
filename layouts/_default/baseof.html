@@ -13,7 +13,7 @@
     {{- template "_internal/opengraph.html" . -}}
 
     {{- $externalPost := partial "page-url.html" . -}}
-    {{- if (in .Section "post") -}}
+    {{- if and (in .Section "post") (not (and .IsSection .Parent.IsHome)) -}}
       {{- $pageUrl := index $externalPost "link" -}}
       {{- $titlePrefix := index $externalPost "title" -}}
       {{- if and (not (hasPrefix $pageUrl site.BaseURL)) (ne $pageUrl "") (not (hasPrefix $pageUrl "/")) -}}

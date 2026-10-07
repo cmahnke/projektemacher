@@ -250,6 +250,8 @@ enableRobotsTXT = true
     suffixes = ["csv"]
   [mediaTypes."text/bibtex"]
     suffixes = ["bib"]
+  [mediaTypes."application/x-qrcode-template"]
+    suffixes = ["json"]
 
 [outputFormats]
   [outputFormats.geojson]
@@ -344,6 +346,13 @@ enableRobotsTXT = true
     isPlainText = true
     isHTML = false
     baseName = "codemeta"
+    notAlternative = true
+
+  [outputFormats.qrcode]
+    mediaType = "application/x-qrcode-template"
+    isPlainText = true
+    isHTML = false
+    baseName = "qrcode"
     notAlternative = true
 
 [markup]
