@@ -3,6 +3,12 @@
   {{- $personURI = . -}}
 {{- end -}}
 
+{{- $author := transform.Unmarshal (partialCached "metadata/schema.org/util/author.html" . (printf "%v" .Params.author) (printf "%v" .Params.authors)) -}}
+{{- $founder := dict -}}
+{{- with $author -}}
+  {{- $founder = . -}}
+{{- end -}}
+
 {{ $profilePage := dict
   "@context" "http://schema.org"
   "@graph" (slice
@@ -13,14 +19,8 @@
       "@id" "https://projektemacher.org/#organization"
       "logo" "https://projektemacher.org/images/laborant.jpg"
       "description" "Projects on digital everyday cultural heritage of the 20th century and hybrid media"
-      "founder" (slice
-        (dict
-          "@type" "Person"
-          "name" "Christian Mahnke"
-          "givenName" "Christian"
-          "@id" "{{ $personURI }}"
-        )
-      )
+      "sameAs" (slice "https://www.npmjs.com/org/projektemacher")
+      "founder" $founder
     )
     (dict
       "@type" "Collection"
