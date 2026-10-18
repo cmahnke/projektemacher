@@ -56,6 +56,9 @@ jobs:
         run: |
           ./scripts/github/checkout.sh
 
+      - name: Rectify page languages
+        run: ./scripts/fix-page-languages.sh
+
       - name: Set up Python
         uses: actions/setup-python@v7
         with:
