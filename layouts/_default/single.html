@@ -10,7 +10,7 @@
     {{- end -}}
     {{- $titlePrefix }}: {{ $postTitle -}}
   {{- else -}}
-    {{- .Title }} · {{ .Site.Title -}}
+    {{- .Title }} · {{ site.Title -}}
   {{- end -}}
 {{- end -}}
 {{ define "content" }}

@@ -4,7 +4,7 @@
     {{- print ": " -}}
   {{- end -}}
 
-  {{- .Title }} · {{ .Site.Title -}}
+  {{- .Title }} · {{ site.Title -}}
 {{ end }}
 {{ define "content" }}
     <div class="content portfolio">
@@ -12,12 +12,10 @@
           <article class="portfolio">
 
             {{ $pages := where .Data.Pages "Section" .Section }}
-            {{- .Scratch.Set "pages" $pages -}}
-            {{- $mainSite := .Sites.Default -}}
+            {{- $mainSite := hugo.Sites.Default -}}
             {{- if ne $mainSite .Site -}}
-                {{- .Scratch.Set "pages" ($pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) ) -}}
+                {{- $pages = $pages | lang.Merge (where $mainSite.RegularPages "Section" .Section) -}}
             {{- end -}}
-            {{- $pages := .Scratch.Get "pages" -}}
             {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
             {{- $pages = where $pages "Params.displayInList" "!=" false -}}
             {{- $sites := where $pages "Params.type" "==" "site" -}}

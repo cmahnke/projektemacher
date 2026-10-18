@@ -4,7 +4,7 @@
     {{- print ": " -}}
   {{- end -}}
 
-  {{- .Title }} · {{ .Site.Title -}}
+  {{- .Title }} · {{ site.Title -}}
 {{ end }}
 {{ define "content" }}
     <div class="content list">
@@ -109,7 +109,7 @@
 
                                     <span class="month">{{ $monthName }}</span>
                                     {{- range (where $yearPages ".Date.Month" "==" $month).Reverse -}}
-                                      {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+                                      {{- $dir := strings.Substr (string (path.Dir .Path)) 1 -}}
                                       {{- $dir = split $dir "/" -}}
 
                                       {{- $displayName := "" -}}
@@ -117,9 +117,9 @@
                                       {{- $linkPrefix := "" -}}
                                       {{- $prefix := index $dir 1 -}}
                                       {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-                                      {{- $blogPage := .Site.GetPage $sectionHeading -}}
+                                      {{- $blogPage := site.GetPage $sectionHeading -}}
                                       {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-                                          {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+                                          {{- $blogPage = site.GetPage "/blog/projektemacher/index.md" -}}
                                           {{- $sectionHeading = "" -}}
                                           {{- $prefix = "projektemacher" -}}
                                       {{- end -}}
@@ -130,7 +130,7 @@
                                       {{- else -}}
                                         {{ $linkPrefix = $blogPage.Param "link" -}}
                                       {{- end -}}
-                                      {{- $postLink = split (substr (string .Path) 1) "/" -}}
+                                      {{- $postLink = split (strings.Substr (string .Path) 1) "/" -}}
 
                                       {{- if eq (len $dir) 2 -}}
                                           {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
@@ -152,7 +152,7 @@
                                           <span class="date">
                                             {{- .Date | time.Format ":date_full" -}}
                                             {{/*
-                                              {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" $.Site.Data.months) -}}
+                                              {{- partial "date.html" (dict "date" .Date "language" $.Page.Language "months" site.Data.months) -}}
                                             */}}
                                           </span>
                                           <span class="link">

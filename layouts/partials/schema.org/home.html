@@ -1,4 +1,4 @@
-{{- $personURI := printf "%s%s" .Site.BaseURL "#person" -}}
+{{- $personURI := printf "%s%s" site.BaseURL "#person" -}}
 {{- with site.Params.author.uri -}}
   {{- $personURI = . -}}
 {{- end -}}

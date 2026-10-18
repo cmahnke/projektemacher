@@ -3,10 +3,10 @@
 {{- $type := .type -}}
 
 {{/* Get section metadata */}}
-{{ $blogs := where $context.Site.Pages "Section" "blog" }}
+{{ $blogs := where site.Pages "Section" "blog" }}
 
 {{/* Collect all relevant pages */}}
-{{- $pages := where $context.Site.Pages "Section" "post" -}}
+{{- $pages := where site.Pages "Section" "post" -}}
 
 {{- $mainSite := hugo.Sites.Default -}}
 {{- if ne $mainSite $context.Site -}}

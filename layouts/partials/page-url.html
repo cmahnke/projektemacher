@@ -5,7 +5,7 @@
 {{- $title := "" -}}
 
 {{- with . -}}
-  {{- $dir := substr (string (.Path)) 1 -}}
+  {{- $dir := strings.Substr (string (.Path)) 1 -}}
   {{- $dir := split $dir "/" -}}
   {{- $lang := "" -}}
   {{- $prefix := "" -}}
@@ -25,10 +25,10 @@
 
   {{- if not $linkPrefix -}}
     {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-    {{- $blogPage := .Site.GetPage $sectionHeading -}}
+    {{- $blogPage := site.GetPage $sectionHeading -}}
 
     {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-      {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+      {{- $blogPage = site.GetPage "/blog/projektemacher/index.md" -}}
       {{- $prefix = $defaultPrefix -}}
     {{- end -}}
 
@@ -45,7 +45,7 @@
     {{- end -}}
   {{- end -}}
 
-  {{- $postPath := substr (string .Path) 1 -}}
+  {{- $postPath := strings.Substr (string .Path) 1 -}}
   {{- $postLinkParts := split $postPath "/" -}}
 
   {{- if ne $linkPrefix "" -}}

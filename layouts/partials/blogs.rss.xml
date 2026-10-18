@@ -2,11 +2,11 @@
   {{- $pages := (partial "blog-posts.html" (dict "context" . "type" "feed")) -}}
 
   <channel>
-    <title>{{ if eq .Title .Site.Title }}{{ .Site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ .Site.Title }}{{ end }}</title>
+    <title>{{ if eq .Title site.Title }}{{ site.Title }}{{ else }}{{ with .Title }}{{.}} on {{ end }}{{ site.Title }}{{ end }}</title>
     <link>{{ .Permalink }}</link>
-    <description>Recent content {{ if ne  .Title  .Site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ .Site.Title }}</description>
+    <description>Recent content {{ if ne  .Title  site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ site.Title }}</description>
     <generator>Hugo {{ hugo.Version }}</generator>
-    {{- with .Site.LanguageCode -}}
+    {{- with site.LanguageCode -}}
       <language>{{ . }}</language>
     {{- end -}}
     {{ if not .Date.IsZero }}
@@ -19,7 +19,7 @@
     {{- end -}}
     {{- range $pages -}}
       <item>
-        {{- $dir := substr (string (path.Dir .Path)) 1 -}}
+        {{- $dir := strings.Substr (string (path.Dir .Path)) 1 -}}
         {{- $dir = split $dir "/" -}}
 
         {{- $displayName := "" -}}
@@ -29,9 +29,9 @@
         {{- $prefix := index $dir 1 -}}
         {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
 
-        {{- $blogPage := .Site.GetPage $sectionHeading -}}
+        {{- $blogPage := site.GetPage $sectionHeading -}}
         {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-            {{- $blogPage = .Site.GetPage "/blog/projektemacher/index.md" -}}
+            {{- $blogPage = site.GetPage "/blog/projektemacher/index.md" -}}
             {{- $sectionHeading = "" -}}
             {{- $prefix = "projektemacher" -}}
         {{- end -}}
@@ -41,7 +41,7 @@
         {{- else -}}
           {{- $linkPrefix = $blogPage.Param "link" -}}
         {{- end -}}
-        {{- $postLink = split (substr (string .Path) 1) "/" -}}
+        {{- $postLink = split (strings.Substr (string .Path) 1) "/" -}}
 
         {{- if eq (len $dir) 2 -}}
             {{- $postLink = last (sub (len $postLink) 0) $postLink -}}
@@ -61,8 +61,8 @@
         {{- $dir = .Path -}}
         {{- range .Resources.ByType "audio" -}}
           {{- $size := 0 -}}
-          {{- $pathPrefix := (substr $postLink (sub (len $linkPrefix) 1)) -}}
-          {{- $audioFilePath := (substr .RelPermalink (len $dir)) -}}
+          {{- $pathPrefix := (strings.Substr $postLink (sub (len $linkPrefix) 1)) -}}
+          {{- $audioFilePath := (strings.Substr .RelPermalink (len $dir)) -}}
           {{- $file := (path.Join "." (replace $sectionHeading "blog" "blogs") "content" $pathPrefix $audioFilePath) -}}
           {{- if fileExists $file -}}
             {{- $size = (os.Stat $file).Size -}}

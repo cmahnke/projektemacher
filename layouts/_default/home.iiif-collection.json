@@ -29,14 +29,14 @@
 {{- end -}}
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
-  "id": "{{ $.Site.BaseURL }}collection.json",
+  "id": "{{ site.BaseURL }}collection.json",
   "type": "Collection",
   "label": {
-      "{{ $.Site.Language.Lang }}": [
-        "{{ $.Site.Title }}"
+      "{{ site.Language.Lang }}": [
+        "{{ site.Title }}"
       ]
     {{- if hugo.IsMultilingual -}}
-      {{- $translations := where $.Site.Home.AllTranslations ".Lang" "!=" $.Site.Language.Lang -}}
+      {{- $translations := where site.Home.AllTranslations ".Lang" "!=" site.Language.Lang -}}
       {{- range $translations -}}
       ,
         "{{ .Lang }}": [
@@ -48,15 +48,15 @@
   "items": [
     {{- range $i, $item := $iiif -}}
       {
-        {{- $dir := substr (string $item.Path) 1 -}}
+        {{- $dir := strings.Substr (string $item.Path) 1 -}}
         {{- $dir = split (string $dir) "/" -}}
         {{- $displayName := "" -}}
         {{- $linkPrefix := "" -}}
         {{- $prefix := index $dir 1 -}}
         {{- $sectionHeading := printf "/%s" (delimit (slice "blog" $prefix) "/") -}}
-        {{- $blogPage := $.Site.GetPage $sectionHeading -}}
+        {{- $blogPage := site.GetPage $sectionHeading -}}
         {{- if eq (printf "%T" $blogPage) "*page.nopPage" -}}
-            {{- $blogPage = $.Site.GetPage "/blog/projektemacher/index.md" -}}
+            {{- $blogPage = site.GetPage "/blog/projektemacher/index.md" -}}
             {{- $sectionHeading = "" -}}
             {{- $prefix = "projektemacher" -}}
         {{- end -}}

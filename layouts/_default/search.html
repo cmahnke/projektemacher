@@ -4,19 +4,19 @@
     {{- print ": " -}}
   {{- end -}}
 
-  {{- .Title }} · {{ .Site.Title -}}
+  {{- .Title }} · {{ site.Title -}}
 {{ end }}
 {{ define "content" }}
   <div class="content list search">
     <div class="searchbox">
       <div class="box">
-        <input id="search-box" class="search-input" type="text" name="search-bar" value="">
+        <input id="search-box" class="search-input" type="text" name="search-bar" value="" aria-label="{{ i18n "search" }}">
       </div>
-      <button id="search-button" class="search-button" type="button" name="search-button"><i class="search-icon"></i><span class="button-text">{{ i18n "search" }}</span></button>
+      <button id="search-button" class="search-button" type="button" name="search-button" aria-label="{{ i18n "search" }}"><i class="search-icon" aria-hidden="true"></i><span class="button-text">{{ i18n "search" }}</span></button>
     </div>
     <div class="search-content result-list">
       <div class="search-filter" id="search-filter"></div>
-      <div id="search-results" class="search-result-container"></div>      
+      <div id="search-results" class="search-result-container" aria-live="polite"></div>
     </div>
   </div>
 {{ end }}

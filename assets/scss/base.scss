@@ -4,28 +4,13 @@
 @import "normalize";
 @import "bootstrap.scss";
 
-/* Variables */
-$text-font-family: Lora, Georgia, serif;
-$heading-font-family: Lato, Helvetica, sans-serif;
-$code-font-family: monospace;
-/* Colors */
-$bg-color: #FAFAFA !default;
-$fg-color: #212121 !default;
-$alt-bg-color: #E0E0E0 !default;
-$alt-fg-color: #000 !default;
-$link-color: #1565c0 !default;
-/* Colors dark */
-$bg-color-dark: #212121 !default;
-$fg-color-dark: #dadada !default;
-$alt-bg-color-dark: #424242 !default;
-$alt-fg-color-dark: #dadada !default;
-$link-color-dark: #42a5f5 !default;
-$nav-color: #293133 !default;
-@import "fonts/lato";
-@import "fonts/lora";
+/* Shared skin foundation from the base theme: variables, fonts, burger icon */
+@import "coder/site-shared";
+
 @import "base";
 @import "content";
 @import "navigation";
+@import "menu";
 /* @import "ol"; */
 @import "ol-iiif";
 @import "icons";
@@ -888,5 +873,20 @@ p.small {
 .archive-statistics {
     @media (max-width: 36em) {
         display: none;
+    }
+}
+
+/* Skip link (see theme's theme.scss) */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 10000;
+    padding: 0.5em 1em;
+    background: #212121;
+    color: #fafafa;
+
+    &:focus {
+        left: 0;
     }
 }
