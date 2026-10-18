@@ -52,6 +52,9 @@ jobs:
         with:
           submodules: false
 
+      - name: Check submodule drift
+        run: ./scripts/check-submodule-drift.sh
+
       - name: Checkout submodules
         run: |
           ./scripts/github/checkout.sh
