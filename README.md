@@ -4,7 +4,7 @@ Projektemacher
 # Using this repository
 
 Make sure you check it out recursively, otherwise the theme and links to other blogs won't work.
-Additionally you need to run `yarn` a least once if you want to start `hugo serve` for offline editing.
+Additionally you need to run `npm install` a least once if you want to start `hugo serve` for offline editing.
 
 ```
 git submodule update --init --recursive
