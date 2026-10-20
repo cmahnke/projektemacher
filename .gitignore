@@ -28,3 +28,11 @@ pagefind/
 assets/scss/npm-fonts/
 assets/scss/flags/
 .DS_Store
+
+/package-lock.json
+
+/npm-shrinkwrap.json
+
+/pnpm-lock.yaml
+
+/yarn.lock

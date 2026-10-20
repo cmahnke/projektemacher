@@ -26,6 +26,10 @@ enableRobotsTXT = true
       target = "assets/js"
 
     [[module.mounts]]
+      source = "assets/ts"
+      target = "assets/ts"
+
+    [[module.mounts]]
       source = "static"
       target = "static"
 

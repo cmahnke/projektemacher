@@ -16,7 +16,9 @@
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
+    "@types/jquery": "^4.0.1",
     "fast-glob": "^3.3.3",
-    "svgo": "^4.1.0"
+    "svgo": "^4.1.0",
+    "typescript": "^7.0.2"
   }
 }
