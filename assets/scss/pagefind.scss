@@ -7,6 +7,13 @@ $search-button-background-color: transparent !default;
 $search-border-color-inactive: lightgrey !default;
 $search-border-color-active: #ff073a !default;
 $color-body-text: black !default;
+/*
+ * Previously injected as entry globals (partial @use migration): now
+ * passed via `@use "pagefind" with (…)`. Defaults mirror the values
+ * the blog entry last leaked in.
+ */
+$frame-bg-color: #a9a9a9 !default;
+$font-heading: Lato, Helvetica, sans-serif !default;
 
 :root {
   --pagefind-ui-scale: 1;

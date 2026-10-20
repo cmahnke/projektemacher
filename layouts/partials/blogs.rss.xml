@@ -6,7 +6,7 @@
     <link>{{ .Permalink }}</link>
     <description>Recent content {{ if ne  .Title  site.Title }}{{ with .Title }}in {{.}} {{ end }}{{ end }}on {{ site.Title }}</description>
     <generator>Hugo {{ hugo.Version }}</generator>
-    {{- with site.LanguageCode -}}
+    {{- with site.Language.Locale -}}
       <language>{{ . }}</language>
     {{- end -}}
     {{ if not .Date.IsZero }}

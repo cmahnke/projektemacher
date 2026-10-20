@@ -29,11 +29,11 @@
   "id": "{{ site.BaseURL }}collection.json",
   "type": "Collection",
   "label": {
-      "{{ site.Language.Lang }}": [
+      "{{ site.Language.Name }}": [
         "{{ site.Title }}"
       ]
     {{- if hugo.IsMultilingual -}}
-      {{- $translations := where site.Home.AllTranslations ".Lang" "!=" site.Language.Lang -}}
+      {{- $translations := where site.Home.AllTranslations ".Lang" "!=" site.Language.Name -}}
       {{- range $translations -}}
       ,
         "{{ .Lang }}": [

@@ -119,7 +119,7 @@ jobs:
         run: |
           npx puppeteer install chrome@stable
           #npx puppeteer browsers install chrome
-          ./themes/projektemacher-base/scripts/github/check-js-errors.sh
+          ./themes/projektemacher-base/scripts/github/check-js-errors.sh -i
 
       # - name: Archive links
       #   run: python ./themes/projektemacher-base/scripts/archive.py -d docs/ -e projektemacher.org -a 14
