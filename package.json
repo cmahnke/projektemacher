@@ -7,18 +7,13 @@
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.8",
-    "echarts": "^6.1.0",
     "echarts-stat": "^1.2.0",
     "fuse.js": "^7.5.0",
     "jquery": "^4.0.0",
-    "normalize.css": "^8.0.1",
-    "ol": "^10.9.0",
     "popper.js": "^1.16.1"
   },
   "devDependencies": {
     "@types/jquery": "^4.0.1",
-    "fast-glob": "^3.3.3",
-    "svgo": "^4.1.0",
-    "typescript": "^7.0.2"
+    "fast-glob": "^3.3.3"
   }
 }
