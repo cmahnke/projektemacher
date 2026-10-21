@@ -23,7 +23,7 @@
     {{- partial "html/head/meta.html" . -}}
     {{- partial "html/head/links.html" . -}}
     {{- partial "html/head/style.html" (dict "context" . "vars" site.Params.style) -}}
-    {{- partial "html/head/script.html" . -}}
+    {{- partial "html/head/script.html" (dict "context" . "opts" (dict "format" "esm")) -}}
     {{- partial "html/head/coder.html" . -}}
 
     {{- partial "metadata/schema.org/schema.org.html" . -}}
