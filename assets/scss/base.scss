@@ -2,23 +2,25 @@
 /* @use "hugo:vars" as *; */
 
 /*
- * Partial @use migration: @use rules must precede @import and emit
- * their CSS in the order given here — normalize keeps its position at
- * the head of the cascade; the remaining modules are class-scoped and
- * order independent (ol-iiif ships the ol CSS itself). Not yet
- * migratable: the hugo-coder partials (global-leak variables), menu
- * (configured via injected globals) and coder/site-shared (deliberate
- * leak module, still @import'ed below for the site specific rules
- * here).
+ * Fully module-based entry (no @import). The @use order reproduces
+ * the original cascade: normalize first, the coder chrome (vendored,
+ * equivalent to hugo-coder's copies), then the theme's partials, the
+ * shared site chrome and pagefind last — followed by the blog
+ * specific rules below. Variables for site rules come from the
+ * "shared" namespace; pagefind is configured via with().
  */
+@use "coder/site-shared" as shared;
 @use "normalize";
-/* Base fonts — loaded exactly once here (not via site-shared, which
-   may be evaluated twice: module + @import) */
+/* Base fonts — loaded exactly once here */
 @use "npm-fonts/lato";
 @use "npm-fonts/lora";
-@use "coder/site-shared" as shared;
-@use "icons";
+@use "coder/base";
+@use "coder/content";
+@use "coder/navigation";
+@use "menu";
 @use "ol-iiif";
+@use "icons";
+@use "coder/site-chrome";
 @use "pagefind" with (
     $color-body-text: shared.$fg-color,
     $font-heading: shared.$heading-font-family,
@@ -26,21 +28,6 @@
     $search-light: icons.$search-light,
     $search-dark: icons.$search-dark,
 );
-
-/* Shared skin foundation from the base theme: variables, fonts, burger icon */
-@import "coder/site-shared";
-
-@import "base";
-@import "content";
-@import "navigation";
-@import "menu";
-/* @import "ol"; — the ol CSS ships with the ol-iiif module above */
-/* ol-iiif and icons moved to @use above */
-
-/* Shared site chrome from the base theme: icon replacements, fixed
-   navigation, home/404 background, about/404 containers, list card
-   styles, flags, body watermark, footer, skip link. */
-@import "coder/site-chrome";
 
 /*
  * Blog specific styles on top of the shared site chrome.
@@ -202,7 +189,7 @@ article header h1.header {
             }
 
             a {
-                color: $fg-color;
+                color: shared.$fg-color;
 
                 .screenshot img {
                     width: 100%;
@@ -212,7 +199,7 @@ article header h1.header {
             a:active,
             a:focus,
             a:hover {
-                color: $fg-color;
+                color: shared.$fg-color;
                 text-decoration: none;
             }
 
@@ -234,7 +221,7 @@ article header h1.header {
 
                     .blog-title {
                         display: block;
-                        font-family: $heading-font-family;
+                        font-family: shared.$heading-font-family;
                         margin-bottom: 0.4em;
                         width: 100%;
                         font-size: 125%;
@@ -368,16 +355,16 @@ article header h1.header {
         &:hover,
         &:visited {
             text-decoration: none;
-            color: $fg-color;
+            color: shared.$fg-color;
         }
     }
 
     .collapse-header {
         display: block;
-        color: $fg-color;
+        color: shared.$fg-color;
         width: 30%;
     }
-    font-family: $heading-font-family;
+    font-family: shared.$heading-font-family;
 
     li.month-section {
         margin: 0 2em;
@@ -402,7 +389,7 @@ article header h1.header {
     box-sizing: border-box;
     margin: auto;
     width: 50%;
-    font-family: $heading-font-family;
+    font-family: shared.$heading-font-family;
     height: 3em;
     display: inline-flex;
 
@@ -413,7 +400,7 @@ article header h1.header {
     }
 
     .search-input {
-        background-color: lighten($nav-color, 70%);
+        background-color: lighten(shared.$nav-color, 70%);
         border: 1px solid darkgray;
         width: 100%;
         height: 100%;
@@ -423,7 +410,7 @@ article header h1.header {
     }
 
     .search-button {
-        background-color: $nav-color;
+        background-color: shared.$nav-color;
         width: 20%;
         min-width: 10em;
         display: inline-block;
@@ -434,7 +421,7 @@ article header h1.header {
         color: white;
 
         &:hover {
-            background-color: lighten($nav-color, 10%);
+            background-color: lighten(shared.$nav-color, 10%);
             color: white;
         }
 
@@ -465,7 +452,7 @@ article header h1.header {
     }
 
     .query {
-        font-family: $heading-font-family;
+        font-family: shared.$heading-font-family;
         font-size: large;
         font-weight: bold;
         margin-bottom: 1em;
