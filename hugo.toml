@@ -391,7 +391,10 @@ enableRobotsTXT = true
             enable = true
 
 [imaging]
-    quality = 95
+    [imaging.jpeg]
+        quality = 95
+    [imaging.webp]
+        quality = 95
 
 [outputs]
     page = ["HTML", "JSON"]
