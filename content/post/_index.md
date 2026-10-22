@@ -1,8 +1,9 @@
 ---
 url: posts
 title: Neueste Beiträge
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 layout: posts
 cascade:
   - target:

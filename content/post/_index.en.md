@@ -1,8 +1,9 @@
 ---
 url: posts
 title: New posts
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 layout: posts
 cascade:
   - target:

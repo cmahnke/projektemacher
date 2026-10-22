@@ -1,8 +1,9 @@
 ---
 title: About this site
 slug: about
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 ---
 # Why "Projektemacher"?
 

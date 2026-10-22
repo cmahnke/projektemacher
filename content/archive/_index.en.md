@@ -1,7 +1,8 @@
 ---
 title: Archive
-displayinlist: false
-metaPage: true
+params:
+  displayinlist: false
+  metaPage: true
 layout: archive
 outputs:
   - csv
