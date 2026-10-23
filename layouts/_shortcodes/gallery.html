@@ -1,0 +1,24 @@
+{{/* This file is just a place holder, to avoid problems with mounted content from  the 'blogs' directory. It renders the inner JSON as a plain image list, like calling 'figure' for each element */}}
+{{- if len .Inner -}}
+  {{- $images := .Inner | unmarshal -}}
+  {{- $baseurl := site.BaseURL | replaceRE "/$" "" -}}
+  {{- $permalink := $.Page.Permalink | replaceRE "\\.html$" "/" -}}
+  <ul class="gallery">
+    {{- range $image := $images -}}
+      {{- $src := $image.src -}}
+      {{- $alt := $image.alt | default "" -}}
+      <li>
+        <figure>
+          {{ if (findRE "(^|:)//" $src) -}}
+            <img src="{{ $src }}"
+          {{- else if (findRE "^/" $src) -}}
+            <img src="{{ printf "%s%s" $baseurl $src }}"
+          {{- else -}}
+            <img src="{{ printf "%s%s" $permalink $src }}"
+          {{- end -}}
+          alt="{{ $alt }}">
+        </figure>
+      </li>
+    {{- end -}}
+  </ul>
+{{- end -}}
