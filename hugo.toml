@@ -418,7 +418,7 @@ enableRobotsTXT = true
                   '^application/ld\+json;charset=[uU][tT][fF]-8$',
                   '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$',
                   '^application/sparql-results\+json$']
-    urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://www\.wikidata\.org/.*', '^https://query\.wikidata\.org/.*', '^https://(de|en)\.wikipedia\.org/.*', '^https?://vocab\.getty\.edu/.*', '^https?://data\.getty\.edu/vocab/.*', '^https://qlever\.dev/api/.*']
+    urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://www\.wikidata\.org/.*', '^https://query\.wikidata\.org/.*', '^https://(de|en)\.wikipedia\.org/.*', '^https?://vocab\.getty\.edu/.*', '^https?://data\.getty\.edu/vocab/.*', '^https://qlever\.dev/api/.*', '^https://static\.projektemacher\.org/.*']
 
 
 [caches]
@@ -428,3 +428,6 @@ enableRobotsTXT = true
   [caches.getresource]
     dir = ':resourceDir/:project'
     maxAge = 604800
+
+[params.robots]
+  llmsTXT = true
