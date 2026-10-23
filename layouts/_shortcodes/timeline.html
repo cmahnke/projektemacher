@@ -1,2 +1,5 @@
 {{/* This file is just a place holder, to avoid problems with mounted content from  the 'blogs' directory */}}
 {{/* TODO: Check if contents should be included for indexing */}}
+{{- if len .Inner -}}
+  {{- $timeline := .Inner -}}
+{{- end -}}
