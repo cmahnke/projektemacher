@@ -35,8 +35,11 @@
   {{ else if eq site.Params.colorscheme "auto" }}
     {{ $csClass = "colorscheme-auto" }}
   {{ end }}
-  {{- $dir := strings.Substr (string (.Path)) 1 -}}
-  {{- $prefix := index $dir 1 -}}
+  {{- $dir := split (string .Path) "/" -}}
+  {{- $prefix := "" -}}
+  {{- if and (ge (len $dir) 3) (in (slice "post" "blog") (index $dir 1)) -}}
+    {{- $prefix = index $dir 2 -}}
+  {{- end -}}
   {{- if ne $prefix "" -}}
     {{- $csClass = printf "%s blog-%s" $csClass $prefix -}}
   {{- end -}}
