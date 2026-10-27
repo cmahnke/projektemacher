@@ -29,7 +29,7 @@
               <div class="post-heading">
                   {{- $dir := strings.Substr (string (path.Dir .Path)) 1 -}}
                   {{- $dir = split $dir "/" -}}
-                  {{- $id := index $dir 1 -}}
+                  {{- $id := printf "post-%s" .File.UniqueID -}}
 
                   {{- $displayName := "" -}}
                   {{- $postLink := "" -}}
@@ -72,7 +72,7 @@
                     {{- .Date | time.Format ":date_full" -}}
                 </span>
                 <span class="link">
-                    <a class="title" href="{{ $postLink }}" {{- if $openExternal -}}target="_blank"{{ else }}data-toggle="collapse"{{- end -}}>{{- $displayName }}{{ .Title -}}</a>
+                    <a class="title"{{ if $openExternal }} href="{{ $postLink }}" target="_blank"{{ else }} href="#{{ $id }}" data-bs-toggle="collapse" aria-expanded="false" aria-controls="{{ $id }}"{{ end }}>{{- $displayName }}{{ .Title -}}</a>
                 </span>
               </div>
               <div class="post-snippet">
@@ -82,7 +82,7 @@
                     <span class="post-spacer">&nbsp;</span>
                 {{ end }}
                 {{ if not $openExternal }}
-                  <div class="post-content collapse collapsed" id="{{ $id }}">
+                  <div class="post-content collapse" id="{{ $id }}">
                     {{ .Content }}
                   </div>
                 {{ end }}
