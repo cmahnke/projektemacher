@@ -6,8 +6,9 @@
  * coder navigation bar (nav.navigation > .container > nav.top-menu).
  * The theme's .top-menu rules assume the theme's own header layout;
  * in the nested position the menu nav must not create its own block
- * or containing block — the burger shares the title line and the list
- * is positioned against the fixed navigation bar.
+ * or containing block — on desktop the list rejoins coder's static
+ * flow layout (float right, see below); on mobile it drops down
+ * absolutely positioned below the bar.
  *
  * $burger-menu-light mirrors menu.scss's burger icon, but filled with
  * the light background color: the dark icon is invisible on the dark
@@ -27,27 +28,43 @@ nav.navigation .top-menu {
     }
 }
 
-nav.navigation .top-menu .navigation-list {
-    top: 50%;
-    right: 2rem;
-    padding-right: 0;
-}
-
 /*
- * Desktop items: coder look (inline, on the title line). Confined to
+ * Desktop items: coder look — the list reverts to coder's static flow
+ * layout (float right, items floated left, 6rem line-height centring).
+ * The theme's .top-menu .navigation-list absolute positioning must be
+ * fully undone: no ancestor of the list is positioned, so it would
+ * anchor against the viewport (top: 50% of the window, right: 2rem
+ * from the window edge) instead of the navigation bar. Confined to
  * this media query because the theme stacks items up to 56em with
  * float: none !important.
  */
 @media only screen and (min-width: 56em) {
+    nav.navigation .top-menu .navigation-list {
+        position: static;
+        float: right;
+        transform: none;
+        height: auto;
+        font-size: inherit;
+        text-align: inherit;
+        padding: 0;
+        padding-inline-start: 0;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        list-style-type: none;
+    }
+
     nav.navigation .top-menu .navigation-list .navigation-item {
         display: inline;
         float: left;
+        padding-left: 0;
     }
 
     nav.navigation .top-menu .navigation-list .navigation-item a,
     nav.navigation .top-menu .navigation-list .navigation-item span {
         font-size: 1.6rem;
         line-height: 6rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
