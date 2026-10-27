@@ -36,3 +36,4 @@ assets/scss/flags/
 /pnpm-lock.yaml
 
 /yarn.lock
+package.json
