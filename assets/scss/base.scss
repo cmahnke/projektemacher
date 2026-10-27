@@ -28,6 +28,7 @@
     $search-light: icons.$search-light,
     $search-dark: icons.$search-dark,
 );
+@use "menu-overrides";
 
 /*
  * Blog specific styles on top of the shared site chrome.

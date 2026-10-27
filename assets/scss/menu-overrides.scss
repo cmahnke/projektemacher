@@ -1,0 +1,121 @@
+@use "functions/color" as *;
+@use "coder/site-shared" as shared;
+
+/*
+ * Coder-look integration: the theme menu partial is nested inside the
+ * coder navigation bar (nav.navigation > .container > nav.top-menu).
+ * The theme's .top-menu rules assume the theme's own header layout;
+ * in the nested position the menu nav must not create its own block
+ * or containing block — the burger shares the title line and the list
+ * is positioned against the fixed navigation bar.
+ *
+ * $burger-menu-light mirrors menu.scss's burger icon, but filled with
+ * the light background color: the dark icon is invisible on the dark
+ * navigation bar.
+ */
+$burger-menu-light: "data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='#{encodecolor(shared.$bg-color)}' d='M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z'/%3E%3C/svg%3E";
+
+nav.navigation .top-menu {
+    display: inline;
+    position: static;
+    width: auto;
+    margin: 0;
+    background: none;
+
+    &::after {
+        background: none;
+    }
+}
+
+nav.navigation .top-menu .navigation-list {
+    top: 50%;
+    right: 2rem;
+    padding-right: 0;
+}
+
+/*
+ * Desktop items: coder look (inline, on the title line). Confined to
+ * this media query because the theme stacks items up to 56em with
+ * float: none !important.
+ */
+@media only screen and (min-width: 56em) {
+    nav.navigation .top-menu .navigation-list .navigation-item {
+        display: inline;
+        float: left;
+    }
+
+    nav.navigation .top-menu .navigation-list .navigation-item a,
+    nav.navigation .top-menu .navigation-list .navigation-item span {
+        font-size: 1.6rem;
+        line-height: 6rem;
+    }
+}
+
+/*
+ * Mobile regime, aligned with the theme's 56em item breakpoint instead
+ * of coder's 768px so no in-between band is left broken.
+ */
+@media only screen and (max-width: 56em) {
+    nav.navigation .top-menu .menu-button {
+        display: block;
+        margin: 1.8rem 0;
+        font-size: 2.4rem;
+    }
+
+    nav.navigation .top-menu .menu-icon {
+        content: url($burger-menu-light);
+        height: 1em;
+        width: 1em;
+        margin-top: 0;
+        vertical-align: middle;
+    }
+
+    nav.navigation .top-menu .navigation-list {
+        top: 6rem;
+        right: 0;
+        left: 0;
+        width: auto;
+        height: auto;
+        padding: 0;
+        transform: none;
+        background-color: #fff;
+        border-top: solid 2px #333;
+        border-bottom: solid 2px #333;
+    }
+
+    /* Re-assert the theme's stacked item styling so it also wins at
+       exactly 56em, where both media queries match. */
+    nav.navigation .top-menu .navigation-list .navigation-item {
+        display: block;
+        float: none;
+    }
+
+    nav.navigation .top-menu .navigation-list .navigation-item a,
+    nav.navigation .top-menu .navigation-list .navigation-item span {
+        font-size: 1.6em;
+        line-height: 3rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* JS regime (assets/ts/menu.ts) at the coder breakpoint, not 45em */
+    nav.navigation .top-menu[data-menu-js] .navigation-list {
+        visibility: hidden;
+        opacity: 0;
+        max-height: 0;
+    }
+
+    nav.navigation .top-menu[data-menu-js][data-menu-open="true"] .navigation-list {
+        visibility: visible;
+        opacity: 1;
+        max-height: 100rem;
+    }
+
+    /* No-JS checkbox fallback */
+    nav.navigation .top-menu #menu-toggle:checked + label + ul {
+        visibility: visible;
+        opacity: 1;
+        max-height: 100rem;
+    }
+}
