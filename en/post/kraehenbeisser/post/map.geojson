@@ -1,0 +1,34 @@
+{
+  "type": "FeatureCollection",
+  "features": [{
+  "type": "Feature",
+  "properties": {
+      "name": "The Curonian Spit",
+      "popupContent": "\u003cdiv class=\"geojsonPopup\"\u003e\n    \u003cdiv class=\"title\"\u003e\n        The Curonian Spit\n    \u003c/div\u003e\n    \u003cdiv class=\"content\"\u003e\n        \u003ch2 id=\"description\"\u003e\n  Description\n  \u003ca class=\"heading-link\" href=\"#description\"\u003e\n    \u003ci class=\"fa fa-link\" aria-hidden=\"true\"\u003e\u003c/i\u003e\n  \u003c/a\u003e\n\u003c/h2\u003e\n\u003cp\u003eThis book is a collection of short stories, poems and images, the latter making up roughly the last half of the volume. The quality is consistently very good; they are executed in copper intaglio printing. And since the aim of the book is to bring the Curonian Spit closer to the reader, the craft of the Krähenbeißer (crow catchers) is of course not to be missed.\u003c/p\u003e\n\u003ch2 id=\"illustrations\"\u003e\n  Illustrations\n  \u003ca class=\"heading-link\" href=\"#illustrations\"\u003e\n    \u003ci class=\"fa fa-link\" aria-hidden=\"true\"\u003e\u003c/i\u003e\n  \u003c/a\u003e\n\u003c/h2\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"link\"\u003e\n        \u003ca href=\"/en/post/kraehenbeisser/post/kurische-nehrung/\" aria-label=\"Read More...: The Curonian Spit\"\u003eRead More...\u003c/a\u003e\n    \u003c/div\u003e\n\u003c/div\u003e\n"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [20.9595786,55.2783325]
+  }
+}
+
+
+
+
+,{
+  "type": "Feature",
+  "properties": {
+      "name": "Rossitten",
+      "popupContent": "\u003cdiv class=\"geojsonPopup\"\u003e\n    \u003cdiv class=\"title\"\u003e\n        Rossitten\n    \u003c/div\u003e\n    \u003cdiv class=\"content\"\u003e\n        \u003ch2 id=\"description\"\u003e\n  Description\n  \u003ca class=\"heading-link\" href=\"#description\"\u003e\n    \u003ci class=\"fa fa-link\" aria-hidden=\"true\"\u003e\u003c/i\u003e\n  \u003c/a\u003e\n\u003c/h2\u003e\n\u003cp\u003eThe author, \u003ca href=\"https://en.wikipedia.org/wiki/Johannes_Thienemann\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eProf. Dr. Johannes Thienemann\u003c/a\u003e, was the founder of the Vogelwarte Rossitten bird observatory (today: \u003ca href=\"https://en.wikipedia.org/wiki/Rybatschi\" target=\"_blank\" rel=\"noopener noreferrer\"\u003eRybatschi\u003c/a\u003e). There he devoted himself to the study of bird migration. This book, the \u0026quot;Volksausgabe\u0026quot; (popular edition) of the 4th edition, therefore focuses on the bird life of the Curonian Spit. However, the first part is kept more general: alongside the landscape and life in Rossitten and on the Curonian Spit, it also deals with a speciality of the region, the Krähenbeißer (crow catchers).\u003c/p\u003e\n\u003ch2 id=\"illustrations\"\u003e\n  Illustrations\n  \u003ca class=\"heading-link\" href=\"#illustrations\"\u003e\n    \u003ci class=\"fa fa-link\" aria-hidden=\"true\"\u003e\u003c/i\u003e\n  \u003c/a\u003e\n\u003c/h2\u003e\n    \u003c/div\u003e\n    \u003cdiv class=\"link\"\u003e\n        \u003ca href=\"/en/post/kraehenbeisser/post/rossitten/\" aria-label=\"Read More...: Rossitten\"\u003eRead More...\u003c/a\u003e\n    \u003c/div\u003e\n\u003c/div\u003e\n"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [20.8416522,55.1575512]
+  }
+}
+
+
+
+
+]
+}

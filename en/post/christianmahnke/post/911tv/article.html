@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8"><meta http-equiv="refresh" content="0; URL=https://christianmahnke.de/post/911tv/"><title>ChristianMahnke.de: 911TV started</title><meta name="author" content="Christian Mahnke">
+  <meta name="dc.creator" content="Christian Mahnke">
+
+<meta http-equiv="Content-Language" content="en">
+<meta name="dc.type" content="Text">
+<meta name="description" content="A web application that makes it possible to experience the news of 11 September 2001 in real time">
+<meta property="og:type" content="article" /><meta property="og:url" content="https://projektemacher.org/en/post/christianmahnke/post/911tv/article.html" /><meta property="og:title" content="911TV started" />
+
+  
+  
+    
+  
+
+
+
+<meta name="keywords" content="React, 911, September 11 attacks, terror, TV, news, live coverage[React, 911, September 11 attacks, terror, TV, news, live coverage], Website, HybridMedia, Archive, JavaScript, MediaInstallation"><meta name="dc.subject" content="React"><meta name="dc.subject" content="911"><meta name="dc.subject" content="September 11 attacks"><meta name="dc.subject" content="terror"><meta name="dc.subject" content="TV"><meta name="dc.subject" content="news"><meta name="dc.subject" content="live coverage[React"><meta name="dc.subject" content="911"><meta name="dc.subject" content="September 11 attacks"><meta name="dc.subject" content="terror"><meta name="dc.subject" content="TV"><meta name="dc.subject" content="news"><meta name="dc.subject" content="live coverage]"><meta name="dc.subject" content="Website"><meta name="dc.subject" content="HybridMedia"><meta name="dc.subject" content="Archive"><meta name="dc.subject" content="JavaScript"><meta name="dc.subject" content="MediaInstallation">
+<meta name="generator" content="Hugo 0.168.0">
+<meta name="projektemacher.org:build-date" content="2026-10-31 10:15:36.542121411 &#43;0000 UTC m=&#43;162.675132869"><meta name="projektemacher.org:git-commit" content="8ab4c15"><meta name="projektemacher.org:stats" content="{&#34;count&#34;:&#34;5935&#34;,&#34;latest&#34;:&#34;2027-10-26T12:47:44&#43;02:00&#34;}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://projektemacher.org/images/favicon-16.png" sizes="16x16"><link rel="icon" type="image/svg+xml" href="https://projektemacher.org/images/cm.svg">
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+
+
+
+<link href="https://static.projektemacher.org/services/webmentions/webmention.php" rel="webmention" /><link href="https://static.projektemacher.org/services/webmentions/webmention.php" rel="pingback" /><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-100-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-100-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-300-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-700-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-900-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-cyrillic-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-cyrillic-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-math-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-symbols-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-vietnamese-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-latin-ext-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-latin-wght-italic.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-cyrillic-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-math-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-symbols-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-vietnamese-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-latin-ext-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="https://projektemacher.org/fonts/lora-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin><link href="https://projektemacher.org/css/3dcde2e700baa65d3814003bfc8fa7f9.min.8141f9cea277dd40f8a7fa9011763ccff31fa9ee2d036b02d53cd6a7c61b3720.css" rel="stylesheet" integrity="sha256-gUH5zqJ33UD4p/qQEXY8z/Mfqe4tA2sC1TzWp8YbNyA=">
+<script src="https://projektemacher.org/js/main.d97f46e78b7136c380f0956521cd7233316427915bbde3e8c9a616b809e155a2.js" integrity="sha256-2X9G54txNsOA8JVlIc1yMzFkJ5FbvePoyaYWuAnhVaI=" crossorigin="anonymous" type="module"></script><link rel="canonical" href="https://projektemacher.org/en/post/christianmahnke/post/911tv/article.html"><script type="application/ld+json">{"@context":"https://schema.org","@id":"https://projektemacher.org/en/post/christianmahnke/post/911tv/","@type":"Blog","author":{"@id":"https://christianmahnke.de/#person","@type":"Person","description":[{"@language":"de","@value":"Sammler und Creative Technologist, spezialisiert auf die Alltagskultur des 20. Jahrhunderts und ihre digitale Präsentation."},{"@language":"en","@value":"Collector and creative technologist specialising in 20th-century everyday culture and its digital presentation."}],"email":"mail@christianmahnke.de","familyName":"Mahnke","gender":"male","givenName":"Christian","identifier":[{"@type":"PropertyValue","propertyID":"ORCID","value":"0009-0003-1361-4159"},{"@type":"PropertyValue","propertyID":"wikidata","value":"Q137668638"},{"@type":"PropertyValue","propertyID":"GND","value":"141541968X"},{"@type":"PropertyValue","propertyID":"museum:digital","value":"322830"}],"jobTitle":"Creative Technologist","knowsAbout":[{"@type":"Specialty","description":"Expertise in modeling, transformation, and searching of METS, MODS, LIDO, Linked Art and IIIF metadata for cultural heritage.","name":"Digital Libraries \u0026 Museums"},{"@type":"Specialty","description":"Practical application of Wikidata, SPARQL, and RDF technologies for Linked Open Data (LOD).","name":"Semantic Web \u0026 Linked Data"},{"@type":"Specialty","description":"Use of LLM-based coding assistants and agentic workflows (Claude Code, OpenCode, Copilot) for day-to-day software development, refactoring and prototyping.","name":"AI \u0026 Agentic Coding"},{"@type":"Specialty","description":"HDR Imaging, Photogrammetry, Stereoscopy, and Computer Vision using OpenCV.","name":"Digital Imaging \u0026 3D"},{"@type":"Specialty","description":"Development in Python, Java, Groovy and sometimes Go","name":"Software Engineering"},{"@type":"Specialty","description":"Cloud-Infrastructures with Docker and Kubernetes.","name":"DevOps"},{"@type":"Specialty","description":"JavaScript, TypeScript, HTML, CSS and static site generatores like Hugo","name":"Web Development"},{"@type":"Specialty","description":"Strategies for community-driven collection building and transparent provenance documentation.","name":"Citizen Participation in institutional collections"},{"@type":"Specialty","description":"Resource efficient and low cost presentation of cultural data and artifacts.","name":"Sustainable Cultural Technology"},{"@type":"Specialty","description":"Innovative presentation of cultural data and artifacts.","name":"Innovative Cultural Presentation"},"XML","LIDO","METS/MODS","TEI","Linked Open Data","Wikidata","OpenStreetMap","International Image Interoperability Framework","Java","Python","HTML","CSS","JavaScript","TypeScript","Hugo","Solr","OpenCV","Docker","Kubernetes","LLM","AI Agents"],"knowsLanguage":["de","en"],"logo":"https://christianmahnke.de/images/logo.png","memberOf":[{"@type":"Organization","name":"Deutscher Museumsbund e.V.","url":"https://www.museumsbund.de/"},{"@type":"Organization","name":"europeana pro","url":"https://pro.europeana.eu/"}],"name":"Christian Mahnke","sameAs":["https://github.com/cmahnke","https://www.linkedin.com/in/cmahnke/","https://www.librarything.com/profile/cmahnke","https://orcid.org/0009-0003-1361-4159","https://openbiblio.social/@cmahnke","https://pro.europeana.eu/person/christian-mahnke","https://term.museum-digital.de/md-de/persinst/322830","https://huggingface.co/cmahnke","https://publications.goettingen-research-online.de/cris/rp/rp115268","http://www.wikidata.org/entity/Q137668638","https://www.openstreetmap.org/user/Christian%20Mahnke","https://de.wikipedia.org/wiki/Benutzer:CMahnke","https://scholar.google.com/citations?user=3_Pdl3cAAAAJ","https://www.reddit.com/user/Projektemacher_org/","http://d-nb.info/gnd/141541968X"],"url":"https://christianmahnke.de/","worksFor":{"@type":"Organization","name":"Projektemacher","url":"https://projektemacher.org/"}},"description":"A web application that makes it possible to experience the news of 11 September 2001 in real time","inLanguage":"en","name":"Projektemacher - 911TV started","url":"https://projektemacher.org/en/post/christianmahnke/post/911tv/"}</script>
+</head>
+
+  
+  <body class="colorscheme-light blog-christianmahnke ">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <main id="main" class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://projektemacher.org/en"><img alt="Logo" class="header-logo" src="https://projektemacher.org/images/laborant.svg" />Projektemacher
+    </a><nav class="top top-menu" aria-label="Main navigation" data-menu-open-label="Open main navigation" data-menu-close-label="Close main navigation">
+    
+    <input type="checkbox" id="menu-toggle" aria-label="Main navigation" />
+    <label class="menu-button float-right" for="menu-toggle"><i class="menu-icon" aria-hidden="true"></i></label>
+    <ul id="main-navigation-list" class="navigation-list"><li class="navigation-item navto-blogs"><a class="navigation-link" href="https://projektemacher.org/en/blogs/" title="Sites &amp; Blogs">Sites &amp; Blogs<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-posts"><a class="navigation-link" href="https://projektemacher.org/en/posts/" title="News">News<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-archive"><a class="navigation-link" href="https://projektemacher.org/en/archive/" title="Archive">Archive<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-search"><a class="navigation-link" href="https://projektemacher.org/en/search/" title="Search">Search<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-about"><a class="navigation-link" href="https://projektemacher.org/en/about/" title="About">About<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-en"><a class="navigation-link" href="https://merch.projektemacher.org/en/" title="Merch">Merch<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item navto-contact"><a class="navigation-link" href="https://projektemacher.org/en/contact/" title="Contact">Contact<i class="link-icon" aria-hidden="true"></i></a></li><li class="navigation-item lang">
+              <a href="https://projektemacher.org/post/christianmahnke/post/911tv/article.html" title="Deutsch" hreflang="de" lang="de">Deutsch</a>
+            </li></ul>
+  </nav><script defer src="https://projektemacher.org/js/menu.f3e70178adb3aa01ab9834de82162c31cc2ece1d9735c1e26ff1b199c08a683d.js" integrity="sha256-8+cBeK2zqgGrmDTeghYsMcwuzh2XNcHib/GxmcCKaD0="></script></section>
+</nav>
+
+
+      
+  <div class="content page">
+    <section class="container page ">
+      <article class="content-container">
+        <div class="date">
+          <time class="post-date" datetime="2023-11-09T19:22:44&#43;02:00">Thursday, November 9, 2023</time>
+        </div>
+        <header><h1 class="header post-title">ChristianMahnke.de: 911TV started</h1></header>
+        <p>An old idea of mine has now been realised:</p>
+<h2 id="9112001-on-television">
+  9/11/2001 on television
+  <a class="heading-link" href="#9112001-on-television">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>The original idea was to present the content &ldquo;physically&rdquo;, i.e. in the form of an armchair and a television in an otherwise empty room in order to increase the immersion. However, this could only have been a temporary installation and would have required some (interesting) technical gimmicks, so the project has now been realised as a <a href="https://911tv.projektemacher.org/" target="_blank" rel="noopener noreferrer">website</a>.</p>
+
+
+<h2 id="why">
+  Why?
+  <a class="heading-link" href="#why">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p><a href="https://en.wikipedia.org/wiki/September_11_attacks" target="_blank" rel="noopener noreferrer">11 September 2001</a> was not only an unprecedented terrorist attack, but also a special media event. The images have become iconic, of course, but also the density of events and length, mediated by live television coverage were without precedent.</p>
+<p>I can still remember that day and the days that followed, how the event developed: first &ldquo;just&rdquo; a news ticker to a spectacular accident&hellip;
+And further developments then led to more and more broadcasters taking up the unfolding events and accompanying it with special programmes.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/September_11_attacks#Aftermath" target="_blank" rel="noopener noreferrer">impact of the event</a> is manifold. Besides the well-known global political, cultural ones, there are also social ones such as the <a href="https://en.wikipedia.org/wiki/9/11_truth_movement" target="_blank" rel="noopener noreferrer">truther movement</a>, which was certainly also fostered by contradictions and rumours in the context of the live coverage.</p>
+<p>Of course, it is no longer possible today to recreate the reception situation of 9/11, if only because it is now known what happened and how it ended. But this page should at least be an attempt to recreate this situation and thus to create immersion. Contrary to current media usage habits, the television programme is linear, but you can change channels.</p>
+<h2 id="how">
+  How?
+  <a class="heading-link" href="#how">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<p>In 2007, the Internet Archive set up the <a href="https://archive.org/details/sept_11_tv_archive" target="_blank" rel="noopener noreferrer">September 11 Television Archive</a>, a collection of TV broadcasts from 20 channels over 7 days, totalling about 3000 hours of material. Although mainly US channels, it also includes some international channels such as <a href="https://en.wikipedia.org/wiki/BBC" target="_blank" rel="noopener noreferrer">BBC</a>, <a href="https://en.wikipedia.org/wiki/NTV_%28Russia%29" target="_blank" rel="noopener noreferrer">NTV</a>, <a href="https://en.wikipedia.org/wiki/TV_Azteca" target="_blank" rel="noopener noreferrer">TV Azteca</a>, <a href="https://en.wikipedia.org/wiki/MCM_%28TV_channel%29" target="_blank" rel="noopener noreferrer">MCM</a> and <a href="https://en.wikipedia.org/wiki/CCTV-3" target="_blank" rel="noopener noreferrer">CCTV-3</a>.</p>
+<p>In addition, there is a <a href="https://archive.org/details/911" target="_blank" rel="noopener noreferrer">day view</a>, which is presented like an <a href="https://en.wikipedia.org/wiki/Electronic_program_guide" target="_blank" rel="noopener noreferrer">EPG</a>, which allows a good overview, but unfortunately also prevents immersion, as it forces constant interaction.</p>
+<p>Therefore, this website summarises the videos and presents them in a very reduced user interface: As an TV set.</p>
+<p>Contrary to current media usage habits, the TV programme is linear, but you can change channels.
+Key events can be displayed as teletext sub titles. Teletext can also be deactivated and the &ldquo;TV&rdquo; displayed in full-screen mode. Loading the teletext panels can take some time.
+If errors occur, such as longer loading times or missing recordings, there is a picture disturbance. This also occurs when you try to switch off the television. Therefore, it can happen that you have to wait a little while until a picture for the respective channel appears&hellip;</p>
+<h3 id="technical-realisation">
+  Technical realisation
+  <a class="heading-link" href="#technical-realisation">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p>The page is realised as a <a href="https://react.dev/" target="_blank" rel="noopener noreferrer">React</a>, i.e. JavaScript application, the additional dependencies are documented on the page. In order to reduce the user interface as much as possible, the interaction options with the screen text are limited to keyboard input.</p>
+<h1 id="update-11-may-2026">
+  Update 11 May 2026
+  <a class="heading-link" href="#update-11-may-2026">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>911TV is now available on Zenodo.</p><div class="tags">#Website#Hybrid media#Archive#Java script#Media station</div></article>
+    </section>
+</div>
+
+
+
+    </main>
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,6041 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://projektemacher.org/collection.json",
+  "type": "Collection",
+  "label": {
+      "de": [
+        "Projektemacher"
+      ],
+        "en": [
+          "Projektemacher"
+        ]
+      },
+  "items": [{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://never-built.goettingen.xyz/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Never Built Göttingen"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vintagereality.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vintage Reality"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://merch.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Merch"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://briefsteller.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Briefsteller"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://labs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Projektemacher Labs"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://schriftmuster.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Schriftmuster"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://backsteinexpressionismus.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Backsteinexpressionismus"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://xn--kleiderbgel-0hb.xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kleiderbügel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--kinderbcher-zhb.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Kinderbücher"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--krhenbeisser-hcb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Krähenbeißer"
+          ]
+        }
+      },{"id": "https://xn--krhenbeisser-hcb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Krähenbeißer"
+          ]
+        }
+      },{"id": "https://xn--blaufusstlpel-qmb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Blaufußtölpel"
+          ]
+        }
+      },{"id": "https://xn--krhenbeisser-hcb.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Krähenbeißer"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://ric-unknownartist.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Ric - An unknown artist"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://haesslicheplastiktiereundzeugs.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Hässliche Plastiktiere und Zeugs"
+          ]
+        }
+      },{"id": "https://christianmahnke.de/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "ChristianMahnke.de"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      },{"id": "https://vorsatzpapier.projektemacher.org/collection.json",
+        "type": "Collection",
+        "label": {
+          "none": [
+            "Vorsatzpapier"
+          ]
+        }
+      }]
+}

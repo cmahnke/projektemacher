@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Projektemacher</title>
+		<link>https://projektemacher.org/en/post/kraehenbeisser/collection.json</link>
+		<description>Recent content on Projektemacher</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+			<managingEditor>mail@christianmahnke.de (Christian Mahnke)</managingEditor>
+		
+		
+			<webMaster>mail@christianmahnke.de (Christian Mahnke)</webMaster>
+		
+		
+		
+			<lastBuildDate>Tue, 28 Jul 2020 16:51:27 +0200</lastBuildDate>
+		
+			<atom:link href="https://projektemacher.org/en/post/kraehenbeisser/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>About this blog</title>
+				<link>https://projektemacher.org/en/post/kraehenbeisser/about/</link>
+				<pubDate>Tue, 28 Jul 2020 16:51:27 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+				<guid>https://projektemacher.org/en/post/kraehenbeisser/about/</guid>
+				<description>&lt;p&gt;This page is a collection of historical depictions of Krähenbeißer (crow catchers). For copyright reasons, no more recent reproductions, such as those sometimes found in books about East Prussia or the Curonian Spit, are included.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Krähenbeisse.de&lt;/strong&gt; is a &lt;a href=&#34;https://projektemacher.org&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Projektemacher.org blog&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;about-krähenbeißer&#34;&gt;&#xA;  About Krähenbeißer&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#about-kr%c3%a4henbei%c3%9fer&#34;&gt;&#xA;    &lt;i class=&#34;fa fa-link&#34; aria-hidden=&#34;true&#34;&gt;&lt;/i&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&amp;ldquo;Krähenbeißer&amp;rdquo; was the name given to the fishermen of the Curonian Spit and the Curonian Lagoon who caught crows to pickle them as provisions for the winter.&#xA;In the depictions made available here so far, you can see the baiting of the decoy crows, the waiting in the catching hut, the emptying of the nets and the bite.&#xA;The name &amp;ldquo;Krähenbeißer&amp;rdquo; (or in the local dialect: Krajebieter) derives from the fact that the crows were bitten on the skull to kill them.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Contact</title>
+				<link>https://projektemacher.org/en/post/kraehenbeisser/contact/</link>
+				<pubDate>Tue, 28 Jul 2020 16:51:27 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+				<guid>https://projektemacher.org/en/post/kraehenbeisser/contact/</guid>
+				<description>&lt;p&gt;&amp;ldquo;Krähenbeißer&amp;rdquo; is a project by &lt;strong&gt;Christian Mahnke&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can get in touch via &lt;a href=&#34;mailto:kraehenbeisser@projektemacher.org&#34;&gt;e-mail&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;img class=&#34;about-img&#34; alt=&#34;Krähenbeißer&#34; src=&#34;https://projektemacher.org/images/kraehenbeisser.svg&#34;&gt;</description>
+			</item>
+			<item>
+				<title>Map</title>
+				<link>https://projektemacher.org/en/post/kraehenbeisser/map/</link>
+				<pubDate>Tue, 28 Jul 2020 16:51:27 +0200</pubDate><author>mail@christianmahnke.de (Christian Mahnke)</author>
+				<guid>https://projektemacher.org/en/post/kraehenbeisser/map/</guid>
+				<description>&lt;p&gt;On this page, the locations of the posts are displayed on a map. The map display uses the external service &lt;a href=&#34;https://www.openstreetmap.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;OpenStreetMap&lt;/a&gt;, so consent is required for its use.&lt;/p&gt;&#xA;&#xA;    &#xA;&#xA;&#xA;&lt;div class=&#34;download-link&#34;&gt;&#xA;  &#xA;    &lt;a class=&#34;download-link&#34; href=&#34;https://projektemacher.org/en/post/kraehenbeisser/map/../post/map.geojson&#34; target=&#34;_blank&#34; rel=&#34;noopener noreferrer&#34;&gt;Download GeoJSON&lt;/a&gt;&#xA;  &#xA;&lt;/div&gt;</description>
+			</item>
+	</channel>
+</rss>
