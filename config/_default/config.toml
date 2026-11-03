@@ -27,28 +27,31 @@
   useragent = "HugoBot/1.0 (https://projektemacher.org/; User:CMahnke)"
   schemaPerson = "https://christianmahnke.de/person.jsonld"
 
-  [params.footer]
-    privacy = true
+[params.footer]
+  privacy = true
 
-  [params.style]
-    # Colors
-    bg-color = '#FAFAFA'
-    fg-color = '#212121'
-    alt-bg-color = '#E0E0E0'
-    alt-fg-color = '#000'
-    link-color = '#1565c0'
-    # Colors dark
-    bg-color-dark = '#212121'
-    fg-color-dark = '#dadada'
-    alt-bg-color-dark = '#424242'
-    alt-fg-color-dark = '#dadada'
-    link-color-dark = '#42a5f5'
-    nav-color = '#293133'
+[params.style]
+  # Colors
+  bg-color = '#FAFAFA'
+  fg-color = '#212121'
+  alt-bg-color = '#E0E0E0'
+  alt-fg-color = '#000'
+  link-color = '#1565c0'
+  # Colors dark
+  bg-color-dark = '#212121'
+  fg-color-dark = '#dadada'
+  alt-bg-color-dark = '#424242'
+  alt-fg-color-dark = '#dadada'
+  link-color-dark = '#42a5f5'
+  nav-color = '#293133'
 
-  [params.css]
-    includeDirs = ["node_modules/bootstrap/scss"]
+[params.css]
+  includeDirs = ["node_modules/bootstrap/scss"]
 
-  [params.author]
-    email = 'mail@christianmahnke.de'
-    name = 'Christian Mahnke'
-    uri = 'http://www.wikidata.org/entity/Q137668638'
+[params.author]
+  email = 'mail@christianmahnke.de'
+  name = 'Christian Mahnke'
+  uri = 'http://www.wikidata.org/entity/Q137668638'
+
+[params.webMcpSearch]
+  enabled = true
