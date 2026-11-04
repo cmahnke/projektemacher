@@ -1,0 +1,41 @@
+{
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.8",
+    "echarts-stat": "^1.2.0",
+    "fuse.js": "^7.5.0",
+    "jquery": "^4.0.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^4.0.1",
+    "fast-glob": "^3.3.3"
+  },
+  "scripts": {
+    "lint-scss": "stylelint 'assets/scss/*'",
+    "lint-js": "eslint 'assets/js' 'assets/ts'",
+    "lint-toml": "eslint i18n",
+    "typecheck": "tsc --noEmit",
+    "lint": "npm run lint-scss && npm run lint-js && npm run lint-toml",
+    "check-generated-css": "stylelint --config ./themes/projektemacher-base/.stylelintrc-postbuild.yaml 'docs/css/*.css'",
+    "postbuild-lint": "npm run check-generated-css",
+    "check:a11y": "node themes/projektemacher-base/scripts/check-a11y.mjs",
+    "check:lighthouse": "node themes/projektemacher-base/scripts/check-lighthouse.mjs",
+    "validate-iiif-gnu": "find docs -name manifest.json -print0 | xargs -r -0 -n1 npx eslint -c themes/projektemacher-base/eslint.config.mjs",
+    "validate-gjson-gnu": "find docs -name '*.gjson' -o -name '*.geojson' -print0 | xargs -r -0 -n1 npx eslint -c themes/projektemacher-base/eslint.config.mjs",
+    "validate-iiif-bsd": "find docs -name manifest.json -print0 | xargs -0 -n1 npx eslint -c themes/projektemacher-base/eslint.config.mjs",
+    "validate-gjson-bsd": "find docs -name '*.gjson' -o -name '*.geojson' -print0 | xargs -0 -n1 npx eslint -c themes/projektemacher-base/eslint.config.mjs",
+    "validate-iiif": "case $OSTYPE in darwin*) npm run validate-iiif-bsd ;; linux*) npm run validate-iiif-gnu ;; bsd*) npm run validate-iiif-bsd ;; *)  exit 100 ;; esac",
+    "validate-gjson": "case $OSTYPE in darwin*) npm run validate-gjson-bsd ;; linux*) npm run validate-gjson-gnu ;; bsd*) npm run validate-gjson-bsd ;; *)  exit 100 ;; esac",
+    "validate": "npm run validate-iiif && npm run validate-gjson",
+    "build": "hugo",
+    "start": "hugo server -D --debug --disableFastRender --buildFuture",
+    "svgo": "svgo -i Source\\ Files/Logo/Laborant.svg -o static/images/laborant.svg"
+  },
+  "overrides": {
+    "canvas": "npm:dry-uninstall"
+  },
+  "resolutions": {
+    "canvas": "npm:empty-npm-package"
+  }
+}
