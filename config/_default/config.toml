@@ -45,9 +45,6 @@
   link-color-dark = '#42a5f5'
   nav-color = '#293133'
 
-[params.css]
-  includeDirs = ["node_modules/bootstrap/scss"]
-
 [params.author]
   email = 'mail@christianmahnke.de'
   name = 'Christian Mahnke'

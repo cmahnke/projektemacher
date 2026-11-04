@@ -1,7 +1,5 @@
 {
   "dependencies": {
-    "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.8",
     "echarts-stat": "^1.2.0"
   },
   "devDependencies": {
