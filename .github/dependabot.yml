@@ -1,14 +1,5 @@
 version: 2
 updates:
-  # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    groups:
-      github-actions:
-        patterns:
-         - '*'
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
@@ -17,19 +8,3 @@ updates:
       npm:
         patterns:
          - '*'
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    ignore:
-      - dependency-name: "themes/hugo-coder"
-    groups:
-      blogs:
-        patterns:
-          - 'blogs/*'
-      themes:
-        patterns:
-          - 'themes/*'
-    cooldown:
-      exclude:
-        - projektemacher-base

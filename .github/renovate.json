@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "gitAuthor": "Projektemacher Bot <renovate@projektemacher.org>",
+  "assignees": ["cmahnke"],
+  "enabledManagers": ["git-submodules", "github-actions"],
+  "git-submodules": {
+    "enabled": true
+  },
+  "cloneSubmodules": false,
+  "ignoreDeps": ["static.projektemacher.org"],
+  "packageRules": [
+    {
+      "matchManagers": ["git-submodules"],
+      "matchDepNames": ["blogs/**"],
+      "groupName": "blogs"
+    },
+    {
+      "matchManagers": ["git-submodules"],
+      "matchDepNames": ["themes/**"],
+      "groupName": "themes"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github-actions"
+    }
+  ]
+}
