@@ -6,7 +6,8 @@ params:
   link: https://backsteinexpressionismus.projektemacher.org/
   status: active
   lang:
-  - de
+    - de
+    - en
 resources:
 - name: screenshot
   src: "screenshot.png"
