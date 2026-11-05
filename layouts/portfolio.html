@@ -18,9 +18,9 @@
             {{- end -}}
             {{- $pages = where $pages "Params.displayinlist" "!=" false -}}
             {{- $pages = where $pages "Params.displayInList" "!=" false -}}
-            {{- $sites := where $pages "Params.type" "==" "site" -}}
+            {{- $sites := where $pages "Type" "==" "site" -}}
             {{- $sites = (sort $sites ".Title" "asc") -}}
-            {{- $pages = where $pages "Params.type" "!=" "site" -}}
+            {{- $pages = where $pages "Type" "!=" "site" -}}
             {{- $sorted := (sort $pages ".Date" "asc").ByParam "status" -}}
 
             {{- if ($sites | len) -}}

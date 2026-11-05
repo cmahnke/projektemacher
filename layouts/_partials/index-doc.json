@@ -64,8 +64,8 @@
     "id": "{{ .File.UniqueID }}",
 
     {{/* Additional post metadata */}}
-    {{- if and .Params.description (ne .Params.description "") -}}
-        "description": {{- .Params.description | markdownify | jsonify -}},
+    {{- if and .Description (ne .Description "") -}}
+        "description": {{- .Description | markdownify | jsonify -}},
     {{- else if and .Params.itemDescription (ne .Params.itemDescription "") -}}
         "description": {{- .Params.itemDescription | markdownify | jsonify -}},
     {{- end -}}
