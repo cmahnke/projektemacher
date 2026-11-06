@@ -4,7 +4,7 @@ description: "A static URL shortener and link resolver"
 date: 2023-11-01T12:00:00+01:00
 params:
   link: https://xn--h-zfa.xyz/
-  type: site
+  itemType: site
   status: planned
   draft: true
   private: true

@@ -1,5 +1,0 @@
-{{- if and (not (isset .Params "archive")) (ne (.Param "archive") false) -}}
-  {{- if not (and (isset .CurrentSection.Params "indexrecursive") (.CurrentSection.Param "indexrecursive")) -}}
-    {{- partial "index-doc.json" . -}}
-  {{- end -}}
-{{- end -}}

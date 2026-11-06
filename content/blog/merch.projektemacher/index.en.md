@@ -4,7 +4,7 @@ description: "Product designs for my collections"
 date: 2022-10-26T06:41:14+01:00
 params:
   link: "https://merch.projektemacher.org/"
-  type: site
+  itemType: site
   archive: true
   news: true
   displayinlist: false

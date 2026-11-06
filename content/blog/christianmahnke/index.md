@@ -4,7 +4,7 @@ description: "Über mich"
 date: 2021-04-28T10:41:14+01:00
 params:
   link: "https://christianmahnke.de/"
-  type: site
+  itemType: site
   archive: true
   news: true
   weight: 1

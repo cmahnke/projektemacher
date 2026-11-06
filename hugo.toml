@@ -397,8 +397,8 @@ enableRobotsTXT = true
         quality = 95
 
 [outputs]
-    page = ["HTML", "JSON"]
-    section = ["HTML", "JSON"]
+    page = ["HTML"]
+    section = ["HTML"]
 
 [sitemap]
   changeFreq = 'weekly'

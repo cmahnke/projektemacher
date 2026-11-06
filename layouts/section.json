@@ -1,3 +1,0 @@
-{{- if and (not (isset .Params "archive")) (ne (.Param "archive") false) -}}
-  {{- partial "index-doc.json" . -}}
-{{- end -}}
