@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name" : "Projektemacher",
+  "url" : "https://projektemacher.org/",
+  "@id": "https://projektemacher.org/#organization",
+  "logo": "https://projektemacher.org/images/laborant.jpg",
+  "description": "Projects on digital everyday cultural heritage of the 20th century and hybrid media",
+  "founder": [
+    {
+      "@type": "Person",
+      "name" : "Christian Mahnke",
+      "givenName" : "Christian",
+      "@id": "https://christianmahnke.de/#person"
+    }
+  ]
+}
