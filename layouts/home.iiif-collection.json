@@ -1,28 +1,30 @@
 {{- $manifest := "collection.json" -}}
 {{- $pages := where site.Pages "Kind" "section" -}}
-  {{- range site.Home.Translations -}}
-  {{- $pages = $pages | lang.Merge site.RegularPages -}}
-{{- end -}}
-{{/*
-{{- $pages = where $pages "Params.displayinlist" "!=" false -}}
-*/}}
 
 {{- $iiif := slice -}}
+{{- $seen := slice -}}
 {{- range $pages -}}
   {{- $page := . -}}
-  {{- if not (isset .Params "outputs") -}}
-    {{- continue -}}
-  {{- else if reflect.IsSlice .Params.outputs -}}
-    {{- if or (in .Params.outputs "iiif") (in .Params.outputs "iiif-manifest") -}}
-      {{ $iiif = $iiif | append $page }}
+  {{- $hasCollection := false -}}
+  {{- range .OutputFormats -}}
+    {{- if eq .Name "iiif-collection" -}}
+      {{- $hasCollection = true -}}
+      {{- break -}}
     {{- end -}}
-    {{ range .OutputFormats -}}
-      {{- if eq .Name "iiif-collection" -}}
-        {{ $iiif = $iiif | append $page }}
-      {{- end -}}
-    {{- end -}}
+  {{- end -}}
+  {{- if not $hasCollection -}}
     {{- continue -}}
   {{- end -}}
+  {{- $dir := split (strings.Substr (string $page.Path) 1) "/" -}}
+  {{- if lt (len $dir) 2 -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $prefix := index $dir 1 -}}
+  {{- if in $seen $prefix -}}
+    {{- continue -}}
+  {{- end -}}
+  {{- $seen = $seen | append $prefix -}}
+  {{- $iiif = $iiif | append $page -}}
 {{- end -}}
 {
   "@context": "http://iiif.io/api/presentation/3/context.json",
