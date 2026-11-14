@@ -416,6 +416,7 @@ enableRobotsTXT = true
     mediaTypes = ['^application/json$',
                   '^application/json;\s?charset=[uU][tT][fF]-8$',
                   '^application/ld\+json;charset=[uU][tT][fF]-8$',
+                  '^application/ld\+json(;.*)?$',
                   '^application/sparql-results\+json;\s?charset=[uU][tT][fF]-8$',
                   '^application/sparql-results\+json$']
     urls = ['^https://unpkg\.com/.*', '^https://aframe.io\/.*', '^https://www\.wikidata\.org/.*', '^https://query\.wikidata\.org/.*', '^https://(de|en)\.wikipedia\.org/.*', '^https?://vocab\.getty\.edu/.*', '^https?://data\.getty\.edu/vocab/.*', '^https://qlever\.dev/api/.*', '^https://static\.projektemacher\.org/.*', '^https://christianmahnke\.de/.*']
