@@ -24,6 +24,7 @@
 @use "pagefind" with (
     $color-body-text: shared.$fg-color,
     $font-heading: shared.$heading-font-family,
+    $font-body: shared.$text-font-family,
     $frame-bg-color: #a9a9a9,
     $search-light: icons.$search-light,
     $search-dark: icons.$search-dark,
@@ -389,7 +390,7 @@ article header h1.header {
 .searchbox {
     box-sizing: border-box;
     margin: auto;
-    width: 50%;
+    width: 80%;
     font-family: shared.$heading-font-family;
     height: 3em;
     display: inline-flex;
@@ -444,7 +445,7 @@ article header h1.header {
 }
 
 .result-list {
-    flex-basis: 80%;
+    width: 80%;
     margin: auto;
     margin-top: 2em;
 

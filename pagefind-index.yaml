@@ -13,6 +13,8 @@ files:
     - 'en/post/202*/*/**'
     - 'search/**'
     - 'en/search/**'
+    - 'post/*/tags/**'
+    - 'en/post/*/tags/**'
     - 'tagline/**'
     - 'en/tagline/**'
     - 'cm/**'
@@ -74,13 +76,8 @@ index:
     date:
       - ".date time": "[datetime]"
   filter:
-    type:
-      - "a[data-wikidata-entity]":
-          function: type
-          args:
-            lang: "{lang}"
     tag:
-      - ".meta .tags a":
+      - ".post-tags a":
           function: extract
           args:
             pattern: "s/#(.*)/$1/g"
