@@ -389,8 +389,7 @@ article header h1.header {
 
 .searchbox {
     box-sizing: border-box;
-    margin: auto;
-    width: 80%;
+    width: 100%;
     font-family: shared.$heading-font-family;
     height: 3em;
     display: inline-flex;
@@ -445,7 +444,7 @@ article header h1.header {
 }
 
 .result-list {
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 2em;
 
