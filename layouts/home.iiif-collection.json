@@ -1,5 +1,8 @@
 {{- $manifest := "collection.json" -}}
 {{- $pages := where site.Pages "Kind" "section" -}}
+{{- range site.Sites -}}
+  {{- $pages = $pages | union (where .Pages "Kind" "section") -}}
+{{- end -}}
 
 {{- $iiif := slice -}}
 {{- $seen := slice -}}
