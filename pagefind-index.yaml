@@ -43,6 +43,9 @@ index:
     - footer.footer: all
     - script: all
     - "div.menu": all
+    # Tag links stay available as filter values, but don't clutter the result
+    # excerpts ('data-pagefind-ignore' defaults to 'index')
+    - "div.tags.post-tags"
   weight:
     - "h1": 7.0
     - "h2": 6.0
